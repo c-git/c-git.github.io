@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Build only
         uses: wykies/zola-deploy-action@master
         env:
