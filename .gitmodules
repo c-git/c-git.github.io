@@ -1,0 +1,6 @@
+[submodule "themes/zola_easydocs_theme"]
+	path = themes/zola_easydocs_theme
+	url = ../../wykies/zola_easydocs_theme.git
+[submodule "sass"]
+	path = sass
+	url = ../../wykies/docs_sass.git
