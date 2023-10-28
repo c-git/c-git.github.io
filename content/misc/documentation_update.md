@@ -1,5 +1,7 @@
 +++
 title='Documentation Update'
+date=2023-10-27
+updated=2023-10-28
 +++
 
 # Overview
@@ -36,3 +38,25 @@ The only variable that we use is `title` and this must be set.
 Pages that need to link to resources that must be stored in the same location require a folder to be created with the name of the page.
 The content of the page is then specified in `index.md` inside of that folder.
 All the related content can then be placed in that same folder.
+
+## Include a date
+
+If you want to make use of [feed generation](https://www.getzola.org/documentation/templates/feeds/) then the pages need to have dates on them.
+There are two values that need to be set in the [front matter](https://www.getzola.org/documentation/content/page/#front-matter) of the page.
+Each are explained in the comments below.
+Note that the comments are not required to be copied.
+All pages created before starting the public website did not have a date and as such all have been set to the last edit date as a proxy.
+
+```toml
+# The date of the post.
+# Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
+# Do not wrap dates in quotes; the line below only indicates that there is no default date.
+# If the section variable `sort_by` is set to `date`, then any page that lacks a `date`
+# will not be rendered.
+# Setting this overrides a date set in the filename.
+date =
+
+# The last updated date of the post, if different from the date.
+# Same format as `date`.
+updated =
+```

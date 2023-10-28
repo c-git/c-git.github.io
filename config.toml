@@ -16,6 +16,9 @@ build_search_index = true
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
 output_dir = "docs"
 
+# When set to "true", a feed is automatically generated.
+generate_feed = true
+
 # Configuration of the Markdown rendering
 [markdown]
 # Whether to do syntax highlighting
