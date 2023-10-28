@@ -158,6 +158,11 @@
     </article>
 </main>
 
+<footer>
+    <div class="separator"></div>   
+    <p><a target="_blank" rel="noopener" href="{{ config.extra.git_url }}">Feedback? Please use github issues</a></p>
+</footer>
+
 {% if config.build_search_index %}
     <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") | safe }}" defer></script>
     <script type="text/javascript" src="{{ get_url(path="search_index.en.js") | safe }}" defer></script>
