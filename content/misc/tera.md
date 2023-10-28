@@ -1,5 +1,6 @@
 +++
 title = "Tera Guide"
+date=2023-10-27
 +++
 
 ## Get everything in context
