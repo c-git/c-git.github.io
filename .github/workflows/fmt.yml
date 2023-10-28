@@ -1,0 +1,21 @@
+name: Check Formatting
+
+on: [push, pull_request]
+
+jobs:
+  formatting_check:
+    name: Code quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - uses: taiki-e/install-action@dprint
+
+      - name: Show version information
+        shell: bash
+        run: |
+          dprint --version
+
+      - name: Ensure `fmt` has been run
+        run:  dprint check
