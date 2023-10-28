@@ -25,6 +25,7 @@ Source: <https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-1
 | Spoiler [^2]               | \|\|Spoiler\|\|                    |
 
 [^1]: Not supported in [CommonMark][common_mark]. `__some text__` is treated as bold in common mark so all underline variants only get a bold added to them in addition to the other styling specified.
+
 [^2]: Not supported in [CommonMark][common_mark]. `|` is used for tables in the [Extended Syntax][extended_syntax]
 
 Discord also supports the following:
