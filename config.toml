@@ -38,6 +38,7 @@ skip_prefixes = [
 ]
 # Skip anchor checking for external URLs that start with these prefixes
 skip_anchor_prefixes = [
+  "https://github.com/",
   "https://www.markdownguide.org/extended-syntax/",
 ]
 
