@@ -16,27 +16,26 @@ Source: <https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-1
 | -------------------------- | ---------------------------------- |
 | _Italics_                  | `*italics* or _italics_`           |
 | **Bold**                   | `**bold**`                         |
-| ***Bold Italics***         | `***bold italics***`               |
+| _**Bold Italics**_         | `_**bold italics**_`               |
 | Underline [^1]             | `__underline__`                    |
-| __*Underline italics*__    | `__*underline italics*__`          |
+| **_Underline italics_**    | `**_underline italics_**`          |
 | Underline bold[^1]         | `__**underline bold**__`           |
 | underline bold italics[^1] | `__***underline bold italics***__` |
 | ~~Strikethrough~~          | `~~Strikethrough~~`                |
 | Spoiler [^2]               | \|\|Spoiler\|\|                    |
 
-
-
 [^1]: Not supported in [CommonMark][common_mark]. `__some text__` is treated as bold in common mark so all underline variants only get a bold added to them in addition to the other styling specified.
 [^2]: Not supported in [CommonMark][common_mark]. `|` is used for tables in the [Extended Syntax][extended_syntax]
 
-
 Discord also supports the following:
+
 - \`One line code blocks\`
 - \`\`\` Multiline code blocks \`\`\`
 - \> Block quotes
 - \>\>\> Multiline block quotes \>\>\>
 
 # Not in spec but needed in practice
+
 ## Newline
 
 Add a `\` at the end of the line to create a new line.
@@ -89,17 +88,17 @@ The later (preferably at the bottom of the section or page)
 - [ ] Item 1
 - [ ] Item 2
 - [x] Item 3 (Checked)
-    - [x] Sub Item 1
-    - [x] Sub Item 2
-    - [x] Sub Item 3
+  - [x] Sub Item 1
+  - [x] Sub Item 2
+  - [x] Sub Item 3
 
 ```markdown
 - [ ] Item 1
 - [ ] Item 2
 - [x] Item 3 (Checked)
-    - [x] Sub Item 1
-    - [x] Sub Item 2
-    - [x] Sub Item 3
+  - [x] Sub Item 1
+  - [x] Sub Item 2
+  - [x] Sub Item 3
 ```
 
 ### Enabling Checkboxes
@@ -127,7 +126,6 @@ functionality. This has also been enabled on this page so functionality can be t
 ## Collapsable sections
 
 Source: <https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab>
-
 
 <details>
   <summary>Click to expand!</summary>
@@ -221,7 +219,6 @@ Tables are created by surrounding text with `|` and alignment is controlled by `
 | :------------------------------ | :-----------------: | --------------------------------: |
 | Header                          | Title, a lil longer | Here's this, a bit longer to show |
 | Paragraph, a bit longer to show |        Text         |                          And more |
-
 
 [common_mark]: https://commonmark.org/help
 [extended_syntax]: https://www.markdownguide.org/extended-syntax/
