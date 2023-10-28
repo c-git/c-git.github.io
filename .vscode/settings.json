@@ -1,7 +1,9 @@
 {
     "cSpell.words": [
+        "elasticlunr",
         "pexels",
-        "pixabay"
+        "pixabay",
+        "uglyurls"
     ],
     "code-runner.customCommand": "zola build",
     "editor.defaultFormatter": "dprint.dprint",
