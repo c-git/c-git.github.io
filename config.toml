@@ -32,7 +32,14 @@ smart_punctuation = true
 
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes
-skip_prefixes = []
+skip_prefixes = [
+  "https://discord.com",
+  "https://support.discord.com",
+]
+# Skip anchor checking for external URLs that start with these prefixes
+skip_anchor_prefixes = [
+  "https://www.markdownguide.org/extended-syntax/",
+]
 
 [extra]
 # Put all your custom variables here

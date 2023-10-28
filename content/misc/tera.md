@@ -10,7 +10,7 @@ title = "Tera Guide"
 
 ## Example for loop
 
-Source: <https://tera.netlify.app/docs/#functions>
+Source: <https://keats.github.io/tera/docs/#functions>
 
 ```
 {% for i in range(end=5) -%}
@@ -19,7 +19,7 @@ Source: <https://tera.netlify.app/docs/#functions>
 
 ## As String
 
-Source: <https://tera.netlify.app/docs/#as-str>
+Source: <https://keats.github.io/tera/docs/#as-str>
 
 ```
 {{ value | as_str }}
