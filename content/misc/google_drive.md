@@ -9,7 +9,7 @@ If someone else "deletes" one of your files from a folder that is shared with th
 And while it's great that it was still available it also meant that it still used from your quota.
 The following was meant to make it easy for me to find and decide on what to do with these files (usually delete them).
 
-Currently they now "move" the files to the root of you Google Drive resulting in something of a mess there but the files are easy to find and manage that way.
+Currently Google now "move" the files to the root of you Google Drive resulting in something of a mess there but the files are easy to find and manage that way.
 
 <https://drive.google.com/drive/search?q=is%3Aunorganized%20owner%3Ame&authuser=0>
 
