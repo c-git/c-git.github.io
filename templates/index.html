@@ -10,6 +10,7 @@
         {% endif -%}
         <link rel="icon" href="{{ _favicon | safe }}">
     {% endif -%}
+    {% block rss %}<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">{% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 </head>
