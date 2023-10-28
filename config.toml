@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://c-git.github.io"
+base_url = "https://c-git.github.io/"
 
 # The site title and description; used in feeds by default.
 title = "One's Notes"
@@ -39,4 +39,4 @@ skip_prefixes = []
 logo = "notepad.png"
 favicon = "notepad.png"
 easydocs_logo_always_clickable = true
-easydocs_uglyurls = true
+easydocs_uglyurls = false
