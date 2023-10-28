@@ -3,5 +3,7 @@
         "pexels",
         "pixabay"
     ],
-    "code-runner.customCommand": "zola build"
+    "code-runner.customCommand": "zola build",
+    "editor.defaultFormatter": "dprint.dprint",
+    "editor.formatOnSave": true
 }
