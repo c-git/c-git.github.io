@@ -1,9 +1,12 @@
 +++
 title='Installation'
 date=2022-09-21
+updated=2023-10-29
 +++
 
 # Install
+
+Install apache with php and required mods/plugins
 
 ```sh
 sudo apt install apache2
