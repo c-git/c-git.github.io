@@ -4,10 +4,10 @@
         <h1 id="page_title">{{ page.title }}</h1>
         {% if page.date -%}
         <p class="page_meta_data">
-            Published: {{ page.date }}
+            <a href="/site-definitions/#published">Published</a>: {{ page.date }}
             {% if page.updated -%}
             <br />
-            Updated: {{ page.updated }}
+            <a href="/site-definitions/#updated">Updated</a>: {{ page.updated }}
             {% endif -%}
         </p>
         {% endif -%}
