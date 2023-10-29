@@ -7,11 +7,13 @@ title='HTTPS Setup'
 Preferably run these steps in a temp folder so file cleanup at the end will be easy.
 
 ## Create RSA key
+
 ```sh
 openssl genrsa -out localhost.key 4096
 ```
 
 ## Create signing request
+
 ```sh
 openssl req -new -key localhost.key -out localhost.csr
 ```
@@ -20,7 +22,7 @@ openssl req -new -key localhost.key -out localhost.csr
 
 Replace <<SERVER-NAME>> with the name of the server
 
-You are about to be asked to enter information that will be incorporated  into your certificate request.
+You are about to be asked to enter information that will be incorporated into your certificate request.
 What you are about to enter is what is called a Distinguished Name or a DN.
 There are quite a few fields but you can leave some blank\
 For some fields there will be a default value,\
@@ -37,14 +39,13 @@ Email Address []:\
 Please enter the following 'extra' attributes\
 to be sent with your certificate request\
 A challenge password []:\
-An optional company name []:\
+An optional company name []:
 
 ## Self sign certificate
 
 ```sh
 openssl x509 -req -days 9999 -in localhost.csr -signkey localhost.key -out localhost.crt
 ```
-
 
 # ENABLE SSL on server
 
