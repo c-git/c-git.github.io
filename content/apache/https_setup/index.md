@@ -1,6 +1,7 @@
 +++
 title='HTTPS Setup'
 date=2022-09-10
+updated=2023-10-29
 +++
 
 # GENERATE KEYS
@@ -21,20 +22,25 @@ openssl req -new -key localhost.key -out localhost.csr
 
 ### Use the following as a guide to answer the questions asked:
 
-Replace <<SERVER-NAME>> with the name of the server
+**Usage Notes**
 
-You are about to be asked to enter information that will be incorporated into your certificate request.
-What you are about to enter is what is called a Distinguished Name or a DN.
-There are quite a few fields but you can leave some blank\
-For some fields there will be a default value,\
-If you enter '.', the field will be left blank.\
+- This section is very use case dependent these just match my needs.
+
+- Replace \<\<SERVER-NAME\>\> with the name of the server.
+
+- You are about to be asked to enter information that will be incorporated into your certificate request.
+  What you are about to enter is what is called a Distinguished Name or a DN.
+  There are quite a few fields but you can leave some blank
+- For some fields there will be a default value,\
+  If you enter '.', the field will be left blank.
+
 -----\
 Country Name (2 letter code) [AU]:**DM**\
-State or Province Name (full name) [Some-State]:**.**\
-Locality Name (eg, city) []:**.**\
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:**.**\
-Organizational Unit Name (eg, section) []:**.**\
-Common Name (e.g. server FQDN or YOUR name) []:**<<SERVER-NAME>>**\
+State or Province Name (full name) [Some-State]:\
+Locality Name (eg, city) []:\
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:\
+Organizational Unit Name (eg, section) []:\
+Common Name (e.g. server FQDN or YOUR name) []:**\<\<SERVER-NAME\>\>**\
 Email Address []:\
 \
 Please enter the following 'extra' attributes\
