@@ -1,5 +1,6 @@
 +++
 title="String Formatting"
+date=2023-07-12
 +++
 
 Source: <https://doc.rust-lang.org/std/fmt/>

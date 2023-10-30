@@ -1,5 +1,6 @@
 +++
 title="Pattern Type State"
+date=2023-10-12
 +++
 
 # Resource List

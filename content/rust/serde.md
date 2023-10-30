@@ -1,5 +1,6 @@
 +++
 title="Serde"
+date=2023-01-06
 +++
 
 Tips and Tricks for working with `Serde`.

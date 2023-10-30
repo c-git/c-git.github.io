@@ -1,5 +1,6 @@
 +++
 title="Cargo"
+date=2023-06-16
 +++
 
 # Configuring Cargo

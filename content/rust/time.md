@@ -1,10 +1,13 @@
 +++
 title="Time"
+date=2023-08-15
+updated=2023-10-30
 +++
 
 # Standard Library
 
 Unless you're only measuring duration you're probably going to want to reach for chrono. See example below of how to measure duration.
+Note that duration does **NOT** keep counting if the computer goes to sleep (The time wile asleep does not count).
 
 ```rust
 use std::time::{Duration, Instant};

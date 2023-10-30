@@ -1,5 +1,6 @@
 +++
 title="Publish Crate"
+date=2023-08-26
 +++
 
 Source: <https://doc.rust-lang.org/cargo/reference/publishing.html>

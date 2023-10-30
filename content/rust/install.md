@@ -1,5 +1,7 @@
 +++
 title="Install"
+date=2022-12-07
+updated=2023-10-30
 +++
 
 # Linux (Debian)
@@ -26,12 +28,6 @@ Install Rustup, cargo, rustc, etc...
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-Install linker
-
-```sh
-sudo apt install build-essential
 ```
 
 ## Packages Needed to compile some of our programs
