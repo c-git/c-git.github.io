@@ -1,0 +1,49 @@
++++
+title='References'
++++
+
+# Official
+
+- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/intro.html)
+- [API Guidelines Checklist](https://rust-lang.github.io/api-guidelines/checklist.html)
+- Naming conventions - [API Guide](https://rust-lang.github.io/api-guidelines/naming.html)
+- Documentation - [API Guide](https://rust-lang.github.io/api-guidelines/documentation.html)
+- Selecting a collection - [Module std::collections](https://doc.rust-lang.org/std/collections/index.html)
+- Setting up defaults - [Trait std::default::Default](https://doc.rust-lang.org/std/default/trait.Default.html)
+- Attributes - [The Rust Reference](https://doc.rust-lang.org/reference/attributes.html)
+    - Code like `#![]` and `#[]`
+    - I always thought they were compiler directives
+- Minimal Reproducible Example tips - [Stack Overflow Rust Info](https://stackoverflow.com/tags/rust/info)
+- Conditional Compilation
+    - [The Rust Reference](https://doc.rust-lang.org/reference/conditional-compilation.html#debug_assertions)
+- Managing External Processes [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/os/external.html)
+- Testing CLI Applications by Running Them [CLI Book](https://rust-cli.github.io/book/tutorial/testing.html#testing-cli-applications-by-running-them), [Example Snippet](@/rust/snippets.md#)
+- Filing reports of unclear error messages (Choose Diagnostic) [Rust Issues](https://github.com/rust-lang/rust/issues/new/choose)
+- Build Queue for Docs.rs [docs.rs](https://docs.rs/releases/queue)
+- Raw Pointers [std docs](https://doc.rust-lang.org/std/primitive.pointer.html)
+- Magic Completions [Rust Analyzer User Manual](https://rust-analyzer.github.io/manual.html#magic-completions)
+
+# Blog Posts
+
+- Iterators - [Creating an Iterator](https://aloso.github.io/2021/03/09/creating-an-iterator)
+
+# Useful crates
+
+- Logging - [log](https://docs.rs/log/latest/log/)
+- Log4rs patterns - [docs.rs](https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html)
+
+# GitHub Actions
+
+- Toolchain [toolchain](https://github.com/actions-rs/toolchain)
+
+# Lints
+
+- Rust Lints - [The rustdoc book](https://doc.rust-lang.org/rustdoc/lints.html) See Frequently used lints
+
+# Frequently used lints
+
+```rust
+#![warn(missing_docs)]
+#![warn(rustdoc::missing_crate_level_docs)]
+#![warn(rustdoc::missing_doc_code_examples)]
+```
