@@ -26,7 +26,7 @@ openssl req -new -key localhost.key -out localhost.csr
 
 - This section is very use case dependent these just match my needs.
 
-- Replace \<\<SERVER-NAME\>\> with the name of the server.
+- Replace `<<SERVER-NAME>>` with the name of the server.
 
 - You are about to be asked to enter information that will be incorporated into your certificate request.
   What you are about to enter is what is called a Distinguished Name or a DN.
@@ -35,12 +35,12 @@ openssl req -new -key localhost.key -out localhost.csr
   If you enter '.', the field will be left blank.
 
 -----\
-Country Name (2 letter code) [AU]:**DM**\
+Country Name (2 letter code) [AU]:`DM`\
 State or Province Name (full name) [Some-State]:\
 Locality Name (eg, city) []:\
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:\
 Organizational Unit Name (eg, section) []:\
-Common Name (e.g. server FQDN or YOUR name) []:**\<\<SERVER-NAME\>\>**\
+Common Name (e.g. server FQDN or YOUR name) []:`<<SERVER-NAME>>`\
 Email Address []:\
 \
 Please enter the following 'extra' attributes\
