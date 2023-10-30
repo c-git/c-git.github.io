@@ -38,9 +38,7 @@ fn main() {
 
     println!("Local time now is: {}", now);
 }
-
 ```
-
 
 # Formatting syntax
 
@@ -48,10 +46,10 @@ See [docs.rs](https://docs.rs/chrono/latest/chrono/format/strftime/index.html#sp
 
 Excerpt from docs.rs
 
-| Spec. |         Example          | Description                                                            |
-| :---- | :----------------------: | :--------------------------------------------------------------------- |
-| %F    |        2001-07-08        | Year-month-day format (ISO 8601). Same as %Y-%m-%d.                    |
-| %T    |         00:34:60         | Hour-minute-second format. Same as %H:%M:%S.                           |
-| %c    | Sun Jul  8 00:34:60 2001 | Locale’s date and time (e.g., Thu Mar 3 23:05:25 2005).                |
-| %a    |           Sun            | Abbreviated weekday name. Always 3 letters.                            |
-| %A    |          Sunday          | Full weekday name. Also accepts corresponding abbreviation in parsing. |
+| Spec. |         Example         | Description                                                            |
+| :---- | :---------------------: | :--------------------------------------------------------------------- |
+| %F    |       2001-07-08        | Year-month-day format (ISO 8601). Same as %Y-%m-%d.                    |
+| %T    |        00:34:60         | Hour-minute-second format. Same as %H:%M:%S.                           |
+| %c    | Sun Jul 8 00:34:60 2001 | Locale’s date and time (e.g., Thu Mar 3 23:05:25 2005).                |
+| %a    |           Sun           | Abbreviated weekday name. Always 3 letters.                            |
+| %A    |         Sunday          | Full weekday name. Also accepts corresponding abbreviation in parsing. |

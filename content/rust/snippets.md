@@ -137,7 +137,6 @@ assert_cmd = "2.0.7"
 predicates = "2.1.5"
 ```
 
-
 ```rust
 // main.rs
 use std::io::BufRead;
@@ -147,7 +146,6 @@ fn main() {
         println!("{}", line.expect("Unable to read input line"));
     }
 }
-
 ```
 
 ```rust
@@ -181,6 +179,7 @@ fn run_executable() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 ```
+
 # Get input arguments to a program
 
 Source: <https://doc.rust-lang.org/book/ch12-01-accepting-command-line-arguments.html#saving-the-argument-values-in-variables>

@@ -6,7 +6,6 @@ title="Tokio"
 
 Source: <https://users.rust-lang.org/t/calling-async-function-from-main/53314>
 
-
 ## Use macro on main
 
 ```rust

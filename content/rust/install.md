@@ -39,6 +39,7 @@ sudo apt install build-essential
 Below is a list of errors and the package that fixes the error. Use as needed.
 
 ---
+
 Error:
 
 ```

@@ -9,10 +9,10 @@ Source: <https://rust-lang.github.io/rustup/overrides.html#toolchain-override-sh
 If the first argument to cargo, rustc or other tools in the toolchain begins with +, it will be interpreted as a rustup toolchain name
 
 Example:
+
 ```sh
 rustfmt +nightly src/lib.rs
 ```
-
 
 # Override to set nightly for a specific folder
 

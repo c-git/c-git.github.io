@@ -21,7 +21,7 @@ fn main() {
 
 # With Dependencies
 
-```rust
+````rust
 #!/usr/bin/env -S cargo +nightly -Zscript
 
 //! ```cargo
@@ -42,4 +42,4 @@ fn main() {
     let args = Args::parse();
     println!("{:?}", args);
 }
-```
+````

@@ -11,21 +11,21 @@ See the [Cargo Reference](https://doc.rust-lang.org/cargo/reference/config.html#
 Source: <https://doc.rust-lang.org/cargo/commands/index.html>
 
 - [doc](https://doc.rust-lang.org/cargo/commands/cargo-doc.html)
-    - `--document-private-items`
-    - `--no-deps`
-    - `--target-dir`
-    - `--open`
+  - `--document-private-items`
+  - `--no-deps`
+  - `--target-dir`
+  - `--open`
 - [run](https://doc.rust-lang.org/cargo/commands/cargo-run.html)
-    - `--release`
-    - `--bin name` (Works with multiple binaries see [Additional Binaries](https://doc.rust-lang.org/cargo/reference/cargo-targets.html?highlight=bin#binaries))
+  - `--release`
+  - `--bin name` (Works with multiple binaries see [Additional Binaries](https://doc.rust-lang.org/cargo/reference/cargo-targets.html?highlight=bin#binaries))
 - [test](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
-    - `-- --ignored` (Works with `#[ignore]`
-      see [rust reference](https://doc.rust-lang.org/reference/attributes/testing.html#the-ignore-attribute))
-    - `-- --test-threads 1`
+  - `-- --ignored` (Works with `#[ignore]`
+    see [rust reference](https://doc.rust-lang.org/reference/attributes/testing.html#the-ignore-attribute))
+  - `-- --test-threads 1`
 - [tree](https://doc.rust-lang.org/cargo/reference/features.html#inspecting-resolved-features)
-    - `-e features`
-    - `-f "{p} {f}"`
-    - `-e features -i foo`
+  - `-e features`
+  - `-f "{p} {f}"`
+  - `-e features -i foo`
 
 # Cargo Environment Variables
 
@@ -43,7 +43,6 @@ println!("{}", env!("CARGO_PKG_NAME"));
 
 - CARGO_PKG_NAME
 - CARGO_PKG_VERSION (Prefer use of [Version Crate](https://crates.io/crates/version))
-
 
 # Specifying dependencies
 
@@ -63,6 +62,7 @@ regex = { git = "https://github.com/rust-lang/regex.git", branch = "next" }
 Source: <https://doc.rust-lang.org/cargo/reference/features.html>
 
 Example of defining a feature
+
 ```toml
 [features]
 default = ["ico", "webp"]
@@ -76,6 +76,7 @@ webp = []
 ```
 
 Optional dependency
+
 ```toml
 [dependencies]
 gif = { version = "0.11.1", optional = true }
@@ -84,9 +85,9 @@ rgb = { version = "0.8.25", optional = true }
 ```
 
 Example of conditionally compiling based on feature
+
 ```rust
 // This conditionally includes a module which implements WEBP support.
 #[cfg(feature = "webp")]
 pub mod webp;
 ```
-

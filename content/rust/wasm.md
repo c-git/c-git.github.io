@@ -2,14 +2,13 @@
 title="WASM"
 +++
 
-
 # Working on WASM code
 
-Note: One thing to note is that not everything that compiles for WASM works on all WASM targets. 
+Note: One thing to note is that not everything that compiles for WASM works on all WASM targets.
 I no longer remember examples of what things don't work but I know that things that were able to compile were not able to run in the browser as they were not supported.
 And not everything can compile to WASM for example the blocking API of [reqwest](https://docs.rs/reqwest/latest/reqwest/) doesn't compile to WASM (With good reason, you can't block the only thread you have).
 
-If you are using [conditional compilation](@/rust/conditional_compilation.md) (eg. `#[cfg(target_arch = "wasm32")]`) to target both wasm and native, 
+If you are using [conditional compilation](@/rust/conditional_compilation.md) (eg. `#[cfg(target_arch = "wasm32")]`) to target both wasm and native,
 then by default rust analyzer will only work on the code it is currently set to compile.
 In VSCode that can look like some code is "disabled" (a dim color compared to other code).
 It doesn't show up errors not have code completion.

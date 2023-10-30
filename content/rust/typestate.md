@@ -9,8 +9,8 @@ title="Pattern Type State"
 - [Video of presentation at Rust Linz](https://www.youtube.com/watch?v=k8kd22jNcps&t=1382s)
 - [Blog post](https://cliffle.com/blog/rust-typestate/) not read yet but keeps coming up when searching for it
 
-
 # Annotated example
+
 ```rust
 use std::collections::HashMap;
 use std::marker::PhantomData;

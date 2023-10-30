@@ -30,5 +30,3 @@ git remote add ci https://github.com/wykies/rust-ci-conf.git
 git fetch ci
 git merge --allow-unrelated ci/main
 ```
-
-```

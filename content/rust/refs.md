@@ -11,11 +11,11 @@ title='References'
 - Selecting a collection - [Module std::collections](https://doc.rust-lang.org/std/collections/index.html)
 - Setting up defaults - [Trait std::default::Default](https://doc.rust-lang.org/std/default/trait.Default.html)
 - Attributes - [The Rust Reference](https://doc.rust-lang.org/reference/attributes.html)
-    - Code like `#![]` and `#[]`
-    - I always thought they were compiler directives
+  - Code like `#![]` and `#[]`
+  - I always thought they were compiler directives
 - Minimal Reproducible Example tips - [Stack Overflow Rust Info](https://stackoverflow.com/tags/rust/info)
 - Conditional Compilation
-    - [The Rust Reference](https://doc.rust-lang.org/reference/conditional-compilation.html#debug_assertions)
+  - [The Rust Reference](https://doc.rust-lang.org/reference/conditional-compilation.html#debug_assertions)
 - Managing External Processes [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/os/external.html)
 - Testing CLI Applications by Running Them [CLI Book](https://rust-cli.github.io/book/tutorial/testing.html#testing-cli-applications-by-running-them), [Example Snippet](@/rust/snippets.md#)
 - Filing reports of unclear error messages (Choose Diagnostic) [Rust Issues](https://github.com/rust-lang/rust/issues/new/choose)

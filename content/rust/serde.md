@@ -59,4 +59,3 @@ also [default value for a field](https://serde.rs/attr-default.html)
 Source: <https://stackoverflow.com/questions/57560593/why-do-i-get-an-unsupportedtype-error-when-serializing-to-toml-with-a-manually-i>
 
 Using `#[serde(tag = "type")]` can sometimes resolve `Err value: UnsupportedType` errors
-
