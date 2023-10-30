@@ -19,6 +19,8 @@ output_dir = "docs"
 # When set to "true", a feed is automatically generated.
 generate_feed = true
 
+author = "One"
+
 # Configuration of the Markdown rendering
 [markdown]
 # Whether to do syntax highlighting
