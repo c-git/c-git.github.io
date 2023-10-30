@@ -1,6 +1,6 @@
 +++
 title = "Misc"
-weight = 400
+weight = 700
 sort_by = "title"
 insert_anchor_links = "right"
 +++
