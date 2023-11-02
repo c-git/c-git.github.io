@@ -1,7 +1,10 @@
 +++
 title="Publish Crate"
 date=2023-08-26
+updated=2023-11-02
 +++
+
+# Steps to publish
 
 Source: <https://doc.rust-lang.org/cargo/reference/publishing.html>
 
@@ -22,3 +25,20 @@ These instructions assume that you have signed up on crates.io and are logged in
   ```rust
   cargo publish
   ```
+
+# Reserve Name
+
+Source: Daniel Henry-Mantilla
+
+```toml
+# ![cfg_attr(any(),)] /*
+[lib]
+path = "Cargo.toml"
+[package]
+name = "async-therefore-i-am"
+version = "0.0.0"
+authors = ["One"]
+description = "async runtime shenanigans"
+license-file = "Cargo.toml"
+# */
+```
