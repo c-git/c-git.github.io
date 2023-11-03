@@ -3,9 +3,8 @@ title="Create New Crate"
 date=2023-11-02
 +++
 
-TODO: Uncomment source info
-
-<!-- Patterned on: [New Repo Creation](@/git/new_repo.md) -->
+<!-- TODO: Uncomment source info
+Patterned on: [New Repo Creation](@/git/new_repo.md) -->
 
 NB: These instructions assume github with ssh key auth but any would be similar
 
