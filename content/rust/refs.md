@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated=2023-10-30
+updated=2023-11-03
 +++
 
 # Official
@@ -27,6 +27,10 @@ updated=2023-10-30
 - Build Queue for Docs.rs - [docs.rs](https://docs.rs/releases/queue)
 - Raw Pointers - [std docs](https://doc.rust-lang.org/std/primitive.pointer.html)
 - Magic Completions - [Rust Analyzer User Manual](https://rust-analyzer.github.io/manual.html#magic-completions)
+
+# Reference Books (Also see [Official](@/rust/refs.md#official))
+
+- Collection patters, idioms and anti-patterns - [Rust design patterns](https://rust-unofficial.github.io/patterns/)
 
 # Blog Posts
 
