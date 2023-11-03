@@ -11,7 +11,7 @@ And not everything can compile to WASM for example the blocking API of [reqwest]
 
 If you are using [conditional compilation](@/rust/conditional_compilation.md) (eg. `#[cfg(target_arch = "wasm32")]`) to target both wasm and native,
 then by default rust analyzer will only work on the code it is currently set to compile.
-In VSCode that can look like some code is "disabled" (a dim color compared to other code).
+In vscode that can look like some code is "disabled" (a dim color compared to other code).
 It doesn't show up errors not have code completion.
 This is both good and bad.
 It's good in that you only get code completion for the target you are working on at the moment.
@@ -36,7 +36,7 @@ This will switch all of cargo (and rust-analyzer) to target WASM instead. So for
 
 ## Switch the vscode extension to target WASM
 
-Alternatively you can set only the VSCode extension for rust-analyzer to target WASM.
+Alternatively you can set only the vscode extension for rust-analyzer to target WASM.
 To do that edit the json file that stores the vscode settings for the current project to add `"rust-analyzer.cargo.target": "wasm32-unknown-unknown"`.
 
 ```json

@@ -20,7 +20,7 @@ NB: These instructions assume github with ssh key auth but any would be similar
    ```sh
    git remote add origin git@github.com:wykies/REPO_NAME.git
    ```
-6. Push branch to remote (Can be done from VSCode UI) and set current branch as a tracking branch (-u sets current brach to tracking)
+6. Push branch to remote (Can be done from vscode UI) and set current branch as a tracking branch (-u sets current brach to tracking)
    ```sh
    git push -u origin main
    ```
