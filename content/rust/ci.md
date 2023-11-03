@@ -34,9 +34,18 @@ git fetch ci
 # Initially merge into current history
 
 **Warning**: If you are using gitflow, initialize it **BEFORE** doing this. See [reason / case tested](@/rust/ci.md#explanation-of-problem-situation).
+And **DON'T** use the `sync` button in vscode until you do the `git push` at the end of the instructions.
 
 ```sh
 git merge --allow-unrelated ci/main
+```
+
+# Push Changes
+
+**NOTE**: use the command line for this not the `sync` button in vscode.
+
+```sh
+git push
 ```
 
 # Update with new CI config
@@ -60,5 +69,8 @@ Discovered this by:
 - Repeated several times and each time it brought in all the history again
 - After resting the history I did it on develop and repeated without issue.
 - Branched off develop and used the [initial merge][init] command again and it said up to date
+
+I also ended up in the problem situation after gitflow had been started, when I used the `sync` button in vscode.
+Didn't do more testing to figure it out but noted so avoid ending up in that problem again or for later testing.
 
 [init]: @/rust/ci.md#initially-merge-into-current-history

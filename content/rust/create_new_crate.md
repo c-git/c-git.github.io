@@ -24,7 +24,8 @@ NB: These instructions assume github with ssh key auth but any would be similar
    ```sh
    git push -u origin main
    ```
-7. Initialize gitflow
+7. Initialize gitflow.
+   1. **WARNING**: Do not use the vscode `sync` button until you do the `git push` at the end of this procedure (pushing earlier is fine but not using the `sync` button).
 8. Copy in and link to template (for updates). To see more explanation of these steps see [CI instructions](@/rust/ci.md).
    ```sh
    git remote add template git@github.com:c-git/rust-crate-template.git
@@ -36,5 +37,6 @@ NB: These instructions assume github with ssh key auth but any would be similar
    git checkout template/main -- .gitignore
    git checkout template/main -- Cargo.toml
    ```
+
 10. Restore crate name (was lost during merge).
 11. Add [CI](@/rust/ci.md).
