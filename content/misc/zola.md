@@ -25,3 +25,8 @@ with websites meant to be used without a webserver.
 
 For more information on sites meant to be used offline without a webserver see `easydocs_uglyurls` in the configuration options for [zola_easydocs_theme](https://github.com/codeandmedia/zola_easydocs_theme#provided-configurations-options)
 This is not necessary if zola serve is used as that runs a basic webserver.
+
+# Renaming files
+
+If you publish your content but then realize you want to rename your files, you can setup aliases to redirect your pages instead of breaking links to your site.
+This can be done at the page level using the `aliases` field in the [front matter](https://www.getzola.org/documentation/content/page/#front-matter). See example [source file](https://github.com/c-git/c-git.github.io/blob/main/content/rust/pattern_typestate.md?plain=1) where site was moved from [old](https://c-git.github.io/rust/typestate/) to [new](https://c-git.github.io/rust/pattern-typestate/).
