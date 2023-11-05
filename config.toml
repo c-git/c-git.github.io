@@ -45,6 +45,7 @@ skip_prefixes = [
 skip_anchor_prefixes = [
   "https://github.com/",
   "https://www.markdownguide.org/extended-syntax/",
+  "https://rust-lang.github.io/rustfmt/", # Marked as bug in issue https://github.com/getzola/zola/issues/2351
 ]
 
 [extra]
