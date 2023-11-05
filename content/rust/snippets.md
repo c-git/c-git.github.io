@@ -85,11 +85,9 @@ fn main() -> Result<(), Box<dyn Error>> {
 
 // The output is wrapped in a Result to allow matching on errors
 // Returns an Iterator to the Reader of the lines of the file.
-fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
-    where
-        P: AsRef<Path>,
+fn read_lines<P: AsRef<Path>>(path: P) -> io::Result<io::Lines<io::BufReader<File>>>
 {
-    let file = File::open(filename)?;
+    let file = File::open(path)?;
     Ok(io::BufReader::new(file).lines())
 }
 ```
