@@ -1,7 +1,7 @@
 +++
 title="Install"
 date=2022-12-07
-updated=2023-10-30
+updated=2023-11-05
 +++
 
 # Linux (Debian)
@@ -18,13 +18,13 @@ by [rust-lang][1] to use rustup and I did not find a package for rustup in the d
 ## Installation
 
 Optional installations to make things go more smoothly (Maybe needed later). If these are done you shouldn't need to
-install anything else after the command to install rust.
+install anything else after the command to install rust. (Not needed in GitHub Code Spaces)
 
 ```sh
 sudo apt install curl build-essential pkg-config libssl-dev git
 ```
 
-Install Rustup, cargo, rustc, etc...
+Install Rustup, cargo, rustc, etc... (Source: <https://www.rust-lang.org/tools/install>)
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
