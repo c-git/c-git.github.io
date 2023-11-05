@@ -26,3 +26,5 @@ This is the date the article was last modified. Note: This doesn't mean the enti
 It may be a trivial change but this date only reflects that.
 To see what actually change you'd need to check the git history.
 If you have difficulty finding the information feel free to create an issue on [github](https://github.com/c-git/c-git.github.io/issues).
+
+[page_front_matter]: https://www.getzola.org/documentation/content/page/#front-matter
