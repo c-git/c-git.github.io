@@ -12,8 +12,9 @@ Source: [rust-lang][1]
 
 NB: It has come to my attention that cargo can also be installed from
 the [debian repos](https://installati.one/debian/11/cargo/), however I have still decided to document the approach using
-the script because it provides more flexibility to choose where cargo is installed. Further it is recommended
-by [rust-lang][1] to use rustup and I did not find a package for rustup in the debian repos.
+the script because it provides more flexibility to choose where cargo is installed.
+Further it is recommended by [rust-lang][1] to use rustup and I did not find a package for rustup in the debian repos.
+I've also become aware the cargo from the debian repos is usually outdated.
 
 ## Installation
 
