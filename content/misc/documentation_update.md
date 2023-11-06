@@ -64,3 +64,10 @@ date =
 # Same format as `date`.
 updated =
 ```
+
+## Rules for setting `date` and `updated`
+
+The fields should be set according to the following rules:
+
+1. If only `date` is set it should match the last commit date for the file, if not set `updated` to todays date.
+2. If `updated` is set it should match the last commit date for the file, if not set `updated` to todays date.
