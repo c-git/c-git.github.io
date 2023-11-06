@@ -42,8 +42,10 @@ All the related content can then be placed in that same folder.
 ## Must include a date
 
 If you want to make use of [feed generation](https://www.getzola.org/documentation/templates/feeds/) then the pages need to have dates on them.
-There are two values that need to be set in the [front matter](https://www.getzola.org/documentation/content/page/#front-matter) of the page.
-Each are explained in the comments below.
+`date` corresponds to [published](@/site-definitions.md#published) and must be set.
+`updated` corresponds to [updated](@/site-definitions.md#updated) and is optional.
+The values need to be set in the [front matter](https://www.getzola.org/documentation/content/page/#front-matter) of the page.
+Each value is explained in the comments below.
 Note that the comments are not required to be copied.
 All pages created before starting the public website did not have a date and as such all have been set to the last edit date as a proxy.
 
