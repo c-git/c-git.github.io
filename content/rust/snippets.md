@@ -1,6 +1,7 @@
 +++
 title="Snippets"
 date=2023-09-02
+updated=2023-11-05
 +++
 
 # Boilerplate
