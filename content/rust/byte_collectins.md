@@ -26,7 +26,7 @@ io::stderr().write_all(&output.stderr).unwrap();
 assert!(output.status.success());
 
 let data = &output.stdout;
-match str::from_utf8(data) {
+match std::str::from_utf8(data) {
     Ok(s) => {
         println!("{s}");
     }
