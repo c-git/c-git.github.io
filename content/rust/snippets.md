@@ -119,6 +119,15 @@ fn write_to_path<P: AsRef<Path>>(path: P, s: &str) -> Result<(), Box<dyn Error>>
 }
 ```
 
+## Print without line return (and flush)
+
+Note: flush is required as `print!()` does not automatically flush like `println!()` does
+
+```rust
+print!("This may not print when we want unless we flush");
+io::stdout().flush()?;
+```
+
 # Tests
 
 ## Unit tests
