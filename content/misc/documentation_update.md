@@ -1,7 +1,7 @@
 +++
 title='Documentation Update'
 date=2023-10-27
-updated=2023-10-28
+updated=2023-11-05
 +++
 
 # Overview
@@ -39,7 +39,7 @@ Pages that need to link to resources that must be stored in the same location re
 The content of the page is then specified in `index.md` inside of that folder.
 All the related content can then be placed in that same folder.
 
-## Include a date
+## Must include a date
 
 If you want to make use of [feed generation](https://www.getzola.org/documentation/templates/feeds/) then the pages need to have dates on them.
 There are two values that need to be set in the [front matter](https://www.getzola.org/documentation/content/page/#front-matter) of the page.
