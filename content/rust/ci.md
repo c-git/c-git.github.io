@@ -1,6 +1,7 @@
 +++
 title="CI"
 date=2023-09-03
+updated = 2023-11-08
 +++
 
 Source: <https://youtu.be/xUH-4y92jPg?si=3eY_i02onu60bVQ4&t=495>

@@ -1,6 +1,7 @@
 +++
 title='Conditional Compilation'
 date=2022-11-12
+updated = 2023-11-08
 +++
 
 Source: <https://stackoverflow.com/questions/39204908/how-to-check-release-debug-builds-using-cfg-in-rust>

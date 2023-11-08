@@ -1,6 +1,7 @@
 +++
 title="Cargo"
 date=2023-06-16
+updated = 2023-11-08
 +++
 
 # Configuring Cargo

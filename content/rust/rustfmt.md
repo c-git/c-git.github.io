@@ -1,6 +1,7 @@
 +++
 title="rustfmt"
 date=2023-09-02
+updated = 2023-11-08
 +++
 
 # Run rustfmt using nightly compiler

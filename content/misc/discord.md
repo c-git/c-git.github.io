@@ -1,6 +1,7 @@
 +++
 title="Discord"
 date=2023-10-27
+updated = 2023-11-08
 +++
 
 # Timestamp Generator

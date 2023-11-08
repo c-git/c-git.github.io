@@ -1,6 +1,7 @@
 +++
 title="String Formatting"
 date=2023-07-12
+updated = 2023-11-08
 +++
 
 Source: <https://doc.rust-lang.org/std/fmt/>

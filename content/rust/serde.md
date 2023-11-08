@@ -1,6 +1,7 @@
 +++
 title="Serde"
 date=2023-01-06
+updated = 2023-11-08
 +++
 
 Tips and Tricks for working with `Serde`.

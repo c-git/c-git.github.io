@@ -1,6 +1,7 @@
 +++
 title="Single file script"
 date=2023-09-02
+updated = 2023-11-08
 +++
 
 Source: <https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#script>
