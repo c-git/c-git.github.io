@@ -49,11 +49,3 @@ updated=2023-11-05
 # Lints
 
 - [The rustdoc book](https://doc.rust-lang.org/rustdoc/lints.html)
-- [Frequently used lints](#frequently-used-lints)
-
-# Frequently used lints
-
-```rust
-#![warn(missing_docs)]
-#![warn(rustdoc::missing_crate_level_docs)]
-```
