@@ -8,8 +8,6 @@ updated = 2023-11-08
 
 Will try to turn this into a template when I have time but for now documenting the changes I need to make every time.
 
-<!-- TODO: Add link to older docs -->
-
 1. [Install rust](@/rust/install.md#installation)
 2. vscode plugin names (for more that might be useful see [full list](@/vscode/extensions_rust.md))
    1. `vadimcn.vscode-lldb`

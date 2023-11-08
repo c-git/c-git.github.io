@@ -58,7 +58,7 @@ function onEditBody(e: GoogleAppsScript.Events.SheetsOnEdit) {
             (e.range.getColumn() !== OUTPUT_COL_TIME_END) &&
             (e.range.getWidth() === 1) &&
             (e.range.getHeight() === 1)) {
-            // TODO: Do the needful (not variables above not automatically defined)
+            // Do the needful (note variables on rhs above are not automatically defined)
         }
     }
 ```
