@@ -81,7 +81,7 @@ The fields should be set according to the following rules:
 cargo install zola_chrono
 ```
 
-## Setting up a pre-commit hook
+## Setting up a pre-push hook
 
 Each line does the following respectively
 
@@ -90,9 +90,9 @@ Each line does the following respectively
 3. Make the file executable
 
 ```sh
-echo -e '#!/bin/sh\nzola_chrono -c content/' > pre-commit
-mv pre-commit .git/hooks
-chmod +x .git/hooks/pre-commit
+echo -e '#!/bin/sh\nzola_chrono -c content/' > pre-push
+mv pre-push .git/hooks
+chmod +x .git/hooks/pre-push
 ```
 
 The hook should now be setup and working.
