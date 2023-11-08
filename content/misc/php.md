@@ -12,7 +12,7 @@ php --version
 
 # Install current version
 
-See [apache](http://localhost@/apache/installation.md) install instructions to see how to install the current version that is in the
+See [apache](@/apache/installation.md) install instructions to see how to install the current version that is in the
 default repos.
 
 # Install multiple versions
@@ -80,7 +80,7 @@ sudo apt-get install php7.3-mysql
 
 ### Restart Apache
 
-See instructions on restarting apache [here](http://localhost@/apache/installation.md#restart-server).
+See instructions on restarting apache [here](@/apache/installation.md#restart-server).
 
 ## For CLI
 
