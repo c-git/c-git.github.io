@@ -41,6 +41,7 @@ updated=2023-11-05
 
 - Logging - [log](https://docs.rs/log/latest/log/)
 - Log4rs patterns - [docs.rs](https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html)
+- List of [my crates](https://crates.io/users/c-git) on crates.io
 
 # GitHub Actions
 
