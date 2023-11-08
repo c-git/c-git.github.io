@@ -6,8 +6,6 @@ updated = 2023-11-08
 
 # Creating SSH Key (Linux)
 
-<!-- TODO Move to github section -->
-
 Source: <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
 - Open a terminal
