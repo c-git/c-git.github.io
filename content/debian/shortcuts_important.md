@@ -8,7 +8,7 @@ updated = 2023-11-08
 
 Some shortcuts are more like things you might not be able to do another way and those are documented here.
 These are generally ones you only need if you have problems or like what they do.
-But I started this because it was to be able to *UNDO* things I didn't want to happen.
+But I started this because it was to be able to _UNDO_ things I didn't want to happen.
 
 # Switch Between User Interfaces
 

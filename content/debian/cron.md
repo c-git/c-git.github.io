@@ -35,10 +35,8 @@ Source: <https://www.linode.com/docs/guides/schedule-tasks-with-cron/#special-cr
 - `@yearly` and `@annually` both run the specified task every year at 12:00am on the 1st of January. This is equivalent
   to specifying `0 0 1 1 *` in the crontab line.
 - `@daily` and `@midnight` both run the cronjob every day at 12:00am. This is equivalent to the following cron
-  syntax: `0
-  0 * * *`.
-- `@monthly` runs the job once a month, on the 1st, at 12:00am. In standard cron syntax this is equivalent to: `0 0
-  1 * *`.
+  syntax: `0 0 * * *`.
+- `@monthly` runs the job once a month, on the 1st, at 12:00am. In standard cron syntax this is equivalent to: `0 0 1 * *`.
 - `@weekly` runs the job once a week at 12:00am on Sunday. This is the same as specifying `0 0 * * 0` on the crontab
   line.
 - `@hourly` runs the job at the top of every hour. In standard cron syntax this is equivalent to: `0 * * * *`.
@@ -80,7 +78,7 @@ mkdir ~/tmp
 ```sh
 echo 'date >> ~/tmp/cron_result.txt' > ~/tmp/cron_test.sh
 chmod 700 ~/tmp/cron_test.sh
-ls -l ~/tmp 
+ls -l ~/tmp
 ```
 
 Open Crontab

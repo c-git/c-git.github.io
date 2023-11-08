@@ -15,7 +15,7 @@ Instructions written for linux (not tested on Windows)
 It's ok if the file does not exist.
 You can just create it.
 
-Note: It is unlikely that the file does not exist 
+Note: It is unlikely that the file does not exist
 because mandatory settings like your name and email address go in the `user` section of that file.
 
 ```sh

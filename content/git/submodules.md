@@ -78,7 +78,6 @@ _NB: Not tested_
 git submodule update --init --recursive --remote
 ```
 
-
 # Remove a submodule
 
 ```sh

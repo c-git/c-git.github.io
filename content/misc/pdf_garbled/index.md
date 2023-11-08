@@ -44,11 +44,11 @@ Two methods were found for this with varied pros and cons
 
 ## Use [@Voice Aloud Reader](https://play.google.com/store/apps/details?id=com.hyperionics.avar)
 
-- Pros: Directly does text to speach once completed
+- Pros: Directly does text to speech once completed
 - Cons:
-    - Must plug into to charger to do multiple pages
-    - Must use mobile device
-    - Not easily able to copy and paste
+  - Must plug into to charger to do multiple pages
+  - Must use mobile device
+  - Not easily able to copy and paste
 
 ## Use online service
 

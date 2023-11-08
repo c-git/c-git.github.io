@@ -6,7 +6,7 @@ updated = 2023-11-08
 
 Source: <https://itsfoss.com/change-mac-address-linux/>
 
-*NB: Not tested*
+_NB: Not tested_
 
 In the instructions `enp0s31f6` is the adapter name
 

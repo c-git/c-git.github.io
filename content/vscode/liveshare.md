@@ -9,6 +9,7 @@ updated = 2023-11-08
 Source: <https://www.digitalocean.com/community/tutorials/how-to-use-live-share-with-visual-studio-code>
 
 Filename: `.vsls.json`
+
 ```json
 {
     "$schema": "http://json.schemastore.org/vsls",

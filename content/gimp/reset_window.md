@@ -15,4 +15,3 @@ The video also includes how to reset other parts.
 - Go to `Edit` -> `Preferences`
 - Then `Interface` -> `Window Management`
 - Click button at bottom that says `Reset Saved Window Positions to Default Values`
-

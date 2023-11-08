@@ -10,6 +10,7 @@ The following are the commands, followed by the log;
 cd /etc/mysql/mysql.conf.d/
 sudo cp mysqld.cnf mysqld.cnf.20191103
 ```
+
 under [mysqld] add skip-grant-tables
 
 ```sql
@@ -21,6 +22,7 @@ flush privileges;
 SET PASSWORD FOR root@'localhost' = PASSWORD('newpwd');
 quit
 ```
+
 remove line added
 
 ```sql

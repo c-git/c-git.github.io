@@ -4,7 +4,7 @@ date = 2023-07-28
 updated = 2023-11-08
 +++
 
-# Compressing files 
+# Compressing files
 
 ## Using target file extension
 
@@ -28,14 +28,14 @@ tar -caf archive.tar.xz *
 ### Compression options
 
 ```
-   -a, --auto-compress        use archive suffix to determine the compression program
-  -j, --bzip2                filter the archive through bzip2
-  -J, --xz                   filter the archive through xz
-      --lzip                 filter the archive through lzip
-      --lzma                 filter the archive through xz
-      --lzop                 filter the archive through lzop
-      --zstd                 filter the archive through zstd
-  -z, --gzip, --gunzip, --ungzip   filter the archive through gzip
+ -a, --auto-compress        use archive suffix to determine the compression program
+-j, --bzip2                filter the archive through bzip2
+-J, --xz                   filter the archive through xz
+    --lzip                 filter the archive through lzip
+    --lzma                 filter the archive through xz
+    --lzop                 filter the archive through lzop
+    --zstd                 filter the archive through zstd
+-z, --gzip, --gunzip, --ungzip   filter the archive through gzip
 ```
 
 ### Example
@@ -68,6 +68,7 @@ Taken from help message
 ```sh
 unzip archive.zip
 ```
+
 # Uncompress .Z files
 
 Source: <https://www.linuxfordevices.com/tutorials/linux/uncompress-z-file>

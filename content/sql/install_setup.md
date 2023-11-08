@@ -45,7 +45,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'p@s$w0rD';
 exit
 ```
 
-You will no longer be able to access mysql using ```sudo mysql```
+You will no longer be able to access mysql using `sudo mysql`
 
 # Run command to secure installation
 

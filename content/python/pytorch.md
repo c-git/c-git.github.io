@@ -14,7 +14,7 @@ Instructions from the website are:
 pip3 install torch torchvision torchaudio
 ```
 
-(NOT TESTED) But I suspect just the command below would be enough if all you want to do is test to see if your card is working 
+(NOT TESTED) But I suspect just the command below would be enough if all you want to do is test to see if your card is working
 
 ```sh
 pip3 install torch

@@ -7,7 +7,6 @@ date=2023-11-06
 
 Source: <https://git-scm.com/docs/pretty-formats#Documentation/pretty-formats.txt-emnem>
 
-
 Used to control output for commands like `log`.
 
 # Example

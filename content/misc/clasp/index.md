@@ -12,7 +12,7 @@ updated = 2023-11-08
 
 ```sh
 clasp clone <scriptID>
-````
+```
 
 - Copy Hook and .gitignore from template
   folder `repos/zTemplates/clasp/CopyContentsToProjectRoot/` or create folder to copy from
@@ -35,10 +35,9 @@ npm i -S @types/google-apps-script
 
   ```sh
   git submodule add ../ts_lib.git
-  ````
+  ```
 
   - Outside of wykies
-
 
   ```sh
   git submodule add git@github.com:wykies/ts_lib.git
@@ -78,13 +77,13 @@ MyLib.foo();  // address a namespace's exported content directly
 
 ```sh
 git submodule add ../js_lib.git
-````
+```
 
 # Converting an existing Javascript (JS) project to TypeScript (TS)
 
 - Copy over from template to update ignore and hooks [last step in new](@content/misc/clasp/index.md#new-project-setup)
 - Remove `js_lib` if in use see [removal instructions in](@content/git/submodules.md#remove-a-submodule)
--Change all `.js` files to `.ts` files and follow normal instructions from [New TS project](@content/misc/clasp/index.md#steps-if-using-typescript-ts)
+  -Change all `.js` files to `.ts` files and follow normal instructions from [New TS project](@content/misc/clasp/index.md#steps-if-using-typescript-ts)
 
 # Useful Commands
 

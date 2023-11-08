@@ -14,14 +14,14 @@ touch -t [[CC]YY]MMDDhhmm[.SS]
 
 The following explains the above format:
 
-* CC – Specifies the first two digits of the year
-* YY – Specifies the last two digits of the year.
+- CC – Specifies the first two digits of the year
+- YY – Specifies the last two digits of the year.
   See [2-Digit year defaults](#2-digit-year-defaults) for details, if CC is omitted.
-* MM – Specifies the month
-* DD – Specifies the date
-* hh – Specifies the hour
-* mm – Specifies the minute
-* SS – Specifies the seconds
+- MM – Specifies the month
+- DD – Specifies the date
+- hh – Specifies the hour
+- mm – Specifies the minute
+- SS – Specifies the seconds
 
 ## Example
 

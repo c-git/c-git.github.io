@@ -22,7 +22,7 @@ touch .gitignore
 
 5. Add file and commit
 
-5. Add remote repo connection (Can be copied from github)
+6. Add remote repo connection (Can be copied from github)
 
 ```sh
 git remote add origin git@github.com:wykies/REPO_NAME.git

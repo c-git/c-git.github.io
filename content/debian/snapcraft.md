@@ -33,8 +33,9 @@ Source: <https://askubuntu.com/questions/1268615/snap-install-specific-old-versi
 
 NB: Example commands use discord because that is one of the programs I was having the problem with at the time.
 Short summary of problem is:
+
 - Had issues with Notepad++
-- Found out there were updates for 4 apps. 
+- Found out there were updates for 4 apps.
   - Notepad++
   - Discord
   - Firefox
@@ -72,9 +73,8 @@ snap revert discord
 
 Search key: unrevert
 
-Wanted to file an issue on the discord repo and wanted to report it while it was not working. 
+Wanted to file an issue on the discord repo and wanted to report it while it was not working.
 Note 141 is the version that I had reverted from. PS It worked after the revert even after a restart.
-
 
 ```sh
 snap revert --revision=141 discord

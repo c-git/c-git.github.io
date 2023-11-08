@@ -25,7 +25,7 @@ Source: <https://youtu.be/lTodCeVAfpI>
 
 ```
 sudo nano /etc/pulse/default.pa
-``` 
+```
 
 ### Add the following text at the bottom
 

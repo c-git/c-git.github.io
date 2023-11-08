@@ -11,7 +11,7 @@ will not record the new source it will continue to record the now silent source.
 
 # Resize Preview
 
-When using different size previews you need to resie the preview to the new source to get a faithful preview.
+When using different size previews you need to resize the preview to the new source to get a faithful preview.
 
 ![screenshot](preview_resize.png)
 

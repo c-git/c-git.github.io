@@ -53,6 +53,7 @@ ip -c a
 ```
 
 ## See installed kernels
+
 ```sh
 find /boot/vmli*
 ```
@@ -118,7 +119,7 @@ Source: <https://www.baeldung.com/linux/sha-256-from-command-line>
 The source also shows how to verify against the checksum file
 
 ```sh
- sha256sum my_file.txt 
+sha256sum my_file.txt
 ```
 
 ```sh
@@ -154,5 +155,3 @@ upower --dump
 ```sh
 watch sensors
 ```
-
-

@@ -33,5 +33,4 @@ const even = (element) => element % 2 === 0;
 
 console.log(array.some(even));
 // expected output: true
-
 ```

@@ -6,10 +6,10 @@ updated = 2023-11-08
 
 # List of useful extensions
 
-* [Timer++](https://extensions.gnome.org/extension/1238/time/)
-* [gTile](https://extensions.gnome.org/extension/28/gtile/)
-* [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
-* [Freon](https://extensions.gnome.org/extension/841/freon/)
+- [Timer++](https://extensions.gnome.org/extension/1238/time/)
+- [gTile](https://extensions.gnome.org/extension/28/gtile/)
+- [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+- [Freon](https://extensions.gnome.org/extension/841/freon/)
 
 # Manual install process
 

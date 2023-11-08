@@ -29,7 +29,7 @@ x += 3
 print(x)
 ```
 
-*Italic*
+_Italic_
 
 **Bold**
 
@@ -39,9 +39,9 @@ print(x)
 > Next line\
 > 3rd line
 
-* List
-* List
-* List
+- List
+- List
+- List
 
 1. One
 2. Two
@@ -49,4 +49,4 @@ print(x)
 
 Horizontal rule:
 
---- 
+---

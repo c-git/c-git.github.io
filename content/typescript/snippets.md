@@ -35,6 +35,7 @@ Utilities.sleep(milliseconds);
 ```
 
 # Google Script Simple Trigger
+
 ## On Open
 
 Putting it at the top outside of the namespace in `shared.ts` is the convention in use

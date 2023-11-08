@@ -23,6 +23,7 @@ sudo npm install --global web-ext
 ```sh
 web-ext --version
 ```
+
 ## Testing an extension
 
 By default it watches for changes and reloads your extension

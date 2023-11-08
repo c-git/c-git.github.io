@@ -18,7 +18,7 @@ Use the menu and Click on `Insert Guest Additions CD Image...` from `Devices`
 
 ![Insert Guest Additions CD Image](mount_image.png)
 
-Navigate to the mounted image in terminal (Can use GUI then right click and `Open in Teminal`) then issue the following
+Navigate to the mounted image in terminal (Can use GUI then right click and `Open in Terminal`) then issue the following
 commands
 
 ```sh

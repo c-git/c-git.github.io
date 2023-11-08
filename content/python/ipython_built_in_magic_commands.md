@@ -9,15 +9,19 @@ Source: https://ipython.readthedocs.io/en/stable/interactive/magics.html
 ## Defined Variables (with types)
 
 [//]: # (@formatter:off)
+
 ```python
-%whos 
+%whos
 ```
+
 [//]: # (@formatter:on)
 
 ## Defined Variables
 
 [//]: # (@formatter:off)
+
 ```python
 %who
 ```
+
 [//]: # (@formatter:on)

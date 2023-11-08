@@ -5,6 +5,7 @@ updated = 2023-11-08
 +++
 
 # Must haves
+
 | Name                | ID                      | Reason                             |
 | :------------------ | :---------------------- | :--------------------------------- |
 | [CodeLLDB][lldb]    | vadimcn.vscode-lldb     | Allows debugging rust code         |
@@ -14,6 +15,7 @@ updated = 2023-11-08
 [ra]: https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
 
 # Useful
+
 | Name                        | ID                                | Reason                                                 |
 | :-------------------------- | :-------------------------------- | :----------------------------------------------------- |
 | [crates][crates]            | serayuzgur.crates                 | Adds icons to cargo.toml to tell you dependency status |
@@ -29,12 +31,13 @@ updated = 2023-11-08
 [insta]: https://marketplace.visualstudio.com/items?itemName=mitsuhiko.insta
 
 # Might be useful
+
 | Name                                | ID                            | Reason                                                      |
 | :---------------------------------- | :---------------------------- | :---------------------------------------------------------- |
 | [vscode-ron][vron]                  | a5huynh.vscode-ron            | Adds support for RON (Rusty object notation)                |
 | [vscode-runner][vrun]               | HarryHopkinson.vs-code-runner | Helps run code?                                             |
 | [Crates Completer][cratescompleter] | jedeop.crates-completer       | Auto complete for creates if you edit `cargo.toml` manually |
-|                                     |
+|                                     |                               |                                                             |
 
 [cratescompleter]: https://marketplace.visualstudio.com/items?itemName=jedeop.crates-completer
 [vron]: https://marketplace.visualstudio.com/items?itemName=a5huynh.vscode-ron

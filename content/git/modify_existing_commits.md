@@ -6,7 +6,7 @@ updated = 2023-11-08
 
 # Modify last commit message
 
-Opens the last message  in your editor
+Opens the last message in your editor
 
 ```sh
 git commit --amend
