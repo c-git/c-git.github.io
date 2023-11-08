@@ -72,3 +72,27 @@ The fields should be set according to the following rules:
 1. `date` should be the original publish date (Must exist and be today or earlier).
 2. `updated` should only be set if `date` is not equal to the last commit date, if it needs to be set it should match the last commit date.
    Which may mean setting it to todays date if you are about to commit that file.
+
+# Using [zola_chrono](https://github.com/c-git/zola_chrono)
+
+## Install
+
+```sh
+cargo install zola_chrono
+```
+
+## Setting up a pre-commit hook
+
+Each line does the following respectively
+
+1. Create the hook file
+2. Move the file into the hooks folder (it should already exist if git is setup)
+3. Make the file executable
+
+```sh
+echo -e '#!/bin/sh\nzola_chrono -c content/' > pre-commit
+mv pre-commit .git/hooks
+chmod +x .git/hooks/pre-commit
+```
+
+The hook should now be setup and working.
