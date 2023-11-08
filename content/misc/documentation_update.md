@@ -49,7 +49,7 @@ Each value is explained in the comments below.
 Note that the comments are not required to be copied.
 All pages created before starting the public website did not have a date and as such all have been set to the last edit date as a proxy.
 
-To simplify setting dates I created a tool called [`zola_page_date_setter`](https://github.com/c-git/zola_page_date_setter/) that automates the updating of `date` and `updated`.
+To simplify setting dates I created a tool called [zola_chrono](https://github.com/c-git/zola_chrono) that automates the updating of `date` and `updated`.
 
 ```toml
 # The date of the post.
