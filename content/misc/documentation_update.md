@@ -1,7 +1,7 @@
 +++
 title='Documentation Update'
 date=2023-10-27
-updated= 2023-11-08
+updated= 2023-11-09
 +++
 
 # Overview
@@ -49,7 +49,7 @@ Each value is explained in the comments below.
 Note that the comments are not required to be copied.
 All pages created before starting the public website did not have a date and as such all have been set to the last edit date as a proxy.
 
-To simplify setting dates I created a tool called [zola_chrono](https://github.com/c-git/zola_chrono) that automates the updating of `date` and `updated`.
+To simplify setting dates I created a tool called [zola_chrono][def] that automates the updating of `date` and `updated`.
 
 ```toml
 # The date of the post.
@@ -73,7 +73,12 @@ The fields should be set according to the following rules:
 2. `updated` should only be set if `date` is not equal to the last commit date, if it needs to be set it should match the last commit date.
    Which may mean setting it to todays date if you are about to commit that file.
 
-# Using [zola_chrono](https://github.com/c-git/zola_chrono)
+Turns out with just these two simple rules it creates at least 42 interesting cases to consider.
+Many of them are edge cases but all had to be accounted for in [zola_chrono][zola_chrono].
+As a result the most authoritative answer on what should happen in a given case is documented in [the tests](https://github.com/c-git/zola_chrono/blob/710e6e84fe1ba788dd0c29ea77084aadcec01f0f/src/processing/file_data.rs#L458-L507).
+If you're already familiar with [rstest](https://docs.rs/rstest/latest/rstest/attr.rstest.html) you can skip the following comment, the tests show several cases with the inputs on the left and expected values on the right. To see what each column represents look at the function definition below the cases the correspond to the function arguments.
+
+# Using [zola_chrono][zola_chrono]
 
 ## Install
 
@@ -96,3 +101,5 @@ chmod +x .git/hooks/pre-push
 ```
 
 The hook should now be setup and working.
+
+[zola_chrono]: https://github.com/c-git/zola_chrono
