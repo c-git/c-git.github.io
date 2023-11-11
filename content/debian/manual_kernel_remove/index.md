@@ -1,8 +1,21 @@
 +++
 title="Manually Removing Old Kernels"
 date = 2023-03-30
-updated = 2023-11-08
+updated = 2023-11-11
 +++
+
+# TLDR
+
+[Check current](@/debian/manual_kernel_remove/index.md#check-current-kernel-version-in-use)
+
+```
+uname -r
+```
+
+[Search key](@/debian/manual_kernel_remove/index.md#mark-kernels-for-removal) to remove the backup kernel manually
+
+- `linux-image`
+- `linux-header`
 
 # Background
 
