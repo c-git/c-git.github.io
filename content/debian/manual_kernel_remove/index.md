@@ -6,13 +6,9 @@ updated = 2023-11-11
 
 # TLDR
 
-[Check current](@/debian/manual_kernel_remove/index.md#check-current-kernel-version-in-use)
+[Check current](@/debian/manual_kernel_remove/index.md#check-current-kernel-version-in-use) to know which not to remove. `uname -r`
 
-```
-uname -r
-```
-
-[Search key](@/debian/manual_kernel_remove/index.md#mark-kernels-for-removal) to remove the backup kernel manually
+[Search keys](@/debian/manual_kernel_remove/index.md#mark-kernels-for-removal) to remove the backup kernel manually
 
 - `linux-image`
 - `linux-header`
