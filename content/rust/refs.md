@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-11-08
+updated= 2023-11-13
 +++
 
 # Official
@@ -41,6 +41,7 @@ updated= 2023-11-08
 
 - Logging - [log](https://docs.rs/log/latest/log/)
 - Log4rs patterns - [docs.rs](https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html)
+- float_eq [docs.rs](https://docs.rs/float_eq/latest/float_eq/)
 - List of [my crates](https://crates.io/users/c-git) on crates.io
 
 # GitHub Actions
