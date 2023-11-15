@@ -1,13 +1,15 @@
 +++
 title="Time"
 date=2023-08-15
-updated=2023-11-06
+updated=2023-11-14
 +++
 
 # Standard Library
 
 Unless you're only measuring duration you're probably going to want to reach for chrono. See example below of how to measure duration.
 Note that duration does **NOT** keep counting if the computer goes to sleep (The time while the computer is suspended does not count).
+
+## Measure duration
 
 ```rust
 use std::time::{Duration, Instant};
@@ -23,6 +25,22 @@ fn main() {
     let duration = start.elapsed();
 
     println!("Time elapsed in expensive_function() is: {:?}", duration);
+}
+```
+
+## Get duration since UNIX_EPOCH
+
+Sources:
+
+- <https://doc.rust-lang.org/std/time/constant.UNIX_EPOCH.html>
+- <https://stackoverflow.com/questions/26593387/how-can-i-get-the-current-time-in-milliseconds>
+
+```rust
+use std::time::{SystemTime, UNIX_EPOCH};
+
+match SystemTime::now().duration_since(UNIX_EPOCH) {
+    Ok(n) => println!("1970-01-01 00:00:00 UTC was {} seconds ago!", n.as_secs()),
+    Err(_) => panic!("SystemTime before UNIX EPOCH!"),
 }
 ```
 
