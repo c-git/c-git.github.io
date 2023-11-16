@@ -57,7 +57,7 @@ ip -c a
 Source: <https://www.rootusers.com/how-to-display-routing-table-in-linux/>
 
 ```sh
-ip route
+ip -c r
 ```
 
 ## See installed kernels
