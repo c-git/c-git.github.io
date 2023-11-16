@@ -102,12 +102,6 @@ snap run discord --start-minimized
 stat
 ```
 
-## Remove old kernels (See also [Manually Remove Old Kernel](@/debian/manual_kernel_remove/index.md))
-
-```sh
-sudo apt autoremove
-```
-
 ## Check system to see which sensors are available
 
 ```sh
