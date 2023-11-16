@@ -1,7 +1,7 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2023-11-08
+updated = 2023-11-16
 +++
 
 ## Consume CPU resources
@@ -50,6 +50,14 @@ history
 
 ```sh
 ip -c a
+```
+
+## Show default gateway and routes
+
+Source: <https://www.rootusers.com/how-to-display-routing-table-in-linux/>
+
+```sh
+ip route
 ```
 
 ## See installed kernels
