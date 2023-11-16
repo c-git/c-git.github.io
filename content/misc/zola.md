@@ -34,25 +34,12 @@ This can be done at the page level using the `aliases` field in the [front matte
 
 # Messed up formatting
 
-I've come across two cases where adding a comment has fixed formatting for me.
+I've come across two cases where I got strange formatting.
 
-One case was a image followed by the page footer.
-In that case the number for the first footer item was not next to it's text.
-Adding a comment after the image fixed the problem.
+## Case with checkboxes in list
 
-The other was two lists, with checkboxes separated by a space (see example below).
-Without the comment the checkboxes were not next to their text
-
-- [ ] 1st list Item 1
-- [ ] 1st list Item 2
-
-- [ ] 2nd list Item 1
-- [ ] 2nd list Item 1
-
-<!-- Comment fixes problem for those below -->
-
-- [ ] 3rd list Item 1
-- [ ] 3rd list Item 2
+I had two lists, with checkboxes separated by a space.
+Without the comment the checkboxes were not next to their text.
 
 ```markdown
 - [ ] 1st list Item 1
@@ -66,3 +53,31 @@ Without the comment the checkboxes were not next to their text
 - [ ] 3rd list Item 1
 - [ ] 3rd list Item 2
 ```
+
+- [ ] 1st list Item 1
+- [ ] 1st list Item 2
+
+- [ ] 2nd list Item 1
+- [ ] 2nd list Item 1
+
+<!-- Comment fixes problem for those below -->
+
+- [ ] 3rd list Item 1
+- [ ] 3rd list Item 2
+
+## Example for footer
+
+I hd a footer that started after in a new paragraph and had `:` after the superscript text.
+Removing `:` or not starting a new paragraph fixed it.
+
+```markdown
+Some text [^1][^2]
+
+[^1]: Footer text\
+[^2]: Footer text
+```
+
+Some text [^1][^2]
+
+[^1]: Footer text\
+[^2]: Footer text
