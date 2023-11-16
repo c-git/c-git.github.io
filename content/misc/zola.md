@@ -1,7 +1,7 @@
 +++
 title='Zola'
 date=2023-10-27
-updated = 2023-11-08
+updated = 2023-11-16
 +++
 
 # Summary
@@ -31,3 +31,38 @@ This is not necessary if zola serve is used as that runs a basic webserver.
 
 If you publish your content but then realize you want to rename your files, you can setup aliases to redirect your pages instead of breaking links to your site.
 This can be done at the page level using the `aliases` field in the [front matter](https://www.getzola.org/documentation/content/page/#front-matter). See example [source file](https://github.com/c-git/c-git.github.io/blob/main/content/rust/pattern_typestate.md?plain=1) where site was moved from [old](https://c-git.github.io/rust/typestate/) to [new](https://c-git.github.io/rust/pattern-typestate/).
+
+# Messed up formatting
+
+I've come across two cases where adding a comment has fixed formatting for me.
+
+One case was a image followed by the page footer.
+In that case the number for the first footer item was not next to it's text.
+Adding a comment after the image fixed the problem.
+
+The other was two lists, with checkboxes separated by a space (see example below).
+Without the comment the checkboxes were not next to their text
+
+- [ ] 1st list Item 1
+- [ ] 1st list Item 2
+
+- [ ] 2nd list Item 1
+- [ ] 2nd list Item 1
+
+<!-- Comment fixes problem for those below -->
+
+- [ ] 3rd list Item 1
+- [ ] 3rd list Item 2
+
+```markdown
+- [ ] 1st list Item 1
+- [ ] 1st list Item 2
+
+- [ ] 2nd list Item 1
+- [ ] 2nd list Item 1
+
+<!-- Comment fixes problem for those below -->
+
+- [ ] 3rd list Item 1
+- [ ] 3rd list Item 2
+```
