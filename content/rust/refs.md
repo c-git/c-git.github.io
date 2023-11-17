@@ -42,6 +42,7 @@ updated= 2023-11-13
 - Logging - [log](https://docs.rs/log/latest/log/)
 - Log4rs patterns - [docs.rs](https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html)
 - float_eq [docs.rs](https://docs.rs/float_eq/latest/float_eq/)
+- inventory [docs.rs](https://docs.rs/inventory/) Register plugs from different files
 - List of [my crates](https://crates.io/users/c-git) on crates.io
 
 # GitHub Actions
