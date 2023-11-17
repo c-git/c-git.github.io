@@ -1,7 +1,7 @@
 +++
 title="services systemd (unit)"
 date = 2023-09-23
-updated = 2023-11-08
+updated = 2023-11-17
 +++
 
 Source: <https://linuxhandbook.com/create-systemd-services/>
@@ -55,7 +55,7 @@ This folder usually won't exist so create it.
 mkdir -p ~/.config/systemd/user
 ```
 
-Same file seems to be required.
+Same file as for [root](@/debian/services.md#run-as-root) is required.
 
 ## Enabling system service
 
