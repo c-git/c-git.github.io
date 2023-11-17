@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-11-13
+updated= 2023-11-17
 +++
 
 # Official
@@ -39,10 +39,12 @@ updated= 2023-11-13
 
 # Useful crates
 
-- Logging - [log](https://docs.rs/log/latest/log/)
-- Log4rs patterns - [docs.rs](https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html)
-- float_eq [docs.rs](https://docs.rs/float_eq/latest/float_eq/)
-- inventory [docs.rs](https://docs.rs/inventory/) Register plugs from different files
+- [log](https://docs.rs/log/) - A lightweight logging facade
+- [log4rs](https://docs.rs/log4rs/) - a highly configurable logging framework modeled after Java’s Logback and log4j libraries.
+  - Logging patterns [patterns](https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html)
+  - WARNING: Appears to be no longer maintained
+- [float_eq](https://docs.rs/float_eq/) - Compare IEEE floating point primitives, structs and collections for equality
+- [inventory](https://docs.rs/inventory/) - Typed distributed plugin registration.
 - List of [my crates](https://crates.io/users/c-git) on crates.io
 
 # GitHub Actions
