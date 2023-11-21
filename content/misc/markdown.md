@@ -1,7 +1,7 @@
 +++
 title = "Markdown / HTML Guide"
 date=2023-10-27
-updated = 2023-11-08
+updated = 2023-11-21
 +++
 
 # Official Docs
@@ -130,6 +130,10 @@ functionality. This has also been enabled on this page so functionality can be t
 
 Source: <https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab>
 
+### WARNING
+
+Be careful with **indentation** otherwise you can end up with a code block and hence raw markdown.
+
 <details>
   <summary>Click to expand!</summary>
 
@@ -166,12 +170,6 @@ malesuada.
 
 </details>
 ```
-
-### Notes
-
-1. Make sure you have an **empty line** after the closing `</summary>` tag, otherwise the markdown/code blocks won't
-   show correctly.
-2. Make sure you have an **empty line** after the closing `</details>` tag if you have multiple collapsible sections.
 
 ## Footnotes
 
