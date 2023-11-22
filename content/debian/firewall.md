@@ -14,6 +14,38 @@ The man page is well written an easy to follow `man ufw`, see there for specific
 > connections for incoming and forwarded connections. In addition to the above, a default
 > rule-set is put in place that does the following...
 
-# Services port number mapping
+# State Information
+
+## View rules in use
+
+```sh
+sudo ufw status verbose
+```
+
+## Logs
+
+Source: <https://www.cyberciti.biz/faq/ubuntu-22-04-lts-set-up-ufw-firewall-in-5-minutes/>
+
+```sh
+tail -f /var/log/ufw.log
+```
+
+## Listening Programs
+
+Excerpt from man page
+
+> The listening report will display the ports on the live system in the listening state for tcp and the open state for udp, along with the address of the interface and the executable listening on the port. An '*' is used in place of the address of the interface when the executable is bound to all interfaces on that port. Following this information is a list of rules which may affect connections on this port. The rules are listed in the order they are evaluated by the kernel, and the first match wins. Please note that the default policy is not listed and tcp6 and udp6 are shown only if IPV6 is enabled.
+
+```sh
+sudo ufw show listening
+```
+
+## Services port number mapping
 
 The named ports can be found in `/etc/services`
+
+# Block outgoing traffic
+
+**NOTE**: Not tested yet
+
+Source: <https://askubuntu.com/questions/448836/how-do-i-with-ufw-deny-all-outgoing-ports-excepting-the-ones-i-need>
