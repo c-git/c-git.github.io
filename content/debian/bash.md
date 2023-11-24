@@ -1,8 +1,17 @@
 +++
-title="BASH Alias"
+title="bash"
 date = 2023-10-04
-updated = 2023-11-08
+updated = 2023-11-24
+aliases=["/debian/bash-alias"]
 +++
+
+# Set script to exit on errors
+
+Source: <https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html>
+
+```bash
+set -e
+```
 
 # See command that will execute when alias is used
 
