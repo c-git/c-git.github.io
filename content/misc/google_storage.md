@@ -5,6 +5,23 @@ updated = 2023-11-27
 aliases = ["/misc/google-drive"]
 +++
 
+# Suggestions to cleanup space used
+
+NB: Be sure to empty the trash after deleting files.
+
+See [breakdown](https://one.google.com/storage) of space used to see where the most gains can come from.
+
+## Google Drive
+
+For google drive if you click the link to the right of google drive (square with a diagonally up arrow), then it should take you to the list of largest files that you can start searching through.
+Alternatively you can try this [quota link](https://drive.google.com/drive/quota).
+
+## Gmail
+
+You want to search for larger emails.
+To do that you can use the advanced search feature (right side of the search box) to get a search similar to `larger:20M`.
+If there are several similar large emails and you want to remove all of them you can further refine the search but be careful not to delete emails you want to keep.
+
 # Orphaned files
 
 The only person who can delete files that you own is you.
