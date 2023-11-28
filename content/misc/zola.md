@@ -1,7 +1,7 @@
 +++
 title='Zola'
 date=2023-10-27
-updated = 2023-11-16
+updated = 2023-11-27
 +++
 
 # Summary
@@ -31,6 +31,10 @@ This is not necessary if zola serve is used as that runs a basic webserver.
 
 If you publish your content but then realize you want to rename your files, you can setup aliases to redirect your pages instead of breaking links to your site.
 This can be done at the page level using the `aliases` field in the [front matter](https://www.getzola.org/documentation/content/page/#front-matter). See example [source file](https://github.com/c-git/c-git.github.io/blob/main/content/rust/pattern_typestate.md?plain=1) where site was moved from [old](https://c-git.github.io/rust/typestate/) to [new](https://c-git.github.io/rust/pattern-typestate/).
+
+```toml
+aliases = ["/rust/typestate"]
+```
 
 # Messed up formatting
 
