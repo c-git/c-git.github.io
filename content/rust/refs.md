@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-11-17
+updated= 2023-12-05
 +++
 
 # Official
@@ -42,7 +42,8 @@ updated= 2023-11-17
 - [log](https://docs.rs/log/) - A lightweight logging facade
 - [log4rs](https://docs.rs/log4rs/) - a highly configurable logging framework modeled after Java’s Logback and log4j libraries.
   - Logging patterns [patterns](https://docs.rs/log4rs/*/log4rs/encode/pattern/index.html)
-  - WARNING: Appears to be no longer maintained
+- [tracing](https://docs.rs/tracing/latest/tracing/index.html)
+  - [Shorthand Macros](https://docs.rs/tracing/latest/tracing/#shorthand-macros)
 - [float_eq](https://docs.rs/float_eq/) - Compare IEEE floating point primitives, structs and collections for equality
 - [inventory](https://docs.rs/inventory/) - Typed distributed plugin registration.
 - List of [my crates](https://crates.io/users/c-git) on crates.io
