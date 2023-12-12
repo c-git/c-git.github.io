@@ -1,7 +1,7 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2023-11-08
+updated = 2023-12-11
 +++
 
 # Setup from default for Rust
@@ -9,10 +9,14 @@ updated = 2023-11-08
 Will try to turn this into a template when I have time but for now documenting the changes I need to make every time.
 
 1. [Install rust](@/rust/install.md#installation)
+   ```sh
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
 2. vscode plugin names (for more that might be useful see [full list](@/vscode/extensions_rust.md))
    1. `vadimcn.vscode-lldb`
    2. `rust-lang.rust-analyzer`
    3. `usernamehw.errorlens`
+   4. `streetsidesoftware.code-spell-checker`
 
 # Pricing
 
