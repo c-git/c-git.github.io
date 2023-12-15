@@ -21,7 +21,7 @@ sudo cp /etc/samba/smb.conf ~
 - Create folder for share
 
 ```sh
-mkdir ~\folder_to_share
+mkdir ~/folder_to_share
 ```
 
 - Edit config see pattern below of config file after you open it
