@@ -1,7 +1,7 @@
 +++
 title='PHP'
 date = 2023-11-06
-updated = 2023-11-08
+updated = 2023-12-15
 +++
 
 # Check current
@@ -75,7 +75,7 @@ sudo a2enmod php7.3
 Source: <https://zoomadmin.com/HowToInstall/UbuntuPackage/php-mysqli>
 
 ```sh
-sudo apt-get install php7.3-mysql
+sudo apt install php7.3-mysql
 ```
 
 ### Restart Apache

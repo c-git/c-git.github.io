@@ -1,7 +1,7 @@
 +++
 title="Install"
 date=2022-12-07
-updated=2023-11-05
+updated= 2023-12-15
 +++
 
 # Linux (Debian)
@@ -47,7 +47,7 @@ Could not find directory of OpenSSL installation, and this `-sys` crate cannot
 Solution:
 
 ```sh
-sudo apt-get install pkg-config libssl-dev
+sudo apt install pkg-config libssl-dev
 ```
 
 ---

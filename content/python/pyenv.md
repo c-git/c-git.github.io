@@ -1,7 +1,7 @@
 +++
 title="pyenv"
 date = 2022-08-19
-updated = 2023-11-08
+updated = 2023-12-15
 +++
 
 ## Check version of linux
@@ -15,7 +15,7 @@ uname -a
 Source: <https://github.com/pyenv/pyenv/wiki>
 
 ```sh
-sudo apt-get update && sudo apt-get install make build-essential libssl-dev zlib1g-dev \
+sudo apt update && sudo apt install make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```

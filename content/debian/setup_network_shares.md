@@ -1,13 +1,13 @@
 +++
 title="Setup Network Shares"
 date = 2022-12-03
-updated = 2023-11-08
+updated = 2023-12-15
 +++
 
 # Install Samba
 
 ```sh
-sudo apt-get install samba
+sudo apt install samba
 ```
 
 # Configure Samba
