@@ -1,6 +1,6 @@
 +++
 title="Actix"
-date = 2023-12-12
+date = 2023-12-15
 +++
 
 Website: <https://actix.rs/>
@@ -10,6 +10,7 @@ Website: <https://actix.rs/>
 - Errors
   - [Error Helpers](https://actix.rs/docs/errors#error-helpers)
   - [Functions](https://docs.rs/actix-web/latest/actix_web/error/index.html#functions)
+  - [Logging Middleware](https://docs.rs/actix-web/latest/actix_web/middleware/struct.Logger.html)
 
 # Log (record) unmatched routes
 
