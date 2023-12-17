@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-12-05
+updated= 2023-12-17
 +++
 
 # Official
@@ -45,6 +45,7 @@ updated= 2023-12-05
 - [tracing](https://docs.rs/tracing/latest/tracing/index.html)
   - [Shorthand Macros](https://docs.rs/tracing/latest/tracing/#shorthand-macros)
 - [float_eq](https://docs.rs/float_eq/) - Compare IEEE floating point primitives, structs and collections for equality
+- [float_ord](https://docs.rs/float-ord/latest/float_ord/) - Add Ord for floats (not tested decided to just use `_by` closure)
 - [inventory](https://docs.rs/inventory/) - Typed distributed plugin registration.
 - List of [my crates](https://crates.io/users/c-git) on crates.io
 
