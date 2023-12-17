@@ -16,10 +16,18 @@ The man page is well written an easy to follow `man ufw`, see there for specific
 
 # State Information
 
-## View rules in use
+## View rules in use (including status and defaults)
 
 ```sh
 sudo ufw status verbose
+```
+
+## View rules in use (numbered)
+
+Numbers make things like deleting rules easier
+
+```sh
+sudo ufw status numbered
 ```
 
 ## Logs
