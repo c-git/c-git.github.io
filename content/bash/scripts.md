@@ -38,6 +38,20 @@ else
 fi
 ```
 
+# Until
+
+```bash
+#!/bin/bash
+
+counter=0
+
+until [ $counter -gt 5 ]
+do
+  echo Counter: $counter
+  ((counter++))
+done
+```
+
 # Set script to exit on errors
 
 Source: <https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html>
