@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-12-17
+updated= 2023-12-20
 +++
 
 # Official
@@ -28,6 +28,7 @@ updated= 2023-12-17
 - Raw Pointers - [std docs](https://doc.rust-lang.org/std/primitive.pointer.html)
 - Magic Completions - [Rust Analyzer User Manual](https://rust-analyzer.github.io/manual.html#magic-completions)
 - Directory Traversal - [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html)
+- Recommended way to write `expect` messages - [std docs](https://doc.rust-lang.org/core/result/enum.Result.html#recommended-message-style)
 
 # Reference Books (Also see [Official](@/rust/refs.md#official))
 
