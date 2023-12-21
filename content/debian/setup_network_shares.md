@@ -1,7 +1,7 @@
 +++
 title="Setup Network Shares"
 date = 2022-12-03
-updated = 2023-12-15
+updated = 2023-12-21
 +++
 
 # Install Samba
@@ -42,8 +42,8 @@ sudo service smbd restart
 
 Permissions are controlled using OS Users and Groups see [User and Groups](@/debian/users_and_groups.md) for
 how to add
-users and put them into groups. Typically, you'll want to use special purpose users that are not able to log in locally.
-So set their logon password to something unusable like a random string of characters.
+users and put them into groups. Typically, you'll want to use special purpose users that are [not able to log in locally](@debian/users-and-groups.md#prevent-a-user-from-showing-in-the-list-of-users-at-the-gui-logon-prompt).
+Also you probably want to set their logon password to something unusable like a random string of characters.
 
 ## Set samba password for a user
 
