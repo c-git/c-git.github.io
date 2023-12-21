@@ -47,6 +47,7 @@ skip_anchor_prefixes = [
   "https://github.com/",
   "https://www.markdownguide.org/extended-syntax/",
   "https://rust-lang.github.io/rustfmt/", # Site uses vue and tags don't exist when fetched https://github.com/getzola/zola/issues/2351
+  "https://dev.mysql.com/",
 ]
 
 [extra]
