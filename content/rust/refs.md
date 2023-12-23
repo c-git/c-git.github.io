@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-12-20
+updated= 2023-12-23
 +++
 
 # Official
@@ -37,6 +37,7 @@ updated= 2023-12-20
 # Blog Posts
 
 - Iterators - [Creating an Iterator](https://aloso.github.io/2021/03/09/creating-an-iterator)
+- [Default arguments for functions in Rust using macros](https://rust.code-maven.com/default-arguments-for-functions)
 
 # Useful crates
 
