@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-12-23
+updated= 2023-12-27
 +++
 
 # Official
@@ -24,6 +24,7 @@ updated= 2023-12-23
   - [CLI Book](https://rust-cli.github.io/book/tutorial/testing.html#testing-cli-applications-by-running-them)
   - [Example Snippet](@/rust/snippets.md#run-cli-app-to-test-it)
 - Filing reports of unclear error messages (Choose Diagnostic) - [Rust Issues](https://github.com/rust-lang/rust/issues/new/choose)
+- Crate.io and Docs.rs issue status - <https://status.crates.io/>
 - Build Queue for Docs.rs - [docs.rs](https://docs.rs/releases/queue)
 - Raw Pointers - [std docs](https://doc.rust-lang.org/std/primitive.pointer.html)
 - Magic Completions - [Rust Analyzer User Manual](https://rust-analyzer.github.io/manual.html#magic-completions)
