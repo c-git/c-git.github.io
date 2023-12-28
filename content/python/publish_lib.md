@@ -1,14 +1,14 @@
 +++
 title="Publish Library"
 date = 2022-09-14
-updated = 2023-11-08
+updated = 2023-12-28
 +++
+
+# Publish a version
 
 Source: <https://packaging.python.org/en/latest/tutorials/packaging-projects/>
 
-## Upload New Version
-
-### Upload specific version
+## Upload specific version
 
 Replace `x.x.x` with the version number e.g. `1.0.0`
 
@@ -20,14 +20,14 @@ python3 -m build
 twine upload dist/opylib-x.x.x*
 ```
 
-### Upload all
+## Upload all
 
 ```sh
 python3 -m build
 twine upload dist/*
 ```
 
-## Initial Setup Setup
+## Initial Setup Setup for Publishing
 
 Last command appears to be python version specific.
 Got it from an error message generated when I tried to use build.
