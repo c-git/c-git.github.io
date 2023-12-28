@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout main
         uses: wykies/checkout@main
+        with:
+          submodules: recursive
       - uses: wykies/install-action@main
         with:
           tool: zola
@@ -20,5 +22,5 @@ jobs:
         shell: bash
         run: zola --version
       - name: Run check
-        run:  zola check
+        run:  zoladprint check
   
