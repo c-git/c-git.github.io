@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
       - name: Checkout main
-        uses: actions/checkout@v4
+        uses: wykies/checkout@main
         with:
           submodules: recursive
       - name: Build and deploy

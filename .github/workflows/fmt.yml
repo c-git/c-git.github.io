@@ -12,9 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v4
+        uses: wykies/checkout@main
 
-      - uses: taiki-e/install-action@dprint
+      - uses: wykies/install-action
+        with:
+          tool: dprint
 
       - name: Show version information
         shell: bash
