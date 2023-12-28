@@ -4,6 +4,27 @@ date = 2022-09-14
 updated = 2023-12-28
 +++
 
+# Editable Install (Local Project Install)
+
+Allows you to run the library before publishing it for external or use case testing.
+
+Sources:
+
+- <https://stackoverflow.com/questions/23075397/python-how-to-edit-an-installed-package>
+- <https://pip.pypa.io/en/stable/topics/local-project-installs/#editable-installs>
+
+## Run from local path source
+
+```sh
+pip install -e path/to/SomeProject
+```
+
+## Run from git source
+
+```sh
+pip install -e git+https://github.com/c-git/opylib.git#egg=opylib
+```
+
 # Publish a version
 
 Source: <https://packaging.python.org/en/latest/tutorials/packaging-projects/>
