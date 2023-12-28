@@ -1,5 +1,9 @@
 name: Check Formatting
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on: [push, pull_request]
 
 jobs:
@@ -14,8 +18,7 @@ jobs:
 
       - name: Show version information
         shell: bash
-        run: |
-          dprint --version
+        run: dprint --version
 
       - name: Ensure `fmt` has been run
         run:  dprint check
