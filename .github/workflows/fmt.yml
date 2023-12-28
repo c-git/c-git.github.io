@@ -14,7 +14,7 @@ jobs:
       - name: Checkout source code
         uses: wykies/checkout@main
 
-      - uses: wykies/install-action
+      - uses: wykies/install-action@main
         with:
           tool: dprint
 
