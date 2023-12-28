@@ -13,14 +13,11 @@ jobs:
     steps:
       - name: Checkout source code
         uses: wykies/checkout@main
-
       - uses: wykies/install-action@main
         with:
           tool: dprint
-
       - name: Show version information
         shell: bash
         run: dprint --version
-
       - name: Ensure `fmt` has been run
         run:  dprint check
