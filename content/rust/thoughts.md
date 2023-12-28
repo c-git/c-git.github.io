@@ -1,6 +1,7 @@
 +++
-title="Thoughts about rust"
+title = "Thoughts about rust"
 date = 2023-11-17
+updated = 2023-12-28
 +++
 
 I kept having thoughts / observations that I wanted to write somewhere so putting them here.
@@ -18,3 +19,9 @@ The right IDE and other supporting tools drastically changes the experience one 
 Don't underestimate the value of a good editor, compiler, linter or formatter.
 I personally do not like formatting code by hand seems like a waste of time and code completion is table stakes.
 If it is context aware that's all the better (but feels like table stakes, don't think I can go back to manually narrowing down results).
+
+# Types
+
+Trying to write python today I realized why I like types in rust.
+Types allow me specify my assumptions at compile time.
+And get the compiler to check them for me.
