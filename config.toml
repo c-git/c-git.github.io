@@ -38,16 +38,15 @@ smart_punctuation = true
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes
 skip_prefixes = [
-  "https://discord.com",
-  "https://support.discord.com",
-  "https://www.cyberciti.biz",
+  "https://support.discord.com", # Client error status code (403 Forbidden) received
+  "https://dev.mysql.com/", # Client error status code (403 Forbidden) received
 ]
 # Skip anchor checking for external URLs that start with these prefixes
 skip_anchor_prefixes = [
   "https://github.com/",
   "https://www.markdownguide.org/extended-syntax/",
   "https://rust-lang.github.io/rustfmt/", # Site uses vue and tags don't exist when fetched https://github.com/getzola/zola/issues/2351
-  "https://dev.mysql.com/",
+  "https://discord.com",
 ]
 
 [extra]
