@@ -38,8 +38,11 @@ smart_punctuation = true
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes
 skip_prefixes = [
-  "https://support.discord.com", # Client error status code (403 Forbidden) received
-  "https://dev.mysql.com/", # Client error status code (403 Forbidden) received
+  # Unless otherwise stated all give "Client error status code (403 Forbidden) received"
+  "https://support.discord.com",
+  "https://dev.mysql.com/",
+  "https://www.cyberciti.biz/faq/",
+  "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
 ]
 # Skip anchor checking for external URLs that start with these prefixes
 skip_anchor_prefixes = [
