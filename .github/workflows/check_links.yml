@@ -1,0 +1,24 @@
+name: Check Links
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: wykies/checkout@main
+      - uses: wykies/install-action@main
+        with:
+          tool: zola
+      - name: Show version information
+        shell: bash
+        run: zola --version
+      - name: Run check
+        run:  zola check
+  
