@@ -1,10 +1,10 @@
 +++
 title="Calender Notifications Popup Disable"
 date = 2022-08-19
-updated = 2023-11-08
+updated = 2023-12-28
 +++
 
-Source: <https://newbedev.com/turn-off-calendar-notifications-ubuntu-20-04>
+Source: https://newbedev.com/turn-off-calendar-notifications-ubuntu-20-04 (Changed from link as it is timing out now)
 
 ### Install dconf Editor
 
