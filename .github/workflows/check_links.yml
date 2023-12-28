@@ -8,6 +8,8 @@ on:
   push:
     paths:
       - 'config.toml'
+  schedule:
+    - cron: '0 0 25 * *' # Run once a month on the 25th at midnight UTC
 
 jobs:
   link_check:
