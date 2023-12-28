@@ -38,7 +38,7 @@ smart_punctuation = true
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes
 skip_prefixes = [
-  # Unless otherwise stated all give "Client error status code (403 Forbidden) received"test
+  # Unless otherwise stated all give "Client error status code (403 Forbidden) received"
   "https://support.discord.com",
   "https://dev.mysql.com/",
   "https://www.cyberciti.biz/faq/",
