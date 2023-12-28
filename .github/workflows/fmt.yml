@@ -22,7 +22,3 @@ jobs:
 
       - name: Ensure `fmt` has been run
         run:  dprint check
-        
-      - name: Test name
-        shell: bash
-        run: echo ${{ github.workflow }}
