@@ -1,7 +1,7 @@
 +++
-title="Snippets"
-date=2023-09-02
-updated=2023-11-05
+title = "Snippets"
+date = 2023-09-02
+updated = 2023-12-28
 +++
 
 # Boilerplate
@@ -301,5 +301,30 @@ impl std::ops::Mul for FloatNonNAN {
     fn mul(self, rhs: Self) -> Self::Output {
         FloatNonNAN::new(self.0 * rhs.0)
     }
+}
+```
+
+# Collect into a result
+
+One fail means the first error is returned (Remember this from the rust book but couldn't find it).
+Mostly needed when I'm using iterators and need to do a map step that may fail.
+Usual issue is not remembering to wrap the good option in Ok.
+
+```rust
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let numbers: Vec<u8> = (0..10).step_by(2).collect();
+    let all_even: Vec<u8> = numbers
+        .iter()
+        .cloned()
+        .map(|x| {
+            if x % 2 == 0 {
+                Ok(x)
+            } else {
+                Err("Oops we founds a odd number")
+            }
+        })
+        .collect::<Result<Vec<u8>, _>>()?;
+    println!("{all_even:?}");
+    Ok(())
 }
 ```
