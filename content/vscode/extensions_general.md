@@ -1,7 +1,7 @@
 +++
 title="Extensions General"
 date = 2023-07-27
-updated = 2023-11-08
+updated = 2023-12-29
 +++
 
 Some may come installed by default (not sure where I got all of these)
@@ -16,6 +16,7 @@ Some may come installed by default (not sure where I got all of these)
 | [GitHub Actions][githubact]                   | github.vscode-github-actions          | GitHub Actions workflows and runs                                           |
 | [GitHub Pull Requests and Issues][githubpull] | GitHub.vscode-pull-request-github     | Pull Request and Issues                                                     |
 | [GitLens — Git supercharged][gitlens]         | eamodio.gitlens                       | Provides more advanced git commands like rebase interactive                 |
+| [Key Promoter][keypromoter]                   | donebd.vscode-keypromoter             | Learn shortcuts while you are working                                       |
 | [Live Preview][liveview]                      | ms-vscode.live-server                 | Lets you preview pages (like markdown)                                      |
 | [Live Share][liveshare]                       | ms-vsliveshare.vsliveshare            | Real-time collaborative development                                         |
 | [Numbered Bookmarks][bookmark]                | alefragnani.numbered-bookmarks        | Mark lines and jump to them, in Delphi style                                |
@@ -35,3 +36,4 @@ Some may come installed by default (not sure where I got all of these)
 [liveview]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
 [remote]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-repositories
 [todo]: https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
+[keypromoter]: https://marketplace.visualstudio.com/items?itemName=donebd.vscode-keypromoter
