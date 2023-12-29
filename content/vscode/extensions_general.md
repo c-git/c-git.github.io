@@ -24,14 +24,14 @@ Some may come installed by default (not sure where I got all of these)
 
 [cmdexec]: https://marketplace.visualstudio.com/items?itemName=easterapps.script-runner
 [spell]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+[bookmark]: https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks
+[gitflow]: https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow
 [gitgraph]: https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 [githistory]: https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
-[gitflow]: https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow
 [githubact]: https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions
 [githubpull]: https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
 [gitlens]: https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
-[liveview]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
 [liveshare]: https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
-[bookmark]: https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks
+[liveview]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
 [remote]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-repositories
 [todo]: https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
