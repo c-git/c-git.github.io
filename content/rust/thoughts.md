@@ -1,8 +1,10 @@
 +++
 title = "Thoughts about rust"
 date = 2023-11-17
-updated = 2023-12-28
+updated = 2024-01-02
 +++
+
+# Foreword
 
 I kept having thoughts / observations that I wanted to write somewhere so putting them here.
 
@@ -25,3 +27,9 @@ If it is context aware that's all the better (but feels like table stakes, don't
 Trying to write python today I realized why I like types in rust.
 Types allow me specify my assumptions at compile time.
 And get the compiler to check them for me.
+
+# Prototyping
+
+I'm not slower in rust than I am in other languages.
+I can just unwrap and clone everywhere and go as fast as I want.
+Then later it's recorded where I need to go back and fix if the project does go forward.
