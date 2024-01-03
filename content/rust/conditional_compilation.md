@@ -1,12 +1,14 @@
 +++
 title='Conditional Compilation'
 date=2022-11-12
-updated = 2023-11-08
+updated = 2024-01-03
 +++
 
 Source: <https://stackoverflow.com/questions/39204908/how-to-check-release-debug-builds-using-cfg-in-rust>
 
 Source: <https://doc.rust-lang.org/reference/conditional-compilation.html#debug_assertions>
+
+Source: <https://doc.rust-lang.org/reference/conditional-compilation.html#the-cfg_attr-attribute>
 
 Allows to have different code compile under different circumstances.
 
@@ -23,6 +25,11 @@ fn example() {
     println!("Debugging disabled");
 }
 
+#[cfg_attr(target_arch = "wasm32", allow(dead_code))]
+fn not_used_in_wasm(){
+    println!("I'm only used outside of WASM)");
+}
+
 fn main() {
     if cfg!(debug_assertions) {
         println!("Debugging enabled");
@@ -35,6 +42,9 @@ fn main() {
 
     #[cfg(not(debug_assertions))]
     println!("Debugging disabled");
+    
+    #[cfg(not(target_arch = "wasm32"))]
+    not_used_in_wasm();
 
     example();
 }
