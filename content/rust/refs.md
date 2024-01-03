@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2023-12-27
+updated= 2024-01-02
 +++
 
 # Official
@@ -39,6 +39,15 @@ updated= 2023-12-27
 
 - Iterators - [Creating an Iterator](https://aloso.github.io/2021/03/09/creating-an-iterator)
 - [Default arguments for functions in Rust using macros](https://rust.code-maven.com/default-arguments-for-functions)
+
+# Podcasts
+
+- [Rustacean Station](https://rustacean-station.org/) - Current community run podcast
+- [New Rustacean](https://newrustacean.com/) - Stopped but it's where I started. This podcast introduced me to rust and got me excited before I read the book and actually tried it myself (converted commute time into see if I like this rust thing time). I think the main reason it got me excited is that he spoke about the parts of rust that I was interested in and maybe contributed to making it easier to learn rust. I found learning rust easy but that's not a sentiment I've heard from many other people so maybe this is why it was easy for me.
+
+# Video
+
+See [here](@misc/youtube_ref_videos.md#rust) for youtube videos.
 
 # Useful crates
 
