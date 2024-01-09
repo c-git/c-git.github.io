@@ -1,7 +1,7 @@
 +++
 title="Extensions Rust"
 date = 2023-07-27
-updated = 2024-01-08
+updated = 2024-01-09
 +++
 
 # Must haves
@@ -13,10 +13,9 @@ updated = 2024-01-08
 
 # Useful
 
-| Name                     | ID                   | Reason                            |
-| :----------------------- | :------------------- | :-------------------------------- |
-| [Error Lens][elens]      | usernamehw.errorlens | Makes errors overlay next to code |
-| [insta snapshots][insta] | mitsuhiko.insta      | Supports working with insta       |
+| Name                | ID                   | Reason                            |
+| :------------------ | :------------------- | :-------------------------------- |
+| [Error Lens][elens] | usernamehw.errorlens | Makes errors overlay next to code |
 
 # Might be useful
 
@@ -25,6 +24,7 @@ updated = 2024-01-08
 | [Crates Completer][cratescompleter] | jedeop.crates-completer       | Auto complete for creates if you edit `cargo.toml` manually                    |
 | [crates][crates]                    | serayuzgur.crates             | Adds icons to cargo.toml to tell you dependency status (using `cargo add` now) |
 | [Even Better TOML][toml]            | tamasfe.even-better-toml      | Add TOML support                                                               |
+| [insta snapshots][insta]            | mitsuhiko.insta               | Supports working with insta                                                    |
 | [vscode-ron][vron]                  | a5huynh.vscode-ron            | Adds support for RON (Rusty object notation)                                   |
 | [vscode-runner][vrun]               | HarryHopkinson.vs-code-runner | Helps run code?                                                                |
 
