@@ -1,16 +1,24 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2024-01-08
+updated = 2024-01-09
 +++
+
+**WIP - Currently testing and not ready for use**
 
 # Setup from default for Rust
 
-Run setup script and exit and reopen terminal to setup cargo in terminal (reopen on required on first use)
+Run [setup script](setup.sh) and exit and reopen terminal to setup cargo in terminal (reopen only required on first use)
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/setup.sh | sh
 ```
+
+# Use devcontainer
+
+I found [this post](https://containers.dev/guide/dockerfile) helpful to get an idea of the options available.
+
+I also found a repo microsoft with pre-configured dev containers <https://github.com/devcontainers/images/tree/main/src/rust>
 
 # Pricing
 
