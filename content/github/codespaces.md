@@ -1,7 +1,7 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2023-12-11
+updated = 2024-01-08
 +++
 
 # Setup from default for Rust
@@ -28,3 +28,7 @@ Will try to turn this into a template when I have time but for now documenting t
 By default you cannot perform actions that would result in billing according the [GitHub Docs](https://docs.github.com/en/codespaces/overview#billing-for-codespaces).
 
 Go to [settings](https://github.com/settings/billing/summary) to see your usage.
+
+# See list of your code spaces
+
+<https://github.com/codespaces/>
