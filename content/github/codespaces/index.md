@@ -19,7 +19,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/s
 ## Install Rust with Trunk
 
 ```sh
-curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_with_trunk.sh | sh
+curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_with_trunk.sh | bash
 ```
 
 It's probably a good idea to ensure the OS is up to date.
