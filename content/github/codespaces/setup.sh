@@ -1,3 +1,4 @@
+set -e
 sudo apt update && sudo apt upgrade
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 code --install-extension vadimcn.vscode-lldb
