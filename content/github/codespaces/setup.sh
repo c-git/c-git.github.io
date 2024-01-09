@@ -1,6 +1,7 @@
 set -e
 sudo apt-get update && sudo apt-get upgrade -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+source "$HOME/.cargo/env"
 code --install-extension vadimcn.vscode-lldb
 code --install-extension rust-lang.rust-analyzer
 code --install-extension usernamehw.errorlens

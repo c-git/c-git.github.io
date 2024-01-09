@@ -8,7 +8,7 @@ updated = 2024-01-09
 
 # Setup from default for Rust
 
-Run [setup script](setup.sh) and exit and reopen terminal to setup cargo in terminal (reopen only required on first use)
+Run [setup script](setup.sh)
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/setup.sh | sh
