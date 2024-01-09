@@ -13,13 +13,13 @@ The script files can be found in [this folder](scripts/) for review as needed.
 ## Install Rust only
 
 ```sh
-curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/setup_rust_only.sh | sh
+curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_rust_only.sh | sh
 ```
 
 ## Install Rust with Trunk
 
 ```sh
-curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/setup_with_trunk.sh | sh
+curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_with_trunk.sh | sh
 ```
 
 It's probably a good idea to ensure the OS is up to date.
