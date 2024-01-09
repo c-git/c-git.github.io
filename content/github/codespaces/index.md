@@ -4,8 +4,6 @@ date=2023-11-05
 updated = 2024-01-09
 +++
 
-**WIP - Currently testing and not ready for use**
-
 # Setup from default for Rust
 
 The script files can be found in [this folder](scripts/) for review as needed.
@@ -20,6 +18,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/s
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_with_trunk.sh | bash
+```
+
+At this point you'll need to either restart you terminal or source the cargo setup script manually.
+
+```sh
+source "$HOME/.cargo/env"
 ```
 
 It's probably a good idea to ensure the OS is up to date.
