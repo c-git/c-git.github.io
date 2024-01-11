@@ -1,7 +1,7 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2024-01-09
+updated = 2024-01-11
 +++
 
 # Setup from default for Rust
@@ -14,7 +14,7 @@ The script files can be found in [this folder](scripts/) for review as needed.
 curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_rust_only.sh | sh
 ```
 
-## Install Rust with Trunk
+## Install Rust with Trunk (Usually only needed if your developing for the web)
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_with_trunk.sh | bash
