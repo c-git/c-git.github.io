@@ -1,7 +1,7 @@
 +++
 title="Updating"
 date = 2023-10-19
-updated = 2023-12-15
+updated = 2024-01-12
 +++
 
 # Update and Upgrade
@@ -22,15 +22,19 @@ Based on this page on [IT'S FOSS][foss] the apt versions of these are probably b
 sudo apt update
 ```
 
-# Update packages
+# Update packages and kernel
 
 Source: <https://www.cyberciti.biz/faq/upgrade-update-ubuntu-using-terminal/>
+
+Tested and this command did do the update for the pending kernel update.
 
 ```sh
 sudo apt upgrade
 ```
 
-# Update Kernel
+# Recommended command for kernel update
+
+Tested and just `sudo apt upgrade` also updated the kernel
 
 Sources:
 
