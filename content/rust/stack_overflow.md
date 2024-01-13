@@ -46,7 +46,16 @@ fn drop_stack_overflow() {
 Reducing to `21_766` or uncommenting the last line cause it not to crash anymore on my machine.
 I tried similar code as a binary and realized I was getting non deterministic behaviour.
 With the number of iterations set to `87_252` I was getting about 20% failure rate.
-Meaning it would usually crash 2 out of 10 runs. (The non-determinism is likely due to what is mentioned in the [post][stack_size_explanation]. Will have to fix the value and test to see what happens)
+Meaning it would usually crash 2 out of 10 runs.
+The non-determinism is likely due to one of two things
+
+1. What is mentioned in the [post][stack_size_explanation] and the OS is changing the "allowed" size.
+2. Or in preparing to test that idea discovered in the docs for Function std::mem::[size_of](https://doc.rust-lang.org/std/mem/fn.size_of.html)
+   > In general, the size of a type is not stable across compilations, but specific types such as primitives are.
+
+Based on testing on main it is the first option as each run appears to have a slight different amount of stack available.
+Tested using `stacker::remaining_stack()`.
+
 I further found that running the tests in release mode `cargo test -r -- --nocapture drop_stack_overflow` increase the number before crashing to `65_320` on my machine.
 On rust playground it seems to be at `21_768`.
 The machine specific size is likely explained by what is in the [post][stack_size_explanation].
@@ -55,3 +64,23 @@ The machine specific size is likely explained by what is in the [post][stack_siz
 
 [problem_solution]: https://github.com/c-git/leetcode/blob/4069e79ead604e552ef297c67393c1424f742ad2/rust/src/_2385_amount_of_time_for_binary_tree_to_be_infected.rs
 [stack_size_explanation]: https://users.rust-lang.org/t/what-is-the-size-limit-of-threads-stack-in-rust/11867
+
+# Checking Space left on Stack
+
+The [stacker](https://docs.rs/stacker/latest/stacker/) crate that is maintained by the rust compiler team provides an easy way to check how much space is left on the stack.
+
+<details>
+
+<summary>Click for details!</summary>
+
+Function stacker::[remaining_stack](https://docs.rs/stacker/latest/stacker/fn.remaining_stack.html)
+
+> Queries the amount of remaining stack as interpreted by this library.
+
+Function stacker::[maybe_grow](https://docs.rs/stacker/latest/stacker/fn.maybe_grow.html)
+
+> Grows the call stack if necessary.
+> This function is intended to be called at manually instrumented points in a program where recursion is known to happen quite a bit. This function will check to see if we’re within red_zone bytes of the end of the stack, and if so it will allocate a new stack of at least stack_size bytes.
+> The closure f is guaranteed to run on a stack with at least red_zone bytes, and it will be run on the current stack if there’s space available.
+
+</details>
