@@ -5,7 +5,12 @@ date=2023-11-05
 
 # Frequently used links and commands
 
+Mostly self explanatory except that running test in release mode can increase limits for things like [stack overflow](rust/stack_overflow.md#drop_can_cause_stack_overflow)
+
 ```sh
+cargo test -- --nocapture
+cargo test -- --ignored
+cargo test -r
 cargo add --dev rstest
 cargo add --dev strum -F derive,strum_macros
 ```
