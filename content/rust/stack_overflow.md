@@ -8,6 +8,8 @@ updated = 2024-01-13
 
 **TLDR** - Large recursive data structures lead to recursive calls to drop them and can cause stack overflow depending on their size.
 
+More information on how drop works can be found in the [rust reference](https://doc.rust-lang.org/reference/destructors.html).
+
 NB: On discord `arriven` pointed me to this [link][stack_size_explanation] that provides more information on the stack size.
 
 <details>
