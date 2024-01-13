@@ -1,0 +1,21 @@
+name: Date Verification
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on: [push, pull_request]
+
+jobs:
+  date_verification:
+    name: Date Verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: wykies/checkout@main
+      - uses: wykies/setup-rust-toolchain@v1
+      - name: Install tool
+        shell: bash
+        run: cargo install zola_chrono
+      - name: Run dates check
+        run:  zola_chrono -c content/
