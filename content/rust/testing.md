@@ -1,7 +1,7 @@
 +++
 title="Testing"
 date=2023-11-05
-updated = 2024-01-12
+updated = 2024-01-14
 +++
 
 # Frequently used links and commands
@@ -23,10 +23,12 @@ cargo add --dev strum -F derive,strum_macros
 
 Source: <https://doc.rust-lang.org/book/ch11-03-test-organization.html#submodules-in-integration-tests>
 
-## TLDR
-
 Do `tests/common/mod.rs` and not `tests/common.rs`.
 
-## Explanation
+<details>
+  <summary>Click for details!</summary>
 
-More annoying that what they mention in the article is the warnings that functions are not used as each file is compiled separately.
+They mainly focus the extra 0 test cases that show in the output, and yes that's annoying but what annoyed me more was the warnings that functions are not used as each file is compiled separately.
+So if warnings bother you too then you probably want to ensure you ensure you put it in `mod.rs`.
+
+</details>
