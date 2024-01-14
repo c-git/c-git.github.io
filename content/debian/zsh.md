@@ -20,7 +20,7 @@ Tested on Ubuntu 22.04
   ```sh
   zsh
   ```
-- Select 0 to create an empty config (This step didn't happen for me)
+- Select 0 to create an empty config (This step didn't happen for me but I think it's because I'd installed [atuin](https://atuin.sh/) already as atuin worked immediately upon install (brining my history with it))
 - Set zsh as default shell
   ```sh
   chsh -s $(which zsh)
@@ -30,4 +30,4 @@ Tested on Ubuntu 22.04
   grep $USER /etc/passwd
   ```
 - Logout and log back in for settings to take effect
-- After logging back in open a terminal and test with [this command](@/debian/useful_commands.md#check-which-shell-is-in-use)
+- After logging back in open a terminal and test with [this command](@/debian/useful_commands.md#check-which-shell-is-in-use) (Really probably not necessary the prompt looks different)
