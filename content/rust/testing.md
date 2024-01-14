@@ -32,3 +32,10 @@ They mainly focus the extra 0 test cases that show in the output, and yes that's
 So if warnings bother you too then you probably want to ensure you ensure you put it in `mod.rs`.
 
 </details>
+
+# Testing CLI applications by running them
+
+Source: <https://rust-cli.github.io/book/tutorial/testing.html#testing-cli-applications-by-running-them>
+
+Don't have more detailed notes other than the link because I decided to not actually run the program but just test the lib instead as the compiler will guide me to where updates need to happen instead of needing to run the test to see where updates are needed.
+But saving the link because I've looked it up quite a few times.
