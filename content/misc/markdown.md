@@ -1,7 +1,7 @@
 +++
 title = "Markdown / HTML Guide"
 date=2023-10-27
-updated = 2023-11-21
+updated = 2024-01-14
 +++
 
 # Official Docs
@@ -132,7 +132,8 @@ Source: <https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1a
 
 ### WARNING
 
-Be careful with **indentation** otherwise you can end up with a code block and hence raw markdown.
+- Be careful with **indentation** otherwise you can end up with a code block and hence raw markdown.
+- Empty line required after `</summary>` tag based on my test or again you get raw markdown.
 
 <details>
   <summary>Click to expand!</summary>
@@ -160,13 +161,10 @@ malesuada.
 
 ```
 <details>
-   <summary>Click to expand!</summary>
+  <summary>Click to expand!</summary>
 
-   Detailed body shows when you click.
-
-   ...
-
-   ...
+  Must have an empty line before this line (based on my tests)
+  Detailed body shows when you click.
 
 </details>
 ```
