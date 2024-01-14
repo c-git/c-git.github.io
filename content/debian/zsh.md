@@ -31,3 +31,5 @@ Tested on Ubuntu 22.04
   ```
 - Logout and log back in for settings to take effect
 - After logging back in open a terminal and test with [this command](@/debian/useful_commands.md#check-which-shell-is-in-use) (Really probably not necessary the prompt looks different)
+- For the equivalent of `.bashrc` see `.zshrc`
+- To set terminal title see [my notes](@/debian/terminal.md#changing-terminal-title) on that
