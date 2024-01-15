@@ -1,12 +1,10 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2024-01-11
+updated = 2024-01-14
 +++
 
 # Setup from default for Rust
-
-The script files can be found in [this folder](scripts/) for review as needed.
 
 ## Install Rust only
 
