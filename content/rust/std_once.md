@@ -4,7 +4,9 @@ date = 2023-12-13
 updated = 2024-01-15
 +++
 
-# Example on how to use [OnceLock](https://doc.rust-lang.org/std/sync/struct.OnceLock.html).
+If thread safety is not needed you can use [OnceCell][oncecell] but [OnceLock][oncelock] can be used in both and hence examples here focus on [OnceLock][oncelock] but the example in the docs for [OnceCell][oncecell] is pretty good.
+
+# Example on how to use OnceLock
 
 The important difference between the examples is where the initialization happens
 
@@ -61,3 +63,6 @@ fn foo() {
     println!("{my_vec:?}");
 }
 ```
+
+[oncecell]: https://doc.rust-lang.org/std/cell/struct.OnceCell.html
+[oncelock]: https://doc.rust-lang.org/std/sync/struct.OnceLock.html
