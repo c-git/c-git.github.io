@@ -1,7 +1,7 @@
 +++
 title="Cargo"
 date=2023-06-16
-updated = 2023-11-08
+updated = 2024-01-17
 +++
 
 # Configuring Cargo
@@ -92,4 +92,15 @@ Example of conditionally compiling based on feature
 // This conditionally includes a module which implements WEBP support.
 #[cfg(feature = "webp")]
 pub mod webp;
+```
+
+# Mutually Exclusive Feature Flags
+
+Source: <https://doc.rust-lang.org/cargo/reference/features.html#mutually-exclusive-features>
+
+**TLDR**: Avoid using mutually exclusive features see source above for options to work around it otherwise detect it at compile time and provide an error message instead of waiting for duplicated functions to stop the compile.
+
+```rust
+#[cfg(all(feature = "foo", feature = "bar"))]
+compile_error!("feature \"foo\" and feature \"bar\" cannot be enabled at the same time");
 ```
