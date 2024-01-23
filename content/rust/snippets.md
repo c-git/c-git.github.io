@@ -345,11 +345,11 @@ fn main() {
 fn seconds_to(days: i64, hour: u32, min: u32, sec: u32) -> Option<std::time::Duration> {
     let now = chrono::Local::now();
 
-    let tomorrow_midnight = (now + chrono::Duration::days(days))
+    let new_date_time = (now + chrono::Duration::days(days))
         .date_naive()
         .and_hms_opt(hour, min, sec)?;
 
-    match tomorrow_midnight
+    match new_date_time
         .signed_duration_since(now.naive_local())
         .to_std()
     {
