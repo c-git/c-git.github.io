@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2023-12-28
+updated = 2024-01-23
 +++
 
 # Boilerplate
@@ -326,5 +326,38 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .collect::<Result<Vec<u8>, _>>()?;
     println!("{all_even:?}");
     Ok(())
+}
+```
+
+# Get number of seconds until midnight
+
+Source: <https://stackoverflow.com/questions/47708305/calculate-the-duration-between-now-and-the-next-midnight-using-chrono>
+
+Requires the [chrono](https://crates.io/crates/chrono) crate.
+
+```rust
+fn main() {
+    let duration = seconds_to(1, 0, 0, 0).unwrap();
+
+    println!("Duration until midnight {duration:?}");
+}
+
+fn seconds_to(days: i64, hour: u32, min: u32, sec: u32) -> Option<std::time::Duration> {
+    let now = chrono::Local::now();
+
+    let tomorrow_midnight = (now + chrono::Duration::days(days))
+        .date_naive()
+        .and_hms_opt(hour, min, sec)?;
+
+    match tomorrow_midnight
+        .signed_duration_since(now.naive_local())
+        .to_std()
+    {
+        Ok(result) => Some(result),
+        Err(e) => {
+            dbg!(e); // Might want to log this error or return a result as suitable to your application
+            None
+        }
+    }
 }
 ```
