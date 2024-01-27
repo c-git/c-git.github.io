@@ -1,12 +1,17 @@
 +++
 title="Create New Crate"
 date=2023-11-02
-updated= 2023-11-08
+updated= 2024-01-27
 +++
 
 Patterned on: [New Repo Creation](@/git/new_repo.md)
 
-NB: These instructions assume github with ssh key auth but any would be similar
+# Notes
+
+- These instructions assume github with ssh key auth but any would be similar
+- If creating a egui application with eframe I have an opinionated setup with a script at <https://github.com/c-git/my_egui_template> (See readme for more details).
+
+# Instructions
 
 1. Create empty repo in cloud
 2. Create folder on local machine with same name (same name is recommended not required)
