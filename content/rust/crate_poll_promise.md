@@ -54,3 +54,10 @@ let promise = poll_promise::Promise::spawn_async(async move { slow_operation().a
 
 }
 ````
+
+# Notes from reading documentation
+
+NB: The following have not been tested yet but this is what I thought of when I read the docs
+
+- [Promise::new](https://docs.rs/poll-promise/latest/poll_promise/struct.Promise.html#method.new) - Useful if you direct access to the [Sender](https://docs.rs/poll-promise/latest/poll_promise/struct.Sender.html)
+- [Promise::from_ready](https://docs.rs/poll-promise/latest/poll_promise/struct.Promise.html#method.from_ready) - Useful if no work is needed to resolve the promise but a promise needs to be returned.
