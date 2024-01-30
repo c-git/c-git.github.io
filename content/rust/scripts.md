@@ -1,12 +1,10 @@
 +++
 title="Single file script"
 date=2023-09-02
-updated = 2023-11-08
+updated = 2024-01-29
 +++
 
 Source: <https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#script>
-
-Tim's video on it with an example: <https://www.youtube.com/watch?v=XvFlWPhyz1Y>
 
 Make file executable and then you can just run it.
 Cargo will automatically deal with caching for you.
@@ -25,11 +23,11 @@ fn main() {
 
 ````rust
 #!/usr/bin/env -S cargo +nightly -Zscript
-
-//! ```cargo
-//! [dependencies]
-//! clap = { version = "4.2", features = ["derive"] }
-//! ```
+```cargo
+package.edition = "2021" # Desirable to stop warning but not needed
+[dependencies]
+clap = { version = "4.2", features = ["derive"] }
+```
 
 use clap::Parser;
 
