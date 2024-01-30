@@ -1,7 +1,8 @@
 +++
-title="Tokio"
+title="Crate Tokio"
 date=2023-08-21
-updated = 2023-11-08
+updated = 2024-01-30
+aliases=["/rust/tokio"]
 +++
 
 # Setup a runtime environment
@@ -21,6 +22,9 @@ async fn do_thing() {
 ```
 
 ## Manually create a runtime
+
+Note: It's important that you use block_on as if there isn't something that is being awaiting the runtime stops.
+Can't remember the source but I forgot to block on at least one thing and then I couldn't spawn anything and have it run (wasted a lot of time).
 
 ```rust
 fn main() {

@@ -1,6 +1,8 @@
 +++
-title="Actix"
+title="Crate Actix Web"
 date = 2023-12-15
+updated = 2024-01-30
+aliases=["/rust/actix"]
 +++
 
 Website: <https://actix.rs/>
