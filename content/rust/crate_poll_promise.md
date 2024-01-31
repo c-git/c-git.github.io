@@ -12,6 +12,8 @@ As per their readme not recommended for libraries.
 
 See [simple example](https://github.com/EmbarkStudios/poll-promise/blob/main/examples/example.rs) that uses threads and no async runtime.
 
+A more complete egui application can be found [here](https://github.com/c-git/egui_file_picker_poll_promise).
+
 The examples below use [cargo script](@/rust/scripts.md) so if you're not familiar please see my short article on that first.
 
 # Example of how to use with Tokio
