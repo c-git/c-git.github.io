@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2024-01-30
+updated= 2024-01-31
 +++
 
 # Official
@@ -39,6 +39,7 @@ updated= 2024-01-30
 
 - Iterators - [Creating an Iterator](https://aloso.github.io/2021/03/09/creating-an-iterator)
 - [Default arguments for functions in Rust using macros](https://rust.code-maven.com/default-arguments-for-functions)
+- [Explanation of Tracing Subscribers](https://hegdenu.net/posts/debugging-tokio-instrumentation/)
 
 # Podcasts
 
