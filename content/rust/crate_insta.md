@@ -16,6 +16,29 @@ If you only call the insta assert functions only once then inline is a fine opti
 But if you have to call the assert function repeatedly (for example in a loop) then that is not supported by inline.
 What you can do though is put your tests into a folder.
 So instead of putting them at the bottom of your code you put the test module into a sub folder and then the insta files will also go into that folder.
+An example of how the subfolder for test option looks can be found [here](https://github.com/fujiapple852/trippy/pull/932/files).
+See output of tree command below.
+
+```sh
+% tree
+.
+├── code_snippet
+│   ├── snapshots
+│   │   ├── cargo_leet__tool__core__helpers__code_snippet__tests__conversion_from_leetcode_response-2.snap
+│   │   ├── cargo_leet__tool__core__helpers__code_snippet__tests__conversion_from_leetcode_response-3.snap
+│   │   └── cargo_leet__tool__core__helpers__code_snippet__tests__conversion_from_leetcode_response.snap
+│   └── tests.rs
+├── code_snippet.rs
+├── daily_challenge.rs
+├── local_store.rs
+├── mod.rs
+├── problem_code.rs
+├── problem_metadata.rs
+├── snapshots
+└── write_to_disk.rs
+
+3 directories, 11 files
+```
 
 # Supporting Tooling
 
@@ -37,5 +60,3 @@ For example:
 
 ```
 ``` -->
-
-<!-- TODO: Add link to example in cargo leet https://github.com/rust-practice/cargo-leet/ -->
