@@ -1,6 +1,6 @@
-# One's Notes
+# Onè's Notes
 
-This repository contains the source for [One's Notes](https://c-git.github.io/) website.
+This repository contains the source for [Onè's Notes](https://c-git.github.io/) website.
 
 ## Feedback / Correction
 

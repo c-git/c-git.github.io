@@ -2,7 +2,7 @@
 base_url = "https://c-git.github.io/"
 
 # The site title and description; used in feeds by default.
-title = "One's Notes"
+title = "Onè's Notes"
 
 # The site theme to use.
 theme = "zola_easydocs_theme"
@@ -19,12 +19,12 @@ output_dir = "docs"
 # When set to "true", a feed is automatically generated.
 generate_feed = true
 
-author = "One"
+author = "Onè"
 
 # Configuration of the Markdown rendering
 [markdown]
 # Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+# Theme can be customized by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 # Whether external links are to be opened in a new tab
