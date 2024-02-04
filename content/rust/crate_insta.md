@@ -10,7 +10,7 @@ Source: <https://insta.rs/docs/quickstart/>
 
 If you are using the assert in a loop you'll want to use `cargo insta test` instead of cargo test to get all snapshots created at the same time.
 
-# Using [`rstest`](https://docs.rs/rstest/latest/rstest/) or [`test_case`](https://docs.rs/test-case/latest/test_case/)
+# Using [rstest](https://docs.rs/rstest/latest/rstest/) or [test_case](https://docs.rs/test-case/latest/test_case/)
 
 Because these crates use macros to create separate test cases the execution order is not deterministic.
 So ensure you set a snapshot name based on something that determines the output for example a string version of the input.
