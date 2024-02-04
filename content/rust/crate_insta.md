@@ -64,3 +64,63 @@ To activate many of the options for the plugin you need to click on the snap fil
 > Version: 1.0.6\
 > Publisher: Armin Ronacher\
 > VS Marketplace Link: <https://marketplace.visualstudio.com/items?itemName=mitsuhiko.insta>
+
+# Setting terminal size
+
+Some test like those of the output of a program might be sensitive to the terminal size and in particular the width.
+Below is an example script to set the terminal width using crossterm.
+Tested on Ubuntu 22.04.1 in the default terminal and it works.
+It doesn't work if the terminal is maximized.
+Also doesn't work in the vscode terminal.
+
+````rust
+#!/usr/bin/env -S cargo +nightly -Zscript
+```
+[package]
+edition = "2021"
+
+[dependencies]
+crossterm = "0.27.0"
+```
+
+fn main() {
+    set_terminal_width(100);
+}
+
+/// Designed for use in testing and will panic if unable to set size in under 2 seconds
+fn set_terminal_width(desired_width: u16) {
+    const MAX_WAIT_TIME_SEC: u64 = 2;
+    let (mut curr_width, mut curr_height) = crossterm::terminal::size().unwrap();
+    println!("Current terminal size is {curr_width} x {curr_height}");
+    if curr_width == desired_width {
+        // Nothing required to be done
+        println!("Already at desired width of {desired_width}");
+        return;
+    }
+
+    let start_instant = std::time::Instant::now();
+    crossterm::execute!(
+        std::io::stdout(),
+        crossterm::terminal::SetSize(desired_width, curr_height)
+    )
+    .unwrap();
+    while curr_width != desired_width {
+        if std::time::Instant::now()
+            .duration_since(start_instant)
+            .as_secs()
+            > MAX_WAIT_TIME_SEC
+        {
+            panic!("failed to change terminal size to width of {desired_width} in under {MAX_WAIT_TIME_SEC} seconds");
+        }
+        std::thread::sleep(std::time::Duration::from_millis(1));
+        (curr_width, curr_height) = crossterm::terminal::size().unwrap();
+    }
+
+    println!(
+        "Successfully changed terminal size to {curr_width} x {curr_height} in {} mills",
+        std::time::Instant::now()
+            .duration_since(start_instant)
+            .as_millis()
+    );
+}
+````
