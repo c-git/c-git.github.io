@@ -73,6 +73,8 @@ Tested on Ubuntu 22.04.1 in the default terminal and it works.
 It doesn't work if the terminal is maximized.
 Also doesn't work in the vscode terminal.
 
+NB: If unfamiliar with cargo scripts more info can be found [here](@/rust/scripts.md)
+
 ````rust
 #!/usr/bin/env -S cargo +nightly -Zscript
 ```
