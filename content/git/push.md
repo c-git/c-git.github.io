@@ -7,6 +7,8 @@ Source: <https://git-scm.com/docs/git-push>
 
 # Force pushing
 
+WARNING: The command given here doesn't work well if fetch runs in background. See source for more notes.
+
 If working on a project where you aren't the only committer it's better to use the with lease option so that if you check locally that you want to blow away the version you see of the remote branch on your machine then that is only what gets destroyed when you push.
 If someone else pushing after what you have on your machine it won't match and you'll get notified.
 
