@@ -1,7 +1,7 @@
 +++
 title='Bash Aliases'
 date=2022-08-22
-updated=2023-12-11
+updated=2024-02-04
 aliases=["/debian/bash-alias"]
 +++
 
@@ -27,3 +27,9 @@ type -a <cmd>
 `-a`display all locations containing an executable named NAME; includes aliases, builtins, and functions.
 
 where `<cmd>` is the command or alias you want information on
+
+If using zsh you can also use the following
+
+```sh
+which <cmd>
+```
