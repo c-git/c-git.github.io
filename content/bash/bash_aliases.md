@@ -1,7 +1,7 @@
 +++
 title='Bash Aliases'
 date=2022-08-22
-updated=2024-02-04
+updated=2024-02-05
 aliases=["/debian/bash-alias"]
 +++
 
@@ -24,7 +24,7 @@ Source: <https://askubuntu.com/questions/102093/how-to-see-the-command-attached-
 type -a <cmd>
 ```
 
-`-a`display all locations containing an executable named NAME; includes aliases, builtins, and functions.
+`-a` display all locations containing an executable named NAME; includes aliases, builtins, and functions.
 
 where `<cmd>` is the command or alias you want information on
 
