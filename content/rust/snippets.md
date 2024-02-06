@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2024-01-23
+updated = 2024-02-06
 +++
 
 # Boilerplate
@@ -105,7 +105,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 ## Write string to a file
 
 ```rust
-use std::{error::Error, fs, io::Write, path::Path};
+use std::{error::Error, io::Write, path::Path};
 
 fn main() -> Result<(), Box<dyn Error>> {
     write_to_path("filename.txt", "text for file")?;
@@ -114,7 +114,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
 fn write_to_path<P: AsRef<Path>>(path: P, s: &str) -> Result<(), Box<dyn Error>> {
     // Create a new file if it doesn't exist or open the file if it already exists
-    let mut file = fs::OpenOptions::new().write(true).create(true).open(path)?;
+    let mut file = std::fs::OpenOptions::new().write(true).create(true).open(path)?;
     file.write_all(s.as_bytes())?;
     Ok(())
 }
