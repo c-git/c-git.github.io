@@ -1,7 +1,8 @@
 +++
-title="Serde"
+title="Crate Serde"
 date=2023-01-06
-updated = 2023-11-08
+updated = 2024-02-06
+aliases=["/rust/serde"]
 +++
 
 Tips and Tricks for working with `Serde`.
@@ -61,3 +62,33 @@ also [default value for a field](https://serde.rs/attr-default.html)
 Source: <https://stackoverflow.com/questions/57560593/why-do-i-get-an-unsupportedtype-error-when-serializing-to-toml-with-a-manually-i>
 
 Using `#[serde(tag = "type")]` can sometimes resolve `Err value: UnsupportedType` errors
+
+# Transcoding
+
+Source: <https://serde.rs/transcode.html>
+
+Going from any self describing format to any other self describing format (Not tested yet, but wanted to be able to find it next time)
+
+```rust
+use std::io;
+
+fn main() {
+    // A JSON input with plenty of whitespace.
+    let input = r#"
+      {
+        "a boolean": true,
+        "an array": [3, 2, 1]
+      }
+    "#;
+
+    // A JSON deserializer. You can use any Serde Deserializer here.
+    let mut deserializer = serde_json::Deserializer::from_str(input);
+
+    // A compacted JSON serializer. You can use any Serde Serializer here.
+    let mut serializer = serde_json::Serializer::new(io::stdout());
+
+    // Prints `{"a boolean":true,"an array":[3,2,1]}` to stdout.
+    // This line works with any self-describing Deserializer and any Serializer.
+    serde_transcode::transcode(&mut deserializer, &mut serializer).unwrap();
+}
+```
