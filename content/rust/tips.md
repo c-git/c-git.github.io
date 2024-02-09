@@ -1,6 +1,6 @@
 +++
 title="Tips"
-date = 2023-11-20
+date = 2024-02-08
 +++
 
 # Recovering Storage Space
@@ -10,6 +10,7 @@ date = 2023-11-20
   - See list of toolchains `rustup toolchain list`
   - Remove a toolchain `rustup toolchain uninstall <VALUE FROM LAST LIST>`
 - [Cargo Sweep](https://crates.io/crates/cargo-sweep) (Suggested by [Conrad Ludgate][conrad])
+- [Not tested yet] Run cargo clean on all projects `find ~ -type d -name target -exec sh -c 'cd {} && cd .. && cargo clean' \` from [timClicks notes](https://github.com/timClicks/notebook/blob/main/rust/cheatsheet.md#free-up-disk-space)
 
 # Sharing a Cargo Build Folder
 
