@@ -1,7 +1,7 @@
 +++
 title = "Crate Insta"
 date = 2024-02-02
-updated = 2024-02-04
+updated = 2024-02-10
 +++
 
 Source: <https://insta.rs/docs/quickstart/>
@@ -39,7 +39,9 @@ There are three ways to decide where to store snapshots.
 ```rust
 pub(crate) fn insta_settings() -> insta::Settings {
     let mut result = insta::Settings::clone_current();
-    result.set_snapshot_path("../tests/snapshots");
+    let cwd = std::env::current_dir().expect("failed to get cwd");
+    let path = cwd.join("tests").join("snapshots");
+    result.set_snapshot_path(path);
     result
 }
 
