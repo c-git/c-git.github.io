@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2024-02-02
+updated= 2024-02-14
 +++
 
 # Official
@@ -30,6 +30,7 @@ updated= 2024-02-02
 - Magic Completions - [Rust Analyzer User Manual](https://rust-analyzer.github.io/manual.html#magic-completions)
 - Directory Traversal - [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html)
 - Recommended way to write `expect` messages - [std docs](https://doc.rust-lang.org/core/result/enum.Result.html#recommended-message-style)
+- Types of enum variants - [Rust by Example](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
 
 # Reference Books (Also see [Official](@/rust/refs.md#official))
 
