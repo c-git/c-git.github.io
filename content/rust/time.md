@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated=2023-11-14
+updated=2024-02-18
 +++
 
 # Standard Library
@@ -60,6 +60,46 @@ fn main() {
     println!("Local time now is: {}", now);
 }
 ```
+
+# In WASM
+
+Source: <https://timclicks.dev/convert-a-unix-timestamp-to-rust/>
+
+````rust
+#!/usr/bin/env -S cargo +nightly -Zscript
+```cargo
+package.edition = "2021" # Desirable to stop warning but not needed
+[dependencies]
+chrono = { version = "0.4.34", default-features = false, features = ["clock"] }
+web-time = "1.0.0"
+```
+
+fn main() {
+    println!("The date and time now is {}", now_date_time_as_string());
+    println!(
+        "The date and time now is {}",
+        now_date_time_as_string_native_only()
+    );
+}
+
+fn now_date_time_as_string() -> String {
+    use chrono::TimeZone as _;
+    let time_stamp = web_time::SystemTime::UNIX_EPOCH
+        .elapsed()
+        .expect("expected date on system to be after the epoch")
+        .as_secs();
+
+    let dt = chrono::NaiveDateTime::from_timestamp_opt(time_stamp as i64, 0).unwrap();
+    let dt = chrono::Local::from_utc_datetime(&chrono::Local, &dt);
+    dt.format("%c").to_string()
+}
+
+// Other version use web_time instead of std::time so it can work in WASM
+// If you don't need WASM use this version
+fn now_date_time_as_string_native_only() -> String {
+    chrono::Local::now().format("%c").to_string()
+}
+````
 
 # Formatting syntax
 
