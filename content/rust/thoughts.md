@@ -1,7 +1,7 @@
 +++
 title = "Thoughts about rust"
 date = 2023-11-17
-updated = 2024-01-02
+updated = 2024-02-23
 +++
 
 # Foreword
@@ -33,3 +33,8 @@ And get the compiler to check them for me.
 I'm not slower in rust than I am in other languages.
 I can just unwrap and clone everywhere and go as fast as I want.
 Then later it's recorded where I need to go back and fix if the project does go forward.
+
+# A thousand french men can't be wrong
+
+Yes, yes they can.
+Just because most people do something doesn't make it right.
