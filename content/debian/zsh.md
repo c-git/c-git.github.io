@@ -1,6 +1,6 @@
 +++
 title = "zsh"
-date = 2024-01-14
+date = 2024-02-23
 +++
 
 Sources:
@@ -20,7 +20,7 @@ Tested on Ubuntu 22.04
   ```sh
   zsh
   ```
-- Select 0 to create an empty config (This step didn't happen for me but I think it's because I'd installed [atuin](https://atuin.sh/) already as atuin worked immediately upon install (brining my history with it))
+- Select 0 to create an empty config (This step didn't happen for me but I'm not sure why)
 - Set zsh as default shell
   ```sh
   chsh -s $(which zsh)
