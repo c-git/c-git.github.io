@@ -1,7 +1,8 @@
 +++
-title="Rest Root Password"
+title="Reset Root Password"
 date = 2022-09-21
-updated = 2023-11-08
+updated = 2024-02-28
+aliases=["/debian/rest-root-password"]
 +++
 
 The following are the commands, followed by the log;
