@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2024-02-25
+updated= 2024-02-29
 +++
 
 # Official
@@ -66,6 +66,7 @@ So please do see the [section page](../index.html) for rust to see the list.
 - [float_ord](https://docs.rs/float-ord/latest/float_ord/) - Add Ord for floats (used as `FloatOrd(1.0)`)
 - [inventory](https://docs.rs/inventory/) - Typed distributed plugin registration.
 - [dirs](https://crates.io/crates/dirs) - Helps you find the suitable directory to use in a cross platform way
+- [version](https://docs.rs/version/latest/version/) - Easy way to check the version of a executable compiled with cargo (clap is probably better if it's just to add a CLI arg to show to users)
 - List of [my crates](https://crates.io/users/c-git) on crates.io
 
 # GitHub Actions
