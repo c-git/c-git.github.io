@@ -1,7 +1,7 @@
 +++
 title = "Thoughts about rust"
 date = 2023-11-17
-updated = 2024-02-23
+updated = 2024-03-02
 +++
 
 # Foreword
@@ -38,3 +38,9 @@ Then later it's recorded where I need to go back and fix if the project does go 
 
 Yes, yes they can.
 Just because most people do something doesn't make it right.
+
+# No network access
+
+If you don't have network access rust still makes it easy to work on a program that uses network like a discord bot because testing is just a confirmation.
+If it compiles a lot of the time it does what you wanted as well.
+This works for more than just network code but requires minimizing panics and making impossible states unrepresentable so the compiler can check if the code is correct.
