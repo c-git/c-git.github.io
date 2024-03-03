@@ -1,14 +1,14 @@
 +++
 title='PDF Garbled (Fix)'
 date = 2022-08-19
-updated = 2023-11-08
+updated = 2024-03-03
 +++
 
 # Background
 
 Got a PDF that would display on the screen fine for reading but would produce garbled text when trying to copy and
 paste.
-Main motivation for addressing the issue is to be able to use text to speach on the pdf to read it.
+Main motivation for addressing the issue is to be able to use text to speech on the pdf to read it.
 This page is meant to document the options found to address this issue.
 
 # Convert pdf to images instead of garbled text
