@@ -1,7 +1,7 @@
 +++
-title="GitHub"
+title="SSH"
 date = 2023-11-06
-updated = 2023-11-08
+updated = 2024-04-04
 +++
 
 # Creating SSH Key (Linux)
