@@ -1,7 +1,7 @@
 +++
 title = "Thoughts about rust"
 date = 2023-11-17
-updated = 2024-03-02
+updated = 2024-04-09
 +++
 
 # Foreword
@@ -44,3 +44,9 @@ Just because most people do something doesn't make it right.
 If you don't have network access rust still makes it easy to work on a program that uses network like a discord bot because testing is just a confirmation.
 If it compiles a lot of the time it does what you wanted as well.
 This works for more than just network code but requires minimizing panics and making impossible states unrepresentable so the compiler can check if the code is correct.
+
+# Unexpected dangers in using rust
+
+I'd been programming for more than a decade before I started rust and I've realized an unexpected problem with starting rust is that it makes it harder to update old projects.
+My ability to write python for example didn't really atrophy but I find myself wanting easier ways to refactor for example and without much effort knowing I got all places that needed to be updated.
+And being able to work "locally" with the types providing protection I can reason about a function without needing to see all call sites.
