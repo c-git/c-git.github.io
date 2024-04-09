@@ -50,3 +50,8 @@ This works for more than just network code but requires minimizing panics and ma
 I'd been programming for more than a decade before I started rust and I've realized an unexpected problem with starting rust is that it makes it harder to update old projects.
 My ability to write python for example didn't really atrophy but I find myself wanting easier ways to refactor for example and without much effort knowing I got all places that needed to be updated.
 And being able to work "locally" with the types providing protection I can reason about a function without needing to see all call sites.
+
+## Takeaway
+
+When starting a project I don't always know how long a project will live and even if it's a prototype it might be better to write it in rust.
+I can usually do it almost as quickly, enjoy doing it more and later if it lives longer than expected I can more easily make changes.
