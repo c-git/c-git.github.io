@@ -1,7 +1,7 @@
 +++
 title='DNS'
 date = 2022-12-02
-updated = 2023-11-08
+updated = 2024-04-13
 +++
 
 Source: <https://www.howtouselinux.com/post/linux-command-use-dig-to-query-dns>
@@ -12,6 +12,12 @@ Tested on Ubuntu 22.04 (Did not work on Ubuntu 18.04)
 
 ```sh
 resolvectl status
+```
+
+# Clear DNS Cache
+
+```sh
+sudo resolvectl flush-caches
 ```
 
 # Dig notes
