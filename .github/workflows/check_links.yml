@@ -19,7 +19,7 @@ jobs:
         uses: wykies/checkout@main
         with:
           submodules: recursive
-      - uses: wykies/install-action@main
+      - uses: taiki-e/install-action@main
         with:
           tool: zola
       - name: Show version information
