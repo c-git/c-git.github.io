@@ -1,7 +1,7 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2023-11-16
+updated = 2024-04-17
 +++
 
 ## Consume CPU resources
@@ -88,6 +88,12 @@ ps -p $$
 
 ```sh
 sha1sum
+```
+
+## Get SHA256 hash of a file
+
+```sh
+sha256sum
 ```
 
 ## Start Discord Minimized
