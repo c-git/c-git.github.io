@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated= 2024-02-25
+updated= 2024-04-17
 +++
 
 # Standard Library
@@ -93,8 +93,14 @@ fn now_date_time_as_string() -> String {
         .expect("expected date on system to be after the epoch")
         .as_secs();
 
-    let dt = chrono::NaiveDateTime::from_timestamp_opt(time_stamp as i64, 0).unwrap();
-    let dt = chrono::Local::from_utc_datetime(&chrono::Local, &dt);
+    let time_stamp = time_stamp
+        .try_into()
+        .expect("wow this program wasn't meant to last that long");
+
+    let dt = chrono::DateTime::from_timestamp(time_stamp, 0)
+        .unwrap()
+        .with_timezone(&chrono::Local);
+        
     dt.format("%c").to_string()
 }
 
