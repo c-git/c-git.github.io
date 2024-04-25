@@ -43,6 +43,8 @@ skip_prefixes = [
   "https://dev.mysql.com/",
   "https://www.cyberciti.biz/faq/",
   "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
+  "https://leetcode.com/",
+  "https://www.linode.com/",
 ]
 # Skip anchor checking for external URLs that start with these prefixes
 skip_anchor_prefixes = [
