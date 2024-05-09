@@ -148,7 +148,18 @@ echo string | sha256sum
 
 ## Manage TexLive Packages
 
-Was already installed on my system not sure from where or when
+Was already installed on my system not sure from where or when.
+However it was a very old version and after I set it up for use using `tlmgr init-usertree` (required for debian).
+I tested it using `tlmgr info algorithm` and got the following:
+
+```
+tlmgr: Local TeX Live (2021) is older than remote repository (2024).
+Cross release updates are only supported with
+  update-tlmgr-latest(.sh/.exe) --update
+See https://tug.org/texlive/upgrade.html for details.
+```
+
+Given than the new install was going to be over 7GB I abandoned this option.
 
 ```sh
 tlmgr
