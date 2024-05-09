@@ -1,8 +1,14 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2024-04-17
+updated = 2024-05-09
 +++
+
+## Find which package contains a particular file
+
+```sh
+apt-file
+```
 
 ## Consume CPU resources
 
@@ -138,6 +144,14 @@ sum my_file.txt
 
 ```sh
 echo string | sha256sum
+```
+
+## Manage TexLive Packages
+
+Was already installed on my system not sure from where or when
+
+```sh
+tlmgr
 ```
 
 ## Move files to trash from command line
