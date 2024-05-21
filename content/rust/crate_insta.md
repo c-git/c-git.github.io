@@ -1,7 +1,7 @@
 +++
 title = "Crate Insta"
 date = 2024-02-02
-updated = 2024-02-10
+updated = 2024-05-21
 +++
 
 Source: <https://insta.rs/docs/quickstart/>
@@ -14,6 +14,7 @@ If you are using the assert in a loop you'll want to use `cargo insta test` inst
 
 Because these crates use macros to create separate test cases the execution order is not deterministic.
 So ensure you set a snapshot name based on something that determines the output for example a string version of the input.
+If you'd like the name to be based on the inputs see the [macro](https://insta.rs/docs/patterns/#rstest) in insta's docs.
 
 # Cleanup of unreferenced snapshots
 
