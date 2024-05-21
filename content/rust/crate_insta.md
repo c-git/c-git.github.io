@@ -57,7 +57,7 @@ fn test_output() {
 For the best experience you'll have to have [cargo-insta](https://insta.rs/docs/cli/) installed.
 You can install it with `cargo install cargo-insta`
 
-If you use vscode you'll also want to make use of the plugin for instal (see plugin page for more details).
+If you use vscode you'll also want to make use of the plugin for insta (see plugin page for more details).
 See info for plugin below (from copy command in vscode).
 To activate many of the options for the plugin you need to click on the snap file **in the tree view**.
 
