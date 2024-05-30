@@ -1,15 +1,18 @@
 +++
 title="Testing"
-date=2023-11-05
-updated = 2024-01-14
+date = 2023-11-05
+updated = 2024-05-30
 +++
 
 # Frequently used links and commands
 
 Mostly self explanatory except that running test in release mode can increase limits for things like [stack overflow](rust/stack_overflow.md#drop_can_cause_stack_overflow)
 
+For more information about these commands see `cargo test -- --help`.
+
 ```sh
 cargo test -- --nocapture
+cargo test -- --show-output # Seems to also show output that is not tied to a specific test (so needed sometimes)
 cargo test -- --ignored
 cargo test -r
 cargo add --dev rstest
