@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated= 2024-03-02
+updated = 2024-05-30
 +++
 
 # Official
@@ -10,6 +10,7 @@ updated= 2024-03-02
 - [API Guidelines Checklist](https://rust-lang.github.io/api-guidelines/checklist.html)
 - Naming conventions - [API Guide](https://rust-lang.github.io/api-guidelines/naming.html)
 - Documentation - [API Guide](https://rust-lang.github.io/api-guidelines/documentation.html)
+- Implement From not Into - [Trait std::convert::Into](https://doc.rust-lang.org/std/convert/trait.Into.html)
 - Selecting a collection - [Module std::collections](https://doc.rust-lang.org/std/collections/index.html)
 - Setting up defaults - [Trait std::default::Default](https://doc.rust-lang.org/std/default/trait.Default.html)
 - Attributes - [The Rust Reference](https://doc.rust-lang.org/reference/attributes.html)
