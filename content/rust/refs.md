@@ -14,7 +14,6 @@ updated= 2024-03-02
 - Setting up defaults - [Trait std::default::Default](https://doc.rust-lang.org/std/default/trait.Default.html)
 - Attributes - [The Rust Reference](https://doc.rust-lang.org/reference/attributes.html)
   - Code like `#![]` and `#[]`
-  - I always thought they were compiler directives
 - Minimal Reproducible Example tips - [Stack Overflow Rust Info](https://stackoverflow.com/tags/rust/info)
 - Conditional Compilation
   - [The Rust Reference](https://doc.rust-lang.org/reference/conditional-compilation.html#debug_assertions)
