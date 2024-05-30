@@ -19,7 +19,10 @@ cargo add --dev rstest
 cargo add --dev strum -F derive,strum_macros
 ```
 
-- Readme for [rstest](https://github.com/la10736/rstest) - To see examples of how to use it. (Not extracting the ones I use because each time I go back I find more I want to use).
+- Readme for [rstest](https://github.com/la10736/rstest) - To see examples of how to use it. (Not extracting the ones I use because each time I go back I find more I want to use). Documented how to do names because I keep looking it up, the name in the example is `authorized_user` (For more context search their docs that's where it is taken from).
+  ```rust
+  #[case::authorized_user(alice())]
+  ```
 - docs.rs for [strum](https://docs.rs/strum/latest/strum/all.html) - To see list of things that can be done with enums by this crate
 
 # Shared module for integration tests
