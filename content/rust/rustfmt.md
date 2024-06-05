@@ -1,7 +1,7 @@
 +++
 title="rustfmt"
 date=2023-09-02
-updated = 2023-11-08
+updated = 2024-06-04
 +++
 
 # Run rustfmt using nightly compiler
@@ -25,6 +25,8 @@ cargo +nightly fmt
 # Using comment wrapping (comment_width)
 
 Source: <https://rust-lang.github.io/rustfmt/#comment_width>
+
+Needs this setting in the `rustfmt.toml` and must be uncommented to use but must tay commented when using the normal stable compiler as it hasn't been standardized as yet.
 
 ```toml
 # `wrap_comments` is unstable so to use you need to use nightly.
