@@ -1,6 +1,7 @@
 +++
 title = "Links between files"
 date = 2024-02-24
+updated = 2024-06-08
 +++
 
 # TLDR
@@ -8,8 +9,9 @@ date = 2024-02-24
 - Hard links share the same data but are independent of each other in terms of the file system and deleting one doesn't affect the other
 - Hard links are usually restricted to only files and withing the same file system
 - Soft links are usually allowed to be dangling and can break and can also be relative or absolute
-- `ln` defaults to hard links and it's best to create them from the directory where the link should be created
+- `ln` defaults to hard links
 - `ln` with `-s` will create a symbolic link instead
+- It is easiest to create link from the directory where the link should be created, if that is not the case and a relative is used ensure the `-r` option is set
 
 # Hard links vs Soft Links (Symbolic Link / Symlinks)
 
