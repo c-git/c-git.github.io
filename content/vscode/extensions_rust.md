@@ -1,7 +1,7 @@
 +++
 title="Extensions Rust"
 date = 2023-07-27
-updated = 2024-01-09
+updated = 2024-06-09
 +++
 
 # Must haves
@@ -19,20 +19,19 @@ updated = 2024-01-09
 
 # Might be useful
 
-| Name                                | ID                            | Reason                                                                         |
-| :---------------------------------- | :---------------------------- | :----------------------------------------------------------------------------- |
-| [Crates Completer][cratescompleter] | jedeop.crates-completer       | Auto complete for creates if you edit `cargo.toml` manually                    |
-| [crates][crates]                    | serayuzgur.crates             | Adds icons to cargo.toml to tell you dependency status (using `cargo add` now) |
-| [Even Better TOML][toml]            | tamasfe.even-better-toml      | Add TOML support                                                               |
-| [insta snapshots][insta]            | mitsuhiko.insta               | Supports working with insta                                                    |
-| [vscode-ron][vron]                  | a5huynh.vscode-ron            | Adds support for RON (Rusty object notation)                                   |
-| [vscode-runner][vrun]               | HarryHopkinson.vs-code-runner | Helps run code?                                                                |
+| Name                     | ID              | Reason                                   |
+| :----------------------- | :-------------- | :--------------------------------------- |
+| [insta snapshots][insta] | mitsuhiko.insta | Makes working with insta more convenient |
 
 # Previously used
 
-| Name                        | ID                                | Reason                                                                               |
-| :-------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------- |
-| [Rust Test Explorer][tests] | Swellaby.vscode-rust-test-adapter | View and run your Rust tests in the Sidebar (Didn't always work so stopped using it) |
+| Name                                | ID                                | Reason                                                                               |
+| :---------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------- |
+| [Crates Completer][cratescompleter] | jedeop.crates-completer           | Auto complete for creates if you edit `cargo.toml` manually (using `cargo add` now)  |
+| [crates][crates]                    | serayuzgur.crates                 | Adds icons to cargo.toml to tell you dependency status (using `cargo add` now)       |
+| [Even Better TOML][toml]            | tamasfe.even-better-toml          | Add TOML support (using dprint now instead)                                          |
+| [Rust Test Explorer][tests]         | Swellaby.vscode-rust-test-adapter | View and run your Rust tests in the Sidebar (Didn't always work so stopped using it) |
+| [vscode-ron][vron]                  | a5huynh.vscode-ron                | Adds support for RON (Rusty object notation) - Wasn't using it                       |
 
 [crates]: https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates
 [cratescompleter]: https://marketplace.visualstudio.com/items?itemName=jedeop.crates-completer
