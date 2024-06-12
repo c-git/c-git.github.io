@@ -1,7 +1,7 @@
 +++
 title="Extensions Rust"
 date = 2023-07-27
-updated = 2024-06-09
+updated = 2024-06-11
 +++
 
 # Must haves
@@ -13,9 +13,10 @@ updated = 2024-06-09
 
 # Useful
 
-| Name                | ID                   | Reason                            |
-| :------------------ | :------------------- | :-------------------------------- |
-| [Error Lens][elens] | usernamehw.errorlens | Makes errors overlay next to code |
+| Name                | ID                   | Reason                                                                         |
+| :------------------ | :------------------- | :----------------------------------------------------------------------------- |
+| [crates][crates]    | serayuzgur.crates    | Adds icons to cargo.toml to tell you dependency status (using `cargo add` now) |
+| [Error Lens][elens] | usernamehw.errorlens | Makes errors overlay next to code                                              |
 
 # Might be useful
 
@@ -28,7 +29,6 @@ updated = 2024-06-09
 | Name                                | ID                                | Reason                                                                               |
 | :---------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------- |
 | [Crates Completer][cratescompleter] | jedeop.crates-completer           | Auto complete for creates if you edit `cargo.toml` manually (using `cargo add` now)  |
-| [crates][crates]                    | serayuzgur.crates                 | Adds icons to cargo.toml to tell you dependency status (using `cargo add` now)       |
 | [Even Better TOML][toml]            | tamasfe.even-better-toml          | Add TOML support (using dprint now instead)                                          |
 | [Rust Test Explorer][tests]         | Swellaby.vscode-rust-test-adapter | View and run your Rust tests in the Sidebar (Didn't always work so stopped using it) |
 | [vscode-ron][vron]                  | a5huynh.vscode-ron                | Adds support for RON (Rusty object notation) - Wasn't using it                       |
