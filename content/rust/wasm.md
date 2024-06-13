@@ -25,7 +25,7 @@ Source: <https://doc.rust-lang.org/cargo/reference/config.html#configuration-for
 
 The easiest way and what I'd recommend for most cases is to switch all of cargo to target WASM (and comment it out to switch back).
 
-To do that go to `.cargo/config.toml` and set `target` in the `build` to `wasm32-unknown-unknown`.
+To do that go to `.cargo/config.toml` and set `target` key in the `build` table to value `wasm32-unknown-unknown`.
 
 ```toml
 # .cargo/config.toml
