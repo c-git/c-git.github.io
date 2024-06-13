@@ -1,7 +1,7 @@
 +++
 title="WASM"
 date=2023-10-19
-updated = 2023-11-08
+updated = 2024-06-12
 +++
 
 # Working on WASM code
@@ -13,7 +13,7 @@ And not everything can compile to WASM for example the blocking API of [reqwest]
 If you are using [conditional compilation](@/rust/conditional_compilation.md) (eg. `#[cfg(target_arch = "wasm32")]`) to target both wasm and native,
 then by default rust analyzer will only work on the code it is currently set to compile.
 In vscode that can look like some code is "disabled" (a dim color compared to other code).
-It doesn't show up errors not have code completion.
+It doesn't show up errors nor have code completion.
 This is both good and bad.
 It's good in that you only get code completion for the target you are working on at the moment.
 It's bad because you might want to work on the WASM code sometimes.
