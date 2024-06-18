@@ -1,7 +1,7 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2024-05-09
+updated = 2024-06-17
 +++
 
 ## Find which package contains a particular file
@@ -64,6 +64,14 @@ Source: <https://www.rootusers.com/how-to-display-routing-table-in-linux/>
 
 ```sh
 ip -c r
+```
+
+## Set static route
+
+Where `192.168.0.0/16` is the network and mask you want to set the route for and `192.168.0.1` is the gateway (It auto detected the interface when I tried it.)
+
+```sh
+sudo ip route add 192.168.0.0/16 via 192.168.0.1
 ```
 
 ## See installed kernels
