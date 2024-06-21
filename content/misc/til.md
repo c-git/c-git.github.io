@@ -1,6 +1,7 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
+updated = 2024-06-21
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.
@@ -82,3 +83,10 @@ ll
 If you use `rm -r folder` instead of trash you can no longer add any files in terminal 1 after that command and the output of `ll` only shows `Total 0`.
 
 </details>
+
+# Share by default
+
+Often making something shared makes it easier for you to access from more places.
+Not everything should be made public and once you do you can't always take it back but double check before you assume it needs to be private.
+Even if no one else uses it, you might be making it easier for yourself at least.
+(Kinda what this site is about...)
