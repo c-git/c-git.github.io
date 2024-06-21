@@ -1,6 +1,6 @@
 +++
 title = "Today I Learned (TIL)"
-date = 2024-05-08
+date = 2024-01-12
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.
