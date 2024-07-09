@@ -26,12 +26,12 @@ updated = 2024-06-11
 
 # Previously used
 
-| Name                                | ID                                | Reason                                                                               |
-| :---------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------- |
-| [Crates Completer][cratescompleter] | jedeop.crates-completer           | Auto complete for creates if you edit `cargo.toml` manually (using `cargo add` now)  |
-| [Even Better TOML][toml]            | tamasfe.even-better-toml          | Add TOML support (using dprint now instead)                                          |
-| [Rust Test Explorer][tests]         | Swellaby.vscode-rust-test-adapter | View and run your Rust tests in the Sidebar (Didn't always work so stopped using it) |
-| [vscode-ron][vron]                  | a5huynh.vscode-ron                | Adds support for RON (Rusty object notation) - Wasn't using it                       |
+| Name                                | ID                                | Reason                                                                                          |
+| :---------------------------------- | :-------------------------------- | :---------------------------------------------------------------------------------------------- |
+| [Crates Completer][cratescompleter] | jedeop.crates-completer           | Auto complete for creates if you edit `cargo.toml` manually (using `cargo add` cli now instead) |
+| [Even Better TOML][toml]            | tamasfe.even-better-toml          | Add TOML support (using dprint now instead)                                                     |
+| [Rust Test Explorer][tests]         | Swellaby.vscode-rust-test-adapter | View and run your Rust tests in the Sidebar (Didn't always work so stopped using it)            |
+| [vscode-ron][vron]                  | a5huynh.vscode-ron                | Adds support for RON (Rusty object notation) - Wasn't using it                                  |
 
 [crates]: https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates
 [cratescompleter]: https://marketplace.visualstudio.com/items?itemName=jedeop.crates-completer
