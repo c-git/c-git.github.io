@@ -1,7 +1,7 @@
 +++
 title="Extensions Rust"
 date = 2023-07-27
-updated = 2024-06-11
+updated = 2024-07-09
 +++
 
 # Must haves
@@ -13,10 +13,9 @@ updated = 2024-06-11
 
 # Useful
 
-| Name                | ID                   | Reason                                                                         |
-| :------------------ | :------------------- | :----------------------------------------------------------------------------- |
-| [crates][crates]    | serayuzgur.crates    | Adds icons to cargo.toml to tell you dependency status (using `cargo add` now) |
-| [Error Lens][elens] | usernamehw.errorlens | Makes errors overlay next to code                                              |
+| Name             | ID                | Reason                                                 |
+| :--------------- | :---------------- | :----------------------------------------------------- |
+| [crates][crates] | serayuzgur.crates | Adds icons to cargo.toml to tell you dependency status |
 
 # Might be useful
 
@@ -35,7 +34,6 @@ updated = 2024-06-11
 
 [crates]: https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates
 [cratescompleter]: https://marketplace.visualstudio.com/items?itemName=jedeop.crates-completer
-[elens]: https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens
 [insta]: https://marketplace.visualstudio.com/items?itemName=mitsuhiko.insta
 [lldb]: https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 [ra]: https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer

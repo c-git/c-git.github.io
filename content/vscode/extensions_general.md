@@ -1,7 +1,7 @@
 +++
 title="Extensions General"
 date = 2023-07-27
-updated = 2024-01-08
+updated = 2024-07-09
 +++
 
 Some may come installed by default (not sure where I got all of these and haven't had time to test)
@@ -11,6 +11,7 @@ Some may come installed by default (not sure where I got all of these and haven'
 | Name                                          | ID                                    | Reason                                                                      |
 | :-------------------------------------------- | :------------------------------------ | :-------------------------------------------------------------------------- |
 | [Code Spell Checker][spell]                   | streetsidesoftware.code-spell-checker | Spelling checker for source code                                            |
+| [Error Lens][elens]                           | usernamehw.errorlens                  | Makes errors overlay next to code                                           |
 | [Git Graph][gitgraph]                         | mhutchie.git-graph                    | View a Git Graph of your repository, and perform Git actions from the graph |
 | [Git History][githistory]                     | donjayamanne.githistory               | Provides additional git commands and more file specific info                |
 | [gitflow][gitflow]                            | vector-of-bool.gitflow                | Gitflow integration                                                         |
@@ -32,6 +33,7 @@ Some may come installed by default (not sure where I got all of these and haven'
 
 [bookmark]: https://marketplace.visualstudio.com/items?itemName=alefragnani.numbered-bookmarks
 [cmdexec]: https://marketplace.visualstudio.com/items?itemName=easterapps.script-runner
+[elens]: https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens
 [gitflow]: https://marketplace.visualstudio.com/items?itemName=vector-of-bool.gitflow
 [gitgraph]: https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
 [githistory]: https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
