@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2024-05-30
+updated = 2024-07-09
 +++
 
 # Official
@@ -31,6 +31,7 @@ updated = 2024-05-30
 - Directory Traversal - [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html)
 - Recommended way to write `expect` messages - [std docs](https://doc.rust-lang.org/core/result/enum.Result.html#recommended-message-style)
 - Types of enum variants - [Rust by Example](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
+- Using a your fork of a crate while developing a feature - [The Cargo Book - Testing a bugfix](https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html#testing-a-bugfix)
 
 # Reference Books (Also see [Official](@/rust/refs.md#official))
 
