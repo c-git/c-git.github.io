@@ -1,7 +1,7 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
-updated = 2024-06-21
+updated = 2024-07-20
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.
@@ -90,3 +90,10 @@ Often making something shared makes it easier for you to access from more places
 Not everything should be made public and once you do you can't always take it back but double check before you assume it needs to be private.
 Even if no one else uses it, you might be making it easier for yourself at least.
 (Kinda what this site is about...)
+
+# Ctrl + D to send EOF
+
+I was reading up [websocat](https://github.com/vi/websocat) while learning how to use websockets and they said I should use `Ctrl + D` to close.
+So I decided to look it up as that wasn't a key combination I was familiar with in the terminal.
+Found info on it on [superuser](https://superuser.com/questions/169051/whats-the-difference-between-c-and-d-for-unix-mac-os-x-terminal) and basically it sends EOF which closes stdin, which can signal to the program that you want to close.
+When used on the terminal it is **a faster way to close the terminal window** than typing exit.
