@@ -1,7 +1,7 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
-updated = 2024-07-20
+updated = 2024-07-21
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.
@@ -97,3 +97,22 @@ I was reading up [websocat](https://github.com/vi/websocat) while learning how t
 So I decided to look it up as that wasn't a key combination I was familiar with in the terminal.
 Found info on it on [superuser](https://superuser.com/questions/169051/whats-the-difference-between-c-and-d-for-unix-mac-os-x-terminal) and basically it sends EOF which closes stdin, which can signal to the program that you want to close.
 When used on the terminal it is **a faster way to close the terminal window** than typing exit.
+
+# Diátaxis
+
+> A systematic approach to technical documentation authoring.
+
+Mentioned to me by [robjtede @ Actix Web](https://github.com/robjtede)
+
+<details>
+  <summary>Click to expand!</summary>
+
+Source: <https://diataxis.fr/>
+
+> Diátaxis is a way of thinking about and doing documentation.
+>
+> It prescribes approaches to content, architecture and form that emerge from a systematic approach to understanding the needs of documentation users.
+>
+> Diátaxis identifies four distinct needs, and four corresponding forms of documentation - tutorials, how-to guides, technical reference and explanation. It places them in a systematic relationship, and proposes that documentation should itself be organised around the structures of those needs.
+
+[![Four Quadrant Image showing types](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
