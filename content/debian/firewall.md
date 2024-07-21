@@ -1,7 +1,7 @@
 +++
 title = "Firewall"
 date = 2023-11-22
-updated = 2023-12-17
+updated = 2024-07-21
 +++
 
 Source: <https://ubuntu.com/server/docs/security-firewall>
@@ -62,6 +62,9 @@ Source: <https://askubuntu.com/questions/448836/how-do-i-with-ufw-deny-all-outgo
 # MAN Page (Copy)
 
 It was easier to view it here so left a copy here (also makes it easier to search)
+
+<details>
+  <summary>Click for full man page!</summary>
 
 ```
 UFW:(8)                                   September 2021                                   UFW:(8)
@@ -587,3 +590,5 @@ AUTHOR
 
 September 2021                                                                             UFW:(8)
 ```
+
+</details>
