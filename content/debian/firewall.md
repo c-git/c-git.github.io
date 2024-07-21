@@ -15,6 +15,15 @@ The man page is well written an easy to follow. See below for a copy of the full
 > connections for incoming and forwarded connections. In addition to the above, a default
 > rule-set is put in place that does the following...
 
+# Frequent commands
+
+Collecting commands I came back here to lookup
+
+- Enable Firewall - `sudo ufw enable`
+- Disable Firewall - `sudo ufw disable`
+- [View rules in use](@/debian/firewall.md#view-rules-in-use-including-status-and-defaults)
+- [See log](@/debian/firewall.md#logs)
+
 # State Information
 
 ## View rules in use (including status and defaults)
