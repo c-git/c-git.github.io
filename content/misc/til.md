@@ -18,9 +18,9 @@ Keep your functions short.
 
 # Deleting files on linux
 
-Deleting a folder does not kick out any terminals in that folder.
+Deleting a folder does not kick out (close) any terminals in that folder.
 Technically I didn't learn that today but I experienced it for the first time today.
-I think presenting this one as a narrative may prove more entertaining and less like random fairly useless knowledge.
+I think presenting this one as a narrative may prove more entertaining and less like random and somewhat useless knowledge.
 
 <details>
   <summary>Click to expand!</summary>
