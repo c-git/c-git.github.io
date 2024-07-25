@@ -1,7 +1,7 @@
 +++
 title="Extensions Rust"
 date = 2023-07-27
-updated = 2024-07-09
+updated = 2024-07-24
 +++
 
 # Must haves
@@ -13,9 +13,9 @@ updated = 2024-07-09
 
 # Useful
 
-| Name             | ID                | Reason                                                 |
-| :--------------- | :---------------- | :----------------------------------------------------- |
-| [crates][crates] | serayuzgur.crates | Adds icons to cargo.toml to tell you dependency status |
+| Name               | ID                | Reason                                                 |
+| :----------------- | :---------------- | :----------------------------------------------------- |
+| [Dependi][dependi] | fill-labs.dependi | Adds icons to cargo.toml to tell you dependency status |
 
 # Might be useful
 
@@ -32,8 +32,8 @@ updated = 2024-07-09
 | [Rust Test Explorer][tests]         | Swellaby.vscode-rust-test-adapter | View and run your Rust tests in the Sidebar (Didn't always work so stopped using it)            |
 | [vscode-ron][vron]                  | a5huynh.vscode-ron                | Adds support for RON (Rusty object notation) - Wasn't using it                                  |
 
-[crates]: https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates
 [cratescompleter]: https://marketplace.visualstudio.com/items?itemName=jedeop.crates-completer
+[dependi]: https://marketplace.visualstudio.com/items?itemName=fill-labs.dependi
 [insta]: https://marketplace.visualstudio.com/items?itemName=mitsuhiko.insta
 [lldb]: https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb
 [ra]: https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
