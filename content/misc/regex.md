@@ -1,6 +1,6 @@
 +++
 title = "Regex"
-date = 2024-07-25
+date = 2024-07-28
 +++
 
 # Foreword
@@ -17,6 +17,6 @@ Also you do know find and replace in many programs supports regex right... (like
 
 ## Find repeated words in a document
 
-```regex
+```re
 \b(\w+)\s+\1\b
 ```
