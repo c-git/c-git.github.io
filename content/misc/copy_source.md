@@ -1,12 +1,12 @@
 +++
 title='Copy Source'
 date = 2022-10-26
-updated = 2023-11-08
+updated = 2024-07-28
 +++
 
 # Foreword
 
-Needed to copy a horizontal rule to paste in Gmail and inspired this page
+I needed to copy a `horizontal rule` to paste into an email and this decided to just keep this page here
 
 # Horizontal rule
 
