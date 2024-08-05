@@ -1,7 +1,7 @@
 +++
 title = "Quotes"
 date = 2024-06-07
-updated = 2024-08-01
+updated = 2024-08-05
 +++
 
 > Stand for something or you will fall for anything.
@@ -29,6 +29,12 @@ _[by](https://en.wikipedia.org/wiki/Dr._Seuss) Dr. Seuss_
 
 ---
 
-> If You're Going Through Hell, Keep Going
+> If You're Going Through Hell, Keep Going.
 
 _[by](https://www.forbes.com/sites/geoffloftus/2012/05/09/if-youre-going-through-hell-keep-going-winston-churchill/) Winston Churchill_
+
+---
+
+> Spread love everywhere you go. Let no one ever come to you without leaving happier.
+
+_[by](https://www.brainyquote.com/quotes/mother_teresa_133195) Mother Teresa_
