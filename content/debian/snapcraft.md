@@ -1,7 +1,7 @@
 +++
 title="Snapcraft"
 date = 2022-09-07
-updated = 2023-11-08
+updated = 2024-08-13
 +++
 
 # Snap Setup
@@ -116,3 +116,7 @@ cp /var/lib/snapd/desktop/applications/pdfmixtool_pdfmixtool.desktop ~/.local/sh
 snap install notepad-plus-plus
 cp /var/lib/snapd/desktop/applications/notepad-plus-plus_notepad-plus-plus.desktop  ~/.local/share/applications/
 ```
+
+# Snap permissions
+
+Source: <https://snapcraft.io/docs/interface-management>
