@@ -1,7 +1,7 @@
 +++
 title = "Quotes"
 date = 2024-06-07
-updated = 2024-08-05
+updated = 2024-08-13
 +++
 
 > Stand for something or you will fall for anything.
@@ -38,3 +38,11 @@ _[by](https://www.forbes.com/sites/geoffloftus/2012/05/09/if-youre-going-through
 > Spread love everywhere you go. Let no one ever come to you without leaving happier.
 
 _[by](https://www.brainyquote.com/quotes/mother_teresa_133195) Mother Teresa_
+
+---
+
+> God grant me Serenity to accept the things I cannot change,\
+> Courage to change the things I can,\
+> And the wisdom to know the difference.
+
+_[Author Unclear](https://en.wikipedia.org/wiki/Serenity_Prayer) but words to live by all the same_
