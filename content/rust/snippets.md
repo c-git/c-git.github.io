@@ -82,6 +82,36 @@ fn write_to_path<P: AsRef<Path>>(path: P, s: &str) -> Result<(), Box<dyn Error>>
 }
 ```
 
+OR with a trait (may not be great for a library as is because it's very opinionated with regard to overwrite)
+
+```rust
+use anyhow::Context as _;
+
+pub trait SaveToFile {
+    /// Writes the file replacing if it already exists
+    fn write_to_path<P: AsRef<Path>>(&self, path: P) -> anyhow::Result<()>;
+}
+
+impl<T: AsRef<str>> SaveToFile for T {
+    fn write_to_path<P: AsRef<Path>>(&self, path: P) -> anyhow::Result<()> {
+        let mut file = std::fs::OpenOptions::new()
+            .truncate(true)
+            .write(true)
+            .create(true)
+            .open(&path)
+            .with_context(|| {
+                format!(
+                    "failed to open file for writing. Filename: {:?}",
+                    path.as_ref()
+                )
+            })?;
+        file.write_all(self.as_ref().as_bytes())
+            .with_context(|| format!("failed to write contents to: {:?}", path.as_ref()))?;
+        Ok(())
+    }
+}
+```
+
 ## Print without line return (and flush)
 
 Note: flush is required as `print!()` does not automatically flush like `println!()` does
