@@ -1,7 +1,7 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2024-06-17
+updated = 2024-08-21
 +++
 
 ## Find which package contains a particular file
@@ -20,6 +20,12 @@ cat /dev/zero > /dev/null
 
 ```sh
 cat /etc/shells
+```
+
+## Go back to previous directory
+
+```sh
+cd -
 ```
 
 ## Show largest folder/files
