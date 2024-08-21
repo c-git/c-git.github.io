@@ -112,7 +112,7 @@ impl<T: AsRef<str>> SaveToFile for T {
 }
 ```
 
-## Print without line return (and flush)
+## Print without new line (and flush)
 
 Note: flush is required as `print!()` does not automatically flush like `println!()` does
 
@@ -244,6 +244,8 @@ fn main() {
 ```
 
 # Float Eq and Ord Wrapper
+
+This may be better served by using the crate float_ord. See [useful crate](@refs.md#useful-crates)
 
 ```rust
 #[derive(Debug, Clone, Copy, PartialEq)]
