@@ -121,6 +121,31 @@ print!("This may not print when we want unless we flush");
 io::stdout().flush()?;
 ```
 
+## Add an extension to a path
+
+Source: <https://users.rust-lang.org/t/append-an-additional-extension/23586/13>
+
+```rust
+pub trait PathExtension {
+    /// Returns the result of set_extension with the appended extension
+    fn add_extension<P: AsRef<Path>>(&mut self, new_extension: P) -> bool;
+}
+
+impl PathExtension for PathBuf {
+    fn add_extension<P: AsRef<Path>>(&mut self, extension: P) -> bool {
+        match self.extension() {
+            Some(ext) => {
+                let mut ext = ext.to_os_string();
+                ext.push(".");
+                ext.push(extension.as_ref());
+                self.set_extension(ext)
+            }
+            None => self.set_extension(extension.as_ref()),
+        }
+    }
+}
+```
+
 # Tests
 
 ## Unit tests
