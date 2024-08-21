@@ -1,46 +1,8 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2024-02-06
+updated = 2024-08-20
 +++
-
-# Boilerplate
-
-## New and Default
-
-```rust
-impl MyType {
-    /// Creates a new [`MyType`] `struct`
-    pub fn new() -> Self {
-        Self {
-            field1: "value1",
-            field2: "value2",
-        }
-    }
-}
-
-impl Default for MyType {
-    fn default() -> Self {
-        Self::new()
-    }
-}
-```
-
-## Derive (Base)
-
-```rust
-#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug, Default)]
-pub struct MyType {}
-```
-
-## Derive (Serde)
-
-```rust
-use serde::{Deserialize, Serialize};
-
-#[derive(Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug, Default, Serialize, Deserialize)]
-pub struct MyType {}
-```
 
 # Library Candidates
 

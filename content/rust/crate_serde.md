@@ -1,7 +1,7 @@
 +++
 title="Crate Serde"
 date=2023-01-06
-updated = 2024-02-06
+updated = 2024-08-20
 aliases=["/rust/serde"]
 +++
 
@@ -52,10 +52,6 @@ also [default value for a field](https://serde.rs/attr-default.html)
 ```
 #[serde(default)]
 ```
-
-# Snippets
-
-- [Derive](@/rust/snippets.md#derive-serde)
 
 # Enums and TOML
 
