@@ -1,7 +1,7 @@
 +++
 title="Cargo"
 date=2023-06-16
-updated = 2024-01-17
+updated = 2024-08-22
 +++
 
 # Configuring Cargo
@@ -104,3 +104,17 @@ Source: <https://doc.rust-lang.org/cargo/reference/features.html#mutually-exclus
 #[cfg(all(feature = "foo", feature = "bar"))]
 compile_error!("feature \"foo\" and feature \"bar\" cannot be enabled at the same time");
 ```
+
+# Patch a crate
+
+Source: <https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html#testing-a-bugfix>
+
+The source is sufficiently terse that I don't find value in extracting relevant parts here other than pointing out the following:
+
+> The way [patch] works is that it’ll load the dependency at ../path/to/uuid and then whenever crates.io is queried for versions of uuid it’ll _also_ return the local version.
+>
+> This means that the **version number of the local checkout is significant** and will affect whether the patch is used. Our manifest declared uuid = "1.0" which means we’ll only resolve to >= 1.0.0, < 2.0.0, and Cargo’s greedy resolution algorithm also means that we’ll resolve to the maximum version within that range. Typically this doesn’t matter as the version of the git repository will already be greater or match the maximum version published on crates.io, but it’s important to keep this in mind!
+
+Bolding applied is my own.
+
+If you need to patch often it is worthwhile looking into [cargo-override](https://crates.io/crates/cargo-override) which automates overriding crates.
