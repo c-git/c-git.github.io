@@ -1,7 +1,7 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2024-08-21
+updated = 2024-08-23
 +++
 
 ## Find which package contains a particular file
@@ -78,6 +78,14 @@ Where `192.168.0.0/16` is the network and mask you want to set the route for and
 
 ```sh
 sudo ip route add 192.168.0.0/16 via 192.168.0.1
+```
+
+## Check route that will be used for address
+
+Source: [Faster than Lime](https://youtu.be/jjKFXlFNR4E?si=ULJU9MzTkXQ3jcqg&t=235) - Use `ip route help` to see more info.
+
+```sh
+ip route get 8.8.8.8
 ```
 
 ## See installed kernels
