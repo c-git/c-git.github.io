@@ -45,6 +45,8 @@ skip_prefixes = [
   "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
   "https://leetcode.com/",
   "https://www.linode.com/",
+  "https://zoomadmin.com", # Site giving 503 now
+  "https://www.brainyquote.com", # I have multiple links to this site and repeated attempts trigger bot protection
 ]
 # Skip anchor checking for external URLs that start with these prefixes
 skip_anchor_prefixes = [
