@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated= 2024-04-17
+updated= 2024-08-31
 +++
 
 # Standard Library
@@ -67,7 +67,7 @@ fn main() {
 
 # In WASM
 
-Source: <https://timclicks.dev/convert-a-unix-timestamp-to-rust/>
+Source: <https://timclicks.dev/tip/convert-a-unix-timestamp-to-rust>
 
 ````rust
 #!/usr/bin/env -S cargo +nightly -Zscript
