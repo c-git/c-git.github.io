@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated= 2024-08-31
+updated= 2024-09-04
 +++
 
 # Standard Library
@@ -55,13 +55,25 @@ Source: <https://rust-lang-nursery.github.io/rust-cookbook/datetime/parse.html#d
 See [Formatting Syntax](#formatting-syntax) for more details on options regarding formatting.
 
 ```rust
-use chrono::{DateTime, Utc};
+fn main() { 
+    let now: chrono::DateTime<chrono::Utc> = chrono::Utc::now();
+    println!("UTC time now is: {}", now);
 
-fn main() {
-    // let now: DateTime<Utc> = Utc::now();
-    let now = Local::now();
-
+    let now = chrono::Local::now();
     println!("Local time now is: {}", now);
+}
+```
+
+# Convert between timezones
+
+Source: <https://stackoverflow.com/questions/28747694/how-do-i-convert-a-chrono-datetimeutc-instance-to-datetimelocal>
+
+```rust
+fn main() {
+    let utc: chrono::DateTime<chrono::Utc> = chrono::Utc::now();
+    let local: chrono::DateTime<chrono::Local> = chrono::DateTime::from(utc);
+    println!("UTC time now is: {}", utc);
+    println!("Local time now is: {}", local);
 }
 ```
 
