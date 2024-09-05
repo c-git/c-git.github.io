@@ -1,6 +1,7 @@
 +++
 title = "Surrender Novena"
 date = 2024-08-31
+updated = 2024-09-04
 +++
 
 # Foreword and sources
@@ -26,7 +27,7 @@ Begin by making the sign of the cross.
 Then, listen or read the words that Jesus spoke to Fr. Dolindo Ruotolo and that He continues to speak to us.
 Each day of the novena, listen and reflect on His words and consider how He is leading you to peace and comfort throughout the next nine days and forever.
 
-For me I found that reading it the pray for the day 3 or more times helped me think about it a bit more and helped me apply it to my situation.
+For me I found that reading the pray for the day 3 or more times helped me think about it a bit more and helped me apply it to my situation.
 
 Link to jump to days:
 
