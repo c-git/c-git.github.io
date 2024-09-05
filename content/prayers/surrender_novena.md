@@ -1,7 +1,7 @@
 +++
 title = "Surrender Novena"
 date = 2024-08-31
-updated = 2024-09-04
+updated = 2024-09-05
 +++
 
 # Foreword and sources
