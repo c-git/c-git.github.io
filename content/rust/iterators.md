@@ -1,6 +1,6 @@
 +++
 title = "Iterators"
-date = 2024-02-25
+date = 2024-09-05
 +++
 
 # References
@@ -17,36 +17,35 @@ Copied from an example by [robjtede @ Actix Web](https://github.com/robjtede) on
 package.edition = "2021" # Desirable to stop warning but not needed
 [dependencies]
 itertools = "0.12.1"
-````
+```
 
 use itertools::Itertools as _;
 
 fn main() {
-let pas = Pas::new();
+    let pas = Pas::new();
 
     for row in pas.take(8) {
         println!("{}", row.iter().join(", "));
     }
-
 }
 
 #[derive(Debug)]
 struct Pas {
-row: u32,
-prev: Vec<i32>,
+    row: u32,
+    prev: Vec<i32>,
 }
 
 impl Pas {
-fn new() -> Self {
-Self {
-row: 0,
-prev: vec![1],
-}
-}
+    fn new() -> Self {
+        Self {
+            row: 0,
+            prev: vec![1],
+        }
+    }
 }
 
 impl Iterator for Pas {
-type Item = Vec<i32>;
+    type Item = Vec<i32>;
 
     fn next(&mut self) -> Option<Self::Item> {
         self.row += 1;
@@ -67,8 +66,5 @@ type Item = Vec<i32>;
 
         Some(self.prev.clone())
     }
-
 }
-
-```
-```
+````
