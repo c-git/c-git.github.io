@@ -1,7 +1,7 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2024-08-23
+updated = 2024-09-08
 +++
 
 ## Find which package contains a particular file
@@ -72,6 +72,20 @@ Source: <https://www.rootusers.com/how-to-display-routing-table-in-linux/>
 ip -c r
 ```
 
+## Kill a running process
+
+Where `pid` is the process ID of the process to kill or
+
+```sh
+kill pid
+```
+
+or where `program` is the name of the program to kill (see more on pidof [here](@/debian/useful_commands.md#get-the-pid-s-of-a-process))
+
+```sh
+kill $(pidof program)
+```
+
 ## Set static route
 
 Where `192.168.0.0/16` is the network and mask you want to set the route for and `192.168.0.1` is the gateway (It auto detected the interface when I tried it.)
@@ -104,6 +118,14 @@ memtester
 
 ```sh
 nmcli device status
+```
+
+## Get the PID(s) of a process
+
+Where `program` is the name of the command that started the process (what that shows in the System Monitor)
+
+```sh
+pidof program
 ```
 
 ## Check which shell is in use
