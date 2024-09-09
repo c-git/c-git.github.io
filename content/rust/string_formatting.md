@@ -1,7 +1,7 @@
 +++
 title="String Formatting"
 date=2023-07-12
-updated = 2023-11-08
+updated = 2024-09-09
 +++
 
 Source: <https://doc.rust-lang.org/std/fmt/>
@@ -39,4 +39,32 @@ format!("{:#?}", (100, 200));     // => "(
                                   //       100,
                                   //       200,
                                   //     )"
+```
+
+# Separators in number
+
+Source: <https://stackoverflow.com/questions/26998485/is-it-possible-to-print-a-number-formatted-with-thousand-separator-in-rust>
+Source: <https://play.rust-lang.org/?version=stable&mode=release&edition=2021&gist=2e4916721f625988d9a4f9a5cdb635ae>
+
+There are crates that do this but this snippet is simple and adds no dependencies
+
+```rust
+fn main() {
+    let val = 10_000_000i32;
+    let mut num = val
+        .abs()
+        .to_string()
+        .as_bytes()
+        .rchunks(3)
+        .rev()
+        .map(std::str::from_utf8)
+        .collect::<Result<Vec<&str>, _>>()
+        .unwrap()
+        .join(","); // separator
+    if val < 0 {
+        num = format!("-{num}")
+    }
+    println!("{num}");
+    // Prints "10,000,000"
+}
 ```
