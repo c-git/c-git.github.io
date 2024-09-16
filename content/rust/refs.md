@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2024-07-09
+updated = 2024-09-16
 +++
 
 # Official
@@ -78,3 +78,4 @@ So please do see the [section page](../index.html) for rust to see the list.
 # Lints
 
 - [The rustdoc book](https://doc.rust-lang.org/rustdoc/lints.html)
+  - In particular see the one for warning about [unused dependencies](https://doc.rust-lang.org/rustc/lints/listing/allowed-by-default.html#unused-crate-dependencies)
