@@ -1,7 +1,7 @@
 +++
 title = "Scripts"
 date = 2023-12-11
-updated = 2023-12-20
+updated = 2024-09-19
 aliases = ["/debian/bash"]
 +++
 
@@ -58,4 +58,12 @@ Source: <https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 
 ```bash
 set -e
+```
+
+# Set script to echo commands
+
+Source: <https://stackoverflow.com/questions/2853803/how-to-echo-shell-commands-as-they-are-executed>
+
+```bash
+set -x
 ```
