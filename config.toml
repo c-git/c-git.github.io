@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://c-git.github.io/"
+base_url = "https://dev.chester.wykies.com"
 
 # The site title and description; used in feeds by default.
 title = "Onè's Notes"
