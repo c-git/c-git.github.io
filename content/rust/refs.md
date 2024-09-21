@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2024-09-16
+updated = 2024-09-20
 +++
 
 # Official
@@ -69,7 +69,7 @@ So please do see the [section page](../index.html) for rust to see the list.
 - [dirs](https://crates.io/crates/dirs) - Helps you find the suitable directory to use in a cross platform way
 - -[secrecy](https://crates.io/crates/secrecy) - Simple secret keeping library. Small API surface and reasonable protection from mistakes.
 - [version](https://docs.rs/version/latest/version/) - Easy way to check the version of a executable compiled with cargo (clap is probably better if it's just to add a CLI arg to show to users)
-- List of [my crates](https://crates.io/users/c-git) on crates.io
+- List of [my crates](https://crates.io/users/c-git?sort=downloads) on crates.io
 
 # GitHub Actions
 
