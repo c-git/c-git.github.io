@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2024-08-20
+updated = 2024-09-21
 +++
 
 # Library Candidates
@@ -270,7 +270,7 @@ fn main() {
 
 # Float Eq and Ord Wrapper
 
-This may be better served by using the crate float_ord. See [useful crate](@refs.md#useful-crates)
+This may be better served by using the crate float_ord. See [useful crate](@/rust/refs.md#useful-crates)
 
 ```rust
 #[derive(Debug, Clone, Copy, PartialEq)]

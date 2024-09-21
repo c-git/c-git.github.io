@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2024-09-20
+updated = 2024-09-21
 +++
 
 # Official
@@ -49,7 +49,7 @@ updated = 2024-09-20
 
 # Video
 
-See [here](@misc/youtube_ref_videos.md#rust) for youtube videos.
+See [here](@/misc/youtube_ref_videos.md#rust) for youtube videos.
 
 # Useful crates
 
