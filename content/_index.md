@@ -64,7 +64,7 @@ Happy for any questions, comments, emotional outbursts...
 
   I've really enjoyed using [egui][egui].
   This crate was my introduction to immediate mode GUI development.
-  I've found that using immediate mode for [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) helps me focus on functionality instead of nits on ascetics.
+  I've found that using immediate mode for [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) helps me focus on functionality instead of ascetics.
   [IMHO](https://www.merriam-webster.com/dictionary/IMHO) they end up looking reasonable anyway ([example](https://uruth-lab.github.io/dbv/)).
   I am using it for multiple of my ongoing projects.
   I've contributed:
@@ -91,7 +91,7 @@ Happy for any questions, comments, emotional outbursts...
         ui.allocate_space(ui.available_size());
     }
     ```
-  - It also demonstrates the use of hotkeys in [egui][egui] applications. Both how to only enable the hotkey when the corresponding [button is active](https://github.com/c-git/log-viewer/blob/3a2e82a65550dfd349b965fd36ffa7f74b129541/src/app.rs#L829) and global hotkeys that are [always active](https://github.com/c-git/log-viewer/blob/3a2e82a65550dfd349b965fd36ffa7f74b129541/src/app.rs#L480).
+  - It also demonstrates the use of hotkeys in [egui][egui] applications, both how to only enable the hotkey when the corresponding [button is active](https://github.com/c-git/log-viewer/blob/3a2e82a65550dfd349b965fd36ffa7f74b129541/src/app.rs#L829) and global hotkeys that are [always active](https://github.com/c-git/log-viewer/blob/3a2e82a65550dfd349b965fd36ffa7f74b129541/src/app.rs#L480).
 - A list of the crates I've published to crates.io can be found [here](https://crates.io/users/c-git?sort=downloads)
 
 [wasm]: https://webassembly.org/
