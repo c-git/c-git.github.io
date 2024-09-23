@@ -22,38 +22,17 @@ _[as per article, attributed to][killer_resume] Former SVP of People Operations 
 
 ## Verb word bank from article
 
-<details>
-    <summary> See list </summary>
-
-- Improved
-- Integrated
-- Incorporated
-- Piloted
-- Optimized
-- Reduced
-- Refactored
-- Utilized
-- Implemented
-- Designed
-- Transformed
-- Shaped
-- Redesigned
-- Structured
-- Increased
-- Established
-- Added
-- Spearheaded
-- Spurred
-- Produced
-- Obtained
-- Decreased
-- Developed
-- Created
-- Revitalized
-- United
-- Used
-- Built
-
-</details>
+|                |             |             |
+| :------------- | :---------: | ----------: |
+| Improved       | Transformed |    Obtained |
+| Integrated     |   Shaped    |   Decreased |
+| Incorporated   | Redesigned  |   Developed |
+| Piloted        | Structured  |     Created |
+| Optimized      |  Increased  | Revitalized |
+| Reduced        | Established |      United |
+| Refactored     |    Added    |        Used |
+| Utilized       | Spearheaded |       Built |
+| Implemented    |   Spurred   |             |
+| DesignedHeader |  Produced   |             |
 
 [killer_resume]: https://www.freecodecamp.org/news/writing-a-killer-software-engineering-resume-b11c91ef699d/
