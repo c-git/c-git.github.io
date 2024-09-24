@@ -1,7 +1,7 @@
 +++
 title='VMware Tools'
 date = 2023-08-23
-updated = 2023-11-08
+updated = 2024-09-24
 +++
 
 # Install from Repo
@@ -20,7 +20,7 @@ sudo apt install open-vm-tools
 
 Tested on Ubuntu 22.04 (2022-09-20)
 
-Source: <https://kb.vmware.com/s/article/1022525>
+Source: <https://knowledge.broadcom.com/external/article?legacyId=1022525>
 
 NB: Main thing reason for creating documentation was to note that the error message `Segmentation Fault (core dumped)`
 is normal, and it should be ignored.
