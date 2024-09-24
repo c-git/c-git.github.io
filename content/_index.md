@@ -111,9 +111,10 @@ Happy for any questions, comments, emotional outbursts...
     }
     ```
   - It also demonstrates the use of hotkeys in [egui][egui] applications, both how to only enable the hotkey when the corresponding [button is active](https://github.com/c-git/log-viewer/blob/3a2e82a65550dfd349b965fd36ffa7f74b129541/src/app.rs#L829) and global hotkeys that are [always active](https://github.com/c-git/log-viewer/blob/3a2e82a65550dfd349b965fd36ffa7f74b129541/src/app.rs#L480).
-  - A list of the crates I've published to crates.io can be found [here](https://crates.io/users/c-git?sort=downloads)
 
 </details>
+
+- A list of the crates I've published to crates.io can be found [here](https://crates.io/users/c-git?sort=downloads)
 
 [wasm]: https://webassembly.org/
 [egui]: https://github.com/emilk/egui
