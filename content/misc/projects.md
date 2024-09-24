@@ -62,6 +62,25 @@ Hence I met no resistance and was able to create the [PR](https://github.com/sea
   - and created an alternate [example of how to load files](https://github.com/c-git/egui_file_picker_poll_promise) using the [poll-promise](https://github.com/EmbarkStudios/poll-promise) crate, which is closer to code I would want to use in an actual project.
   </details>
 
+# [bazooka-bot](https://github.com/c-git/bazooka-bot) (Rust)
+
+> Discord bot for the [Bazooka Alliance Server](http://discord.gg/uQVy7BH) (Alliance for [Command and Conquer: Rivals](https://www.ea.com/en-ca/games/command-and-conquer/command-and-conquer-rivals) Game)
+
+- Created a discord bot rust using [serenity](https://docs.rs/serenity/latest/serenity/) to replace the older one that I had written in [python](https://github.com/fone-git/bazooka-bot).
+- Hosted on [shuttle](https://www.shuttle.rs/)
+
+<details>
+    <summary>Click to see more</summary>
+
+- Highlighted features:
+  - Schedule events
+  - Manage players voting on ideas
+  - Manage recording of scores during the event
+  - Uses both text based commands and [slash commands](https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ)
+  - See the [readme](https://github.com/c-git/bazooka-bot) of the project for all functionality
+
+</details>
+
 # [log-viewer](https://github.com/c-git/log-viewer) (Rust) [Online Demo](http://dev.chester.wykies.com/log-viewer/)
 
 > Simple log viewer for logs with json lines
