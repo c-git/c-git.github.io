@@ -1,6 +1,7 @@
 +++
 title = "Projects"
 date = 2024-09-24
+updated = 2024-09-25
 +++
 
 # [trippy](https://github.com/fujiapple852/trippy) (Rust)
@@ -66,7 +67,7 @@ Hence I met no resistance and was able to create the [PR](https://github.com/sea
 
 > Discord bot for the [Bazooka Alliance Server](http://discord.gg/uQVy7BH) (Alliance for [Command and Conquer: Rivals](https://www.ea.com/en-ca/games/command-and-conquer/command-and-conquer-rivals) Game)
 
-- Created a discord bot rust using [serenity](https://docs.rs/serenity/latest/serenity/) to replace the older one that I had written in [python](https://github.com/fone-git/bazooka-bot).
+- Created a discord bot rust using [poise](https://docs.rs/poise/latest/poise/) to replace the older one that I had written in [python](https://github.com/fone-git/bazooka-bot).
 - Hosted on [shuttle](https://www.shuttle.rs/)
 
 <details>
