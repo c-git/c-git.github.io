@@ -21,8 +21,8 @@ This work showed vulnerabilities in methods that are still in ongoing use.
 I also have a paper ([ID# M2671](https://www.ecai2024.eu/programme/accepted-papers)), with the same title as my thesis, that has been accepted at the 27TH EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE ([ECAI 2024](https://www.ecai2024.eu/)).
 
 As part of my thesis I also developed two tools that facilitated my research.
-One was a [framework in python](https://github.com/uruth-lab/experiment_framework) to manage running experiments and the other was a tool written in [Rust](https://www.rust-lang.org/) using [egui][egui] to [build and edit datasets](https://github.com/uruth-lab/dbv/).
-The dataset builder is able to be [run in the browser](https://uruth-lab.github.io/dbv/) using [WASM][wasm].
+One was a [framework in python](https://github.com/uruth-lab/experiment_framework) to manage running experiments and the other was a tool written in [Rust](https://www.rust-lang.org/) using [egui](https://github.com/emilk/egui) to [build and edit datasets](https://github.com/uruth-lab/dbv/).
+The dataset builder is able to be [run in the browser](https://uruth-lab.github.io/dbv/) using [WASM](https://webassembly.org/).
 
 ## Open source projects
 
