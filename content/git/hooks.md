@@ -2,8 +2,18 @@
 title = "Hooks Examples"
 date = 2023-12-20
 update = 2024-02-01
-updated = 2024-02-02
+updated = 2024-10-04
 +++
+
+# Skip commit hooks
+
+Source: <https://stackoverflow.com/questions/7230820/skip-git-commit-hooks>
+
+Add a `--no-verify` flag. Only tested on commit as below
+
+```sh
+git commit --no-verify
+```
 
 # pre-commit Hook to prevent changes to a zola project base_url
 
