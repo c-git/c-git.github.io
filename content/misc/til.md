@@ -1,7 +1,7 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
-updated = 2024-07-21
+updated = 2024-10-08
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.
@@ -116,3 +116,17 @@ Source: <https://diataxis.fr/>
 > Diátaxis identifies four distinct needs, and four corresponding forms of documentation - tutorials, how-to guides, technical reference and explanation. It places them in a systematic relationship, and proposes that documentation should itself be organised around the structures of those needs.
 
 [![Four Quadrant Image showing types](https://diataxis.fr/_images/diataxis.png)](https://diataxis.fr/)
+
+Image Source: <https://diataxis.fr/_images/diataxis.png>
+
+</details>
+
+# Importance of Documentation
+
+It actually comes back to why are you working on the project being documented.
+Is it just to experiment?
+Is it to create a usable artifact that you expect to only be useful for a short period of time?
+At the end of the day we have limited time and need to be conscious of how we choose to use that limited resource.
+The next person (might be you) may be able to figure it out again by looking at the code but you could drastically cut down the time needed if you add documentation.
+So really it's more about do you expect someone to need to look at the code in the future (again this future might be you), is there any small thing you can do to help them out?
+Sometimes you can re-derive a process but documenting processes I've found to be the most important because it's not always trivial to come up with them again and may end up requiring making the same mistakes again what you've already made.
