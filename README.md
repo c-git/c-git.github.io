@@ -1,6 +1,6 @@
 # Onè's Notes
 
-This repository contains the source for [Onè's Notes](https://c-git.github.io/) website.
+This repository contains the source for [Onè's Notes](https://dev.chester.wykies.com/) website.
 
 ## Feedback / Correction
 

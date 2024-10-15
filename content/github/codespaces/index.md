@@ -1,21 +1,29 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2024-01-14
+updated = 2024-10-15
 +++
 
 # Setup from default for Rust
 
+These are my custom setups if you just want rust only see the [rust website](https://www.rust-lang.org/tools/install).
+
+Feel free to download the scripts to review to decide if you want to use them. They are pretty simple.
+
 ## Install Rust only
 
+[Download Script](https://dev.chester.wykies.com/github/codespaces/scripts/setup_rust_only.sh)
+
 ```sh
-curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_rust_only.sh | sh
+curl --proto '=https' --tlsv1.2 -sSf https://dev.chester.wykies.com/github/codespaces/scripts/setup_rust_only.sh | sh
 ```
 
 ## Install Rust with Trunk (Usually only needed if your developing for the web)
 
+[Download Script](https://dev.chester.wykies.com/github/codespaces/scripts/setup_with_trunk.sh)
+
 ```sh
-curl --proto '=https' --tlsv1.2 -sSf https://c-git.github.io/github/codespaces/scripts/setup_with_trunk.sh | bash
+curl --proto '=https' --tlsv1.2 -sSf https://dev.chester.wykies.com/github/codespaces/scripts/setup_with_trunk.sh | bash
 ```
 
 At this point you'll need to either restart you terminal or source the cargo setup script manually.
