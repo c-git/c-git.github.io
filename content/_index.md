@@ -18,7 +18,7 @@ A change in perspective can bring into focus opportunities instead of just probl
 I attained a Master’s degree in Computer Science from [York University](https://www.yorku.ca/), under the supervision of [Dr. Ruth Urner](https://www.eecs.yorku.ca/~uruth/).
 In my thesis, titled "AN AXIOMATIC PERSPECTIVE ON ANOMALY DETECTION", we created a foundation for the development of a line of theoretical work on anomaly detection (outlier detection).
 This work showed vulnerabilities in methods that are still in ongoing use.
-I also have a paper ([ID# M2671](https://www.ecai2024.eu/programme/accepted-papers)), with the same title as my thesis, that has been accepted at the 27TH EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE ([ECAI 2024](https://www.ecai2024.eu/)).
+We also have a [paper](https://ebooks.iospress.nl/doi/10.3233/FAIA240853), with the same title as my thesis, that has been accepted at the 27TH EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE ([ECAI 2024](https://www.ecai2024.eu/)).
 
 As part of my thesis I also developed two tools that facilitated my research.
 One was a [framework in python](https://github.com/uruth-lab/experiment_framework) to manage running experiments and the other was a tool written in [Rust](https://www.rust-lang.org/) using [egui](https://github.com/emilk/egui) to [build and edit datasets](https://github.com/uruth-lab/dbv/).
