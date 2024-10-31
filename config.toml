@@ -63,4 +63,5 @@ favicon = "notepad.png"
 easydocs_logo_always_clickable = true
 easydocs_uglyurls = false
 easydocs_heading_threshold = 1
-git_url = "https://github.com/c-git/c-git.github.io/"
+git_url = "https://github.com/c-git/"
+feedback_url = "https://github.com/c-git/c-git.github.io/issues"
