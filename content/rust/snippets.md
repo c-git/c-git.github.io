@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2024-09-21
+updated = 2024-11-07
 +++
 
 # Library Candidates
@@ -75,7 +75,6 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 
 fn write_to_path<P: AsRef<Path>>(path: P, s: &str) -> Result<(), Box<dyn Error>> {
-    // Create a new file if it doesn't exist or open the file if it already exists
     let mut file = std::fs::OpenOptions::new().write(true).create(true).open(path)?;
     file.write_all(s.as_bytes())?;
     Ok(())
