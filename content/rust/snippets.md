@@ -75,7 +75,11 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 
 fn write_to_path<P: AsRef<Path>>(path: P, s: &str) -> Result<(), Box<dyn Error>> {
-    let mut file = std::fs::OpenOptions::new().write(true).create(true).open(path)?;
+    let mut file = std::fs::OpenOptions::new()
+            .write(true)
+            .create(true)
+            .truncate(true)
+            .open(path)?;
     file.write_all(s.as_bytes())?;
     Ok(())
 }
