@@ -25,6 +25,21 @@ a b c d e /path/command
 - `e`: Day of the week(0-7 [7 or 0 == sunday])
 - `/path/command` – Script or command name to schedule
 
+## Options other than number
+
+Source: <https://crontab.guru/every-5-minutes>
+
+- `*` :	any value
+- `,` :	value list separator
+- `-` :	range of values
+- `/` :	step values
+
+Example every 5 minutes
+
+```
+*/5 * * * * date >> ~/date.txt
+```
+
 # Special @ shortcuts
 
 Source: <https://www.linode.com/docs/guides/schedule-tasks-with-cron/#special-cron-syntaxes>
