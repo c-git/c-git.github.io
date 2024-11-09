@@ -1,7 +1,7 @@
 +++
 title="Cron"
 date = 2022-12-07
-updated = 2023-11-08
+updated = 2024-11-09
 +++
 
 Source: <https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/>
@@ -29,8 +29,6 @@ a b c d e /path/command
 
 Source: <https://www.linode.com/docs/guides/schedule-tasks-with-cron/#special-cron-syntaxes>
 
-# Test Cron
-
 - `@reboot` statement runs the specified command once, at start up.
 - `@yearly` and `@annually` both run the specified task every year at 12:00am on the 1st of January. This is equivalent
   to specifying `0 0 1 1 *` in the crontab line.
@@ -46,6 +44,8 @@ Example Usage
 ```
 @reboot date >> ~/test_cron.txt
 ```
+
+# Test Cron
 
 ## Simple Test
 
@@ -63,9 +63,9 @@ Add line to bottom and save (Ensure there is a new line at the end of the line)
 
 Wait one minute and confirm that it works
 
-## Move involved test that uses a script
+## More involved test that uses a script
 
-Create test script and set cron to run script
+**Overview**: Create test script and set cron to run script
 
 Create temp folder
 
@@ -73,7 +73,7 @@ Create temp folder
 mkdir ~/tmp
 ```
 
-## Create test script
+Create test script
 
 ```sh
 echo 'date >> ~/tmp/cron_result.txt' > ~/tmp/cron_test.sh
