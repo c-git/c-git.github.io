@@ -42,6 +42,6 @@ Happy for any questions, comments, emotional outbursts...
 
 <!-- Decided not to include the actual QR Codes here because I haven't implemented relative link checking yet and found it too error prone.
 
-NB: Images always seem to use relative links based on my short test -->
+NB: Images always seem to use relative links based on my brief testing -->
 
 Included a few QR codes to facilitate in person sharing [here](@/misc/qr_codes/index.md)
