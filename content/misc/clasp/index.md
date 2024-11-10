@@ -1,7 +1,7 @@
 +++
 title='CLASP'
 date = 2023-04-17
-updated = 2024-09-21
+updated = 2024-11-10
 +++
 
 # New project setup
@@ -83,7 +83,8 @@ git submodule add ../js_lib.git
 
 - Copy over from template to update ignore and hooks [last step in new](@/misc/clasp/index.md#new-project-setup)
 - Remove `js_lib` if in use see [removal instructions in](@/git/submodules.md#remove-a-submodule)
-  -Change all `.js` files to `.ts` files and follow normal instructions from [New TS project](@/misc/clasp/index.md#steps-if-using-typescript-ts)
+- Change all `.js` files to `.ts` files
+- Follow normal instructions from [New TS project](@/misc/clasp/index.md#steps-if-using-typescript-ts)
 
 # Useful Commands
 
