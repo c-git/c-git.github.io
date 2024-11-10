@@ -82,7 +82,7 @@ git submodule add ../js_lib.git
 # Converting an existing Javascript (JS) project to TypeScript (TS)
 
 - Copy over from template to update ignore and hooks [last step in new](@/misc/clasp/index.md#new-project-setup)
-- Remove `js_lib` if in use see [removal instructions in](@/git/submodules.md#remove-a-submodule)
+- Remove `js_lib` if in use see [removal instructions for submodule](@/git/submodules.md#remove-a-submodule)
 - Change all `.js` files to `.ts` files
 - Follow normal instructions from [New TS project](@/misc/clasp/index.md#steps-if-using-typescript-ts)
 
