@@ -16,7 +16,7 @@ Programming, just like life, is about perspective.
 A change in perspective can bring into focus opportunities instead of just problems.
 
 I attained a Master’s degree in Computer Science from [York University](https://www.yorku.ca/), under the supervision of [Dr. Ruth Urner](https://www.eecs.yorku.ca/~uruth/).
-In my thesis, titled "AN AXIOMATIC PERSPECTIVE ON ANOMALY DETECTION", we created a foundation for the development of a line of theoretical work on anomaly detection (outlier detection).
+In my [thesis](https://hdl.handle.net/10315/42476), titled "[AN AXIOMATIC PERSPECTIVE ON ANOMALY DETECTION](https://yorkspace.library.yorku.ca/items/1aed06b7-415c-430c-82b0-c498fd07c488)", we created a foundation for the development of a line of theoretical work on anomaly detection (outlier detection).
 This work showed vulnerabilities in methods that are still in ongoing use.
 We also have a [paper](https://doi.org/10.3233/FAIA240853), titled "An Axiomatic Perspective on Anomaly Detection" published in the 27TH EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE ([ECAI 2024](https://doi.org/10.3233/FAIA392)).
 
