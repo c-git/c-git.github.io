@@ -1,7 +1,7 @@
 +++
 title = "Links between files"
 date = 2024-02-24
-updated = 2024-06-08
+updated = 2024-11-15
 +++
 
 # TLDR
@@ -12,6 +12,25 @@ updated = 2024-06-08
 - `ln` defaults to hard links
 - `ln` with `-s` will create a symbolic link instead
 - It is easiest to create link from the directory where the link should be created, if that is not the case and a relative is used ensure the `-r` option is set
+
+> Usage: ln [OPTION]... [-T] TARGET LINK_NAME
+> or: ln [OPTION]... TARGET
+> or: ln [OPTION]... TARGET... DIRECTORY
+> or: ln [OPTION]... -t DIRECTORY TARGET...
+> In the 1st form, create a link to TARGET with the name LINK_NAME.
+> In the 2nd form, create a link to TARGET in the current directory.
+> In the 3rd and 4th forms, create links to each TARGET in DIRECTORY.
+> Create hard links by default, symbolic links with --symbolic.
+> By default, each destination (name of new link) should not already exist.
+> When creating hard links, each TARGET must exist. Symbolic links
+> can hold arbitrary text; if later resolved, a relative link is
+> interpreted in relation to its parent directory.
+
+Example from the folder to create link in (same for directory or file)
+
+```sh
+ln -s ORIGINAL ./
+```
 
 # Hard links vs Soft Links (Symbolic Link / Symlinks)
 
