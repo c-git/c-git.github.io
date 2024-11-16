@@ -1,6 +1,7 @@
 +++
 title = "Resume writing"
 date = 2024-09-23
+updated = 2024-11-16
 +++
 
 # Templates
@@ -18,7 +19,7 @@ Source: [How to write a killer Software Engineering résumé][killer_resume]
 
 > Accomplished [X] as measured by [Y] by doing [Z]
 
-_[as per article, attributed to][killer_resume] Former SVP of People Operations at Google, Laszlo Bock_
+_The [article I read][killer_resume] attributed it to Laszlo Bock, Former SVP of People Operations at Google_
 
 ## Verb word bank from article
 
