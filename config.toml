@@ -2,7 +2,7 @@
 base_url = "https://dev.chester.wykies.com"
 
 # The site title and description; used in feeds by default.
-title = "Onè's Notes"
+title = "Chester Wyke"
 
 # The site theme to use.
 theme = "zola_easydocs_theme"
