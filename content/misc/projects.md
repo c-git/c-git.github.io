@@ -1,7 +1,7 @@
 +++
 title = "Projects"
 date = 2024-09-24
-updated = 2024-09-25
+updated = 2024-11-19
 +++
 
 # [trippy](https://github.com/fujiapple852/trippy) (Rust)
@@ -82,12 +82,14 @@ Hence I met no resistance and was able to create the [PR](https://github.com/sea
 
 </details>
 
-# [log-viewer](https://github.com/c-git/log-viewer) (Rust) [Online Demo](http://dev.chester.wykies.com/log-viewer/)
+# [log-viewer](https://github.com/c-git/log-viewer) (Rust)
 
 > Simple log viewer for logs with json lines
 
 I developed a simple log viewing application using [egui][egui].
 It enables basic log file navigation.
+There is an a version able to be run from the browser available [here](http://dev.chester.wykies.com/log-viewer/).
+(See [sample log files](https://github.com/c-git/log-viewer/tree/main/tests/sample_logs))
 It works on log files where each line is a json string.
 
 <details>
