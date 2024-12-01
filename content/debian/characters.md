@@ -1,6 +1,7 @@
 +++
 title = "Characters"
 date = 2024-02-02
+updated = 2024-12-01
 +++
 
 # Frequently used codes
@@ -10,6 +11,8 @@ Then enter the unicode code point in hexadecimal for the character you want.
 It is not case sensitive and leading 0's are not required.
 
 - è - e8
+- ¢ - a2
+- € - 20ac
 
 # Typing characters not on the keyboard
 
