@@ -1,7 +1,7 @@
 +++
 title="Create New Crate"
 date=2023-11-02
-updated= 2024-01-27
+updated= 2024-12-07
 +++
 
 Patterned on: [New Repo Creation](@/git/new_repo.md)
@@ -28,19 +28,17 @@ Patterned on: [New Repo Creation](@/git/new_repo.md)
    ```sh
    git push -u origin main
    ```
-7. Initialize gitflow.
-   1. **WARNING**: Do not use the vscode `sync` button until you do the `git push` at the end of this procedure (pushing earlier is fine but not using the `sync` button).
-8. Copy in and link to template (for updates). To see more explanation of these steps see [CI instructions](@/rust/ci.md).
+7. Copy in and link to template (for updates). To see more explanation of these steps see [CI instructions](@/rust/ci.md).
    ```sh
    git remote add template git@github.com:c-git/rust-crate-template.git
    git fetch template
    git merge --allow-unrelated template/main
    ```
-9. Resolve merge conflict
+8. Resolve merge conflict
    ```sh
    git checkout template/main -- .gitignore
    git checkout template/main -- Cargo.toml
    ```
 
-10. Restore crate name (was lost during merge).
-11. Add [CI](@/rust/ci.md).
+9. Restore crate name (was lost during merge).
+10. Add [CI](@/rust/ci.md).
