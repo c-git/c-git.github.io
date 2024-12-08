@@ -1,7 +1,7 @@
 +++
 title="Submodules"
 date = 2023-04-14
-updated = 2023-11-08
+updated = 2024-12-08
 +++
 
 # Add a new submodule
@@ -82,4 +82,17 @@ git submodule update --init --recursive --remote
 
 ```sh
 git rm <path-to-submodule>
+```
+
+# Impacts on github workflows
+
+If your code depends on the submodule being there then you'll need to ensure it gets checked out.
+You'll need to add with `submodules: recursive` to your checkout step (See example below).
+Also used in CI for [this repo](https://github.com/c-git/c-git.github.io/tree/main/.github/workflows).
+
+```yaml
+- name: Checkout repo
+    uses: actions/checkout@v4
+    with:
+        submodules: recursive
 ```
