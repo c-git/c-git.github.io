@@ -1,6 +1,7 @@
 +++
 title="Crate CSV"
 date = 2024-05-04
+updated = 2024-12-18
 +++
 
 # Example of writing CSV to a Buffer (String)
@@ -9,13 +10,13 @@ This is a modified version of the example from the [rust cookbook](https://rust-
 
 Writes to a vector of bytes then converts it into a string.
 
-````rust
+```rust
 #!/usr/bin/env -S cargo +nightly -Zscript
-```cargo
+---cargo
 package.edition = "2021" # Desirable to stop warning but not needed
 [dependencies]
 csv = "1.3.0"
-```
+---
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
 let query = "CA";
@@ -46,4 +47,4 @@ West Hollywood,CA,37031,34.0900000,-118.3608333";
     Ok(())
 
 }
-````
+```

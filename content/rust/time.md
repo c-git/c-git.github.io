@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated= 2024-09-04
+updated = 2024-12-18
 +++
 
 # Standard Library
@@ -81,14 +81,14 @@ fn main() {
 
 Source: <https://timclicks.dev/tip/convert-a-unix-timestamp-to-rust>
 
-````rust
+```rust
 #!/usr/bin/env -S cargo +nightly -Zscript
-```cargo
+---cargo
 package.edition = "2021" # Desirable to stop warning but not needed
 [dependencies]
 chrono = { version = "0.4.34", default-features = false, features = ["clock"] }
 web-time = "1.0.0"
-```
+---
 
 fn main() {
     println!("The date and time now is {}", now_date_time_as_string());
@@ -121,7 +121,7 @@ fn now_date_time_as_string() -> String {
 fn now_date_time_as_string_native_only() -> String {
     chrono::Local::now().format("%c").to_string()
 }
-````
+```
 
 # Formatting syntax
 

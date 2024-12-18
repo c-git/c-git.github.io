@@ -1,6 +1,7 @@
 +++
 title = "Crate Poll Promise"
 date = 2024-01-30
+updated = 2024-12-18
 +++
 
 Source: <https://github.com/EmbarkStudios/poll-promise>
@@ -20,14 +21,14 @@ The examples below use [cargo script](@/rust/scripts.md) so if you're not famili
 
 Put it here instead of in their examples folder because it would have prevented `cargo test` from passing because it needs non-default features.
 
-````rust
+```rust
 #!/usr/bin/env -S cargo +nightly -Zscript
-```cargo
+---cargo
 package.edition = "2021"
 [dependencies]
 poll-promise = { version = "0.3.0", features = ["tokio"] }
 tokio = "1.35.1"
-```
+---
 
 async fn slow_operation() -> String {
 std::thread::sleep(std::time::Duration::from_secs(2));
@@ -55,7 +56,7 @@ let promise = poll_promise::Promise::spawn_async(async move { slow_operation().a
     }
 
 }
-````
+```
 
 # Notes from reading documentation
 

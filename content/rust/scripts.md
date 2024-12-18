@@ -1,7 +1,7 @@
 +++
 title="Single file script"
 date=2023-09-02
-updated = 2024-01-29
+updated = 2024-12-18
 +++
 
 Source: <https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#script>
@@ -21,13 +21,13 @@ fn main() {
 
 # With Dependencies
 
-````rust
+```rust
 #!/usr/bin/env -S cargo +nightly -Zscript
-```cargo
+---cargo
 package.edition = "2021" # Desirable to stop warning but not needed
 [dependencies]
 clap = { version = "4.2", features = ["derive"] }
-```
+---
 
 use clap::Parser;
 
@@ -42,4 +42,4 @@ fn main() {
     let args = Args::parse();
     println!("{:?}", args);
 }
-````
+```

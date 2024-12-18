@@ -1,6 +1,7 @@
 +++
 title = "Iterators"
 date = 2024-09-05
+updated = 2024-12-18
 +++
 
 # References
@@ -11,13 +12,13 @@ date = 2024-09-05
 
 Copied from an example by [robjtede @ Actix Web](https://github.com/robjtede) on discord. It was an aside to Tim's [video](https://www.youtube.com/watch?v=RQE4GeDe4yw)
 
-````rust
+```rust
 #!/usr/bin/env -S cargo +nightly -Zscript
-```cargo
+---cargo
 package.edition = "2021" # Desirable to stop warning but not needed
 [dependencies]
 itertools = "0.12.1"
-```
+---
 
 use itertools::Itertools as _;
 
@@ -67,4 +68,4 @@ impl Iterator for Pas {
         Some(self.prev.clone())
     }
 }
-````
+```
