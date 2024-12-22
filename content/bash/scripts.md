@@ -1,9 +1,19 @@
 +++
 title = "Scripts"
 date = 2023-12-11
-updated = 2024-09-19
+updated = 2024-12-22
 aliases = ["/debian/bash"]
 +++
+
+# Shebang Line
+
+Source: <https://codejunction.hashnode.dev/the-advantage-of-using-usrbinenv-bash-over-binbash>
+
+This is the line that goes at the top of the script and tells the shell what to use to execute the script
+
+```bash
+#!/usr/bin/env bash
+```
 
 # If statements
 
@@ -50,6 +60,31 @@ do
   echo Counter: $counter
   ((counter++))
 done
+```
+
+# Positional arguments
+
+Source: <https://www.redhat.com/en/blog/arguments-options-bash-scripts>
+
+$0 - the name of the running script and $1 to $9 are positional arguments.
+The example if for a executable text file called `test_script` in your current directory.
+
+```bash
+#!/usr/bin/env bash
+
+echo Running \"$0\"
+echo With 1st argument in quotes is \"$1\"
+echo And 2nd without quotes this time is: "$2"
+echo And 3rd without quotes this time is: $3
+```
+
+Run with `./test_script.sh first second third` and it outputs
+
+```
+Running "./test_script.sh"
+With 1st argument in quotes is "first"
+And 2nd without quotes this time is: second
+And 3rd without quotes this time is: third
 ```
 
 # Set script to exit on errors
