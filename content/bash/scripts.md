@@ -19,6 +19,10 @@ This is the line that goes at the top of the script and tells the shell what to 
 
 Source: <https://linuxize.com/post/bash-if-else-statement/>
 
+**WARNING!!** I ran into syntax errors with `fi` if I put `then` on the same line with `if` (see error message below)
+
+> ... syntax error near unexpected token `fi'
+
 ```bash
 if TEST-COMMAND1
 then
@@ -85,6 +89,92 @@ Running "./test_script.sh"
 With 1st argument in quotes is "first"
 And 2nd without quotes this time is: second
 And 3rd without quotes this time is: third
+```
+
+# Case statements
+
+Source: <https://linuxize.com/post/bash-case-statement/>
+
+```bash
+case EXPRESSION in
+
+  PATTERN_1)
+    STATEMENTS
+    ;;
+
+  PATTERN_2)
+    STATEMENTS
+    ;;
+
+  PATTERN_N)
+    STATEMENTS
+    ;;
+
+  *)
+    STATEMENTS
+    ;;
+esac
+```
+
+```bash
+#!/bin/bash
+
+echo -n "Enter the name of a country: "
+read COUNTRY
+
+echo -n "The official language of $COUNTRY is "
+
+case $COUNTRY in
+
+  Lithuania)
+    echo -n "Lithuanian"
+    ;;
+
+  Romania | Moldova)
+    echo -n "Romanian"
+    ;;
+
+  Italy | "San Marino" | Switzerland | "Vatican City")
+    echo -n "Italian"
+    ;;
+
+  *)
+    echo -n "unknown"
+    ;;
+esac
+```
+
+# Comparing Strings
+
+Source: <https://linuxize.com/post/how-to-compare-strings-in-bash/>
+
+See link for more info.
+One note I wanted to add is to ensure you use quotes around your strings especially if they are coming from variables.
+
+# Directory exits test (and negation)
+
+The example below does nothing in the positive case and exits on the negative case
+
+```bash
+if [ -d "$SRC_DIR" ] 
+then
+    : # Do nothing (was getting trouble with negating the condition)
+else
+  echo "Error: Source directory does not exist"
+  exit 1
+fi
+```
+
+# No-Op
+
+Source: <https://stackoverflow.com/questions/12404661/what-is-the-use-case-of-noop-in-bash>
+
+Simply use a `:`
+
+```bash
+while keep_waiting; do
+  : # do nothing
+done
 ```
 
 # Set script to exit on errors
