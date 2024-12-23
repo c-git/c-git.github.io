@@ -23,4 +23,8 @@ and in the caller you need to have a separate job that put the relative path the
 jobs:
   run_tests:
     uses: ./.github/workflows/general.yml
+  deploy:
+    runs-on: ubuntu-latest
+    needs: run_tests # Requires that the other job succeeds before this one will start
+    steps:
 ```
