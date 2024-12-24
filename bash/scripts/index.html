@@ -1,0 +1,1163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://dev.chester.wykies.com/main.css">
+    <link rel="icon" href="https://dev.chester.wykies.com/notepad.png">
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="https://dev.chester.wykies.com/atom.xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Chester Wyke | Scripts </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <a href="https:&#x2F;&#x2F;dev.chester.wykies.com">
+                        <img id="logo" src="https://dev.chester.wykies.com/notepad.png" alt="logo"/>
+                    </a>
+                <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                <input class="tree-toggle" type="checkbox" id="apache"
+                           />
+                    <label class="tree-toggle-label"
+                           for="apache">Apache</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/apache/https-setup/">HTTPS Setup</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/apache/installation/">Installation</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="bash"
+                           checked/>
+                    <label class="tree-toggle-label"
+                           for="bash">Bash</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/bash/background-commands/">Background Commands</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/bash/bash-aliases/">Bash Aliases</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/bash/command-substitution/">Command Substitution</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/bash/redirect-output/">Redirect Output</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/bash/return-code/">Return Code</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://dev.chester.wykies.com/bash/scripts/">Scripts</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <ul id="toc">
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#shebang-line">Shebang Line</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#if-statements">If statements</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#until">Until</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#positional-arguments">Positional arguments</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#case-statements">Case statements</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#comparing-strings">Comparing Strings</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#directory-exits-test-and-negation">Directory exits test (and negation)</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#no-op">No-Op</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#set-script-to-exit-on-errors">Set script to exit on errors</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://dev.chester.wykies.com/bash/scripts/#set-script-to-echo-commands">Set script to echo commands</a>
+                                                    </li>
+                                            </ul>
+                                    </ul>
+                <input class="tree-toggle" type="checkbox" id="debian"
+                           />
+                    <label class="tree-toggle-label"
+                           for="debian">Debian</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/debian/7zip/">7z encrypted file</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/acrobat-reader/">Acrobat Reader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/android-on-linux/">Android Apps on Linux</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/audio/">Audio</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/blacklist-module/">Blacklist Module</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/calender-notifications-popup-disable/">Calender Notifications Popup Disable</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/characters/">Characters</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/compressed-files/">Compressed Files</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/create-bootable-flash/">Create Bootable Flash Drive</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/cron/">Cron</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/cups-pdf-printer/">CUPS PDF Printer</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/dns/">DNS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/extension/">Extensions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/firewall/">Firewall</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/gping/">gping</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/hide-mounts/">Hide Mounts</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/link-files/">Links between files</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/mac-address-change/">MAC Address Change</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/man/">MAN</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/manual-kernel-remove/">Manually Removing Old Kernels</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/mounting/">Mounting Drives</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/nautilus/">Nautilus</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/open-vpn/">OpenVPN</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/paths-to-rem/">Paths to remember</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/power/">Power</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/ppp-logs/">PPP logs</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/redirect-stderr/">Redirecting stderr</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/scp/">SCP</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/sed/">sed</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/services/">services systemd (unit)</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/icons/">Set Icon for Application</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/permissions-recusively-on-dir/">Set permissions recursively on directory structure</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/setup-network-shares/">Setup Network Shares</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/shortcuts-important/">Shortcuts (Important)</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/seconds-clock/">Show Seconds on Clock Display</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/smartgit/">Smartgit</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/snapcraft/">Snapcraft</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/ssh/">SSH</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/startup/">Startup</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/strange-problems/">Strange Problems and Fixes</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/terminal/">Terminal</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/touch/">Touch (Set file modified date)</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/ubuntu-software/">Ubuntu Software</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/update/">Updating</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/useful-commands/">Useful commands</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/users-and-groups/">Users and Groups</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/video-cards/">Video Cards</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/view-whitespace/">View Whitespace</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/wayland-or-x11/">Wayland or x11?</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/debian/zsh/">zsh</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="gimp"
+                           />
+                    <label class="tree-toggle-label"
+                           for="gimp">GIMP</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/gimp/reset-window/">Reset window</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/gimp/transparent/">Transparent background</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="git"
+                           />
+                    <label class="tree-toggle-label"
+                           for="git">Git</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/git/branches/">Branches</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/detached-head/">Detached Head</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/formatting/">Formatting</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/global-ignore/">Global Ignore</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/history/">History</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/hooks/">Hooks Examples</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/merge/">Merge</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/merge-conflict/">Merge Conflict</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/modify-existing-commits/">Modify Existing Commits</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/new-clasp/">New CLASP repo</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/new-repo/">New Repo Creation</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/push/">Push</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/rebase/">Rebase</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/remotes/">Remotes</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/rerere/">rerere</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/reset/">Reset</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/stash/">Stash</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/git/submodules/">Submodules</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="github"
+                           />
+                    <label class="tree-toggle-label"
+                           for="github">GitHub</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/github/ci/">CI</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/github/codespaces/">Codespaces</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/github/forking/">Forking</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/github/actions/">Github Actions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/github/ssh/">SSH</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="javascript"
+                           />
+                    <label class="tree-toggle-label"
+                           for="javascript">Javascript</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/javascript/arrays/">Arrays</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/javascript/event-handlers/">Event Handlers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/javascript/linting/">Linting Suppression</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="latex"
+                           />
+                    <label class="tree-toggle-label"
+                           for="latex">Latex</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/latex/attachfile/">Attach File Inside PDF</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/latex/latex-freq/">LaTex Frequently used commands</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="misc"
+                           />
+                    <label class="tree-toggle-label"
+                           for="misc">Misc</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/misc/anydesk/">Anydesk</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/cannon-mg3600/">Cannon MG3600</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/chromecast/">Chromecast</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/clasp/">CLASP</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/colors/">Colors</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/controllers/">Controllers</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/copy-source/">Copy Source</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/css-display-ref/">CSS Display Reference</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/discord/">Discord</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/documentation-update/">Documentation Update</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/firefox-extensions/">Firefox Extensions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/google-storage/">Google Storage</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/links/">Links</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/markdown/">Markdown &#x2F; HTML Guide</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/obs/">OBS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/pdf-garbled/">PDF Garbled (Fix)</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/php/">PHP</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/php-my-admin/">phpMyAdmin</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/presentation-animation-removal/">Presentation Animation Removal</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/projects/">Projects</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/qr-codes/">QR Codes</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/quotes/">Quotes</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/regex/">Regex</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/rdp/">Remote Desktop Protocol (RDP)</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/replit/">Replit</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/resume-writing/">Resume writing</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/tera/">Tera Guide</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/rem/">Things to Remember</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/til/">Today I Learned (TIL)</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/veracrypt/">VeraCrypt</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/vnc/">VNC Ubuntu</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/wireshark/">Wireshark</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/youtube-ref-videos/">YouTube Reference Videos</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/misc/zola/">Zola</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="prayers"
+                           />
+                    <label class="tree-toggle-label"
+                           for="prayers">Prayers</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/prayers/surrender-novena/">Surrender Novena</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="pycharm"
+                           />
+                    <label class="tree-toggle-label"
+                           for="pycharm">PyCharm</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/pycharm/disable-formatter-on-part-of-code/">Disable Formatter on parts of Code</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/pycharm/javascript/">JavaScript</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/pycharm/launcher/">Launcher Shortcut</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/pycharm/live-templates/">Live Templates</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/pycharm/regex/">RegExp Editor</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="python"
+                           />
+                    <label class="tree-toggle-label"
+                           for="python">Python</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/python/freq-lookup/">Frequently looked up functions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/get-func-name/">Get the current function&#x27;s name</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/ipython-built-in-magic-commands/">IPython Built-in magic commands</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/memory/">Memory</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/publish-lib/">Publish Library</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/pyenv/">pyenv</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/pytorch/">PyTorch</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/running-a-script/">Running a Script</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/python/string-formatting/">String Formatting</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="rust"
+                           />
+                    <label class="tree-toggle-label"
+                           for="rust">Rust</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/rust/areweyet/">Are we yet</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/ci/">CI</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/conditional-compilation/">Conditional Compilation</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-actix/">Crate Actix Web</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-csv/">Crate CSV</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-egui/">Crate egui</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-insta/">Crate Insta</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-poll-promise/">Crate Poll Promise</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-serde/">Crate Serde</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-tokio/">Crate Tokio</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/crate-tracing-subscriber/">Crate Tracing Subscriber</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/create-new-crate/">Create New Crate</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/create-new-egui-project/">Create new egui project</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/documentation/">Documentation</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/install/">Install</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/json/">JSON</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/macros/">Macros</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/std-once/">OnceLock</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/pattern-builder/">Pattern Builder</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/pattern-typestate/">Pattern Type State</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/publish-crate/">Publish Crate</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/refs/">References</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/regex/">Regex</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/rustfmt/">rustfmt</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/scripts/">Single file script</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/snippets/">Snippets</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/stack-overflow/">Stack Overflow</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/string-formatting/">String Formatting</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/testing/">Testing</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/thoughts/">Thoughts about rust</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/time/">Time</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/tips/">Tips</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/toolchain/">Toolchain (Nightly)</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/wasm/">WASM</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/rust/byte-collections/">Working with collections of bytes</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="typescript"
+                           />
+                    <label class="tree-toggle-label"
+                           for="typescript">TypeScript</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/typescript/error-suppression/">Error Suppression</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/typescript/snippets/">Snippets</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="sql"
+                           />
+                    <label class="tree-toggle-label"
+                           for="sql">SQL</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/sql/add-new-user/">Add New User to Database</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/sql/install-setup/">Install and Setup</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/sql/mysql/">Install MySQL</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/sql/misc/">Misc</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/sql/reset-root-password/">Reset Root Password</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/sql/temp-admin/">Temp Admin</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/sql/list-users/">View List Of Users</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/sql/permissions/">View User Permissions</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="virtual-box"
+                           />
+                    <label class="tree-toggle-label"
+                           for="virtual-box">Virtual Box</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/virtual_box/guest-additions/">Guest Additions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/virtual_box/optical-disks-management/">Optical Disks Management</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="vscode"
+                           />
+                    <label class="tree-toggle-label"
+                           for="vscode">VSCode</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/vscode/extensions-general/">Extensions General</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/vscode/extensions-rust/">Extensions Rust</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/vscode/hotkeys/">Hotkeys</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/vscode/liveshare/">Live Share</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/vscode/whitespace/">View Whitespace (Non printing characters)</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="vmware"
+                           />
+                    <label class="tree-toggle-label"
+                           for="vmware">VMware</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/vmware/vmware-tools/">VMware Tools</a>
+                            </li>
+
+                            </ul>
+                <input class="tree-toggle" type="checkbox" id="web-design"
+                           />
+                    <label class="tree-toggle-label"
+                           for="web-design">Web Design</label>
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://dev.chester.wykies.com/web_design/css/">CSS</a>
+                            </li>
+
+                            <li >
+                                <a href="https://dev.chester.wykies.com/web_design/material-design/">Material Design</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+
+        <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        <div id="wrap">
+            
+        <h1 id="page_title">Scripts</h1>
+        <p class="page_meta_data">
+            <a href="/site-definitions/#published">Published</a>: 2023-12-11
+            <br />
+            <a href="/site-definitions/#updated">Updated</a>: 2024-12-22
+            </p>
+        <h1 id="shebang-line">Shebang Line<a class="zola-anchor" href="#shebang-line" aria-label="Anchor link for: shebang-line"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://codejunction.hashnode.dev/the-advantage-of-using-usrbinenv-bash-over-binbash">https://codejunction.hashnode.dev/the-advantage-of-using-usrbinenv-bash-over-binbash</a></p>
+<p>This is the line that goes at the top of the script and tells the shell what to use to execute the script</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;">#!/usr/bin/env bash
+</span></code></pre>
+<h1 id="if-statements">If statements<a class="zola-anchor" href="#if-statements" aria-label="Anchor link for: if-statements"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://linuxize.com/post/bash-if-else-statement/">https://linuxize.com/post/bash-if-else-statement/</a></p>
+<p><strong>WARNING!!</strong> I ran into syntax errors with <code>fi</code> if I put <code>then</code> on the same line with <code>if</code> (see error message below)</p>
+<blockquote>
+<p>… syntax error near unexpected token `fi’</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b48ead;">if </span><span style="color:#bf616a;">TEST-COMMAND1
+</span><span style="color:#b48ead;">then
+</span><span>  </span><span style="color:#bf616a;">STATEMENTS1
+</span><span style="color:#b48ead;">elif </span><span style="color:#bf616a;">TEST-COMMAND2
+</span><span style="color:#b48ead;">then
+</span><span>  </span><span style="color:#bf616a;">STATEMENTS2
+</span><span style="color:#b48ead;">else
+</span><span>  </span><span style="color:#bf616a;">STATEMENTS3
+</span><span style="color:#b48ead;">fi
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;">#!/bin/bash
+</span><span>
+</span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-n </span><span>&quot;</span><span style="color:#a3be8c;">Enter a number: </span><span>&quot;
+</span><span style="color:#96b5b4;">read</span><span> VAR
+</span><span>
+</span><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">[ </span><span>$</span><span style="color:#bf616a;">VAR -gt</span><span> 10 </span><span style="color:#96b5b4;">]
+</span><span style="color:#b48ead;">then
+</span><span>  </span><span style="color:#96b5b4;">echo </span><span>&quot;</span><span style="color:#a3be8c;">The variable is greater than 10.</span><span>&quot;
+</span><span style="color:#b48ead;">elif </span><span style="color:#96b5b4;">[ </span><span>$</span><span style="color:#bf616a;">VAR -eq</span><span> 10 </span><span style="color:#96b5b4;">]
+</span><span style="color:#b48ead;">then
+</span><span>  </span><span style="color:#96b5b4;">echo </span><span>&quot;</span><span style="color:#a3be8c;">The variable is equal to 10.</span><span>&quot;
+</span><span style="color:#b48ead;">else
+</span><span>  </span><span style="color:#96b5b4;">echo </span><span>&quot;</span><span style="color:#a3be8c;">The variable is less than 10.</span><span>&quot;
+</span><span style="color:#b48ead;">fi
+</span></code></pre>
+<h1 id="until">Until<a class="zola-anchor" href="#until" aria-label="Anchor link for: until"> 🔗</a></h1>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;">#!/bin/bash
+</span><span>
+</span><span style="color:#bf616a;">counter</span><span>=</span><span style="color:#a3be8c;">0
+</span><span>
+</span><span style="color:#b48ead;">until </span><span style="color:#96b5b4;">[ </span><span>$</span><span style="color:#bf616a;">counter -gt</span><span> 5 </span><span style="color:#96b5b4;">]
+</span><span style="color:#b48ead;">do
+</span><span>  </span><span style="color:#96b5b4;">echo</span><span> Counter: $</span><span style="color:#bf616a;">counter
+</span><span>  ((counter++))
+</span><span style="color:#b48ead;">done
+</span></code></pre>
+<h1 id="positional-arguments">Positional arguments<a class="zola-anchor" href="#positional-arguments" aria-label="Anchor link for: positional-arguments"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://www.redhat.com/en/blog/arguments-options-bash-scripts">https://www.redhat.com/en/blog/arguments-options-bash-scripts</a></p>
+<p>$0 - the name of the running script and $1 to $9 are positional arguments.
+The example if for a executable text file called <code>test_script</code> in your current directory.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;">#!/usr/bin/env bash
+</span><span>
+</span><span style="color:#96b5b4;">echo</span><span> Running </span><span style="color:#96b5b4;">\&quot;</span><span>$</span><span style="color:#bf616a;">0</span><span style="color:#96b5b4;">\&quot;
+</span><span style="color:#96b5b4;">echo</span><span> With 1st argument in quotes is </span><span style="color:#96b5b4;">\&quot;</span><span>$</span><span style="color:#bf616a;">1</span><span style="color:#96b5b4;">\&quot;
+</span><span style="color:#96b5b4;">echo</span><span> And 2nd without quotes this time is: &quot;$</span><span style="color:#bf616a;">2</span><span>&quot;
+</span><span style="color:#96b5b4;">echo</span><span> And 3rd without quotes this time is: $</span><span style="color:#bf616a;">3
+</span></code></pre>
+<p>Run with <code>./test_script.sh first second third</code> and it outputs</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>Running &quot;./test_script.sh&quot;
+</span><span>With 1st argument in quotes is &quot;first&quot;
+</span><span>And 2nd without quotes this time is: second
+</span><span>And 3rd without quotes this time is: third
+</span></code></pre>
+<h1 id="case-statements">Case statements<a class="zola-anchor" href="#case-statements" aria-label="Anchor link for: case-statements"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://linuxize.com/post/bash-case-statement/">https://linuxize.com/post/bash-case-statement/</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b48ead;">case</span><span> EXPRESSION </span><span style="color:#b48ead;">in
+</span><span>
+</span><span>  PATTERN_1</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#bf616a;">STATEMENTS
+</span><span>    ;;
+</span><span>
+</span><span>  PATTERN_2</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#bf616a;">STATEMENTS
+</span><span>    ;;
+</span><span>
+</span><span>  PATTERN_N</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#bf616a;">STATEMENTS
+</span><span>    ;;
+</span><span>
+</span><span>  *</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#bf616a;">STATEMENTS
+</span><span>    ;;
+</span><span style="color:#b48ead;">esac
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;">#!/bin/bash
+</span><span>
+</span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-n </span><span>&quot;</span><span style="color:#a3be8c;">Enter the name of a country: </span><span>&quot;
+</span><span style="color:#96b5b4;">read</span><span> COUNTRY
+</span><span>
+</span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-n </span><span>&quot;</span><span style="color:#a3be8c;">The official language of </span><span>$</span><span style="color:#bf616a;">COUNTRY</span><span style="color:#a3be8c;"> is </span><span>&quot;
+</span><span>
+</span><span style="color:#b48ead;">case </span><span>$</span><span style="color:#bf616a;">COUNTRY </span><span style="color:#b48ead;">in
+</span><span>
+</span><span>  Lithuania</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-n </span><span>&quot;</span><span style="color:#a3be8c;">Lithuanian</span><span>&quot;
+</span><span>    ;;
+</span><span>
+</span><span>  Romania | Moldova</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-n </span><span>&quot;</span><span style="color:#a3be8c;">Romanian</span><span>&quot;
+</span><span>    ;;
+</span><span>
+</span><span>  Italy | &quot;</span><span style="color:#a3be8c;">San Marino</span><span>&quot; | Switzerland | &quot;</span><span style="color:#a3be8c;">Vatican City</span><span>&quot;</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-n </span><span>&quot;</span><span style="color:#a3be8c;">Italian</span><span>&quot;
+</span><span>    ;;
+</span><span>
+</span><span>  *</span><span style="color:#b48ead;">)
+</span><span>    </span><span style="color:#96b5b4;">echo </span><span style="color:#bf616a;">-n </span><span>&quot;</span><span style="color:#a3be8c;">unknown</span><span>&quot;
+</span><span>    ;;
+</span><span style="color:#b48ead;">esac
+</span></code></pre>
+<h1 id="comparing-strings">Comparing Strings<a class="zola-anchor" href="#comparing-strings" aria-label="Anchor link for: comparing-strings"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://linuxize.com/post/how-to-compare-strings-in-bash/">https://linuxize.com/post/how-to-compare-strings-in-bash/</a></p>
+<p>See link for more info.
+One note I wanted to add is to ensure you use quotes around your strings especially if they are coming from variables.</p>
+<h1 id="directory-exits-test-and-negation">Directory exits test (and negation)<a class="zola-anchor" href="#directory-exits-test-and-negation" aria-label="Anchor link for: directory-exits-test-and-negation"> 🔗</a></h1>
+<p>The example below does nothing in the positive case and exits on the negative case</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">[ </span><span style="color:#bf616a;">-d </span><span>&quot;$</span><span style="color:#bf616a;">SRC_DIR</span><span>&quot; </span><span style="color:#96b5b4;">] 
+</span><span style="color:#b48ead;">then
+</span><span>    </span><span style="color:#96b5b4;">: </span><span style="color:#65737e;"># Do nothing (was getting trouble with negating the condition)
+</span><span style="color:#b48ead;">else
+</span><span>  </span><span style="color:#96b5b4;">echo </span><span>&quot;</span><span style="color:#a3be8c;">Error: Source directory does not exist</span><span>&quot;
+</span><span>  </span><span style="color:#96b5b4;">exit</span><span> 1
+</span><span style="color:#b48ead;">fi
+</span></code></pre>
+<h1 id="no-op">No-Op<a class="zola-anchor" href="#no-op" aria-label="Anchor link for: no-op"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://stackoverflow.com/questions/12404661/what-is-the-use-case-of-noop-in-bash">https://stackoverflow.com/questions/12404661/what-is-the-use-case-of-noop-in-bash</a></p>
+<p>Simply use a <code>:</code></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b48ead;">while </span><span style="color:#bf616a;">keep_waiting</span><span>; </span><span style="color:#b48ead;">do
+</span><span>  </span><span style="color:#96b5b4;">: </span><span style="color:#65737e;"># do nothing
+</span><span style="color:#b48ead;">done
+</span></code></pre>
+<h1 id="set-script-to-exit-on-errors">Set script to exit on errors<a class="zola-anchor" href="#set-script-to-exit-on-errors" aria-label="Anchor link for: set-script-to-exit-on-errors"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html">https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">set </span><span style="color:#bf616a;">-e
+</span></code></pre>
+<h1 id="set-script-to-echo-commands">Set script to echo commands<a class="zola-anchor" href="#set-script-to-echo-commands" aria-label="Anchor link for: set-script-to-echo-commands"> 🔗</a></h1>
+<p>Source: <a rel="noopener" target="_blank" href="https://stackoverflow.com/questions/2853803/how-to-echo-shell-commands-as-they-are-executed">https://stackoverflow.com/questions/2853803/how-to-echo-shell-commands-as-they-are-executed</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">set </span><span style="color:#bf616a;">-x
+</span></code></pre>
+
+    
+        </div>
+
+    </article>
+</main>
+
+<footer>
+    <div class="separator"></div>   
+    <p>
+        <span class="feedback">
+            <a target="_blank" rel="noopener" href="https:&#x2F;&#x2F;github.com&#x2F;c-git&#x2F;c-git.github.io&#x2F;issues">Feedback? Please contact me via github issues</a> 
+        </span>
+        <span class="icons">
+            <a target="_blank" rel="noopener" href="https:&#x2F;&#x2F;github.com&#x2F;c-git&#x2F;">
+                <img alt="GitHub icon" src="https://dev.chester.wykies.com/github-mark-white.svg"/>
+            </a>
+            <a target="_blank" rel="noopener" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;cwyke">
+                <img alt="LinkedIn icon" src="https://dev.chester.wykies.com/LI-In-Bug.png"/>
+            </a>
+            <a target="_blank" rel="noopener" href="https://dev.chester.wykies.com/atom.xml">
+                <img alt="RSS Feed Icon" src="https://dev.chester.wykies.com/rss-icon.svg"/>
+            </a>
+        </span>
+    </p>
+</footer>
+
+
+    <script type="text/javascript" src="https://dev.chester.wykies.com/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://dev.chester.wykies.com/search_index.en.js" defer></script>
+    <script type="text/javascript" src="https://dev.chester.wykies.com/js.js" defer></script>
+</body>
+</html>
