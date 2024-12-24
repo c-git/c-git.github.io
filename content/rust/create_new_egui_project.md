@@ -1,8 +1,9 @@
 +++
 title = "Create new egui project"
 date = 2024-04-08
+updated = 2024-12-23
 +++
 
-If already setup see last part of setup [readme](https://github.com/c-git/my_egui_template/blob/main/setup_script/README.md#create-a-new-project-from-the-template) for instructions.
-
-Otherwise start from the top of the setup [readme](https://github.com/c-git/my_egui_template/blob/main/setup_script/README.md).
+I need to come up with a new preferred workflow.
+I need to give it some thought.
+For now I'm sunsetting my last recommendation in lieu of just the [official template](https://github.com/emilk/eframe_template) until I come up with a better workflow.

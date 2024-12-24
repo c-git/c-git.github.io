@@ -1,7 +1,7 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
-updated = 2024-10-08
+updated = 2024-12-23
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.
@@ -26,7 +26,7 @@ I think presenting this one as a narrative may prove more entertaining and less 
   <summary>Click to expand!</summary>
 
 It all started with me trying to create a new [egui](https://www.egui.rs/) project.
-I decided to use [my template](https://github.com/c-git/my_egui_template/tree/main) which I wrote a setup script for.
+I decided to use [my template](https://github.com/c-git/my_egui_template/tree/main) (Note sunset my version of the template wasn't worth the maintenance costs) which I wrote a setup script for.
 The sequence of events went like this:
 
 - In vscode use `Open folder...` to create a folder (using the open dialog) and open that folder.
