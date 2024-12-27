@@ -45,6 +45,7 @@ skip_prefixes = [
   "https://support.discord.com",
   "https://www.brainyquote.com", # I have multiple links to this site and repeated attempts trigger bot protection
   "https://www.cyberciti.biz/faq/",
+  "https://www.linkedin.com/in/cwyke", # Requires login and gives a 999 status code
   "https://www.linode.com/",
   "https://zoomadmin.com", # Site giving 503 now
 ]
