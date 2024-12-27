@@ -39,21 +39,21 @@ smart_punctuation = true
 # Skip link checking for external URLs that start with these prefixes
 skip_prefixes = [
   # Unless otherwise stated all give "Client error status code (403 Forbidden) received"
-  "https://support.discord.com",
   "https://dev.mysql.com/",
-  "https://www.cyberciti.biz/faq/",
   "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
   "https://leetcode.com/",
+  "https://support.discord.com",
+  "https://www.brainyquote.com", # I have multiple links to this site and repeated attempts trigger bot protection
+  "https://www.cyberciti.biz/faq/",
   "https://www.linode.com/",
   "https://zoomadmin.com", # Site giving 503 now
-  "https://www.brainyquote.com", # I have multiple links to this site and repeated attempts trigger bot protection
 ]
 # Skip anchor checking for external URLs that start with these prefixes
 skip_anchor_prefixes = [
-  "https://github.com/",
-  "https://www.markdownguide.org/extended-syntax/",
-  "https://rust-lang.github.io/rustfmt/", # Site uses vue and tags don't exist when fetched https://github.com/getzola/zola/issues/2351
   "https://discord.com",
+  "https://github.com/",
+  "https://rust-lang.github.io/rustfmt/", # Site uses vue and tags don't exist when fetched https://github.com/getzola/zola/issues/2351
+  "https://www.markdownguide.org/extended-syntax/",
 ]
 
 [extra]
