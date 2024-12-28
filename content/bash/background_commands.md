@@ -1,10 +1,12 @@
 +++
 title = "Background Commands"
 date = 2024-03-03
-updated = 2024-07-20
+updated = 2024-12-28
 +++
 
 Source: <https://askubuntu.com/questions/510811/what-is-the-difference-between-ctrl-z-and-ctrl-c-in-the-terminal>
+
+Note: I found more info on `fg` in the man page for sh (see `man sh`).
 
 We all end up pressing `Ctrl + Z` instead of `Ctrl + C` one day and not knowing what to do.
 This isn't always a big deal unless the program that was running locked some resource you want to use.
