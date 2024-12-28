@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2024-11-07
+updated = 2024-12-28
 +++
 
 # Library Candidates
@@ -146,6 +146,34 @@ impl PathExtension for PathBuf {
             None => self.set_extension(extension.as_ref()),
         }
     }
+}
+```
+
+## Add commas to number for display
+
+NB: To the best of my recollection here is also a crate that provides a more robust implementation
+
+```rust
+fn as_string_with_separators(value: usize) -> String {
+    value
+        .to_string()
+        .as_bytes()
+        .rchunks(3)
+        .rev()
+        .map(std::str::from_utf8)
+        .collect::<Result<Vec<&str>, _>>()
+        .unwrap()
+        .join(",")
+}
+```
+
+## Replace escaped special characters with the actual special characters
+
+This one feels like there should be a better way but I haven't needed it so not sure but the [aho_corasick](https://docs.rs/aho-corasick/latest/aho_corasick/) crate could do multiple find and replace simultaneously instead of sequentially if I recall correctly.
+
+```rust
+fn clean_msg<S: AsRef<str>>(msg: S) -> String {
+    msg.as_ref().replace(r"\n", "\n").replace(r#"\""#, "\"")
 }
 ```
 
