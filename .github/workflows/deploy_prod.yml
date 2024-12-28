@@ -18,7 +18,7 @@ jobs:
         with:
           submodules: recursive
       - name: Build and deploy
-        uses: wykies/zola-deploy-action@upgrade_to_zola_19
+        uses: wykies/zola-deploy-action@master
         env:
           OUT_DIR: docs
           BUILD_DIR: .
