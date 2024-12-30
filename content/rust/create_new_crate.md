@@ -1,7 +1,7 @@
 +++
 title="Create New Crate"
 date=2023-11-02
-updated= 2024-12-07
+updated= 2024-12-29
 +++
 
 Patterned on: [New Repo Creation](@/git/new_repo.md)
@@ -38,6 +38,7 @@ Patterned on: [New Repo Creation](@/git/new_repo.md)
    ```sh
    git checkout template/main -- .gitignore
    git checkout template/main -- Cargo.toml
+   git checkout template/main -- src/lib.rs
    ```
 
 9. Restore crate name (was lost during merge).
