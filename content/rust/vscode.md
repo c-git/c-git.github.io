@@ -19,3 +19,12 @@ In `.vscode/settings.json` add:
 # Setting target for RA
 
 See the [example for wasm](@/rust/wasm.md#switch-the-vscode-extension-to-target-wasm)
+
+# Disable default features for RA
+
+```json
+// .vscode/settings.json
+{    
+    "rust-analyzer.cargo.noDefaultFeatures": true
+}
+```
