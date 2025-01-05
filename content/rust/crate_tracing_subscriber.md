@@ -1,7 +1,7 @@
 +++
 title = "Crate Tracing Subscriber"
 date = 2024-11-24
-updated = 2024-12-06
+updated = 2025-01-05
 +++
 
 # Crate Docs
@@ -25,7 +25,7 @@ tracing_subscriber::registry()
     .with(fmt::layer().with_span_events(FmtSpan::ACTIVE))
     .with(EnvFilter::try_from_default_env().unwrap_or_else(|_| {
         EnvFilter::new(if cfg!(debug_assertions) {
-            "info"
+            "zbus=warn,info"
         } else {
             "warn"
         })
