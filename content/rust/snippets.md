@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2024-12-28
+updated = 2025-01-14
 +++
 
 # Library Candidates
@@ -409,5 +409,34 @@ fn seconds_to(days: i64, hour: u32, min: u32, sec: u32) -> Option<std::time::Dur
             None
         }
     }
+}
+```
+
+# Random
+
+Source: <https://rust-random.github.io/book/guide-values.html#the-rng-trait>
+
+Copied here for faster lookup without having to search for it again.
+
+```sh
+cargo add rand
+```
+
+```rust
+use rand::Rng;
+
+fn main() {
+    let mut rng = rand::thread_rng();
+
+    // an unbiased integer over the entire range:
+    let i: i32 = rng.gen();
+    println!("i = {i}");
+
+    // a uniformly distributed value between 0 and 1:
+    let x: f64 = rng.gen();
+    println!("x = {x}");
+
+    // simulate rolling a die:
+    println!("roll = {}", rng.gen_range(1..=6));
 }
 ```
