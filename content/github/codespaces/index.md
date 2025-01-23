@@ -28,6 +28,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://dev.chester.wykies.com/github/codes
 curl --proto '=https' --tlsv1.2 -sSf https://dev.chester.wykies.com/github/codespaces/scripts/setup_with_trunk.sh | bash
 ```
 
+## Loading rust into your environment
+
 At this point you'll need to either restart you terminal or run one of the following commands recommended but the rust install script (note the leading DOT):
 
 ```sh
