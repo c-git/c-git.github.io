@@ -20,6 +20,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://dev.chester.wykies.com/github/codes
 
 ## Install Rust with Trunk (Usually only needed if your developing for the web)
 
+**WARNING:** I'm aware of errors when using this version of the script but haven't had the time to resolve them, for now I recommend using the rust only script and installing trunk separately
+
 [Download Script](https://dev.chester.wykies.com/github/codespaces/scripts/setup_with_trunk.sh)
 
 ```sh
