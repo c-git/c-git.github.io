@@ -1,7 +1,7 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2024-10-15
+updated = 2025-01-23
 +++
 
 # Setup from default for Rust
@@ -26,17 +26,11 @@ curl --proto '=https' --tlsv1.2 -sSf https://dev.chester.wykies.com/github/codes
 curl --proto '=https' --tlsv1.2 -sSf https://dev.chester.wykies.com/github/codespaces/scripts/setup_with_trunk.sh | bash
 ```
 
-At this point you'll need to either restart you terminal or source the cargo setup script manually.
+At this point you'll need to either restart you terminal or run one of the following commands recommended but the rust install script (note the leading DOT):
 
 ```sh
-source "$HOME/.cargo/env"
-```
-
-It's probably a good idea to ensure the OS is up to date.
-Depending on what you're doing this may not matter for example just navigating code and not running anything (This is my opinion I haven't though long enough about this to be sure).
-
-```sh
-sudo apt update && sudo apt upgrade
+. "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
+source "$HOME/.cargo/env.fish"  # For fish
 ```
 
 # Use devcontainer
