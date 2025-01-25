@@ -43,6 +43,7 @@ skip_prefixes = [
   "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
   "https://leetcode.com/",
   "https://support.discord.com",
+  "https://wiki.mozilla.org/Areweyet",
   "https://www.brainyquote.com", # I have multiple links to this site and repeated attempts trigger bot protection
   "https://www.cyberciti.biz/faq/",
   "https://www.linkedin.com/in/cwyke", # Requires login and gives a 999 status code
