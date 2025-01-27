@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2025-01-14
+updated = 2025-01-27
 +++
 
 # Library Candidates
@@ -438,5 +438,30 @@ fn main() {
 
     // simulate rolling a die:
     println!("roll = {}", rng.gen_range(1..=6));
+}
+```
+
+# Wrap a call to the format macro
+
+Source: <https://stackoverflow.com/questions/32289605/how-do-i-write-a-wrapper-for-a-macro-without-repeating-the-rules>
+
+Useful when you want provide the same calling syntax as `format!()` but you want to perform additional steps.
+In this example postfix the text with error and add the position it occurred in the code.
+
+```rust
+#[macro_export]
+macro_rules! internal_error {
+    ($($arg:tt)*) => {{
+        let res = format!($($arg)*);
+        let internal_error_msg = format!(
+            "{}\ninternal error: {}:{}:{}",
+            res,
+            file!(),
+            line!(),
+            column!()
+        );
+        tracing::error!(?internal_error_msg);
+        internal_error_msg
+    }};
 }
 ```
