@@ -33,9 +33,11 @@ nano ~/.config/systemd/user/SERVICE_NAME.service
 
 # Example Contents
 
-This is the same for both. See the [linuxhandbook] for more info on what should be set in the file.
-You can find a list of targets [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.special.html).
-You can also set the user to run as for system wide services (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#User=)).
+- This is the same for both (with a few exceptions).
+  See the [linuxhandbook] for more info on what should be set in the file.
+- You can find a list of targets [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.special.html).
+- You can also set the user to run as for system wide services (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#User=)).
+- You can set environment variables using `Environment=` (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#Environment) for more).
 
 ```
 [Unit]
@@ -44,6 +46,7 @@ After=network.target
 
 [Service]
 ExecStart=/bin/bash -c '/usr/bin/my_awesome_program >> /home/user/out.txt 2>&1'
+Environment="VAR1=word1 word2" VAR2=word3 "VAR3=$word 5 6"
 Type=simple
 Restart=always
 
