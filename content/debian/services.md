@@ -1,7 +1,7 @@
 +++
 title="services systemd (unit)"
 date = 2023-09-23
-updated = 2023-11-17
+updated = 2025-02-19
 +++
 
 Source: [linuxhandbook]
@@ -35,6 +35,7 @@ nano ~/.config/systemd/user/SERVICE_NAME.service
 
 This is the same for both. See the [linuxhandbook] for more info on what should be set in the file.
 You can find a list of targets [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.special.html).
+You can also set the user to run as for system wide services (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#User=)).
 
 ```
 [Unit]
