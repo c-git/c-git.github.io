@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2025-01-03
+updated = 2025-02-24
 +++
 
 # Official
@@ -27,7 +27,7 @@ updated = 2025-01-03
 - Crate.io and Docs.rs issue status - <https://status.crates.io/>
 - Build Queue for Docs.rs - [docs.rs](https://docs.rs/releases/queue)
 - Raw Pointers - [std docs](https://doc.rust-lang.org/std/primitive.pointer.html)
-- Magic Completions - [Rust Analyzer User Manual](https://rust-analyzer.github.io/manual.html#magic-completions)
+- Magic Completions - [Rust Analyzer User Manual](https://rust-analyzer.github.io/book/features.html#magic-completions)
 - Directory Traversal - [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html)
 - Recommended way to write `expect` messages - [std docs](https://doc.rust-lang.org/core/result/enum.Result.html#recommended-message-style)
 - Types of enum variants - [Rust by Example](https://doc.rust-lang.org/rust-by-example/custom_types/enum.html)
