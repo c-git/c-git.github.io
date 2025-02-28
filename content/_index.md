@@ -1,5 +1,5 @@
 +++
-title = "Notes"
+title = "Home page"
 weight = 0
 sort_by = "title"
 insert_anchor_links = "right"
