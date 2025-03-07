@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2025-02-24
+updated = 2025-03-07
 +++
 
 # Official
@@ -47,7 +47,7 @@ updated = 2025-02-24
 - [Rustacean Station](https://rustacean-station.org/) - Current community run podcast
 - [Rust in Production](https://corrode.dev/podcast/) - Interviews with companies using rust in production.
 - [RustShip](https://www.marcoieni.com/tags/rustship/) - Interviews with companies that ship rust software.
-- [Self-Directed Research Podcast (SDR)](https://sdr-podcast.com/) - "Every week, a new presentation on what Amos or James has been up to. Usually: Rust, embedded, web servers, but anything is fair game.", is what the top of their site says. Tracks with what I've heard so far.
+- [Self-Directed Research Podcast (SDR)](https://sdr-podcast.com/) - "Every week, a new presentation on what Amos or James has been up to. Usually: Rust, embedded, web servers, but anything is fair game.", is what the top of their site says. Tracks with what I've heard so far (although no episodes for the year yet).
 - [Oxide and Friends](https://oxide-and-friends.transistor.fm/) - Not specifically a rust podcast but it's from a company that uses rust and, as a result, rust comes up frequently.
 - [New Rustacean](https://newrustacean.com/) - Stopped but it's where I started. This podcast introduced me to rust and got me excited before I read the book and actually tried it myself (converted commute time into see if I like this rust thing time). I think the main reason it got me excited is that he spoke about the parts of rust that I was interested in and maybe contributed to making it easier to learn rust. I found learning rust easy but that's not a sentiment I've heard from many other people so maybe this is why it was easy for me.
 
