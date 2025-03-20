@@ -1,7 +1,7 @@
 +++
 title = "Scripts"
 date = 2023-12-11
-updated = 2024-12-22
+updated = 2025-03-20
 aliases = ["/debian/bash"]
 +++
 
@@ -191,4 +191,53 @@ Source: <https://stackoverflow.com/questions/2853803/how-to-echo-shell-commands-
 
 ```bash
 set -x
+```
+
+# For loops
+
+Source: <https://opensource.com/article/18/5/you-dont-know-bash-intro-bash-arrays>
+
+| Syntax          | Result                                  |
+| :-------------- | :-------------------------------------- |
+| `arr=()`        | Create an empty array                   |
+| `${arr[2]}`     | Retrieve third element                  |
+| `${!arr[@]}`    | Retrieve array indices                  |
+| `arr[0]=3`      | Overwrite 1st element                   |
+| `str=$(ls)`     | Save ls output as a string              |
+| `${arr[@]:s:n}` | Retrieve n elements starting at index s |
+
+## Example simple application call
+
+```bash
+allThreads=(1 2 4 8 16 32 64 128)
+allRuntimes=()
+for t in ${allThreads[@]}; do
+  runtime=$(./pipeline --threads $t)
+  allRuntimes+=( $runtime )
+done
+```
+
+## Example Log Alerting
+
+```bash
+# List of logs and who should be notified of issues
+logPaths=("api.log" "auth.log" "jenkins.log" "data.log")
+logEmails=("jay@email" "emma@email" "jon@email" "sophia@email")
+
+# Look for signs of trouble in each log
+for i in ${!logPaths[@]};
+do
+  log=${logPaths[$i]}
+  stakeholder=${logEmails[$i]}
+  numErrors=$( tail -n 100 "$log" | grep "ERROR" | wc -l )
+
+  # Warn stakeholders if recently saw > 5 errors
+  if [[ "$numErrors" -gt 5 ]];
+  then
+    emailRecipient="$stakeholder"
+    emailSubject="WARNING: ${log} showing unusual levels of errors"
+    emailBody="${numErrors} errors found in log ${log}"
+    echo "$emailBody" | mailx -s "$emailSubject" "$emailRecipient"
+  fi
+done
 ```
