@@ -1,7 +1,7 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
-updated = 2024-12-23
+updated = 2025-03-20
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.
@@ -130,3 +130,10 @@ At the end of the day we have limited time and need to be conscious of how we ch
 The next person (might be you) may be able to figure it out again by looking at the code but you could drastically cut down the time needed if you add documentation.
 So really it's more about do you expect someone to need to look at the code in the future (again this future might be you), is there any small thing you can do to help them out?
 Sometimes you can re-derive a process but documenting processes I've found to be the most important because it's not always trivial to come up with them again and may end up requiring making the same mistakes again what you've already made.
+
+# Github CI stdin can trick programs
+
+If you are using a program in GitHub CI be careful if the program takes a path or stdin because some "smart" programs detect CI as supplying stdin when really it's not.
+In my case it was ripgrep.
+I needed to specify a path to get it to work eg `rg MY_REGEX .` where the dot specifies the current folder.
+There is a very good explanation on the [ripgrep repo](https://github.com/BurntSushi/ripgrep/discussions/2241).
