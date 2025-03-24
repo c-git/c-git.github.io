@@ -43,11 +43,11 @@ However, once you are comfortable with the solution types at least in general th
 
 NB: If you're feeling overwhelmed start with [this video](https://www.youtube.com/watch?v=G5_Q2_yRFsY) and you can also check out the list he prepared in the table below, it's the one from [AlgoMaster][algomaster].
 
-| List                                      | Reason                                                                                                                                                                       | Organization             |
-| :---------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
-| [LeetCode 75][leetcode75]                 | Provided by leetcode and free (they also have list available to premium users, support them if if you're able)                                                               | Grouped by Solution Type |
-| [AlgoMaster][alogmaster]                  | Haven't tried it myself but seem you can save your progress with his login feature and has links to solutions (seems like his) and preloaded search for solutions on YouTube | Grouped by Solution Type |
-| [Grind 75 by author of Blind 75][grind75] | Allows customization of plan to the amount of time you have available and can not show what topic is covered by a question for you to practice that skill                    | Customizable             |
+| List                                      | Reason                                                                                                                                                                         | Organization             |
+| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
+| [LeetCode 75][leetcode75]                 | Provided by leetcode and free (they also have list available to premium users, support them if if you're able)                                                                 | Grouped by Solution Type |
+| [AlgoMaster][alogmaster]                  | Has links to an explanation for each solution type before the problems. Has links to solutions for each problem (seems like his) and preloaded search for solutions on YouTube | Grouped by Solution Type |
+| [Grind 75 by author of Blind 75][grind75] | Allows customization of plan to the amount of time you have available and can not show what topic is covered by a question for you to practice that skill                      | Customizable             |
 
 [grind75]: https://www.techinterviewhandbook.org/grind75/
 [alogmaster]: https://algomaster.io/practice/dsa-patterns
