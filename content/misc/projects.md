@@ -25,26 +25,28 @@ Even though I've not used trippy yet for my original use case, I am actively inv
 
 </details>
 
-- [egui][egui] (Rust)
+# [egui][egui] (Rust)
 
-  > An easy-to-use immediate mode GUI in Rust that runs on both web and native
+> An easy-to-use immediate mode GUI in Rust that runs on both web and native
 
-  I've contributed several small improvements based on my interactions with this community.
+I've contributed several small improvements based on my interactions with this community.
 
-  <details>
+<details>
     <summary>Click to see more</summary>
 
-  I've really enjoyed using [egui][egui].
-  This crate was my introduction to immediate mode GUI development.
-  I've found that using immediate mode for [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) helps me focus on functionality instead of ascetics.
-  [IMHO](https://www.merriam-webster.com/dictionary/IMHO) they end up looking reasonable anyway ([example](https://uruth-lab.github.io/dbv/)).
-  I am using it for multiple of my ongoing projects.
-  I've contributed:
-  - a few typo fixes
-  - ensured [all examples](https://github.com/emilk/egui/pull/3770) on the [demo website](https://www.egui.rs/) include links to the source code
-  - updated the template to make it easy for new users to [set the icon](https://github.com/emilk/eframe_template/pull/122) for an application
-  - and created an alternate [example of how to load files](https://github.com/c-git/egui_file_picker_poll_promise) using the [poll-promise](https://github.com/EmbarkStudios/poll-promise) crate, which is closer to code I would want to use in an actual project.
-  </details>
+I've really enjoyed using [egui][egui].
+This crate was my introduction to immediate mode GUI development.
+I've found that using immediate mode for [PoC](https://en.wikipedia.org/wiki/Proof_of_concept) helps me focus on functionality instead of ascetics.
+[IMHO](https://www.merriam-webster.com/dictionary/IMHO) they end up looking reasonable anyway ([example](https://uruth-lab.github.io/dbv/)).
+I am using it for multiple of my ongoing projects.
+I've contributed:
+
+- a few typo fixes
+- ensured [all examples](https://github.com/emilk/egui/pull/3770) on the [demo website](https://www.egui.rs/) include links to the source code
+- updated the template to make it easy for new users to [set the icon](https://github.com/emilk/eframe_template/pull/122) for an application
+- and created an alternate [example of how to load files](https://github.com/c-git/egui_file_picker_poll_promise) using the [poll-promise](https://github.com/EmbarkStudios/poll-promise) crate, which is closer to code I would want to use in an actual project.
+
+</details>
 
 # [bazooka-bot](https://github.com/c-git/bazooka-bot) (Rust)
 
