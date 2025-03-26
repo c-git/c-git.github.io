@@ -1,7 +1,7 @@
 +++
 title = "Projects"
 date = 2024-09-24
-updated = 2024-11-19
+updated = 2025-03-26
 +++
 
 # [trippy](https://github.com/fujiapple852/trippy) (Rust)
@@ -22,23 +22,6 @@ Trippy is now at a point where it is ready to support my use case.
 However while waiting I developed a [temporary solution](https://github.com/rust-practice/conn_mon) based on the ping program that ships with debian.
 Once time permits I will rebuild on top of trippy and incorporate what I learned from the temporary solution.
 Even though I've not used trippy yet for my original use case, I am actively involved with the project.
-
-</details>
-
-# [reqwest](https://github.com/seanmonstar/reqwest) (Rust)
-
-> An easy and powerful Rust HTTP Client
-
-I create a [PR](https://github.com/seanmonstar/reqwest/pull/2360) to add cookie support for [WASM][wasm] builds.
-
-<details>
-    <summary>Click to see more</summary>
-
-I needed to use reqwest in a [WASM][wasm] context (inside of the browser) for a project I was working on.
-However, reqwest currently does not support cookies when compiled for [WASM][wasm].
-After experimenting with a workaround that resulted in success, I decided to try to implement the functionality directly into reqwest.
-I was fortunate that others had already tried before me and cleared the road blocks.
-Hence I met no resistance and was able to create the [PR](https://github.com/seanmonstar/reqwest/pull/2360) to add cookie support for [WASM][wasm] builds.
 
 </details>
 
