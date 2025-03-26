@@ -1,5 +1,5 @@
 +++
-title = "Projects"
+title = "Projects and Contributions"
 date = 2024-09-24
 updated = 2025-03-26
 +++
