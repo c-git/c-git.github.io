@@ -4,7 +4,7 @@ date = 2024-09-24
 updated = 2025-03-26
 +++
 
-# [log-viewer](https://github.com/c-git/log-viewer) (Rust)
+# [log-viewer](https://github.com/c-git/log-viewer) (Rust, Author)
 
 > Simple log viewer for logs with json lines
 
@@ -33,7 +33,7 @@ This project servers as an example for many things that I've learned to do in [e
 
 </details>
 
-# [bazooka-bot](https://github.com/c-git/bazooka-bot) (Rust)
+# [bazooka-bot](https://github.com/c-git/bazooka-bot) (Rust, Author)
 
 > Discord bot for the [Bazooka Alliance Server](http://discord.gg/uQVy7BH) (Alliance for [Command and Conquer: Rivals](https://www.ea.com/en-ca/games/command-and-conquer/command-and-conquer-rivals) Game)
 
@@ -52,7 +52,7 @@ This project servers as an example for many things that I've learned to do in [e
 
 </details>
 
-# [trippy](https://github.com/fujiapple852/trippy) (Rust)
+# [trippy](https://github.com/fujiapple852/trippy) (Rust, Contributor)
 
 > Combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
 
@@ -73,7 +73,7 @@ Even though I've not used trippy yet for my original use case, I am actively inv
 
 </details>
 
-# [egui][egui] (Rust)
+# [egui][egui] (Rust, Contributor)
 
 > An easy-to-use immediate mode GUI in Rust that runs on both web and native
 
