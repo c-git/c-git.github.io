@@ -1,6 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
+updated = 2025-03-25
 +++
 
 I quite enjoy doing leetcode as small contained puzzles that are easy to verify.
@@ -46,11 +47,11 @@ NB: If you're feeling overwhelmed start with [this video](https://www.youtube.co
 | List                                      | Reason                                                                                                                                                                         | Organization             |
 | :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
 | [LeetCode 75][leetcode75]                 | Provided by leetcode and free (they also have list available to premium users, support them if if you're able)                                                                 | Grouped by Solution Type |
-| [AlgoMaster][alogmaster]                  | Has links to an explanation for each solution type before the problems. Has links to solutions for each problem (seems like his) and preloaded search for solutions on YouTube | Grouped by Solution Type |
+| [AlgoMaster][algomaster]                  | Has links to an explanation for each solution type before the problems. Has links to solutions for each problem (seems like his) and preloaded search for solutions on YouTube | Grouped by Solution Type |
 | [Grind 75 by author of Blind 75][grind75] | Allows customization of plan to the amount of time you have available and can not show what topic is covered by a question for you to practice that skill                      | Customizable             |
 
 [grind75]: https://www.techinterviewhandbook.org/grind75/
-[alogmaster]: https://algomaster.io/practice/dsa-patterns
+[algomaster]: https://algomaster.io/practice/dsa-patterns
 [leetcode75]: https://leetcode.com/studyplan/leetcode-75/
 
 # Recreational
