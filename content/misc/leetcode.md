@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-03-25
+updated = 2025-03-27
 +++
 
 I quite enjoy doing leetcode as small contained puzzles that are easy to verify.
@@ -35,24 +35,29 @@ List of leetcode problems from the description of the video:
 > #4: [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) - Score: 8.2952\
 > #5: [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/description/) - Score: 8.0952
 
-If you're new to leetcode then it might be better to start of with easy problems to get the hang of it.
-Then do a few mediums before you move onto the hard ones.
+If you're new to leetcode then start with [neetcode][neetcode] it makes it easy to find a path to follow.
 My key takeaway is that "reasonable" hard problems are actually not hard just require multiple techniques and thus you get more value from doing them.
+But be warned some of them just require niche knowledge.
 The following are some lists I think are worth taking a look at and why.
 When starting off getting practice on types of solutions is good to help you build up intuition on when a type of solution is appropriate.
 However, once you are comfortable with the solution types at least in general then not having a hint on what type of solution to use is better to help you identify what type of solution you should use instead of being suggested one.
 
-NB: If you're feeling overwhelmed start with [this video](https://www.youtube.com/watch?v=G5_Q2_yRFsY) and you can also check out the list he prepared in the table below, it's the one from [AlgoMaster][algomaster].
+These are some good videos to help you get oriented:
 
-| List                                      | Reason                                                                                                                                                                         | Organization             |
-| :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
-| [LeetCode 75][leetcode75]                 | Provided by leetcode and free (they also have list available to premium users, support them if if you're able)                                                                 | Grouped by Solution Type |
-| [AlgoMaster][algomaster]                  | Has links to an explanation for each solution type before the problems. Has links to solutions for each problem (seems like his) and preloaded search for solutions on YouTube | Grouped by Solution Type |
-| [Grind 75 by author of Blind 75][grind75] | Allows customization of plan to the amount of time you have available and can not show what topic is covered by a question for you to practice that skill                      | Customizable             |
+- [The LeetCode Fallacy](https://www.youtube.com/watch?v=2V7yPrxJ8Ck) by [NeetCode][neetcode]
+- [How to Start LeetCode from ZERO in 2025](https://www.youtube.com/watch?v=G5_Q2_yRFsY) by [AlgoMaster][algomaster]
 
-[grind75]: https://www.techinterviewhandbook.org/grind75/
+| List                                            | Reason                                                                                                                                                                         | Organization             |
+| :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
+| [NeetCode Roadmap](https://neetcode.io/roadmap) | Provides a guided tree to follow based on prerequisites                                                                                                                        | Tree with solution types |
+| [LeetCode 75][leetcode75]                       | Provided by leetcode and free (they also have list available to premium users, support them if if you're able)                                                                 | Grouped by Solution Type |
+| [AlgoMaster][algomaster]                        | Has links to an explanation for each solution type before the problems. Has links to solutions for each problem (seems like his) and preloaded search for solutions on YouTube | Grouped by Solution Type |
+| [Grind 75 by author of Blind 75][grind75]       | Allows customization of plan to the amount of time you have available and can not show what topic is covered by a question for you to practice that skill                      | Customizable             |
+
 [algomaster]: https://algomaster.io/practice/dsa-patterns
+[grind75]: https://www.techinterviewhandbook.org/grind75/
 [leetcode75]: https://leetcode.com/studyplan/leetcode-75/
+[neetcode]: https://neetcode.io/
 
 # Recreational
 
