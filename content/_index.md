@@ -2,7 +2,7 @@
 title = "Home page"
 weight = 0
 sort_by = "title"
-paginate_by = 3
+template = "pages.html"
 +++
 
 # Chester Wyke
