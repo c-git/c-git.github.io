@@ -54,10 +54,12 @@ This Template can also be used as the rendering template for Sections, eg: examp
       {%- endif -%}
     {%- endif %}
     <div>
-      {%- if section_item.title %}
-      <h2>{{ section_item.title }}</h2>
-      {%- endif %}
-      {{- section_item.content | safe }}
+      {# Comment out heading and body content
+        {%- if section_item.title %}
+        <h2>{{ section_item.title }}</h2>
+        {%- endif %}
+        {{- section_item.content | safe }}
+      #}
       {%- if config.extra.archive_reverse %}
       {%- for year, posts in section_item.pages | sort(attribute="year") | reverse | group_by(attribute="year") %}
       {%- if not hide_section_dates %}
