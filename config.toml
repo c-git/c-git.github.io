@@ -31,7 +31,7 @@ output_dir = "docs"
 generate_feeds = true
 
 # The default author for pages
-author = "Onè"
+author = "Chester Wyke"
 
 taxonomies = [
   #    {name = "categories", feed = true},
