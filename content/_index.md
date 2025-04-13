@@ -5,8 +5,6 @@ sort_by = "title"
 template = "pages.html"
 +++
 
-# Chester Wyke
-
 ## About Me
 
 I'm better known online as Onè.
