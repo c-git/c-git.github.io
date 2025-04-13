@@ -1,27 +1,26 @@
-@use '../themes/abridge/sass/abridge' with (
-  /// LINES HERE END WITH COMMA AFTER THE VALUE!
+@use '../themes/abridge/sass/abridge' with ( /// LINES HERE END WITH COMMA AFTER THE VALUE!
   /// The things your less likely to need to override have been commented out.
 
   /// Enable a centered viewport for <header>, <main>, <footer> inside <body>
   /// Fluid layout until a defined size, then becomes centered viewport.
   //$enable-maxwidth: true,
-  $mw: 70%,// max-width
+  $mw: 70%, // max-width
   //$mb: 1200px,// value at which to switch from fluid layout to max-width
 
-  $abridgeMode: "switcher",//valid values: switcher, auto, dark, light
-  $syntax-mode: "auto",// Force syntax mode: auto, dark, light
-  $switcherDefault: "dark",// default nojs switcher mode: dark, light (make sure to also set js_switcher_default in config.toml)
+  $abridgeMode: "switcher", //valid values: switcher, auto, dark, light
+  $syntax-mode: "auto", // Force syntax mode: auto, dark, light
+  $switcherDefault: "dark", // default nojs switcher mode: dark, light (make sure to also set js_switcher_default in config.toml)
 
-  $color: "orange",// color template to use/override: orange, blue, blueshade
+  $color: "orange", // color template to use/override: orange, blue, blueshade
 
-  $color-syntax: "abridge",// syntax color template to use/override: abridge,
-  $syntax: true,//syntax highlighting for Code Blocks.
+  $color-syntax: "abridge", // syntax color template to use/override: abridge,
+  $syntax: true, //syntax highlighting for Code Blocks.
 
-  $enable-icons: true,// false disables ALL icons
-  $ic: true,// true for colorized icons, otherwise #888 is used.
+  $enable-icons: true, // false disables ALL icons
+  $ic: true, // true for colorized icons, otherwise #888 is used.
 
   $icon-rss: true,
-  $icon-mail: false,// e-mail
+  $icon-mail: false, // e-mail
   $icon-mastodon: false,
   $icon-element: false,
   $icon-matrix: false,
@@ -29,10 +28,10 @@
   $icon-kofi: false,
   $icon-twitter: false,
   $icon-facebook: false,
-  $icon-linkedin: false,
+  $icon-linkedin: true,
   $icon-codeberg: false,
   $icon-gitlab: false,
-  $icon-github: false,
+  $icon-github: true,
   $icon-github-sponsor: false,
   $icon-bitbucket: false,
   $icon-python: false,
