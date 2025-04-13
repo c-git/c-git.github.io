@@ -3,6 +3,7 @@ title = "Home page"
 weight = 0
 sort_by = "title"
 template = "pages.html"
+insert_anchor_links = "right"
 +++
 
 ## About Me
