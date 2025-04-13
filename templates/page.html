@@ -94,7 +94,7 @@
     </article>
     {%- block toc %}
     {%- if config.extra.toc | default(value=true) %}
-    {%- if page.extra.toc %}
+    {%- if page.extra.toc  | default(value=true) %}
     {%- set toc = page.toc %}
     {%- endif %}
     {%- if toc or page.extra.series %}
