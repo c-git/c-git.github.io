@@ -20,9 +20,11 @@ clasp clone <scriptID>
 
 ## Steps if using TypeScript (TS)
 
-Source: <https://developers.google.com/apps-script/guides/typescript>
+This version is was based on the then version of <https://developers.google.com/apps-script/guides/typescript> which linked out to https://github.com/google/clasp/blob/master/docs/typescript.md but they no longer provide typescript. See excerpt from the github [readme][drop_clasp_typescript] below.
 
-Source: <https://github.com/google/clasp/blob/master/docs/typescript.md>
+> #### [Drop typescript support][drop_clasp_typescript]
+>
+> Clasp no longer transpiles typescript code. For typescript projects, use typescript with a bundler like Rollup to transform code prior to pushing with clasp.
 
 - Add Type definitions for Apps Script
 
@@ -51,7 +53,7 @@ clasp push --watch
 
 ### TypeScript Modules, exports and imports
 
-Source: <https://github.com/google/clasp/blob/master/docs/typescript.md#the-namespace-statement-workaround>
+Original Source was: https://github.com/google/clasp/blob/master/docs/typescript.md#the-namespace-statement-workaround but they are [dropping typescript support][drop_clasp_typescript].
 
 Instead of normal imports use the following as import is not supported in GAS
 
@@ -129,3 +131,5 @@ First install Install [Node.js](https://nodejs.org/en/download/)
 ```sh
 npm install @google/clasp -g
 ```
+
+[drop_clasp_typescript]: https://github.com/google/clasp#drop-typescript-support

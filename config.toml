@@ -157,6 +157,7 @@ insert_anchor_links = "heading"
 # Skip link checking for external URLs that start with these prefixes
 skip_prefixes = [
   # Unless otherwise stated all give "Client error status code (403 Forbidden) received"
+  "https://codejunction.hashnode.dev", # 429 Too Many Requests
   "https://dev.mysql.com/",
   "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
   "https://leetcode.com/",
@@ -166,6 +167,7 @@ skip_prefixes = [
   "https://www.cyberciti.biz/faq/",
   "https://www.linkedin.com/in/cwyke", # Requires login and gives a 999 status code
   "https://www.linode.com/",
+  "https://www.linux.org",
   "https://zoomadmin.com", # Site giving 503 now
 ]
 # Skip anchor checking for external URLs that start with these prefixes

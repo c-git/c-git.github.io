@@ -6,7 +6,7 @@ updated = 2023-11-08
 
 ## Reboot environment
 
-Source: <https://replit.com/talk/ask/Any-way-to-reboot-a-Repl/46731>
+Original Source was: https://replit.com/talk/ask/Any-way-to-reboot-a-Repl/46731 but it's gone 404 now.
 
 ```
 busybox reboot
