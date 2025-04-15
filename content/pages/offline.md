@@ -2,6 +2,8 @@
 path = "offline"
 template = "pages.html"
 title = "Offline Mode"
+date = 2025-04-13
+updated = 2025-04-15
 +++
 
 ## Offline Mode

@@ -1,7 +1,7 @@
 +++
 title = "Replit"
 date = 2022-08-19
-updated = 2023-11-08
+updated = 2025-04-15
 +++
 
 ## Reboot environment

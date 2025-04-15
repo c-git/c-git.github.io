@@ -3,6 +3,8 @@ description = "This page outlines the Privacy Policy for this site, and the date
 path = "privacy"
 template = "pages.html"
 title = "Privacy Policy"
+date = 2025-04-13
+updated = 2025-04-15
 +++
 
 ## Privacy
