@@ -2,6 +2,8 @@
 title='CSS Display Reference'
 date = 2022-11-09
 updated = 2023-11-08
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 Meant to be a place to quickly view many elements generated from markdown to see CSS formatting applied on this site.

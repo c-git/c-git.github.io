@@ -2,6 +2,8 @@
 title="Remotes"
 date = 2023-07-21
 updated = 2023-11-08
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 Source: <https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories>

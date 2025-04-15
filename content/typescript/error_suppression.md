@@ -2,6 +2,8 @@
 title="Error Suppression"
 date = 2023-04-14
 updated = 2023-11-08
+extra = { series = "typescript" }
+taxonomies = { tags = ["typescript"] }
 +++
 
 Source: <https://bobbyhadz.com/blog/typescript-ignore-error>

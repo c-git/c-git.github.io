@@ -1,6 +1,8 @@
 +++
 title="Documentation"
 date=2023-11-02
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Include Readme.md in rustdoc

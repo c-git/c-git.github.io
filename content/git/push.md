@@ -1,6 +1,8 @@
 +++
 title = "Push"
 date = 2024-02-04
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 Source: <https://git-scm.com/docs/git-push>

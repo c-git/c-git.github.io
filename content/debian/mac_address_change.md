@@ -2,6 +2,8 @@
 title="MAC Address Change"
 date = 2022-06-02
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: <https://itsfoss.com/change-mac-address-linux/>

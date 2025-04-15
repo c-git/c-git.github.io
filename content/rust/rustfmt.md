@@ -2,6 +2,8 @@
 title="rustfmt"
 date=2023-09-02
 updated = 2024-06-04
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Run rustfmt using nightly compiler

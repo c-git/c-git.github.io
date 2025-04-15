@@ -2,6 +2,8 @@
 title='PyTorch'
 date = 2022-09-10
 updated = 2023-11-08
+extra = { series = "python" }
+taxonomies = { tags = ["python"] }
 +++
 
 # Install PyTorch

@@ -1,6 +1,8 @@
 +++
 title = "Controllers"
 date = 2024-02-20
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # PS4 Controller on Linux

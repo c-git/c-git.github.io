@@ -2,6 +2,8 @@
 title="YouTube Reference Videos"
 date = 2023-11-09
 updated = 2024-01-03
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Foreword

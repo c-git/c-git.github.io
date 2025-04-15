@@ -1,6 +1,8 @@
 +++
 title = "MAN"
 date = 2023-12-17
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Man pages are great but sometimes you want to access it from outside of the terminal.

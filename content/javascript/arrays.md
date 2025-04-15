@@ -2,6 +2,8 @@
 title='Arrays'
 date = 2022-08-19
 updated = 2023-11-08
+extra = { series = "javascript" }
+taxonomies = { tags = ["javascript"] }
 +++
 
 Source: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array>

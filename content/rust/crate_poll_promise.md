@@ -2,6 +2,8 @@
 title = "Crate Poll Promise"
 date = 2024-01-30
 updated = 2024-12-18
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 Source: <https://github.com/EmbarkStudios/poll-promise>

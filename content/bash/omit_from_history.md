@@ -1,6 +1,8 @@
 +++
 title = "Omit From History"
 date = 2025-02-20
+extra = { series = "bash" }
+taxonomies = { tags = ["bash"] }
 +++
 
 Source: <https://stackoverflow.com/questions/6475524/how-do-i-prevent-commands-from-showing-up-in-bash-history>

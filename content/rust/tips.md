@@ -1,6 +1,8 @@
 +++
 title="Tips"
 date = 2024-02-08
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Recovering Storage Space

@@ -2,6 +2,8 @@
 title="Extensions Rust"
 date = 2023-07-27
 updated = 2024-07-24
+extra = { series = "vscode" }
+taxonomies = { tags = ["vscode"] }
 +++
 
 # Must haves

@@ -2,6 +2,8 @@
 title="Codespaces"
 date=2023-11-05
 updated = 2025-01-23
+extra = { series = "github" }
+taxonomies = { tags = ["github"] }
 +++
 
 # Setup from default for Rust

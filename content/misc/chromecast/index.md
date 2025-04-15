@@ -1,6 +1,8 @@
 +++
 title = "Chromecast"
 date = 2023-12-27
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Mirror Phone Screen

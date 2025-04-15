@@ -2,6 +2,8 @@
 title='Audio'
 date = 2022-10-12
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Multiple Outputs

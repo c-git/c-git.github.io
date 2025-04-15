@@ -1,6 +1,8 @@
 +++
 title="JSON"
 date=2023-11-02
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 Source: <https://hachyderm.io/@predrag/111336085323364834>

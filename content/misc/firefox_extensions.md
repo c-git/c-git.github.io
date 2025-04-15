@@ -2,6 +2,8 @@
 title="Firefox Extensions"
 date = 2023-10-22
 updated = 2023-11-08
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Reference Sources

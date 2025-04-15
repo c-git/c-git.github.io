@@ -2,6 +2,8 @@
 title = "Resume writing"
 date = 2024-09-23
 updated = 2024-11-16
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Templates

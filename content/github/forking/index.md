@@ -1,6 +1,8 @@
 +++
 title = "Forking"
 date = 2024-02-22
+extra = { series = "github" }
+taxonomies = { tags = ["github"] }
 +++
 
 If forking a repo to make a PR and you intend to keep fork around then it's advisable not to commit to the main branch to avoid issues with history not being able to be linear.

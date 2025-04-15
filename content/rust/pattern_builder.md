@@ -1,6 +1,8 @@
 +++
 title="Pattern Builder"
 date=2023-11-03
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 Source: <https://rust-unofficial.github.io/patterns/patterns/creational/builder.html>

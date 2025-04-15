@@ -2,6 +2,8 @@
 title = "Crate Insta"
 date = 2024-02-02
 updated = 2025-02-03
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 Source: <https://insta.rs/docs/quickstart/>

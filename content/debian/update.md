@@ -2,6 +2,8 @@
 title="Updating"
 date = 2023-10-19
 updated = 2024-01-12
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Update and Upgrade

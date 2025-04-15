@@ -2,6 +2,8 @@
 title='PHP'
 date = 2023-11-06
 updated = 2024-08-31
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Check current

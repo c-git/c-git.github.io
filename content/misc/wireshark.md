@@ -1,6 +1,8 @@
 +++
 title = "Wireshark"
 date = 2023-12-15
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Installation

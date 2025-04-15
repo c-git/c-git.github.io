@@ -1,6 +1,8 @@
 +++
 title = "Detached Head"
 date = 2024-09-12
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # Recovering a detached head created from a hard reset

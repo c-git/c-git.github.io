@@ -2,6 +2,8 @@
 title="Merge Conflict"
 date = 2023-11-02
 updated = 2023-11-08
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # Accept their/ours

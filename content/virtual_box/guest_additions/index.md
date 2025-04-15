@@ -2,6 +2,8 @@
 title="Guest Additions"
 date = 2022-10-19
 updated = 2023-11-08
+extra = { series = "virtual_box" }
+taxonomies = { tags = ["virtual_box"] }
 +++
 
 Steps recorded on VM running Ubuntu 18.04.6

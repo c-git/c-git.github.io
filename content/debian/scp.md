@@ -2,6 +2,8 @@
 title="SCP"
 date = 2023-10-19
 updated = 2023-11-27
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Transfer to remote server

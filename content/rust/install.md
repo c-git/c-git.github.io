@@ -2,6 +2,8 @@
 title="Install"
 date=2022-12-07
 updated= 2023-12-15
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Linux (Debian)

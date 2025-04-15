@@ -2,6 +2,8 @@
 title='Zola'
 date=2023-10-27
 updated = 2023-11-27
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Summary

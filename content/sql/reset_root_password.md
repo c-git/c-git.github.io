@@ -3,6 +3,8 @@ title="Reset Root Password"
 date = 2022-09-21
 updated = 2024-02-28
 aliases=["/debian/rest-root-password"]
+extra = { series = "sql" }
+taxonomies = { tags = ["sql"] }
 +++
 
 The following are the commands, followed by the log;

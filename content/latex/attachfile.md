@@ -2,6 +2,8 @@
 title="Attach File Inside PDF"
 date = 2023-08-15
 updated = 2023-11-08
+extra = { series = "latex" }
+taxonomies = { tags = ["latex"] }
 +++
 
 Source: <https://tex.stackexchange.com/questions/18271/include-binary-data>

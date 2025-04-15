@@ -1,6 +1,8 @@
 +++
 title = "Regex"
 date = 2024-12-02
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Capture first match

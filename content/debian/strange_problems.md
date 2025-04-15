@@ -2,6 +2,8 @@
 title="Strange Problems and Fixes"
 date = 2023-04-13
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Ctrl + .

@@ -2,6 +2,8 @@
 title="Show Seconds on Clock Display"
 date = 2023-07-03
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 1. Open `dconf Editor` (May need to be installed, not included by default)

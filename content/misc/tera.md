@@ -2,6 +2,8 @@
 title = "Tera Guide"
 date=2023-10-27
 updated = 2023-11-08
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 ## Get everything in context

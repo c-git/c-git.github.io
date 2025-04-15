@@ -1,6 +1,8 @@
 +++
 title = "VNC Ubuntu"
 date = 2024-01-07
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 I've needed to do this three times now and each time I don't know what happens but I get issues so writing it down this time.

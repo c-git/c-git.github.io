@@ -2,6 +2,8 @@
 title="Cargo"
 date=2023-06-16
 updated = 2024-08-22
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Configuring Cargo

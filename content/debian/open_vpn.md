@@ -1,6 +1,8 @@
 +++
 title = "OpenVPN"
 date = 2023-12-06
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Saved link to official how to because it was a bit hard to find

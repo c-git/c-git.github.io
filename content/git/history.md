@@ -2,6 +2,8 @@
 title="History"
 date = 2023-10-19
 updated = 2023-11-08
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # View git history

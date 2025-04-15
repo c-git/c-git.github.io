@@ -2,6 +2,8 @@
 title="Formatting"
 date=2023-11-06
 updated = 2023-11-08
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # Foreword

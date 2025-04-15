@@ -2,6 +2,8 @@
 title = "Crate Tracing Subscriber"
 date = 2024-11-24
 updated = 2025-01-05
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Crate Docs

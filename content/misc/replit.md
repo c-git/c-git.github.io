@@ -2,6 +2,8 @@
 title = "Replit"
 date = 2022-08-19
 updated = 2025-04-15
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 ## Reboot environment

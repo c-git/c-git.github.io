@@ -3,6 +3,8 @@ title="Crate Serde"
 date=2023-01-06
 updated = 2024-08-20
 aliases=["/rust/serde"]
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 Tips and Tricks for working with `Serde`.

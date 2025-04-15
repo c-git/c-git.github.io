@@ -2,6 +2,8 @@
 title = "Surrender Novena"
 date = 2024-08-31
 updated = 2024-09-05
+extra = { series = "prayers" }
+taxonomies = { tags = ["prayers"] }
 +++
 
 # Foreword and sources

@@ -1,6 +1,8 @@
 +++
 title = "phpMyAdmin"
 date = 2024-04-17
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 I have XAMPP installed and wanted to document part of my config in case I have to setup again on a new computer.

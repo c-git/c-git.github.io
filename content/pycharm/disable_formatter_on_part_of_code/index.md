@@ -2,6 +2,8 @@
 title="Disable Formatter on parts of Code"
 date = 2022-08-19
 updated = 2023-11-08
+extra = { series = "pycharm" }
+taxonomies = { tags = ["pycharm"] }
 +++
 
 Source: <https://stackoverflow.com/questions/14020200/how-to-config-intellij-idea-not-format-some-part-of-the-code>

@@ -2,6 +2,8 @@
 title="Blacklist Module"
 date = 2022-08-19
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: <https://superuser.com/questions/575887/how-to-disable-device-in-linux-debian-wheezy>

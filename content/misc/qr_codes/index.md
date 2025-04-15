@@ -1,6 +1,8 @@
 +++
 title = "QR Codes"
 date = 2024-11-01
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # My personal website (This site)

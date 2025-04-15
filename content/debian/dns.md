@@ -2,6 +2,8 @@
 title='DNS'
 date = 2022-12-02
 updated = 2024-04-13
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: <https://www.howtouselinux.com/post/linux-command-use-dig-to-query-dns>

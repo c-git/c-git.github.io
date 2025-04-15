@@ -2,6 +2,8 @@
 title='VMware Tools'
 date = 2023-08-23
 updated = 2024-09-24
+extra = { series = "vmware" }
+taxonomies = { tags = ["vmware"] }
 +++
 
 # Install from Repo

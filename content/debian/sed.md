@@ -1,6 +1,8 @@
 +++
 title = "sed"
 date = 2024-01-27
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: <https://www.linux.org/threads/why-i-love-sed-and-a-clear-practical-beginners-guide-to-using-it.43651/>

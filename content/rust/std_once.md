@@ -2,6 +2,8 @@
 title = "OnceLock"
 date = 2023-12-13
 updated = 2024-09-17
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 If thread safety is not needed you can use [OnceCell][oncecell] but [OnceLock][oncelock] can be used in both and hence examples here focus on [OnceLock][oncelock] but the example in the docs for [OnceCell][oncecell] is pretty good.

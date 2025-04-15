@@ -2,6 +2,8 @@
 title = "Markdown / HTML Guide"
 date=2023-10-27
 updated = 2024-01-14
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Official Docs

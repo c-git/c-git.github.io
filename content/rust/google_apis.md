@@ -1,6 +1,8 @@
 +++
 title = "Google APIs"
 date = 2025-03-20
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Google Sheets

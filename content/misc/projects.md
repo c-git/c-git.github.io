@@ -2,6 +2,8 @@
 title = "Projects and Contributions"
 date = 2024-09-24
 updated = 2025-03-26
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # [log-viewer](https://github.com/c-git/log-viewer) (Rust, Author)

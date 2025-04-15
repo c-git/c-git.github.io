@@ -2,6 +2,8 @@
 title="Create Bootable Flash Drive"
 date = 2023-07-27
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 ### Display List of Hard Drives

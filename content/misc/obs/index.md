@@ -2,6 +2,8 @@
 title='OBS'
 date = 2022-10-22
 updated = 2023-11-08
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Desktop Audio

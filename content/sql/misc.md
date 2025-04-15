@@ -2,6 +2,8 @@
 title='Misc'
 date = 2022-09-21
 updated = 2023-11-08
+extra = { series = "sql" }
+taxonomies = { tags = ["sql"] }
 +++
 
 Source: <https://www.digitalocean.com/community/tutorials/how-to-allow-remote-access-to-mysql>

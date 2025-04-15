@@ -2,6 +2,8 @@
 title="Leetcode"
 date=2025-03-24
 updated = 2025-03-27
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 I quite enjoy doing leetcode as small contained puzzles that are easy to verify.

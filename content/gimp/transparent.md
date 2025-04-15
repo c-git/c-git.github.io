@@ -2,6 +2,8 @@
 title="Transparent background"
 date = 2023-06-05
 updated = 2023-11-08
+extra = { series = "gimp" }
+taxonomies = { tags = ["gimp"] }
 +++
 
 Source: <https://youtu.be/nl2uqKqbryo>

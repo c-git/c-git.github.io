@@ -1,6 +1,8 @@
 +++
 title = "lettre"
 date = 2025-03-15
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Sending email using smtp and Gmail

@@ -2,6 +2,8 @@
 title = "Thoughts about rust"
 date = 2023-11-17
 updated = 2024-04-09
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Foreword

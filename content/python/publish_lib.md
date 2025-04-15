@@ -2,6 +2,8 @@
 title="Publish Library"
 date = 2022-09-14
 updated = 2023-12-28
+extra = { series = "python" }
+taxonomies = { tags = ["python"] }
 +++
 
 # Editable Install (Local Project Install)

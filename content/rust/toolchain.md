@@ -2,6 +2,8 @@
 title="Toolchain (Nightly)"
 date=2023-06-29
 updated = 2023-11-08
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Per command override (shorthand)

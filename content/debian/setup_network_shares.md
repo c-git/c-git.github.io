@@ -2,6 +2,8 @@
 title="Setup Network Shares"
 date = 2022-12-03
 updated = 2024-09-21
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Install Samba

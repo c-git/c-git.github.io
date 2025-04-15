@@ -2,6 +2,8 @@
 title="Cron"
 date = 2022-12-07
 updated = 2024-11-09
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: <https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/>

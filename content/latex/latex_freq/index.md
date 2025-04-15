@@ -2,6 +2,8 @@
 title="LaTex Frequently used commands"
 date = 2023-06-23
 updated = 2023-11-08
+extra = { series = "latex" }
+taxonomies = { tags = ["latex"] }
 +++
 
 [//]: # (TODO: Add way to display the latex)

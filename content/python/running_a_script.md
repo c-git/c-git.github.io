@@ -1,6 +1,8 @@
 +++
 title = "Running a Script"
 date = 2023-12-29
+extra = { series = "python" }
+taxonomies = { tags = ["python"] }
 +++
 
 # TLDR

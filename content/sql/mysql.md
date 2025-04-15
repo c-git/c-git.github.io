@@ -4,6 +4,8 @@ date = 2022-12-07
 updated = 2023-12-20
 
 aliases=["/sql/install-mysql/"]
+extra = { series = "sql" }
+taxonomies = { tags = ["sql"] }
 
 +++
 

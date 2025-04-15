@@ -2,6 +2,8 @@
 title = "Firewall"
 date = 2023-11-22
 updated = 2024-07-21
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: <https://ubuntu.com/server/docs/security-firewall>

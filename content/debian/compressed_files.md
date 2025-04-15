@@ -2,6 +2,8 @@
 title='Compressed Files'
 date = 2023-07-28
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Compressing files

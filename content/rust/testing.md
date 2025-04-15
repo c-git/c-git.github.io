@@ -2,6 +2,8 @@
 title="Testing"
 date = 2023-11-05
 updated = 2024-05-30
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Frequently used links and commands

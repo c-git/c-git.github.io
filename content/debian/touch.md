@@ -2,6 +2,8 @@
 title="Touch (Set file modified date)"
 date = 2022-06-02
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: <https://www.thegeekstuff.com/2012/11/linux-touch-command/>

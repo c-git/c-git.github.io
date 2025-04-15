@@ -2,6 +2,8 @@
 title="Create New Crate"
 date=2023-11-02
 updated= 2024-12-29
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 Patterned on: [New Repo Creation](@/git/new_repo.md)

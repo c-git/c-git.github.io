@@ -2,6 +2,8 @@
 title="Calender Notifications Popup Disable"
 date = 2022-08-19
 updated = 2023-12-28
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Source: https://newbedev.com/turn-off-calendar-notifications-ubuntu-20-04 (Changed from link as it is timing out now)

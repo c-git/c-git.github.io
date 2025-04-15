@@ -3,6 +3,8 @@ title = "Hooks Examples"
 date = 2023-12-20
 update = 2024-02-01
 updated = 2024-10-04
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # Skip commit hooks

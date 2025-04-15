@@ -3,6 +3,8 @@ title='Bash Aliases'
 date=2022-08-22
 updated=2024-02-05
 aliases=["/debian/bash-alias"]
+extra = { series = "bash" }
+taxonomies = { tags = ["bash"] }
 +++
 
 In a bash shell there is a special file provided for creating aliases to avoid directly editing your `.bashrc` logon script.

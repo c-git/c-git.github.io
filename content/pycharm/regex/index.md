@@ -2,6 +2,8 @@
 title="RegExp Editor"
 date = 2022-08-19
 updated = 2024-07-25
+extra = { series = "pycharm" }
+taxonomies = { tags = ["pycharm"] }
 +++
 
 ![Screen Shot](scrshot.png)

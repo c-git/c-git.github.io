@@ -2,6 +2,8 @@
 title = "Cannon MG3600"
 date = 2022-06-01
 updated = 2024-12-16
+extra = { series = "misc" }
+taxonomies = { tags = ["misc"] }
 +++
 
 # Connecting the printer to the WiFi using WPS

@@ -2,6 +2,8 @@
 title = "Iterators"
 date = 2024-09-05
 updated = 2024-12-18
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # References

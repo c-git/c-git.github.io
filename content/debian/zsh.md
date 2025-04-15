@@ -1,6 +1,8 @@
 +++
 title = "zsh"
 date = 2024-02-23
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Sources:

@@ -1,6 +1,8 @@
 +++
 title = "rerere"
 date = 2024-02-02
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 Source: <https://git-scm.com/docs/git-rerere>

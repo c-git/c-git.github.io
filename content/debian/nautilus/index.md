@@ -2,6 +2,8 @@
 title='Nautilus'
 date = 2022-08-19
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 Many useful shortcuts for Nautilus can be found in the menu under shortcuts,

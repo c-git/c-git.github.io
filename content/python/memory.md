@@ -2,6 +2,8 @@
 title="Memory"
 date = 2023-08-16
 updated = 2023-11-08
+extra = { series = "python" }
+taxonomies = { tags = ["python"] }
 +++
 
 Source: <https://docs.python.org/3/library/tracemalloc.html>

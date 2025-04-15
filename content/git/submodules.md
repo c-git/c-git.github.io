@@ -2,6 +2,8 @@
 title="Submodules"
 date = 2023-04-14
 updated = 2024-12-08
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # Add a new submodule

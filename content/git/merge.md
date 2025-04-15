@@ -2,6 +2,8 @@
 title="Merge"
 date = 2023-04-17
 updated = 2023-11-08
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # Aborting a merge

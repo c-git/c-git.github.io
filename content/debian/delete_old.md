@@ -1,6 +1,8 @@
 +++
 title = "Delete Old Files Automatically"
 date = 2025-02-28
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Explanation

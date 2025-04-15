@@ -2,6 +2,8 @@
 title="Add New User to Database"
 date = 2022-09-21
 updated = 2023-11-08
+extra = { series = "sql" }
+taxonomies = { tags = ["sql"] }
 +++
 
 (See sample log below)

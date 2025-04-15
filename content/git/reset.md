@@ -2,6 +2,8 @@
 title='Reset'
 date = 2022-08-26
 updated = 2024-06-02
+extra = { series = "git" }
+taxonomies = { tags = ["git"] }
 +++
 
 # Reset to current head and discard all including stash

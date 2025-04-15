@@ -2,6 +2,8 @@
 title='Power'
 date = 2022-08-19
 updated = 2023-11-08
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # Set low battery notifications percentage

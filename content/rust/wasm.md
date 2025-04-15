@@ -2,6 +2,8 @@
 title="WASM"
 date=2023-10-19
 updated = 2024-06-12
+extra = { series = "rust" }
+taxonomies = { tags = ["rust"] }
 +++
 
 # Working on WASM code

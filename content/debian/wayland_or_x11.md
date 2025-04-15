@@ -1,6 +1,8 @@
 +++
 title = "Wayland or x11?"
 date = 2024-12-23
+extra = { series = "debian" }
+taxonomies = { tags = ["debian"] }
 +++
 
 # How to know which you are using

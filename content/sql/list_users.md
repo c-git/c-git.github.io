@@ -2,6 +2,8 @@
 title="View List Of Users"
 date = 2022-09-21
 updated = 2023-11-08
+extra = { series = "sql" }
+taxonomies = { tags = ["sql"] }
 +++
 
 ```sql

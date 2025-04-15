@@ -2,6 +2,8 @@
 title='Launcher Shortcut'
 date = 2022-08-19
 updated = 2023-11-08
+extra = { series = "pycharm" }
+taxonomies = { tags = ["pycharm"] }
 +++
 
 Source: <https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher>
