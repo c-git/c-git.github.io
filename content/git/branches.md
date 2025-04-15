@@ -1,7 +1,7 @@
 +++
 title='Branches'
 date = 2023-10-28
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "git" }
 taxonomies = { tags = ["git"] }
 +++

@@ -3,6 +3,7 @@ title = "Detached Head"
 date = 2024-09-12
 extra = { series = "git" }
 taxonomies = { tags = ["git"] }
+updated = 2025-04-15
 +++
 
 # Recovering a detached head created from a hard reset

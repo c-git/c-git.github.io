@@ -3,6 +3,7 @@ title="Pattern Builder"
 date=2023-11-03
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
+updated = 2025-04-15
 +++
 
 Source: <https://rust-unofficial.github.io/patterns/patterns/creational/builder.html>

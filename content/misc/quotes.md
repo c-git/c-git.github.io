@@ -1,7 +1,7 @@
 +++
 title = "Quotes"
 date = 2024-06-07
-updated = 2024-08-13
+updated = 2025-04-15
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++

@@ -1,7 +1,7 @@
 +++
 title="Live Share"
 date = 2023-06-24
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "vscode" }
 taxonomies = { tags = ["vscode"] }
 +++

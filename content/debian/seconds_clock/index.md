@@ -1,7 +1,7 @@
 +++
 title="Show Seconds on Clock Display"
 date = 2023-07-03
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

@@ -3,6 +3,7 @@ title = "Github Actions"
 date = 2024-12-23
 extra = { series = "github" }
 taxonomies = { tags = ["github"] }
+updated = 2025-04-15
 +++
 
 # Reusing a github action

@@ -1,7 +1,7 @@
 +++
 title="SSH"
 date = 2023-11-06
-updated = 2024-04-04
+updated = 2025-04-15
 extra = { series = "github" }
 taxonomies = { tags = ["github"] }
 +++

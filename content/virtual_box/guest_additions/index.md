@@ -1,7 +1,7 @@
 +++
 title="Guest Additions"
 date = 2022-10-19
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "virtual_box" }
 taxonomies = { tags = ["virtual_box"] }
 +++

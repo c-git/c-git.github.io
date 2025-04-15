@@ -1,7 +1,7 @@
 +++
 title = "Crate Insta"
 date = 2024-02-02
-updated = 2025-02-03
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

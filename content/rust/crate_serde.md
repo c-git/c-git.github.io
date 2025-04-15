@@ -1,7 +1,7 @@
 +++
 title="Crate Serde"
 date=2023-01-06
-updated = 2024-08-20
+updated = 2025-04-15
 aliases=["/rust/serde"]
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }

@@ -1,7 +1,7 @@
 +++
 title="LaTex Frequently used commands"
 date = 2023-06-23
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "latex" }
 taxonomies = { tags = ["latex"] }
 +++

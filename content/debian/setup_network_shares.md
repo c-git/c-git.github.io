@@ -1,7 +1,7 @@
 +++
 title="Setup Network Shares"
 date = 2022-12-03
-updated = 2024-09-21
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

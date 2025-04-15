@@ -1,7 +1,7 @@
 +++
 title="Live Templates"
 date = 2022-10-15
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "pycharm" }
 taxonomies = { tags = ["pycharm"] }
 +++

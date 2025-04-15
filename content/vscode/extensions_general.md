@@ -1,7 +1,7 @@
 +++
 title="Extensions General"
 date = 2023-07-27
-updated = 2024-07-09
+updated = 2025-04-15
 extra = { series = "vscode" }
 taxonomies = { tags = ["vscode"] }
 +++

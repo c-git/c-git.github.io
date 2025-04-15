@@ -1,7 +1,7 @@
 +++
 title = "Iterators"
 date = 2024-09-05
-updated = 2024-12-18
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

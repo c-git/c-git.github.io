@@ -3,6 +3,7 @@ title = "Terminal"
 date = 2024-01-14
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
+updated = 2025-04-15
 +++
 
 # Changing terminal title

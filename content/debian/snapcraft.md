@@ -1,7 +1,7 @@
 +++
 title="Snapcraft"
 date = 2022-09-07
-updated = 2024-08-13
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

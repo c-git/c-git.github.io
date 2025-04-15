@@ -1,7 +1,7 @@
 +++
 title = "Snippets"
 date = 2023-09-02
-updated = 2025-01-27
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

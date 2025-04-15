@@ -1,7 +1,7 @@
 +++
 title='Linting Suppression'
 date = 2022-08-19
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "javascript" }
 taxonomies = { tags = ["javascript"] }
 +++

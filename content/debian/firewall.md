@@ -1,7 +1,7 @@
 +++
 title = "Firewall"
 date = 2023-11-22
-updated = 2024-07-21
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

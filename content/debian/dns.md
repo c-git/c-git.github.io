@@ -1,7 +1,7 @@
 +++
 title='DNS'
 date = 2022-12-02
-updated = 2024-04-13
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

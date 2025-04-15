@@ -3,6 +3,7 @@ title = "Command Substitution"
 date = 2023-12-29
 extra = { series = "bash" }
 taxonomies = { tags = ["bash"] }
+updated = 2025-04-15
 +++
 
 Source: <http://mywiki.wooledge.org/CommandSubstitution>

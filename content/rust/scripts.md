@@ -1,7 +1,7 @@
 +++
 title="Single file script"
 date=2023-09-02
-updated = 2024-12-18
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

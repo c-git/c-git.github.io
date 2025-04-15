@@ -1,7 +1,7 @@
 +++
 title = "Crate Poll Promise"
 date = 2024-01-30
-updated = 2024-12-18
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

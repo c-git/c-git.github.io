@@ -1,7 +1,7 @@
 +++
 title = "Crate Tracing Subscriber"
 date = 2024-11-24
-updated = 2025-01-05
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

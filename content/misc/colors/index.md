@@ -3,6 +3,7 @@ title = "Colors"
 date = 2024-07-28
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
+updated = 2025-04-15
 +++
 
 # Color Blindness

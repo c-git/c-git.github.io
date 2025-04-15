@@ -1,7 +1,7 @@
 +++
 title="String Formatting"
 date=2023-07-12
-updated = 2024-09-09
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

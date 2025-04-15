@@ -1,7 +1,7 @@
 +++
 title = "Characters"
 date = 2024-02-02
-updated = 2024-12-01
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

@@ -1,7 +1,7 @@
 +++
 title="Firefox Extensions"
 date = 2023-10-22
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++

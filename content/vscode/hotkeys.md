@@ -3,6 +3,7 @@ title="Hotkeys"
 date = 2023-11-09
 extra = { series = "vscode" }
 taxonomies = { tags = ["vscode"] }
+updated = 2025-04-15
 +++
 
 Compilation of hotkeys I use and those I rarely use but really want and then have a hard time finding.

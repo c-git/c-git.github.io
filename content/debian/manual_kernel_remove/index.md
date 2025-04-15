@@ -1,7 +1,7 @@
 +++
 title="Manually Removing Old Kernels"
 date = 2023-03-30
-updated = 2023-11-11
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

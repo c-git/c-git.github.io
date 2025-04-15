@@ -1,7 +1,7 @@
 +++
 title="Touch (Set file modified date)"
 date = 2022-06-02
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

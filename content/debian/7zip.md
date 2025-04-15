@@ -3,6 +3,7 @@ title = "7z encrypted file"
 date = 2024-02-28
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
+updated = 2025-04-15
 +++
 
 Found an old `7z` file that was password protected and the UI `Extract Here` option wouldn't extract it for me. It said

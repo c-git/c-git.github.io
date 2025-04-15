@@ -3,6 +3,7 @@ title = "vscode"
 date = 2025-01-04
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
+updated = 2025-04-15
 +++
 
 In all headings RA means RustAnalyzer

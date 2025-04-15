@@ -1,7 +1,7 @@
 +++
 title="Google Storage"
 date=2023-10-27
-updated = 2024-11-13
+updated = 2025-04-15
 aliases = ["/misc/google-drive"]
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }

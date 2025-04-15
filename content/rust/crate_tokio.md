@@ -1,7 +1,7 @@
 +++
 title="Crate Tokio"
 date=2023-08-21
-updated = 2024-01-30
+updated = 2025-04-15
 aliases=["/rust/tokio"]
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }

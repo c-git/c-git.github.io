@@ -1,7 +1,7 @@
 +++
 title='Bash Aliases'
 date=2022-08-22
-updated=2024-02-05
+updated= 2025-04-15
 aliases=["/debian/bash-alias"]
 extra = { series = "bash" }
 taxonomies = { tags = ["bash"] }

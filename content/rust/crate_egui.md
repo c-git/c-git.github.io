@@ -3,6 +3,7 @@ title = "Crate egui"
 date = 2024-09-05
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
+updated = 2025-04-15
 +++
 
 # Get window size

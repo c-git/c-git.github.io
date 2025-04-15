@@ -3,6 +3,7 @@ title="JSON"
 date=2023-11-02
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
+updated = 2025-04-15
 +++
 
 Source: <https://hachyderm.io/@predrag/111336085323364834>

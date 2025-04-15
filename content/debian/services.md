@@ -1,7 +1,7 @@
 +++
 title="services systemd (unit)"
 date = 2023-09-23
-updated = 2025-02-19
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

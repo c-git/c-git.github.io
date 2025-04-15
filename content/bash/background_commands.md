@@ -1,7 +1,7 @@
 +++
 title = "Background Commands"
 date = 2024-03-03
-updated = 2024-12-28
+updated = 2025-04-15
 extra = { series = "bash" }
 taxonomies = { tags = ["bash"] }
 +++

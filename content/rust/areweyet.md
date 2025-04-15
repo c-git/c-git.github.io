@@ -3,6 +3,7 @@ title = "Are we yet"
 date = 2023-11-22
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
+updated = 2025-04-15
 +++
 
 There are several "Are we x yet?" websites for rust. Mozilla has a [compilation of "areweyet"](https://wiki.mozilla.org/Areweyet) sites but it's not only rust. This github repo called [AreWeRustYet](https://github.com/UgurcanAkkok/AreWeRustYet) appears to be rust focused and has summaries not sure of how updated it is, but still found it faster to find the one I was looking for there.

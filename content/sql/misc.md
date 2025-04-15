@@ -1,7 +1,7 @@
 +++
 title='Misc'
 date = 2022-09-21
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "sql" }
 taxonomies = { tags = ["sql"] }
 +++

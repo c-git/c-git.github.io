@@ -1,7 +1,7 @@
 +++
 title = "Thoughts about rust"
 date = 2023-11-17
-updated = 2024-04-09
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

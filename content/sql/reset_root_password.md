@@ -1,7 +1,7 @@
 +++
 title="Reset Root Password"
 date = 2022-09-21
-updated = 2024-02-28
+updated = 2025-04-15
 aliases=["/debian/rest-root-password"]
 extra = { series = "sql" }
 taxonomies = { tags = ["sql"] }

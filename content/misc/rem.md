@@ -1,7 +1,7 @@
 +++
 title="Things to Remember"
 date=2004-10-01
-updated=2024-02-18
+updated= 2025-04-15
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++

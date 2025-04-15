@@ -1,7 +1,7 @@
 +++
 title="Testing"
 date = 2023-11-05
-updated = 2024-05-30
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

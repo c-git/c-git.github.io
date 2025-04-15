@@ -1,7 +1,7 @@
 +++
 title="Memory"
 date = 2023-08-16
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "python" }
 taxonomies = { tags = ["python"] }
 +++

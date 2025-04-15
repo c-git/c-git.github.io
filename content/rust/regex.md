@@ -3,6 +3,7 @@ title = "Regex"
 date = 2024-12-02
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
+updated = 2025-04-15
 +++
 
 # Capture first match

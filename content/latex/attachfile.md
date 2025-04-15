@@ -1,7 +1,7 @@
 +++
 title="Attach File Inside PDF"
 date = 2023-08-15
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "latex" }
 taxonomies = { tags = ["latex"] }
 +++

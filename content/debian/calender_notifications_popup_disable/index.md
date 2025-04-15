@@ -1,7 +1,7 @@
 +++
 title="Calender Notifications Popup Disable"
 date = 2022-08-19
-updated = 2023-12-28
+updated = 2025-04-15
 extra = { series = "debian" }
 taxonomies = { tags = ["debian"] }
 +++

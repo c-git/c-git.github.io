@@ -1,7 +1,7 @@
 +++
 title = "Resume writing"
 date = 2024-09-23
-updated = 2024-11-16
+updated = 2025-04-15
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++

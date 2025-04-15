@@ -1,7 +1,7 @@
 +++
 title="Transparent background"
 date = 2023-06-05
-updated = 2023-11-08
+updated = 2025-04-15
 extra = { series = "gimp" }
 taxonomies = { tags = ["gimp"] }
 +++

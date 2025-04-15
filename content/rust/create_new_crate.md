@@ -1,7 +1,7 @@
 +++
 title="Create New Crate"
 date=2023-11-02
-updated= 2024-12-29
+updated= 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

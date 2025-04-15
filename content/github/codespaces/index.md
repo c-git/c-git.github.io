@@ -1,7 +1,7 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2025-01-23
+updated = 2025-04-15
 extra = { series = "github" }
 taxonomies = { tags = ["github"] }
 +++

@@ -3,6 +3,7 @@ title="Remote Desktop Protocol (RDP)"
 date = 2023-11-15
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
+updated = 2025-04-15
 +++
 
 # Crashing shortly after connecting

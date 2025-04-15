@@ -3,6 +3,7 @@ title = "Redirect Output"
 date = 2024-11-13
 extra = { series = "bash" }
 taxonomies = { tags = ["bash"] }
+updated = 2025-04-15
 +++
 
 # stderr to stdout

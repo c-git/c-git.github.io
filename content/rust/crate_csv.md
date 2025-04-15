@@ -1,7 +1,7 @@
 +++
 title="Crate CSV"
 date = 2024-05-04
-updated = 2024-12-18
+updated = 2025-04-15
 extra = { series = "rust" }
 taxonomies = { tags = ["rust"] }
 +++

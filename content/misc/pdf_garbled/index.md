@@ -1,7 +1,7 @@
 +++
 title='PDF Garbled (Fix)'
 date = 2022-08-19
-updated = 2024-03-03
+updated = 2025-04-15
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
