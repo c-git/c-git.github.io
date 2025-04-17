@@ -1,7 +1,7 @@
 +++
 title = "Surrender Novena"
 date = 2024-08-31
-updated = 2025-04-15
+updated = 2025-04-17
 extra = { series = "prayers" }
 taxonomies = { tags = ["prayers"] }
 +++
@@ -10,7 +10,7 @@ taxonomies = { tags = ["prayers"] }
 
 The original link that was referred to me for this novena was from [Catholic Exchange][ce].
 However after reading the article I still wasn't clear on how the novena should be prayed.
-I found a more prescriptive version on [Hallow][hallow] but I found a small typo in one of the prays for the days and thus text for the prayers for the days has been copied from the [Catholic Exchange](ce) Article.
+I found a more prescriptive version on [Hallow][hallow] but I found a small typo in one of the prays for the days and thus text for the prayers for the days has been copied from the [Catholic Exchange][ce] Article.
 I patterned on the prescriptive structure from [Hallow](hallow).
 
 [hallow]: https://hallow.com/blog/how-to-pray-the-surrender-novena/
