@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-15
+updated = 2025-04-17
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
@@ -9,6 +9,20 @@ taxonomies = { tags = ["misc"] }
 I quite enjoy doing leetcode as small contained puzzles that are easy to verify.
 It's also pretty good for trying out a new language in some regards.
 This page is a collection of resources for various purposes:
+
+# Problem solving tips
+
+This is a list of tips I want to remember.
+It's likely that there is a more comprehensive list somewhere but I haven't looked for it.
+There are just small techniques to apply.
+Not really a full pattern but just a way to reframe problems.
+If you know of a comprehensive list of techniques like these please tell me about it.
+I'll check it out and link to it if I find it good.
+I included an example problem where the the technique applies.
+
+- Rearrange formulas into one that is easier to optimize for - [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/)
+  - Taken from Hint #2 for problem.
+  > Notice that (j - i != nums[j] - nums[i]) is the same as (nums[i] - i != nums[j] - j).
 
 # Interview Preparation
 
