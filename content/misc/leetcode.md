@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-17
+updated = 2025-04-19
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
@@ -10,7 +10,7 @@ I quite enjoy doing leetcode as small contained puzzles that are easy to verify.
 It's also pretty good for trying out a new language in some regards.
 This page is a collection of resources for various purposes:
 
-# Problem solving tips
+# Problem solving tips and notes
 
 This is a list of tips I want to remember.
 It's likely that there is a more comprehensive list somewhere but I haven't looked for it.
@@ -20,9 +20,48 @@ If you know of a comprehensive list of techniques like these please tell me abou
 I'll check it out and link to it if I find it good.
 I included an example problem where the the technique applies.
 
-- Rearrange formulas into one that is easier to optimize for - [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/)
-  - Taken from Hint #2 for problem.
-  > Notice that (j - i != nums[j] - nums[i]) is the same as (nums[i] - i != nums[j] - j).
+## Rearrange formulas
+
+Source: Taken from Hint #2 for problem.
+
+- [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/)
+
+Check to see if formulas in question can be rearranged into one that is easier to optimize for
+
+> Notice that (j - i != nums[j] - nums[i]) is the same as (nums[i] - i != nums[j] - j).
+
+## Consider `partition_point`
+
+Inspired by: <https://www.youtube.com/watch?v=TjthKf7Mc_8>
+
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
+- [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)
+- [704. Binary Search](https://leetcode.com/problems/binary-search)
+
+When you need binary search consider using `partition_point` function from [rust std](https://doc.rust-lang.org/std/primitive.slice.html#method.partition_point). If it's not allowed manually implement as below.
+
+```rust
+/// Returns the index of the partition point according to the given predicate (the index of the first element of the second partition).
+/// See <https://doc.rust-lang.org/std/primitive.slice.html#method.partition_point> for more info
+fn partition_point<T>(arr: &[T], is_left_half: impl Fn(&T) -> bool) -> usize {
+    let mut size = arr.len();
+    if size == 0 {
+        return 0;
+    }
+    let mut base = 0usize;
+    while size > 1 {
+        let half = size / 2;
+        let mid = base + half;
+        base = if is_left_half(&arr[mid]) { mid } else { base };
+        size -= half;
+    }
+    if is_left_half(&arr[base]) {
+        base + 1
+    } else {
+        base
+    }
+}
+```
 
 # Interview Preparation
 
