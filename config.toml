@@ -108,7 +108,7 @@ smart_punctuation = true
 # The default template can be overridden by creating an `anchor-link.html` file in the `templates` directory.
 # This value can be "left", "right", "heading" or "none".
 # "heading" means the full heading becomes the text of the anchor.
-insert_anchor_links = "heading"
+insert_anchor_links = "right"
 
 # Any Extra language you do not use, delete or comment out the extra language sections:
 # [languages.fr]
