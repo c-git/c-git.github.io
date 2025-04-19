@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - content</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/content/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-15T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/content/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Site Definitions</title>
+        <published>2023-10-29T00:00:00+00:00</published>
+        <updated>2025-04-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/site-definitions/"/>
+        <id>https://dev.chester.wykies.com/site-definitions/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/site-definitions/">&lt;h1 id=&quot;foreword&quot;&gt;Foreword&lt;&#x2F;h1&gt;
+&lt;p&gt;Explains some words and what they mean on a site wide basis.
+It mostly explains meta data and what it means, not necessarily related to the content of the pages.
+This is meant to improve consistency so I can see what I meant the last time I used the word.
+I think looking at a few examples from below should make the intention clear.
+For example &lt;code&gt;Published&lt;&#x2F;code&gt; does not mean published in all possible contexts that it is used on this site but rather what the published date refers to.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;words&quot;&gt;Words&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;published&quot;&gt;Published&lt;&#x2F;h2&gt;
+&lt;p&gt;Taken from &lt;code&gt;date&lt;&#x2F;code&gt; in the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;content&#x2F;page&#x2F;#front-matter&quot;&gt;page front matter&lt;&#x2F;a&gt;.
+This is the date the article was first published or last modified if it was from before the articles were made public.
+See &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;misc&#x2F;documentation-update&#x2F;#must-include-a-date&quot;&gt;modification instructions&lt;&#x2F;a&gt; for more details on updating.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;updated&quot;&gt;Updated&lt;&#x2F;h2&gt;
+&lt;p&gt;Taken from &lt;code&gt;updated&lt;&#x2F;code&gt; in the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;content&#x2F;page&#x2F;#front-matter&quot;&gt;page front matter&lt;&#x2F;a&gt;.
+This is the date the article was last modified. Note: This doesn’t mean the entire article was updated nor retested.
+It may be a trivial change but this date only reflects that it was changed.
+You can think of it as a modified date for the page.
+To see what actually change you’d need to check the git history.
+If you have difficulty finding the information feel free to create an issue on &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;c-git&#x2F;c-git.github.io&#x2F;issues&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>feed</title>
+        <published>2023-10-28T00:00:00+00:00</published>
+        <updated>2025-04-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/feed/"/>
+        <id>https://dev.chester.wykies.com/feed/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/feed/"></content>
+        
+    </entry>
+</feed>
