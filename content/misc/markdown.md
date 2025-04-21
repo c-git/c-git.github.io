@@ -1,7 +1,7 @@
 +++
 title = "Markdown / HTML Guide"
 date=2023-10-27
-updated = 2025-04-15
+updated = 2025-04-20
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
@@ -154,7 +154,7 @@ dolor nunc, interdum id convallis vitae, maximus ac elit.
 
 Proin ullamcorper lorem id dui commodo hendrerit. Etiam vitae commodo ipsum. Aliquam placerat ex sed dolor eleifend, id
 pulvinar lorem dictum. Duis in massa tortor. Maecenas leo quam, luctus at egestas ac, tincidunt a odio. Pellentesque
-cursus mi egestas leo viverra egestas. Nulla quis velit sit amet tellus aliquet mollis sed sed justo. Vivamus interdum
+cursus mi egestas leo viverra egestas. Nulla quis velit sit amet tellus aliquet mollis sed justo. Vivamus interdum
 porta ultricies. Nulla quis ex in arcu consequat auctor quis et ligula. Phasellus pellentesque nibh quis risus pretium
 malesuada.
 **Generated 2 paragraphs, 219 words, 1490 bytes of [Lorem Ipsum](https://www.lipsum.com/)**

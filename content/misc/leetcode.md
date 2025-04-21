@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-19
+updated = 2025-04-20
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
@@ -18,7 +18,7 @@ There are just small techniques to apply.
 Not really a full pattern but just a way to reframe problems.
 If you know of a comprehensive list of techniques like these please tell me about it.
 I'll check it out and link to it if I find it good.
-I included an example problem where the the technique applies.
+I included an example problem where the technique applies.
 
 ## Rearrange formulas
 
@@ -105,7 +105,7 @@ These are some good videos to help you get oriented:
 | List                                            | Reason                                                                                                                                                                         | Organization             |
 | :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------- |
 | [NeetCode Roadmap](https://neetcode.io/roadmap) | Provides a guided tree to follow based on prerequisites                                                                                                                        | Tree with solution types |
-| [LeetCode 75][leetcode75]                       | Provided by leetcode and free (they also have list available to premium users, support them if if you're able)                                                                 | Grouped by Solution Type |
+| [LeetCode 75][leetcode75]                       | Provided by leetcode and free (they also have list available to premium users, support them if you're able)                                                                    | Grouped by Solution Type |
 | [AlgoMaster][algomaster]                        | Has links to an explanation for each solution type before the problems. Has links to solutions for each problem (seems like his) and preloaded search for solutions on YouTube | Grouped by Solution Type |
 | [Grind 75 by author of Blind 75][grind75]       | Allows customization of plan to the amount of time you have available and can not show what topic is covered by a question for you to practice that skill                      | Customizable             |
 

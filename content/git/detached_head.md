@@ -3,7 +3,7 @@ title = "Detached Head"
 date = 2024-09-12
 extra = { series = "git" }
 taxonomies = { tags = ["git"] }
-updated = 2025-04-15
+updated = 2025-04-20
 +++
 
 # Recovering a detached head created from a hard reset
@@ -20,7 +20,7 @@ This showed the commit with a `HEAD@{1}` next to it
 git checkout HEAD@{1}
 ```
 
-This moved me onto a detached head. And git gave me instructions how how to "save it"
+This moved me onto a detached head. And git gave me instructions how to "save it"
 
 ```sh
 git switch -c new_branch

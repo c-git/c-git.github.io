@@ -1,7 +1,7 @@
 +++
 title="Publish Library"
 date = 2022-09-14
-updated = 2025-04-15
+updated = 2025-04-20
 extra = { series = "python" }
 taxonomies = { tags = ["python"] }
 +++
@@ -50,7 +50,7 @@ python3 -m build
 twine upload dist/*
 ```
 
-## Initial Setup Setup for Publishing
+## Initial Setup for Publishing
 
 Last command appears to be python version specific.
 Got it from an error message generated when I tried to use build.
