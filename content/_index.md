@@ -25,7 +25,7 @@ The dataset builder is able to be [run in the browser](https://uruth-lab.github.
 
 ## Open source projects
 
-- [Featured Projects](@/misc/projects.md)
+- [Featured Projects](@/featured_projects.md)
 - [Repositories](https://github.com/c-git?tab=repositories&q=&type=source&language=&sort=)
 - [Crates Published](https://crates.io/users/c-git?sort=downloads)
 - [My python helper library](https://pypi.org/project/opylib/) (Cut down repeated code between projects)
