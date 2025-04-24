@@ -1,9 +1,7 @@
 +++
 title="Site Definitions"
 date=2023-10-29
-updated= 2025-04-15
-extra = { series = "content" }
-taxonomies = { tags = ["content"] }
+updated= 2025-04-24
 +++
 
 # Foreword

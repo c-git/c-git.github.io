@@ -4,9 +4,7 @@ path = "privacy"
 template = "pages.html"
 title = "Privacy Policy"
 date = 2025-04-13
-updated = 2025-04-15
-extra = { series = "pages" }
-taxonomies = { tags = ["pages"] }
+updated = 2025-04-24
 +++
 
 ## Privacy
