@@ -95,7 +95,7 @@ Each line does the following respectively
 3. Make the file executable
 
 ```sh
-echo -e '#!/bin/sh\nzola_chrono -c content/' > pre-push
+echo -e '#!/bin/sh\nzola_chrono --check content/' > pre-push
 mv pre-push .git/hooks
 chmod +x .git/hooks/pre-push
 ```
