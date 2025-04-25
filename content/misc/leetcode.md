@@ -72,6 +72,68 @@ fn partition_point<T>(arr: &[T], is_left_half: impl Fn(&T) -> bool) -> usize {
 
 </details>
 
+## Be comfortable with permutations
+
+<details>
+
+- [46. Permutations](https://leetcode.com/problems/permutations/)
+
+Sometimes brute force is what the question wants.
+I prefer [Heap's Algorithm](https://en.wikipedia.org/wiki/Heap%27s_algorithm) but it's too difficult to memorize.
+So instead I think the iterative solution from the video is the easiest to remember without feeling too icky
+
+```rust
+/// Based on https://www.youtube.com/watch?v=FZe0UqISmUw
+pub fn permute(nums: Vec<i32>) -> Vec<Vec<i32>> {
+    let mut result = vec![vec![]];
+
+    // For each number insert it into each position in the previous solutions
+    // Including at the end
+    for num in nums {
+        let mut new_result = vec![];
+        for prev_result_val in result {
+            for i in 0..=prev_result_val.len() {
+                let mut clone = prev_result_val.clone();
+                clone.insert(i, num);
+                new_result.push(clone);
+            }
+        }
+        result = new_result;
+    }
+
+    result
+}
+```
+
+</details>
+
+## Be comfortable with subsets
+
+<details>
+
+- [78. Subsets](https://leetcode.com/problems/subsets)
+
+Note that this is not subarrays.
+Similarly to [permutations](@/misc/leetcode.md#be-comfortable-with-permutations) an iterative approach can be used to just add all numbers to the end only instead of all positions like permutations.
+
+```rust
+pub fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {
+    // Based on editorial and https://www.youtube.com/watch?v=z3xEwMA5Rn8
+    let mut result = vec![vec![]];
+    for num in nums {
+        let n = result.len();
+        for i in 0..n {
+            let mut next = result[i].clone();
+            next.push(num);
+            result.push(next);
+        }
+    }
+    result
+}
+```
+
+</details>
+
 # Interview Preparation
 
 In my opinion if you already have experience with leetcode then a good video to start with is [this one](https://www.youtube.com/watch?v=0XUzt0D3xMw) from [Uncle Steve](https://alifeengineered.substack.com/about) where he starts of with summarizing the article [How well do LeetCode ratings predict interview performance? Here's the data](https://interviewing.io/blog/how-well-do-leetcode-ratings-predict-interview-performance).
