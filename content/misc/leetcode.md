@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-24
+updated = 2025-04-25
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
@@ -22,6 +22,8 @@ I included an example problem where the technique applies.
 
 ## Rearrange formulas
 
+<details>
+
 Source: Taken from Hint #2 for problem.
 
 - [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/)
@@ -31,7 +33,11 @@ Check to see if formulas in question can be rearranged into one that is easier t
 
 > Notice that (j - i != nums[j] - nums[i]) is the same as (nums[i] - i != nums[j] - j).
 
+</details>
+
 ## Consider `partition_point`
+
+<details>
 
 Inspired by: <https://www.youtube.com/watch?v=TjthKf7Mc_8>
 
@@ -63,6 +69,8 @@ fn partition_point<T>(arr: &[T], is_left_half: impl Fn(&T) -> bool) -> usize {
     }
 }
 ```
+
+</details>
 
 # Interview Preparation
 
