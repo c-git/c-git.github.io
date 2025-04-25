@@ -1,9 +1,8 @@
 +++
 title = "phpMyAdmin"
 date = 2024-04-17
-extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
-updated = 2025-04-15
+updated = 2025-04-25
 +++
 
 I have XAMPP installed and wanted to document part of my config in case I have to setup again on a new computer.

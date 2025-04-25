@@ -1,9 +1,8 @@
 +++
 title = "VeraCrypt"
 date = 2024-01-11
-extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
-updated = 2025-04-15
+updated = 2025-04-25
 +++
 
 # Sizes of Created Encrypted file containers

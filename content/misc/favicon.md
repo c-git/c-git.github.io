@@ -1,8 +1,8 @@
 +++
 title = "favicon"
 date = 2025-04-17
-extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
+updated = 2025-04-25
 +++
 
 Source: <https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs>

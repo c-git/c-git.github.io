@@ -1,9 +1,8 @@
 +++
 title = "Presentation Animation Removal"
 date = 2024-10-09
-extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
-updated = 2025-04-15
+updated = 2025-04-25
 +++
 
 I prefer create slides with animations to help the viewers follow the part of the slide I'm referring to.

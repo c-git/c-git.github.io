@@ -1,8 +1,7 @@
 +++
 title='Anydesk'
 date = 2022-10-22
-updated = 2025-04-15
-extra = { series = "misc" }
+updated = 2025-04-25
 taxonomies = { tags = ["misc"] }
 +++
 

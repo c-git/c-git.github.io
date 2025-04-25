@@ -1,8 +1,7 @@
 +++
 title = "Cannon MG3600"
 date = 2022-06-01
-updated = 2025-04-15
-extra = { series = "misc" }
+updated = 2025-04-25
 taxonomies = { tags = ["misc"] }
 +++
 

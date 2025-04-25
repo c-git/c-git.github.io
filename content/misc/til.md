@@ -1,8 +1,7 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
-updated = 2025-04-15
-extra = { series = "misc" }
+updated = 2025-04-25
 taxonomies = { tags = ["misc"] }
 +++
 

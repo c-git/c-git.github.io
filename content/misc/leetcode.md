@@ -2,7 +2,6 @@
 title="Leetcode"
 date=2025-03-24
 updated = 2025-04-25
-extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
 
