@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-20
+updated = 2025-04-24
 extra = { series = "misc" }
 taxonomies = { tags = ["misc"] }
 +++
@@ -25,6 +25,7 @@ I included an example problem where the technique applies.
 Source: Taken from Hint #2 for problem.
 
 - [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/)
+- [2845. Count of Interesting Subarrays](https://leetcode.com/problems/count-of-interesting-subarrays/)
 
 Check to see if formulas in question can be rearranged into one that is easier to optimize for
 
