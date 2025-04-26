@@ -4,6 +4,7 @@ weight = 0
 sort_by = "title"
 template = "pages.html"
 transparent = true
+extra = { disable_check_series = true, disable_check_tag = true }
 +++
 
 ## About Me
