@@ -1,9 +1,9 @@
 +++
 title = "View Whitespace"
 date = 2023-12-01
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
-updated = 2025-04-15
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
+updated = 2025-04-26
 +++
 
 Source: <https://stackoverflow.com/questions/3569997/how-to-find-out-line-endings-in-a-text-file>

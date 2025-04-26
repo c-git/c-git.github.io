@@ -1,9 +1,9 @@
 +++
 title = "Background Commands"
 date = 2024-03-03
-updated = 2025-04-15
-extra = { series = "bash" }
-taxonomies = { tags = ["bash"] }
+updated = 2025-04-26
+extra = { series = "Bash" }
+taxonomies = { tags = ["Bash"] }
 +++
 
 Source: <https://askubuntu.com/questions/510811/what-is-the-difference-between-ctrl-z-and-ctrl-c-in-the-terminal>

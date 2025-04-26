@@ -1,9 +1,9 @@
 +++
 title="Error Suppression"
 date = 2023-04-14
-updated = 2025-04-15
-extra = { series = "typescript" }
-taxonomies = { tags = ["typescript"] }
+updated = 2025-04-26
+extra = { series = "TypeScript" }
+taxonomies = { tags = ["TypeScript"] }
 +++
 
 Source: <https://bobbyhadz.com/blog/typescript-ignore-error>

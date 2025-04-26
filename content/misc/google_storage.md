@@ -1,9 +1,9 @@
 +++
 title="Google Storage"
 date=2023-10-27
-updated = 2025-04-25
+updated = 2025-04-26
 aliases = ["/misc/google-drive"]
-taxonomies = { tags = ["misc"] }
+taxonomies = { tags = ["Misc"] }
 +++
 
 # Suggestions to cleanup space used

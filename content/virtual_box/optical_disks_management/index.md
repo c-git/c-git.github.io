@@ -1,9 +1,9 @@
 +++
 title="Optical Disks Management"
 date = 2022-08-19
-updated = 2025-04-15
-extra = { series = "virtual_box" }
-taxonomies = { tags = ["virtual_box"] }
+updated = 2025-04-26
+extra = { series = "Virtual Box" }
+taxonomies = { tags = ["Virtual Box"] }
 +++
 
 ![Menu Display](menu_display.png)

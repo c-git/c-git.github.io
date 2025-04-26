@@ -1,8 +1,8 @@
 +++
 title = "Quotes"
 date = 2024-06-07
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 > Stand for something or you will fall for anything.

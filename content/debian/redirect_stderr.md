@@ -1,9 +1,9 @@
 +++
 title="Redirecting stderr"
 date = 2023-06-19
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 Source: <https://askubuntu.com/questions/625224/how-to-redirect-stderr-to-a-file>

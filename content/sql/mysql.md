@@ -1,11 +1,11 @@
 +++
 title="Install MySQL"
 date = 2022-12-07
-updated = 2025-04-15
+updated = 2025-04-26
 
 aliases=["/sql/install-mysql/"]
-extra = { series = "sql" }
-taxonomies = { tags = ["sql"] }
+extra = { series = "SQL" }
+taxonomies = { tags = ["SQL"] }
 
 +++
 

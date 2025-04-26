@@ -1,9 +1,9 @@
 +++
 title = "Redirect Output"
 date = 2024-11-13
-extra = { series = "bash" }
-taxonomies = { tags = ["bash"] }
-updated = 2025-04-15
+extra = { series = "Bash" }
+taxonomies = { tags = ["Bash"] }
+updated = 2025-04-26
 +++
 
 # stderr to stdout

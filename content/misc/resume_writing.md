@@ -1,8 +1,8 @@
 +++
 title = "Resume writing"
 date = 2024-09-23
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 # Templates

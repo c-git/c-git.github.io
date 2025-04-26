@@ -1,8 +1,8 @@
 +++
 title='PHP'
 date = 2023-11-06
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 # Check current

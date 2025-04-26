@@ -1,9 +1,9 @@
 +++
 title='Reset window'
 date = 2023-06-05
-updated = 2025-04-15
-extra = { series = "gimp" }
-taxonomies = { tags = ["gimp"] }
+updated = 2025-04-26
+extra = { series = "GIMP" }
+taxonomies = { tags = ["GIMP"] }
 +++
 
 # Reset window

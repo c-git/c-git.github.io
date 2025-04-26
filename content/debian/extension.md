@@ -1,9 +1,9 @@
 +++
 title="Extensions"
 date = 2023-06-28
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 # List of useful extensions

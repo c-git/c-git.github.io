@@ -1,8 +1,8 @@
 +++
 title='CLASP'
 date = 2023-04-17
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 # New project setup

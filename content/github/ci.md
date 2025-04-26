@@ -1,9 +1,9 @@
 +++
 title = "CI"
 date = 2024-02-04
-extra = { series = "github" }
-taxonomies = { tags = ["github"] }
-updated = 2025-04-15
+extra = { series = "GitHub" }
+taxonomies = { tags = ["GitHub"] }
+updated = 2025-04-26
 +++
 
 Notes on github actions.

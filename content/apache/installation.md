@@ -1,9 +1,9 @@
 +++
 title='Installation'
 date=2022-09-21
-updated= 2025-04-15
-extra = { series = "apache" }
-taxonomies = { tags = ["apache"] }
+updated= 2025-04-26
+extra = { series = "Apache" }
+taxonomies = { tags = ["Apache"] }
 +++
 
 # Install

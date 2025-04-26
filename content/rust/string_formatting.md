@@ -1,9 +1,9 @@
 +++
 title="String Formatting"
 date=2023-07-12
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 Source: <https://doc.rust-lang.org/std/fmt/>

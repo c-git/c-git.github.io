@@ -1,8 +1,8 @@
 +++
 title="Remote Desktop Protocol (RDP)"
 date = 2023-11-15
-taxonomies = { tags = ["misc"] }
-updated = 2025-04-25
+taxonomies = { tags = ["Misc"] }
+updated = 2025-04-26
 +++
 
 # Crashing shortly after connecting

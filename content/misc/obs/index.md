@@ -1,8 +1,8 @@
 +++
 title='OBS'
 date = 2022-10-22
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 # Desktop Audio

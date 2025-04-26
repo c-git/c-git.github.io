@@ -1,9 +1,9 @@
 +++
 title="New Repo Creation"
 date = 2023-06-15
-updated = 2025-04-15
-extra = { series = "git" }
-taxonomies = { tags = ["git"] }
+updated = 2025-04-26
+extra = { series = "Git" }
+taxonomies = { tags = ["Git"] }
 +++
 
 NB: These instructions assume github with ssh key auth but any would be similar

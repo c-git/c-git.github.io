@@ -1,9 +1,9 @@
 +++
 title='Branches'
 date = 2023-10-28
-updated = 2025-04-15
-extra = { series = "git" }
-taxonomies = { tags = ["git"] }
+updated = 2025-04-26
+extra = { series = "Git" }
+taxonomies = { tags = ["Git"] }
 +++
 
 Source: <https://www.nobledesktop.com/learn/git/git-branches>

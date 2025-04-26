@@ -1,10 +1,10 @@
 +++
 title="Crate Actix Web"
 date = 2023-12-15
-updated = 2025-04-15
+updated = 2025-04-26
 aliases=["/rust/actix"]
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 Website: <https://actix.rs/>

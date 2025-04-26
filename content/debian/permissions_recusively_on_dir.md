@@ -1,9 +1,9 @@
 +++
 title="Set permissions recursively on directory structure"
 date = 2022-06-02
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 Source: <https://superuser.com/questions/91935/how-to-recursively-chmod-all-directories-except-files>

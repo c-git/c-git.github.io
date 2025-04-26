@@ -1,9 +1,9 @@
 +++
 title="Stash"
 date = 2023-04-27
-updated = 2025-04-15
-extra = { series = "git" }
-taxonomies = { tags = ["git"] }
+updated = 2025-04-26
+extra = { series = "Git" }
+taxonomies = { tags = ["Git"] }
 +++
 
 Source: `git stash --help`

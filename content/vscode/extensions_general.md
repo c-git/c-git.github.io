@@ -1,9 +1,9 @@
 +++
 title="Extensions General"
 date = 2023-07-27
-updated = 2025-04-15
-extra = { series = "vscode" }
-taxonomies = { tags = ["vscode"] }
+updated = 2025-04-26
+extra = { series = "VSCode" }
+taxonomies = { tags = ["VSCode"] }
 +++
 
 Some may come installed by default (not sure where I got all of these and haven't had time to test)

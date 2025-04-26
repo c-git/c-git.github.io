@@ -1,9 +1,9 @@
 +++
 title='Acrobat Reader'
 date = 2022-09-30
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 # Saving Issues

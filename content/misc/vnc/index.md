@@ -1,8 +1,8 @@
 +++
 title = "VNC Ubuntu"
 date = 2024-01-07
-taxonomies = { tags = ["misc"] }
-updated = 2025-04-25
+taxonomies = { tags = ["Misc"] }
+updated = 2025-04-26
 +++
 
 I've needed to do this three times now and each time I don't know what happens but I get issues so writing it down this time.

@@ -1,9 +1,9 @@
 +++
 title='Ubuntu Software'
 date = 2023-06-28
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 This page covers program that were found through the "Ubuntu Software" program, which is link a store where you can search for programs that you want.

@@ -1,9 +1,9 @@
 +++
 title="Users and Groups"
 date = 2022-12-07
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 Source: <https://www.howtogeek.com/50787/add-a-user-to-a-group-or-second-group-on-linux/>

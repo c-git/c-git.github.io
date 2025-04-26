@@ -1,9 +1,9 @@
 +++
 title="Time"
 date=2023-08-15
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Standard Library

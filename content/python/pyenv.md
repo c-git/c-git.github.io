@@ -1,9 +1,9 @@
 +++
 title="pyenv"
 date = 2022-08-19
-updated = 2025-04-15
-extra = { series = "python" }
-taxonomies = { tags = ["python"] }
+updated = 2025-04-26
+extra = { series = "Python" }
+taxonomies = { tags = ["Python"] }
 +++
 
 ## Check version of linux

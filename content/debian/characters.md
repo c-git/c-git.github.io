@@ -1,9 +1,9 @@
 +++
 title = "Characters"
 date = 2024-02-02
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 # Frequently used codes

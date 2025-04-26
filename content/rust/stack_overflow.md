@@ -1,9 +1,9 @@
 +++
 title = "Stack Overflow"
 date = 2024-01-12
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Drop can lead to stack overflow

@@ -1,9 +1,9 @@
 +++
 title = "Links between files"
 date = 2024-02-24
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 # TLDR

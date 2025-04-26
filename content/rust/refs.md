@@ -1,9 +1,9 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 This page serves as a place to collect link to rust content I either want to be able to find again or to content I want to easily be able to reference in bulk instead of on a per link basis.

@@ -1,8 +1,8 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 I quite enjoy doing leetcode as small contained puzzles that are easy to verify.

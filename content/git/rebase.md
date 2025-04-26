@@ -1,9 +1,9 @@
 +++
 title="Rebase"
 date = 2023-06-28
-updated = 2025-04-15
-extra = { series = "git" }
-taxonomies = { tags = ["git"] }
+updated = 2025-04-26
+extra = { series = "Git" }
+taxonomies = { tags = ["Git"] }
 +++
 
 # Rebase onto develop

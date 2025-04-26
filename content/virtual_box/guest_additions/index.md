@@ -1,9 +1,9 @@
 +++
 title="Guest Additions"
 date = 2022-10-19
-updated = 2025-04-15
-extra = { series = "virtual_box" }
-taxonomies = { tags = ["virtual_box"] }
+updated = 2025-04-26
+extra = { series = "Virtual Box" }
+taxonomies = { tags = ["Virtual Box"] }
 +++
 
 Steps recorded on VM running Ubuntu 18.04.6

@@ -1,9 +1,9 @@
 +++
 title='Conditional Compilation'
 date=2022-11-12
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 Source: <https://stackoverflow.com/questions/39204908/how-to-check-release-debug-builds-using-cfg-in-rust>

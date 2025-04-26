@@ -1,9 +1,9 @@
 +++
 title='Arrays'
 date = 2022-08-19
-updated = 2025-04-15
-extra = { series = "javascript" }
-taxonomies = { tags = ["javascript"] }
+updated = 2025-04-26
+extra = { series = "Javascript" }
+taxonomies = { tags = ["Javascript"] }
 +++
 
 Source: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array>

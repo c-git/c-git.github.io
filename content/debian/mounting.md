@@ -1,9 +1,9 @@
 +++
 title="Mounting Drives"
 date = 2022-12-03
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 # Mounting a second hard drive

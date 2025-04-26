@@ -1,9 +1,9 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 ## Find which package contains a particular file

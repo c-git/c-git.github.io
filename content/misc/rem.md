@@ -1,8 +1,8 @@
 +++
 title="Things to Remember"
 date=2004-10-01
-updated= 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated= 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 - I'm not about moving out of my comfort zone. I'd prefer expand it.

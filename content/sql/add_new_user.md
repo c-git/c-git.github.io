@@ -1,9 +1,9 @@
 +++
 title="Add New User to Database"
 date = 2022-09-21
-updated = 2025-04-15
-extra = { series = "sql" }
-taxonomies = { tags = ["sql"] }
+updated = 2025-04-26
+extra = { series = "SQL" }
+taxonomies = { tags = ["SQL"] }
 +++
 
 (See sample log below)

@@ -1,9 +1,9 @@
 +++
 title="IPython Built-in magic commands"
 date = 2022-06-02
-updated = 2025-04-15
-extra = { series = "python" }
-taxonomies = { tags = ["python"] }
+updated = 2025-04-26
+extra = { series = "Python" }
+taxonomies = { tags = ["Python"] }
 +++
 
 Source: https://ipython.readthedocs.io/en/stable/interactive/magics.html

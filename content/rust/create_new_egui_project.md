@@ -1,9 +1,9 @@
 +++
 title = "Create new egui project"
 date = 2024-04-08
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 I need to come up with a new preferred workflow.

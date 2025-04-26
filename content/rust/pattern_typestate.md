@@ -1,10 +1,10 @@
 +++
 title="Pattern Type State"
 date=2023-10-12
-updated= 2025-04-15
+updated= 2025-04-26
 aliases=["/rust/typestate"]
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Resource List

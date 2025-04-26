@@ -1,9 +1,9 @@
 +++
 title="Crate CSV"
 date = 2024-05-04
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Example of writing CSV to a Buffer (String)

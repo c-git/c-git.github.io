@@ -1,9 +1,9 @@
 +++
 title="Hide Mounts"
 date = 2022-08-19
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 Source: <https://askubuntu.com/questions/1263625/remove-hdd-icon-from-dock-in-20-04>

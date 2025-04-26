@@ -1,9 +1,9 @@
 +++
 title = "MAN"
 date = 2023-12-17
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
-updated = 2025-04-15
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
+updated = 2025-04-26
 +++
 
 Man pages are great but sometimes you want to access it from outside of the terminal.

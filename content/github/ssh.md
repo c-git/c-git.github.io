@@ -1,9 +1,9 @@
 +++
 title="SSH"
 date = 2023-11-06
-updated = 2025-04-15
-extra = { series = "github" }
-taxonomies = { tags = ["github"] }
+updated = 2025-04-26
+extra = { series = "GitHub" }
+taxonomies = { tags = ["GitHub"] }
 +++
 
 # Creating SSH Key (Linux)

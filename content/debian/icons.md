@@ -1,9 +1,9 @@
 +++
 title="Set Icon for Application"
 date = 2023-04-03
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 Source: <https://www.solvetechnow.com/post/how-to-change-app-icon-in-ubuntu>

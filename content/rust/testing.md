@@ -1,9 +1,9 @@
 +++
 title="Testing"
 date = 2023-11-05
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Frequently used links and commands

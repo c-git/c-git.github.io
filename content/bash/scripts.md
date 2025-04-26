@@ -1,10 +1,10 @@
 +++
 title = "Scripts"
 date = 2023-12-11
-updated = 2025-04-15
+updated = 2025-04-26
 aliases = ["/debian/bash"]
-extra = { series = "bash" }
-taxonomies = { tags = ["bash"] }
+extra = { series = "Bash" }
+taxonomies = { tags = ["Bash"] }
 +++
 
 # Shebang Line

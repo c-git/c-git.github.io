@@ -1,8 +1,8 @@
 +++
 title='Copy Source'
 date = 2022-10-26
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 # Foreword

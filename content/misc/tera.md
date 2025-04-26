@@ -1,8 +1,8 @@
 +++
 title = "Tera Guide"
 date=2023-10-27
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 ## Get everything in context

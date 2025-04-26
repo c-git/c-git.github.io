@@ -1,9 +1,9 @@
 +++
 title = "PPP logs"
 date = 2023-12-06
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
-updated = 2025-04-15
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
+updated = 2025-04-26
 +++
 
 Source: <https://askubuntu.com/questions/441900/where-is-the-log-of-pppd-in-ubuntu-13-10>

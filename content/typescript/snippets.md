@@ -1,9 +1,9 @@
 +++
 title="Snippets"
 date = 2023-04-17
-updated = 2025-04-15
-extra = { series = "typescript" }
-taxonomies = { tags = ["typescript"] }
+updated = 2025-04-26
+extra = { series = "TypeScript" }
+taxonomies = { tags = ["TypeScript"] }
 +++
 
 Includes Google App Script (gscript)

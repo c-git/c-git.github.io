@@ -1,9 +1,9 @@
 +++
 title = "Push"
 date = 2024-02-04
-extra = { series = "git" }
-taxonomies = { tags = ["git"] }
-updated = 2025-04-15
+extra = { series = "Git" }
+taxonomies = { tags = ["Git"] }
+updated = 2025-04-26
 +++
 
 Source: <https://git-scm.com/docs/git-push>

@@ -1,9 +1,9 @@
 +++
 title='Return Code'
 date=2022-08-19
-updated= 2025-04-15
-extra = { series = "bash" }
-taxonomies = { tags = ["bash"] }
+updated= 2025-04-26
+extra = { series = "Bash" }
+taxonomies = { tags = ["Bash"] }
 +++
 
 Source: <https://linuxhint.com/bash-exit-code-of-last-command/>

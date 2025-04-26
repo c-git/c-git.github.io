@@ -1,9 +1,9 @@
 +++
 title="Publish Crate"
 date=2023-08-26
-updated= 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated= 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Steps to publish

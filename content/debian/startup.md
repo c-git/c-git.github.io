@@ -1,9 +1,9 @@
 +++
 title="Startup"
 date = 2022-12-07
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 Making programs run on startup can be archived a few different ways. The ones documented here are the ones that have

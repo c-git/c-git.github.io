@@ -1,9 +1,9 @@
 +++
 title="Single file script"
 date=2023-09-02
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 Source: <https://doc.rust-lang.org/nightly/cargo/reference/unstable.html#script>

@@ -1,9 +1,9 @@
 +++
 title="Shortcuts (Important)"
 date = 2022-10-16
-updated = 2025-04-15
-extra = { series = "debian" }
-taxonomies = { tags = ["debian"] }
+updated = 2025-04-26
+extra = { series = "Debian" }
+taxonomies = { tags = ["Debian"] }
 +++
 
 # Foreword

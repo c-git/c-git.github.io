@@ -1,9 +1,9 @@
 +++
 title="Live Share"
 date = 2023-06-24
-updated = 2025-04-15
-extra = { series = "vscode" }
-taxonomies = { tags = ["vscode"] }
+updated = 2025-04-26
+extra = { series = "VSCode" }
+taxonomies = { tags = ["VSCode"] }
 +++
 
 # Controlling files shared

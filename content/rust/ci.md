@@ -1,9 +1,9 @@
 +++
 title="CI"
 date=2023-09-03
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 Source: <https://youtu.be/xUH-4y92jPg?si=3eY_i02onu60bVQ4&t=495>

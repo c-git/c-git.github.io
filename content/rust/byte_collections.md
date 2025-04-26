@@ -1,9 +1,9 @@
 +++
 title="Working with collections of bytes"
 date=2023-11-06
-updated = 2025-04-15
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+updated = 2025-04-26
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Converting to String

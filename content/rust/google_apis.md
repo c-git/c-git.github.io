@@ -1,9 +1,9 @@
 +++
 title = "Google APIs"
 date = 2025-03-20
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
-updated = 2025-04-15
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
+updated = 2025-04-26
 +++
 
 # Google Sheets

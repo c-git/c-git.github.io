@@ -1,8 +1,8 @@
 +++
 title = "Today I Learned (TIL)"
 date = 2024-01-12
-updated = 2025-04-25
-taxonomies = { tags = ["misc"] }
+updated = 2025-04-26
+taxonomies = { tags = ["Misc"] }
 +++
 
 **Foreword**: I didn't always learn the thing at that time but that's when something caused me to say you know what I should write this down.

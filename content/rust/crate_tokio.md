@@ -1,10 +1,10 @@
 +++
 title="Crate Tokio"
 date=2023-08-21
-updated = 2025-04-15
+updated = 2025-04-26
 aliases=["/rust/tokio"]
-extra = { series = "rust" }
-taxonomies = { tags = ["rust"] }
+extra = { series = "Rust" }
+taxonomies = { tags = ["Rust"] }
 +++
 
 # Setup a runtime environment

@@ -1,8 +1,8 @@
 +++
 title = "Regex"
 date = 2024-07-28
-taxonomies = { tags = ["misc"] }
-updated = 2025-04-25
+taxonomies = { tags = ["Misc"] }
+updated = 2025-04-26
 +++
 
 # Foreword
