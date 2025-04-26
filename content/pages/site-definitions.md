@@ -1,7 +1,9 @@
 +++
+path = "site-definitions"
+template = "pages.html"
 title="Site Definitions"
 date=2023-10-29
-updated= 2025-04-24
+updated= 2025-04-25
 +++
 
 # Foreword
