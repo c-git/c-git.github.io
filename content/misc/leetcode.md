@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-26
+updated = 2025-04-27
 taxonomies = { tags = ["Misc"] }
 +++
 
@@ -19,7 +19,19 @@ If you know of a comprehensive list of techniques like these please tell me abou
 I'll check it out and link to it if I find it good.
 I included an example problem where the technique applies.
 
-## Rearrange formulas
+## Try brute force
+
+<details>
+
+- [437. Path Sum III](https://leetcode.com/problems/path-sum-iii/description/)
+
+Coding up brute force is a good starting point but a better starting point is just typing out or writing up what you need to keep track of to solve it as a human.
+Add "digital" constraints like only looking at one variable at a time and then try to solve and see where you have repeated work and things like that which could cause the optimal solution to fall out.
+In the example problem once I [looked at Deepti](https://www.youtube.com/watch?v=zraEXluZLj0) manually solve it, the solution became obvious and I wasn't stuck anymore.
+
+</details>
+
+## Rearrange formulas (especially if modulus is involved - think of operations closed under modulus (+,-,*))
 
 <details>
 
