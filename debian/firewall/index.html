@@ -1,0 +1,848 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Firewall | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/debian/firewall/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/debian/firewall/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/debian/firewall/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="Firewall | Chester Wyke" />
+  <meta name="twitter:title" content="Firewall | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-04-26" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><li><i type="reset" id="mode" class="js svgs adjust"></i></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="svgs svgm search"></button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/debian/firewall/">Firewall</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> November 22, 2023 <span class="rpad"></span>Updated: April 26, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/debian/">Debian</a> </span>
+
+    
+        <div class="block">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/debian/">Debian (Series)</a><br>
+            <a href="https://dev.chester.wykies.com/debian/mac-address-change/">MAC Address Change</a><br>
+            <a href="https://dev.chester.wykies.com/debian/permissions-recusively-on-dir/">Set permissions recursively on directory structure</a><br>
+            <a href="https://dev.chester.wykies.com/debian/touch/">Touch (Set file modified date)</a><br>
+            <a href="https://dev.chester.wykies.com/debian/android-on-linux/">Android Apps on Linux</a><br>
+            <a href="https://dev.chester.wykies.com/debian/blacklist-module/">Blacklist Module</a><br>
+            <a href="https://dev.chester.wykies.com/debian/calender-notifications-popup-disable/">Calender Notifications Popup Disable</a><br>
+            <a href="https://dev.chester.wykies.com/debian/cups-pdf-printer/">CUPS PDF Printer</a><br>
+            <a href="https://dev.chester.wykies.com/debian/gping/">gping</a><br>
+            <a href="https://dev.chester.wykies.com/debian/hide-mounts/">Hide Mounts</a><br>
+            <a href="https://dev.chester.wykies.com/debian/nautilus/">Nautilus</a><br>
+            <a href="https://dev.chester.wykies.com/debian/power/">Power</a><br>
+            <a href="https://dev.chester.wykies.com/debian/smartgit/">Smartgit</a><br>
+            <a href="https://dev.chester.wykies.com/debian/video-cards/">Video Cards</a><br>
+            <a href="https://dev.chester.wykies.com/debian/snapcraft/">Snapcraft</a><br>
+            <a href="https://dev.chester.wykies.com/debian/acrobat-reader/">Acrobat Reader</a><br>
+            <a href="https://dev.chester.wykies.com/debian/audio/">Audio</a><br>
+            <a href="https://dev.chester.wykies.com/debian/shortcuts-important/">Shortcuts (Important)</a><br>
+            <a href="https://dev.chester.wykies.com/debian/dns/">DNS</a><br>
+            <a href="https://dev.chester.wykies.com/debian/mounting/">Mounting Drives</a><br>
+            <a href="https://dev.chester.wykies.com/debian/setup-network-shares/">Setup Network Shares</a><br>
+            <a href="https://dev.chester.wykies.com/debian/cron/">Cron</a><br>
+            <a href="https://dev.chester.wykies.com/debian/startup/">Startup</a><br>
+            <a href="https://dev.chester.wykies.com/debian/users-and-groups/">Users and Groups</a><br>
+            <a href="https://dev.chester.wykies.com/debian/paths-to-rem/">Paths to remember</a><br>
+            <a href="https://dev.chester.wykies.com/debian/manual-kernel-remove/">Manually Removing Old Kernels</a><br>
+            <a href="https://dev.chester.wykies.com/debian/icons/">Set Icon for Application</a><br>
+            <a href="https://dev.chester.wykies.com/debian/strange-problems/">Strange Problems and Fixes</a><br>
+            <a href="https://dev.chester.wykies.com/debian/redirect-stderr/">Redirecting stderr</a><br>
+            <a href="https://dev.chester.wykies.com/debian/extension/">Extensions</a><br>
+            <a href="https://dev.chester.wykies.com/debian/ubuntu-software/">Ubuntu Software</a><br>
+            <a href="https://dev.chester.wykies.com/debian/seconds-clock/">Show Seconds on Clock Display</a><br>
+            <a href="https://dev.chester.wykies.com/debian/create-bootable-flash/">Create Bootable Flash Drive</a><br>
+            <a href="https://dev.chester.wykies.com/debian/compressed-files/">Compressed Files</a><br>
+            <a href="https://dev.chester.wykies.com/debian/services/">services systemd (unit)</a><br>
+            <a href="https://dev.chester.wykies.com/debian/scp/">SCP</a><br>
+            <a href="https://dev.chester.wykies.com/debian/ssh/">SSH</a><br>
+            <a href="https://dev.chester.wykies.com/debian/update/">Updating</a><br>
+            <a href="https://dev.chester.wykies.com/debian/useful-commands/">Useful commands</a><br>
+            <a class="scur" href="https://dev.chester.wykies.com/debian/firewall/">Firewall</a><br> 
+          
+            <a href="https://dev.chester.wykies.com/debian/view-whitespace/">View Whitespace</a><br>
+            <a href="https://dev.chester.wykies.com/debian/open-vpn/">OpenVPN</a><br>
+            <a href="https://dev.chester.wykies.com/debian/ppp-logs/">PPP logs</a><br>
+            <a href="https://dev.chester.wykies.com/debian/man/">MAN</a><br>
+            <a href="https://dev.chester.wykies.com/debian/terminal/">Terminal</a><br>
+            <a href="https://dev.chester.wykies.com/debian/sed/">sed</a><br>
+            <a href="https://dev.chester.wykies.com/debian/characters/">Characters</a><br>
+            <a href="https://dev.chester.wykies.com/debian/zsh/">zsh</a><br>
+            <a href="https://dev.chester.wykies.com/debian/link-files/">Links between files</a><br>
+            <a href="https://dev.chester.wykies.com/debian/7zip/">7z encrypted file</a><br>
+            <a href="https://dev.chester.wykies.com/debian/wayland-or-x11/">Wayland or x11?</a><br>
+            <a href="https://dev.chester.wykies.com/debian/delete-old/">Delete Old Files Automatically</a><br>
+            <a href="https://dev.chester.wykies.com/debian/screen/">Screen Application</a><br>
+            <a href="https://dev.chester.wykies.com/debian/set-ip/">Set IP</a><br>
+      </div>
+    </div>
+
+
+<p>Source: <a rel="noopener" target="_blank" href="https://ubuntu.com/server/docs/security-firewall">https://ubuntu.com/server/docs/security-firewall</a></p>
+<h1 id="man-page-extract"><a class="zola-anchor" href="#man-page-extract" aria-label="Anchor link for: man-page-extract">Man page extract</a></h1>
+<p>The man page is well written an easy to follow. See below for a copy of the full <a href="https://dev.chester.wykies.com/debian/firewall/#man-page-copy">man page</a>.</p>
+<blockquote>
+<p>On installation, ufw is disabled with a default incoming policy of deny, a default forward
+policy of deny, and a default outgoing policy of allow, with stateful tracking for NEW
+connections for incoming and forwarded connections. In addition to the above, a default
+rule-set is put in place that does the following…</p>
+</blockquote>
+<h1 id="frequent-commands"><a class="zola-anchor" href="#frequent-commands" aria-label="Anchor link for: frequent-commands">Frequent commands</a></h1>
+<p>Collecting commands I came back here to lookup</p>
+<ul>
+<li>Enable Firewall - <code>sudo ufw enable</code></li>
+<li>Disable Firewall - <code>sudo ufw disable</code></li>
+<li><a href="https://dev.chester.wykies.com/debian/firewall/#view-rules-in-use-including-status-and-defaults">View rules in use</a></li>
+<li><a href="https://dev.chester.wykies.com/debian/firewall/#logs">See log</a></li>
+</ul>
+<h1 id="state-information"><a class="zola-anchor" href="#state-information" aria-label="Anchor link for: state-information">State Information</a></h1>
+<h2 id="view-rules-in-use-including-status-and-defaults"><a class="zola-anchor" href="#view-rules-in-use-including-status-and-defaults" aria-label="Anchor link for: view-rules-in-use-including-status-and-defaults">View rules in use (including status and defaults)</a></h2>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> ufw status verbose</span>
+</span></code></pre>
+<h2 id="view-rules-in-use-numbered"><a class="zola-anchor" href="#view-rules-in-use-numbered" aria-label="Anchor link for: view-rules-in-use-numbered">View rules in use (numbered)</a></h2>
+<p>Numbers make things like deleting rules easier</p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> ufw status numbered</span>
+</span></code></pre>
+<h2 id="logs"><a class="zola-anchor" href="#logs" aria-label="Anchor link for: logs">Logs</a></h2>
+<p>Source: <a rel="noopener" target="_blank" href="https://www.cyberciti.biz/faq/ubuntu-22-04-lts-set-up-ufw-firewall-in-5-minutes/">https://www.cyberciti.biz/faq/ubuntu-22-04-lts-set-up-ufw-firewall-in-5-minutes/</a></p>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">tail</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>f</span> /var/log/ufw.log</span>
+</span></code></pre>
+<h2 id="listening-programs"><a class="zola-anchor" href="#listening-programs" aria-label="Anchor link for: listening-programs">Listening Programs</a></h2>
+<p>Excerpt from man page</p>
+<blockquote>
+<p>The listening report will display the ports on the live system in the listening state for tcp and the open state for udp, along with the address of the interface and the executable listening on the port. An ‘*’ is used in place of the address of the interface when the executable is bound to all interfaces on that port. Following this information is a list of rules which may affect connections on this port. The rules are listed in the order they are evaluated by the kernel, and the first match wins. Please note that the default policy is not listed and tcp6 and udp6 are shown only if IPV6 is enabled.</p>
+</blockquote>
+<pre data-lang="sh" class="language-sh z-code"><code class="language-sh" data-lang="sh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> ufw show listening</span>
+</span></code></pre>
+<h2 id="services-port-number-mapping"><a class="zola-anchor" href="#services-port-number-mapping" aria-label="Anchor link for: services-port-number-mapping">Services port number mapping</a></h2>
+<p>The named ports can be found in <code>/etc/services</code></p>
+<h1 id="block-outgoing-traffic"><a class="zola-anchor" href="#block-outgoing-traffic" aria-label="Anchor link for: block-outgoing-traffic">Block outgoing traffic</a></h1>
+<p><strong>NOTE</strong>: Not tested yet</p>
+<p>Source: <a rel="noopener" target="_blank" href="https://askubuntu.com/questions/448836/how-do-i-with-ufw-deny-all-outgoing-ports-excepting-the-ones-i-need">https://askubuntu.com/questions/448836/how-do-i-with-ufw-deny-all-outgoing-ports-excepting-the-ones-i-need</a></p>
+<h1 id="man-page-copy"><a class="zola-anchor" href="#man-page-copy" aria-label="Anchor link for: man-page-copy">MAN Page (Copy)</a></h1>
+<p>It was easier to view it here so left a copy here (also makes it easier to search)</p>
+<details>
+  <summary>Click for full man page!</summary>
+<pre class="z-code"><code><span class="z-text z-plain">UFW:(8)                                   September 2021                                   UFW:(8)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">NAME
+</span><span class="z-text z-plain">       ufw - program for managing a netfilter firewall
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">DESCRIPTION
+</span><span class="z-text z-plain">       This  program is for managing a Linux firewall and aims to provide an easy to use interface
+</span><span class="z-text z-plain">       for the user.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">USAGE
+</span><span class="z-text z-plain">       ufw [--dry-run] enable|disable|reload
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw [--dry-run] default allow|deny|reject [incoming|outgoing|routed]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw [--dry-run] logging on|off|LEVEL
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw [--dry-run] reset
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw [--dry-run] status [verbose|numbered]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw [--dry-run] show REPORT
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw  [--dry-run]  [delete]  [insert   NUM]   [prepend]   allow|deny|reject|limit   [in|out]
+</span><span class="z-text z-plain">       [log|log-all] [ PORT[/PROTOCOL] | APPNAME ] [comment COMMENT]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw  [--dry-run] [rule] [delete] [insert NUM] [prepend] allow|deny|reject|limit [in|out [on
+</span><span class="z-text z-plain">       INTERFACE]] [log|log-all] [proto PROTOCOL] [from ADDRESS [port PORT | app  APPNAME  ]]  [to
+</span><span class="z-text z-plain">       ADDRESS [port PORT | app APPNAME ]] [comment COMMENT]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw  [--dry-run]  route  [delete] [insert NUM] [prepend] allow|deny|reject|limit [in|out on
+</span><span class="z-text z-plain">       INTERFACE] [log|log-all] [proto PROTOCOL] [from ADDRESS [port PORT | app APPNAME]] [to  AD‐
+</span><span class="z-text z-plain">       DRESS [port PORT | app APPNAME]] [comment COMMENT]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw [--dry-run] [--force] delete NUM
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw [--dry-run] app list|info|default|update
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">OPTIONS
+</span><span class="z-text z-plain">       --version
+</span><span class="z-text z-plain">              show program&#39;s version number and exit
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       -h, --help
+</span><span class="z-text z-plain">              show help message and exit
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       --dry-run
+</span><span class="z-text z-plain">              don&#39;t modify anything, just show the changes
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       enable reloads firewall and enables firewall on boot.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       disable
+</span><span class="z-text z-plain">              unloads firewall and disables firewall on boot
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       reload reloads firewall
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       default allow|deny|reject DIRECTION
+</span><span class="z-text z-plain">              change the default policy for traffic going DIRECTION, where DIRECTION is one of in‐
+</span><span class="z-text z-plain">              coming, outgoing or routed. Note that existing rules will have to be migrated  manu‐
+</span><span class="z-text z-plain">              ally when changing the default policy. See RULE SYNTAX for more on deny and reject.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       logging on|off|LEVEL
+</span><span class="z-text z-plain">              toggle  logging. Logged packets use the LOG_KERN syslog facility. Systems configured
+</span><span class="z-text z-plain">              for rsyslog support may also log to /var/log/ufw.log. Specifying a LEVEL turns  log‐
+</span><span class="z-text z-plain">              ging  on  for  the specified LEVEL. The default log level is &#39;low&#39;.  See LOGGING for
+</span><span class="z-text z-plain">              details.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       reset  Disables and resets firewall to installation defaults. Can also give the --force op‐
+</span><span class="z-text z-plain">              tion to perform the reset without confirmation.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       status show status of firewall and ufw managed rules. Use status verbose for extra informa‐
+</span><span class="z-text z-plain">              tion. In the status output, &#39;Anywhere&#39; is synonymous with  &#39;any&#39;,  0.0.0.0/0  (IPv4)
+</span><span class="z-text z-plain">              and  ::/0 (IPv6). Note that when using status, there is a subtle difference when re‐
+</span><span class="z-text z-plain">              porting interfaces. For example, if the following rules are added:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">                ufw allow in on eth0 from 192.168.0.0/16
+</span><span class="z-text z-plain">                ufw allow out on eth1 to 10.0.0.0/8
+</span><span class="z-text z-plain">                ufw route allow in on eth0 out on eth1 to 10.0.0.0/8 from 192.168.0.0/16
+</span><span class="z-text z-plain">                ufw limit 2222/tcp comment &#39;SSH port&#39;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">              ufw status will output:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">                To                         Action      From
+</span><span class="z-text z-plain">                --                         ------      ----
+</span><span class="z-text z-plain">                Anywhere on eth0           ALLOW       192.168.0.0/16
+</span><span class="z-text z-plain">                10.0.0.0/8                 ALLOW OUT   Anywhere on eth1
+</span><span class="z-text z-plain">                10.0.0.0/8 on eth1         ALLOW FWD   192.168.0.0/16 on eth0
+</span><span class="z-text z-plain">                Anywhere                   LIMIT       Anywhere                 # SSH port
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">              For the input and output rules, the interface is reported relative to  the  firewall
+</span><span class="z-text z-plain">              system  as an endpoint, whereas with route rules, the interface is reported relative
+</span><span class="z-text z-plain">              to the direction packets flow through the firewall.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       show REPORT
+</span><span class="z-text z-plain">              display information about the running firewall. See REPORTS
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       allow ARGS
+</span><span class="z-text z-plain">              add allow rule.  See RULE SYNTAX
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       deny ARGS
+</span><span class="z-text z-plain">              add deny rule.  See RULE SYNTAX
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       reject ARGS
+</span><span class="z-text z-plain">              add reject rule.  See RULE SYNTAX
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       limit ARGS
+</span><span class="z-text z-plain">              add limit rule.  See RULE SYNTAX
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       delete RULE|NUM
+</span><span class="z-text z-plain">              deletes the corresponding RULE
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       insert NUM RULE
+</span><span class="z-text z-plain">              insert the corresponding RULE as rule number NUM
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       prepend RULE
+</span><span class="z-text z-plain">              prepend the corresponding RULE to the top of the ruleset
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">RULE SYNTAX
+</span><span class="z-text z-plain">       Users can specify rules using either a simple syntax or a full syntax.  The  simple  syntax
+</span><span class="z-text z-plain">       only specifies the port and optionally the protocol to be allowed or denied on the host.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Both  syntaxes  support specifying a comment for the rule. For existing rules, specifying a
+</span><span class="z-text z-plain">       different comment updates the comment and specifying &#39;&#39; removes the comment.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Example rules using the simple syntax:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow 53
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This rule will allow tcp and udp port 53 to any address on this host. To specify  a  proto‐
+</span><span class="z-text z-plain">       col, append &#39;/protocol&#39; to the port. For example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow 25/tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This  will allow tcp port 25 to any address on this host. ufw will also check /etc/services
+</span><span class="z-text z-plain">       for the port and protocol if specifying a service by name.  Eg:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow smtp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw supports both ingress and egress filtering and users may optionally specify a direction
+</span><span class="z-text z-plain">       of  either  in or out for either incoming or outgoing traffic. If no direction is supplied,
+</span><span class="z-text z-plain">       the rule applies to incoming traffic. Eg:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow in http
+</span><span class="z-text z-plain">         ufw reject out smtp
+</span><span class="z-text z-plain">         ufw reject telnet comment &#39;telnet is unencrypted&#39;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Users can also use a fuller syntax, specifying the source  and  destination  addresses  and
+</span><span class="z-text z-plain">       ports. This syntax is loosely based on OpenBSD&#39;s PF syntax. For example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw deny proto tcp to any port 80
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This will deny all traffic to tcp port 80 on this host. Another example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw deny proto tcp from 10.0.0.0/8 to 192.168.0.1 port 25
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This will deny all traffic from the RFC1918 Class A network to tcp port 25 with the address
+</span><span class="z-text z-plain">       192.168.0.1.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw deny proto tcp from 2001:db8::/32 to any port 25
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This will deny all traffic from the IPv6 2001:db8::/32 to tcp port 25 on  this  host.  IPv6
+</span><span class="z-text z-plain">       must be enabled in /etc/default/ufw for IPv6 firewalling to work.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw deny in on eth0 to 224.0.0.1 proto igmp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This will deny all igmp traffic to 224.0.0.1 on the eth0 interface.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow in on eth0 to 192.168.0.1 proto gre
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This will allow all gre traffic to 192.168.0.1 on the eth0 interface.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow proto tcp from any to any port 80,443,8080:8090 comment &#39;web app&#39;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The  above  will  allow all traffic to tcp ports 80, 443 and 8080-8090 inclusive and adds a
+</span><span class="z-text z-plain">       comment for the rule. When specifying multiple ports, the ports list must be numeric,  can‐
+</span><span class="z-text z-plain">       not  contain  spaces  and  must be modified as a whole. Eg, in the above example you cannot
+</span><span class="z-text z-plain">       later try to delete just the &#39;443&#39; port. You cannot specify  more  than  15  ports  (ranges
+</span><span class="z-text z-plain">       count as 2 ports, so the port count in the above example is 4).
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw  supports  several different protocols. The following are valid in any rule and enabled
+</span><span class="z-text z-plain">       when the protocol is not specified:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         tcp
+</span><span class="z-text z-plain">         udp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The following have certain restrictions and are not enabled when the protocol is not speci‐
+</span><span class="z-text z-plain">       fied:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ah      valid without port number
+</span><span class="z-text z-plain">         esp     valid without port number
+</span><span class="z-text z-plain">         gre     valid without port number
+</span><span class="z-text z-plain">         ipv6    valid for IPv4 addresses and without port number
+</span><span class="z-text z-plain">         igmp    valid for IPv4 addresses and without port number
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Rules  for  traffic not destined for the host itself but instead for traffic that should be
+</span><span class="z-text z-plain">       routed/forwarded through the firewall should specify the  route  keyword  before  the  rule
+</span><span class="z-text z-plain">       (routing  rules differ significantly from PF syntax and instead take into account netfilter
+</span><span class="z-text z-plain">       FORWARD chain conventions). For example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw route allow in on eth1 out on eth2
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This will allow all traffic routed to eth2 and coming in on eth1 to traverse the firewall.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw route allow in on eth0 out on eth1 to 12.34.45.67 port 80 proto tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This rule allows any packets coming in on eth0 to traverse the firewall out on eth1 to  tcp
+</span><span class="z-text z-plain">       port 80 on 12.34.45.67.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       In  addition  to  routing rules and policy, you must also setup IP forwarding.  This may be
+</span><span class="z-text z-plain">       done by setting the following in /etc/ufw/sysctl.conf:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         net/ipv4/ip_forward=1
+</span><span class="z-text z-plain">         net/ipv6/conf/default/forwarding=1
+</span><span class="z-text z-plain">         net/ipv6/conf/all/forwarding=1
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       then restarting the firewall:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw disable
+</span><span class="z-text z-plain">         ufw enable
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Be aware that setting kernel tunables is operating system specific and ufw sysctl  settings
+</span><span class="z-text z-plain">       may be overridden. See the sysctl manual page for details.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw  supports  connection rate limiting, which is useful for protecting against brute-force
+</span><span class="z-text z-plain">       login attacks. When a limit rule is used, ufw will normally allow the connection  but  will
+</span><span class="z-text z-plain">       deny connections if an IP address attempts to initiate 6 or more connections within 30 sec‐
+</span><span class="z-text z-plain">       onds. See http://www.debian-administration.org/articles/187 for details. Typical usage is:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw limit ssh/tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Sometimes it is desirable to let the sender know when traffic is being denied, rather  than
+</span><span class="z-text z-plain">       simply ignoring it. In these cases, use reject instead of deny.  For example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw reject auth
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       By default, ufw will apply rules to all available interfaces. To limit this, specify DIREC‐
+</span><span class="z-text z-plain">       TION on INTERFACE, where DIRECTION is one of in or out  (interface  aliases  are  not  sup‐
+</span><span class="z-text z-plain">       ported).  For example, to allow all new incoming http connections on eth0, use:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow in on eth0 to any port 80 proto tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       To delete a rule, simply prefix the original rule with delete with or without the rule com‐
+</span><span class="z-text z-plain">       ment. For example, if the original rule was:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw deny 80/tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Use this to delete it:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw delete deny 80/tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       You may also specify the rule by NUM, as seen in the status numbered output.  For  example,
+</span><span class="z-text z-plain">       if you want to delete rule number &#39;3&#39;, use:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw delete 3
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       If you have IPv6 enabled and are deleting a generic rule that applies to both IPv4 and IPv6
+</span><span class="z-text z-plain">       (eg &#39;ufw allow 22/tcp&#39;), deleting by rule number will delete only the  specified  rule.  To
+</span><span class="z-text z-plain">       delete both with one command, prefix the original rule with delete.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       To  insert a rule, specify the new rule as normal, but prefix the rule with the rule number
+</span><span class="z-text z-plain">       to insert. For example, if you have four rules, and you want to insert a new rule  as  rule
+</span><span class="z-text z-plain">       number three, use:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw insert 3 deny to any port 22 from 10.0.0.135 proto tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Similarly,  to  add  a  rule  before  all  other rules matching the rule&#39;s IP type, use the
+</span><span class="z-text z-plain">       prepend rule:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw prepend deny from 1.2.3.4
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This is particularly useful for dynamic firewalls as found in an IPS.  Importantly, if  the
+</span><span class="z-text z-plain">       specified  rule is an IPv4 rule, it will be prepended before all other IPv4 rules. If it is
+</span><span class="z-text z-plain">       an IPv6 rule, it will be prepended before any IPv6 rules.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       To see a list of numbered rules, use:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw status numbered
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw supports per rule logging. By default, no logging is performed when a packet matches  a
+</span><span class="z-text z-plain">       rule.  Specifying  log will log all new connections matching the rule, and log-all will log
+</span><span class="z-text z-plain">       all packets matching the rule.  For example, to allow and log all new ssh connections, use:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow log 22/tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       See LOGGING for more information on logging.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">EXAMPLES
+</span><span class="z-text z-plain">       Deny all access to port 53:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw deny 53
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Allow all access to tcp port 80:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow 80/tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Allow all access from RFC1918 networks to this host:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow from 10.0.0.0/8
+</span><span class="z-text z-plain">         ufw allow from 172.16.0.0/12
+</span><span class="z-text z-plain">         ufw allow from 192.168.0.0/16
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Deny access to udp port 514 from host 1.2.3.4:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw deny proto udp from 1.2.3.4 to any port 514
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Allow access to udp 1.2.3.4 port 5469 from 1.2.3.5 port 5469:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow proto udp from 1.2.3.5 port 5469 to 1.2.3.4 port 5469
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">REMOTE MANAGEMENT
+</span><span class="z-text z-plain">       When running ufw enable or starting ufw via its initscript, ufw will flush its chains. This
+</span><span class="z-text z-plain">       is  required  so  ufw can maintain a consistent state, but it may drop existing connections
+</span><span class="z-text z-plain">       (eg ssh). ufw does support adding rules before enabling the firewall, so administrators can
+</span><span class="z-text z-plain">       do:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow proto tcp from any to any port 22
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       before running &#39;ufw enable&#39;. The rules will still be flushed, but the ssh port will be open
+</span><span class="z-text z-plain">       after enabling the firewall. Please note that once ufw is &#39;enabled&#39;, ufw will not flush the
+</span><span class="z-text z-plain">       chains  when  adding  or removing rules (but will when modifying a rule or changing the de‐
+</span><span class="z-text z-plain">       fault policy). By default, ufw will prompt when enabling the firewall while  running  under
+</span><span class="z-text z-plain">       ssh. This can be disabled by using &#39;ufw --force enable&#39;.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">APPLICATION INTEGRATION
+</span><span class="z-text z-plain">       ufw  supports  application  integration  by  reading  profiles located in /etc/ufw/applica‐
+</span><span class="z-text z-plain">       tions.d. To list the names of application profiles known to ufw, use:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw app list
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Users can specify an application name when adding a rule (quoting any  profile  names  with
+</span><span class="z-text z-plain">       spaces). For example, when using the simple syntax, users can use:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow &lt;name&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Or for the extended syntax:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow from 192.168.0.0/16 to any app &lt;name&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       You  should  not specify the protocol with either syntax, and with the extended syntax, use
+</span><span class="z-text z-plain">       app in place of the port clause.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Details on the firewall profile for a given application can be seen with:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw app info &lt;name&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       where &#39;&lt;name&gt;&#39; is one of the applications seen with the app list command.  Users  may  also
+</span><span class="z-text z-plain">       specify all to see the profiles for all known applications.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Syntax for the application profiles is a simple .INI format:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         [&lt;name&gt;]
+</span><span class="z-text z-plain">         title=&lt;title&gt;
+</span><span class="z-text z-plain">         description=&lt;description&gt;
+</span><span class="z-text z-plain">         ports=&lt;ports&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The &#39;ports&#39; field may specify a &#39;|&#39;-separated list of ports/protocols where the protocol is
+</span><span class="z-text z-plain">       optional. A comma-separated list or a range (specified with &#39;start:end&#39;) may also  be  used
+</span><span class="z-text z-plain">       to specify multiple ports, in which case the protocol is required. For example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         [SomeService]
+</span><span class="z-text z-plain">         title=Some title
+</span><span class="z-text z-plain">         description=Some description
+</span><span class="z-text z-plain">         ports=12/udp|34|56,78:90/tcp
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       In  the above example, &#39;SomeService&#39; may be used in app rules and it specifies UDP port 12,
+</span><span class="z-text z-plain">       TCP and UDP on port 34 and TCP ports 56 and 78-90 inclusive.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       After creating or editing an application profile, users can run:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw app update &lt;name&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       This command will automatically update the firewall with updated  profile  information.  If
+</span><span class="z-text z-plain">       specify &#39;all&#39; for name, then all the profiles will be updated.  To update a profile and add
+</span><span class="z-text z-plain">       a new rule to the firewall automatically, users can run:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw app update --add-new &lt;name&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The behavior of the update --add-new command can be configured using:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw app default &lt;policy&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The default application policy is skip, which means that the update --add-new command  will
+</span><span class="z-text z-plain">       do  nothing.  Users may also specify a policy of allow or deny so the update --add-new com‐
+</span><span class="z-text z-plain">       mand may automatically update the firewall.  WARNING: it may be a security to risk to use a
+</span><span class="z-text z-plain">       default  allow  policy  for application profiles. Carefully consider the security ramifica‐
+</span><span class="z-text z-plain">       tions before using a default allow policy.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">LOGGING
+</span><span class="z-text z-plain">       ufw supports multiple logging levels. ufw defaults to a loglevel of &#39;low&#39; when  a  loglevel
+</span><span class="z-text z-plain">       is not specified. Users may specify a loglevel with:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw logging LEVEL
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       LEVEL may be &#39;off&#39;, &#39;low&#39;, &#39;medium&#39;, &#39;high&#39; and &#39;full&#39;. Log levels are defined as:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       off    disables ufw managed logging
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       low    logs  all  blocked  packets not matching the defined policy (with rate limiting), as
+</span><span class="z-text z-plain">              well as packets matching logged rules
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       medium log level low, plus all allowed packets not matching the defined policy, all INVALID
+</span><span class="z-text z-plain">              packets, and all new connections.  All logging is done with rate limiting.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       high   log level medium (without rate limiting), plus all packets with rate limiting
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       full   log level high without rate limiting
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Loglevels above medium generate a lot of logging output, and may quickly fill up your disk.
+</span><span class="z-text z-plain">       Loglevel medium may generate a lot of logging output on a busy system.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Specifying &#39;on&#39; simply enables logging at log level &#39;low&#39; if logging is currently  not  en‐
+</span><span class="z-text z-plain">       abled.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">REPORTS
+</span><span class="z-text z-plain">       The  following  reports are supported. Each is based on the live system and with the excep‐
+</span><span class="z-text z-plain">       tion of the listening report, is in raw iptables format:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         raw
+</span><span class="z-text z-plain">         builtins
+</span><span class="z-text z-plain">         before-rules
+</span><span class="z-text z-plain">         user-rules
+</span><span class="z-text z-plain">         after-rules
+</span><span class="z-text z-plain">         logging-rules
+</span><span class="z-text z-plain">         listening
+</span><span class="z-text z-plain">         added
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The raw report shows the complete firewall, while the others show a subset of  what  is  in
+</span><span class="z-text z-plain">       the raw report.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The  listening  report will display the ports on the live system in the listening state for
+</span><span class="z-text z-plain">       tcp and the open state for udp, along with the address of the interface and the  executable
+</span><span class="z-text z-plain">       listening on the port. An &#39;*&#39; is used in place of the address of the interface when the ex‐
+</span><span class="z-text z-plain">       ecutable is bound to all interfaces on that port. Following this information is a  list  of
+</span><span class="z-text z-plain">       rules which may affect connections on this port. The rules are listed in the order they are
+</span><span class="z-text z-plain">       evaluated by the kernel, and the first match wins. Please note that the default  policy  is
+</span><span class="z-text z-plain">       not listed and tcp6 and udp6 are shown only if IPV6 is enabled.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The  added  report  displays the list of rules as they were added on the command-line. This
+</span><span class="z-text z-plain">       report does not show the status of the running firewall (use &#39;ufw status&#39; instead). Because
+</span><span class="z-text z-plain">       rules are normalized by ufw, rules may look different than the originally added rule. Also,
+</span><span class="z-text z-plain">       ufw does not record command ordering,  so  an  equivalent  ordering  is  used  which  lists
+</span><span class="z-text z-plain">       IPv6-only rules after other rules.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">NOTES
+</span><span class="z-text z-plain">       On  installation, ufw is disabled with a default incoming policy of deny, a default forward
+</span><span class="z-text z-plain">       policy of deny, and a default outgoing policy of allow, with stateful tracking for NEW con‐
+</span><span class="z-text z-plain">       nections for incoming and forwarded connections.  In addition to the above, a default rule‐
+</span><span class="z-text z-plain">       set is put in place that does the following:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - DROP packets with RH0 headers
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - DROP INVALID packets
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - ACCEPT certain icmp packets (INPUT and FORWARD): destination-unreachable,  source-quench,
+</span><span class="z-text z-plain">       time-exceeded,  parameter-problem,  and  echo-request  for  IPv4.  destination-unreachable,
+</span><span class="z-text z-plain">       packet-too-big, time-exceeded, parameter-problem, and echo-request for IPv6.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - ACCEPT icmpv6 packets for stateless autoconfiguration (INPUT)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - ACCEPT ping replies from IPv6 link-local (ffe8::/10) addresses (INPUT)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - ACCEPT DHCP client traffic (INPUT)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - DROP non-local traffic (INPUT)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - ACCEPT mDNS (zeroconf/bonjour/avahi 224.0.0.251 for IPv4 and ff02::fb for IPv6) for  ser‐
+</span><span class="z-text z-plain">       vice discovery (INPUT)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       - ACCEPT UPnP (239.255.255.250 for IPv4 and ff02::f for IPv6) for service discovery (INPUT)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       Rule  ordering  is important and the first match wins. Therefore when adding rules, add the
+</span><span class="z-text z-plain">       more specific rules first with more general rules later.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       ufw is not intended to provide complete firewall functionality via its  command  interface,
+</span><span class="z-text z-plain">       but instead provides an easy way to add or remove simple rules.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       The  status  command  shows  basic  information about the state of the firewall, as well as
+</span><span class="z-text z-plain">       rules managed via the ufw command. It does not show rules from the rules files in /etc/ufw.
+</span><span class="z-text z-plain">       To  see the complete state of the firewall, users can ufw show raw.  This displays the fil‐
+</span><span class="z-text z-plain">       ter, nat, mangle and raw tables using:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         iptables -n -L -v -x -t &lt;table&gt;
+</span><span class="z-text z-plain">         ip6tables -n -L -v -x -t &lt;table&gt;
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       See the iptables and ip6tables documentation for more details.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       If the default policy is set to REJECT, ufw may interfere with rules added outside  of  the
+</span><span class="z-text z-plain">       ufw framework. See README for details.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       IPV6  is  allowed  by  default.  To change this behavior to only accept IPv6 traffic on the
+</span><span class="z-text z-plain">       loopback interface, set IPV6 to &#39;no&#39; in /etc/default/ufw and reload ufw. When IPv6  is  en‐
+</span><span class="z-text z-plain">       abled,  you may specify rules in the same way as for IPv4 rules, and they will be displayed
+</span><span class="z-text z-plain">       with ufw status. Rules that match both IPv4 and IPv6 addresses apply to both  IP  versions.
+</span><span class="z-text z-plain">       For example, when IPv6 is enabled, the following rule will allow access to port 22 for both
+</span><span class="z-text z-plain">       IPv4 and IPv6 traffic:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow 22
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       IPv6 over IPv4 tunnels and 6to4 are supported by using the  &#39;ipv6&#39;  protocol  (&#39;41&#39;).  This
+</span><span class="z-text z-plain">       protocol can only be used with the full syntax. For example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow to 10.0.0.1 proto ipv6
+</span><span class="z-text z-plain">         ufw allow to 10.0.0.1 from 10.4.0.0/16 proto ipv6
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       IPSec is supported by using the &#39;esp&#39; (&#39;50&#39;) and &#39;ah&#39; (&#39;51&#39;) protocols. These protocols can
+</span><span class="z-text z-plain">       only be used with the full syntax. For example:
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">         ufw allow to 10.0.0.1 proto esp
+</span><span class="z-text z-plain">         ufw allow to 10.0.0.1 from 10.4.0.0/16 proto esp
+</span><span class="z-text z-plain">         ufw allow to 10.0.0.1 proto ah
+</span><span class="z-text z-plain">         ufw allow to 10.0.0.1 from 10.4.0.0/16 proto ah
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">       In addition to the command-line interface, ufw also provides a framework which  allows  ad‐
+</span><span class="z-text z-plain">       ministrators  to  modify  default behavior as well as take full advantage of netfilter. See
+</span><span class="z-text z-plain">       the ufw-framework manual page for more information.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">SEE ALSO
+</span><span class="z-text z-plain">       ufw-framework(8),  iptables(8),  ip6tables(8),  iptables-restore(8),  ip6tables-restore(8),
+</span><span class="z-text z-plain">       sysctl(8), sysctl.conf(5)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">AUTHOR
+</span><span class="z-text z-plain">       ufw is Copyright 2008-2021, Canonical Ltd.
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">September 2021                                                                             UFW:(8)
+</span></code></pre>
+</details>
+
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/debian/">Series</a><br>
+
+          
+          
+      <a href="https://dev.chester.wykies.com/debian/mac-address-change/">MAC Address Change</a><br>
+
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/debian/permissions-recusively-on-dir/">Set permissions recursively on directory structure</a><br>
+                <a href="https://dev.chester.wykies.com/debian/touch/">Touch (Set file modified date)</a><br>
+                <a href="https://dev.chester.wykies.com/debian/android-on-linux/">Android Apps on Linux</a><br>
+                <a href="https://dev.chester.wykies.com/debian/blacklist-module/">Blacklist Module</a><br>
+                <a href="https://dev.chester.wykies.com/debian/calender-notifications-popup-disable/">Calender Notifications Popup Disable</a><br>
+                <a href="https://dev.chester.wykies.com/debian/cups-pdf-printer/">CUPS PDF Printer</a><br>
+                <a href="https://dev.chester.wykies.com/debian/gping/">gping</a><br>
+                <a href="https://dev.chester.wykies.com/debian/hide-mounts/">Hide Mounts</a><br>
+                <a href="https://dev.chester.wykies.com/debian/nautilus/">Nautilus</a><br>
+                <a href="https://dev.chester.wykies.com/debian/power/">Power</a><br>
+                <a href="https://dev.chester.wykies.com/debian/smartgit/">Smartgit</a><br>
+                <a href="https://dev.chester.wykies.com/debian/video-cards/">Video Cards</a><br>
+                <a href="https://dev.chester.wykies.com/debian/snapcraft/">Snapcraft</a><br>
+                <a href="https://dev.chester.wykies.com/debian/acrobat-reader/">Acrobat Reader</a><br>
+                <a href="https://dev.chester.wykies.com/debian/audio/">Audio</a><br>
+                <a href="https://dev.chester.wykies.com/debian/shortcuts-important/">Shortcuts (Important)</a><br>
+                <a href="https://dev.chester.wykies.com/debian/dns/">DNS</a><br>
+                <a href="https://dev.chester.wykies.com/debian/mounting/">Mounting Drives</a><br>
+                <a href="https://dev.chester.wykies.com/debian/setup-network-shares/">Setup Network Shares</a><br>
+                <a href="https://dev.chester.wykies.com/debian/cron/">Cron</a><br>
+                <a href="https://dev.chester.wykies.com/debian/startup/">Startup</a><br>
+                <a href="https://dev.chester.wykies.com/debian/users-and-groups/">Users and Groups</a><br>
+                <a href="https://dev.chester.wykies.com/debian/paths-to-rem/">Paths to remember</a><br>
+                <a href="https://dev.chester.wykies.com/debian/manual-kernel-remove/">Manually Removing Old Kernels</a><br>
+                <a href="https://dev.chester.wykies.com/debian/icons/">Set Icon for Application</a><br>
+                <a href="https://dev.chester.wykies.com/debian/strange-problems/">Strange Problems and Fixes</a><br>
+                <a href="https://dev.chester.wykies.com/debian/redirect-stderr/">Redirecting stderr</a><br>
+                <a href="https://dev.chester.wykies.com/debian/extension/">Extensions</a><br>
+                <a href="https://dev.chester.wykies.com/debian/ubuntu-software/">Ubuntu Software</a><br>
+                <a href="https://dev.chester.wykies.com/debian/seconds-clock/">Show Seconds on Clock Display</a><br>
+                <a href="https://dev.chester.wykies.com/debian/create-bootable-flash/">Create Bootable Flash Drive</a><br>
+                <a href="https://dev.chester.wykies.com/debian/compressed-files/">Compressed Files</a><br>
+                <a href="https://dev.chester.wykies.com/debian/services/">services systemd (unit)</a><br>
+                <a href="https://dev.chester.wykies.com/debian/scp/">SCP</a><br>
+                <a href="https://dev.chester.wykies.com/debian/ssh/">SSH</a><br>
+            </div>
+
+          
+
+          
+            <a href="https://dev.chester.wykies.com/debian/update/">Updating</a><br>
+            <a href="https://dev.chester.wykies.com/debian/useful-commands/">Useful commands</a><br>
+
+          
+            
+      <a class="scur" href="https://dev.chester.wykies.com/debian/firewall/">Firewall</a><br>
+    
+
+          
+            <a href="https://dev.chester.wykies.com/debian/view-whitespace/">View Whitespace</a><br>
+          
+            <a href="https://dev.chester.wykies.com/debian/open-vpn/">OpenVPN</a><br>
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/debian/ppp-logs/">PPP logs</a><br>
+                <a href="https://dev.chester.wykies.com/debian/man/">MAN</a><br>
+                <a href="https://dev.chester.wykies.com/debian/terminal/">Terminal</a><br>
+                <a href="https://dev.chester.wykies.com/debian/sed/">sed</a><br>
+                <a href="https://dev.chester.wykies.com/debian/characters/">Characters</a><br>
+                <a href="https://dev.chester.wykies.com/debian/zsh/">zsh</a><br>
+                <a href="https://dev.chester.wykies.com/debian/link-files/">Links between files</a><br>
+                <a href="https://dev.chester.wykies.com/debian/7zip/">7z encrypted file</a><br>
+                <a href="https://dev.chester.wykies.com/debian/wayland-or-x11/">Wayland or x11?</a><br>
+                <a href="https://dev.chester.wykies.com/debian/delete-old/">Delete Old Files Automatically</a><br>
+                <a href="https://dev.chester.wykies.com/debian/screen/">Screen Application</a><br>
+            </div>
+        
+      <a href="https://dev.chester.wykies.com/debian/set-ip/">Set IP</a><br>
+
+        
+      </div>
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#man-page-extract">Man page extract</a>
+        </div>
+        <div>
+          <a href="#frequent-commands">Frequent commands</a>
+        </div>
+        <div>
+          <a href="#state-information">State Information</a>
+        </div>
+        <div class="hpad">
+          <a href="#view-rules-in-use-including-status-and-defaults"><small>- View rules in use (including status and defaults)</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#view-rules-in-use-numbered"><small>- View rules in use (numbered)</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#logs"><small>- Logs</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#listening-programs"><small>- Listening Programs</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#services-port-number-mapping"><small>- Services port number mapping</small></a>
+        </div>
+        <div>
+          <a href="#block-outgoing-traffic">Block outgoing traffic</a>
+        </div>
+        <div>
+          <a href="#man-page-copy">MAN Page (Copy)</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav>
+          
+      <p class="s80"> © 2022-<span id="year">2025</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>
