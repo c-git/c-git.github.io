@@ -1,7 +1,7 @@
 +++
 title="Cargo"
 date=2023-06-16
-updated = 2025-04-26
+updated = 2025-05-11
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
@@ -43,10 +43,11 @@ Example
 
 ```rust
 println!("{}", env!("CARGO_PKG_NAME"));
+println!("{}", env!("CARGO_PKG_VERSION"));
 ```
 
 - CARGO_PKG_NAME
-- CARGO_PKG_VERSION (Prefer use of [Version Crate](https://crates.io/crates/version))
+- CARGO_PKG_VERSION (As an alternative you may use the [Version Crate](https://crates.io/crates/version))
 
 # Specifying dependencies
 
