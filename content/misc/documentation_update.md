@@ -1,7 +1,7 @@
 +++
 title='Documentation Update'
 date=2023-10-27
-updated= 2025-04-26
+updated= 2025-05-24
 taxonomies = { tags = ["Misc"] }
 +++
 
@@ -104,3 +104,12 @@ chmod +x .git/hooks/pre-push
 The hook should now be setup and working.
 
 [zola_chrono]: https://github.com/c-git/zola_chrono
+
+# Screenshot colors
+
+Documenting colors used for consistency going forward
+
+| Use                 | Color Code                                  |
+| :------------------ | :------------------------------------------ |
+| Screenshot boarders | {{ color_with_background(color="797e9c") }} |
+| Highlights          | {{ color_with_background(color="4cac44") }} |
