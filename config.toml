@@ -158,11 +158,17 @@ insert_anchor_links = "heading"
 skip_prefixes = [
   # Unless otherwise stated all give "Client error status code (403 Forbidden) received"
   "https://alifeengineered.substack.com",
+  "https://askubuntu.com",
   "https://codejunction.hashnode.dev", # 429 Too Many Requests
   "https://dev.mysql.com/",
   "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
   "https://leetcode.com/",
+  "https://serverfault.com",
+  "https://stackoverflow.com",
+  "https://superuser.com",
   "https://support.discord.com",
+  "https://tex.stackexchange.com",
+  "https://unix.stackexchange.com",
   "https://wiki.mozilla.org/Areweyet",
   "https://www.brainyquote.com", # I have multiple links to this site and repeated attempts trigger bot protection
   "https://www.cyberciti.biz/faq/",
