@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-04-27
+updated = 2025-06-26
 taxonomies = { tags = ["Misc"] }
 +++
 
@@ -28,6 +28,19 @@ I included an example problem where the technique applies.
 Coding up brute force is a good starting point but a better starting point is just typing out or writing up what you need to keep track of to solve it as a human.
 Add "digital" constraints like only looking at one variable at a time and then try to solve and see where you have repeated work and things like that which could cause the optimal solution to fall out.
 In the example problem once I [looked at Deepti](https://www.youtube.com/watch?v=zraEXluZLj0) manually solve it, the solution became obvious and I wasn't stuck anymore.
+
+</details>
+
+## Tips for detecting DP
+
+<details>
+
+- [139. Word Break](https://leetcode.com/problems/word-break/description/)
+
+I eventually solved the problem by patterning on [Deepti's solution](https://www.youtube.com/watch?v=TK9pptFzH-A).
+What I think I missed is that even though because of how the question is constructed the ways must be tried, brute force even with a trie would be too slow as it's exponential.
+
+**Lesson:** If the ways really must be tried and trying them is exponential, it's likely a dynamic programming (DP) problem.
 
 </details>
 
