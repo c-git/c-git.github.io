@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - GitHub</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/github/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-26T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/github/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Github Actions</title>
+        <published>2024-12-23T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/github/actions/"/>
+        <id>https://dev.chester.wykies.com/github/actions/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/github/actions/">&lt;h1 id=&quot;reusing-a-github-action&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#reusing-a-github-action&quot; aria-label=&quot;Anchor link for: reusing-a-github-action&quot;&gt;Reusing a github action&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&#x2F;sharing-automations&#x2F;reusing-workflows#calling-a-reusable-workflow&quot;&gt;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&#x2F;sharing-automations&#x2F;reusing-workflows#calling-a-reusable-workflow&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;See source for more details but I’ll focus on the use case I most commonly have, two workflows in the same repo and I want to call one from the other to ensure it runs and succeeds before the other one starts.
+Example use case can be found at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wykies&#x2F;crates&#x2F;&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;wykies&#x2F;crates&#x2F;&lt;&#x2F;a&gt; where the &lt;code&gt;shuttle.yml&lt;&#x2F;code&gt; calls &lt;code&gt;general.yml&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;In the workflow being called you must have the following in inside of the &lt;code&gt;on&lt;&#x2F;code&gt; section.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yml&quot; class=&quot;language-yml z-code&quot;&gt;&lt;code class=&quot;language-yml&quot; data-lang=&quot;yml&quot;&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;&lt;span class=&quot;z-constant z-language z-boolean z-yaml&quot;&gt;on&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;  
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;workflow_call&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and in the caller you need to have a separate job that put the relative path the called workflow in uses as below:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yml&quot; class=&quot;language-yml z-code&quot;&gt;&lt;code class=&quot;language-yml&quot; data-lang=&quot;yml&quot;&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;&lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;jobs&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;run_tests&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;uses&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;.&#x2F;.github&#x2F;workflows&#x2F;general.yml&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;  &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;deploy&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;runs-on&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;ubuntu-latest&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;needs&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;run_tests&lt;&#x2F;span&gt; &lt;span class=&quot;z-comment z-line z-number-sign z-yaml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-line z-number-sign z-yaml&quot;&gt;#&lt;&#x2F;span&gt; Requires that the other job succeeds before this one will start
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-yaml&quot;&gt;    &lt;span class=&quot;z-string z-unquoted z-plain z-out z-yaml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-yaml&quot;&gt;steps&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-separator z-key-value z-mapping z-yaml&quot;&gt;:&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Forking</title>
+        <published>2024-02-22T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/github/forking/"/>
+        <id>https://dev.chester.wykies.com/github/forking/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/github/forking/">&lt;p&gt;If forking a repo to make a PR and you intend to keep fork around then it’s advisable not to commit to the main branch to avoid issues with history not being able to be linear.
+I normally set branch protection on the main branch as shown in the screenshot.
+This still allows it to be updated from the upstream but not committed to directly.&lt;br &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;github&#x2F;forking&#x2F;options.png&quot; alt=&quot;Screenshot of options selected&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Note: If &lt;code&gt;Do not allow bypassing the above settings&lt;&#x2F;code&gt; is not checked it is still very easy to accidentally commit to main.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>CI</title>
+        <published>2024-02-04T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/github/ci/"/>
+        <id>https://dev.chester.wykies.com/github/ci/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/github/ci/">&lt;p&gt;Notes on github actions.&lt;&#x2F;p&gt;
+&lt;p&gt;See this &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&#x2F;learn-github-actions&#x2F;variables#default-environment-variables&quot;&gt;link&lt;&#x2F;a&gt; for environment variables set by github.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>SSH</title>
+        <published>2023-11-06T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/github/ssh/"/>
+        <id>https://dev.chester.wykies.com/github/ssh/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/github/ssh/">&lt;h1 id=&quot;creating-ssh-key-linux&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#creating-ssh-key-linux&quot; aria-label=&quot;Anchor link for: creating-ssh-key-linux&quot;&gt;Creating SSH Key (Linux)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;authentication&#x2F;connecting-to-github-with-ssh&quot;&gt;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;authentication&#x2F;connecting-to-github-with-ssh&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open a terminal&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;ssh-keygen -t ed25519 -C &quot;&quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Save to the default location&lt;&#x2F;li&gt;
+&lt;li&gt;Enter and confirm a suitable passphrase&lt;&#x2F;li&gt;
+&lt;li&gt;Go to &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;settings&#x2F;ssh&#x2F;new&quot;&gt;GitHub new SSH key page&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Title&lt;&#x2F;code&gt; is not important it’s more like a note to remember where they key is used. So you could use for example
+the last octet of the server’s IP.&lt;&#x2F;li&gt;
+&lt;li&gt;Leave &lt;code&gt;Key type&lt;&#x2F;code&gt; on &lt;code&gt;Authentication Key&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;For &lt;code&gt;Key&lt;&#x2F;code&gt; copy the value from the public key you just generated
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat ~&#x2F;.ssh&#x2F;id_ed25519.pub&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Copy the line that is output into the text box on GitHub&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Click &lt;code&gt;Add SSH Key&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Codespaces</title>
+        <published>2023-11-05T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/github/codespaces/"/>
+        <id>https://dev.chester.wykies.com/github/codespaces/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/github/codespaces/">&lt;h1 id=&quot;setup-from-default-for-rust&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup-from-default-for-rust&quot; aria-label=&quot;Anchor link for: setup-from-default-for-rust&quot;&gt;Setup from default for Rust&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;These are my custom setups if you just want rust only see the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;tools&#x2F;install&quot;&gt;rust website&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Feel free to download the scripts to review to decide if you want to use them. They are pretty simple.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;install-rust-only&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-rust-only&quot; aria-label=&quot;Anchor link for: install-rust-only&quot;&gt;Install Rust only&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;github&#x2F;codespaces&#x2F;scripts&#x2F;setup_rust_only.sh&quot;&gt;Download Script&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh z-code&quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;curl&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;proto&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;=https&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;tlsv1&lt;&#x2F;span&gt;.2&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;sSf&lt;&#x2F;span&gt; https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;github&#x2F;codespaces&#x2F;scripts&#x2F;setup_rust_only.sh&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;sh&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;install-rust-with-trunk-usually-only-needed-if-your-developing-for-the-web&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-rust-with-trunk-usually-only-needed-if-your-developing-for-the-web&quot; aria-label=&quot;Anchor link for: install-rust-with-trunk-usually-only-needed-if-your-developing-for-the-web&quot;&gt;Install Rust with Trunk (Usually only needed if your developing for the web)&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;WARNING:&lt;&#x2F;strong&gt; I’m aware of errors when using this version of the script but haven’t had the time to resolve them, for now I recommend using the rust only script and installing trunk separately&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;github&#x2F;codespaces&#x2F;scripts&#x2F;setup_with_trunk.sh&quot;&gt;Download Script&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh z-code&quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;curl&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;proto&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;=https&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;tlsv1&lt;&#x2F;span&gt;.2&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;sSf&lt;&#x2F;span&gt; https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;github&#x2F;codespaces&#x2F;scripts&#x2F;setup_with_trunk.sh&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-pipe z-shell&quot;&gt;|&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;bash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;loading-rust-into-your-environment&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#loading-rust-into-your-environment&quot; aria-label=&quot;Anchor link for: loading-rust-into-your-environment&quot;&gt;Loading rust into your environment&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;At this point you’ll need to either restart you terminal or run one of the following commands recommended but the rust install script (note the leading DOT):&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sh&quot; class=&quot;language-sh z-code&quot;&gt;&lt;code class=&quot;language-sh&quot; data-lang=&quot;sh&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-dot z-shell&quot;&gt;.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.cargo&#x2F;env&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;            &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; For sh&#x2F;bash&#x2F;zsh&#x2F;ash&#x2F;dash&#x2F;pdksh&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-source z-shell&quot;&gt;source&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.cargo&#x2F;env.fish&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;  &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; For fish&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;use-devcontainer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#use-devcontainer&quot; aria-label=&quot;Anchor link for: use-devcontainer&quot;&gt;Use devcontainer&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;I found &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;containers.dev&#x2F;guide&#x2F;dockerfile&quot;&gt;this post&lt;&#x2F;a&gt; helpful to get an idea of the options available.&lt;&#x2F;p&gt;
+&lt;p&gt;I also found a repo microsoft with pre-configured dev containers &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;devcontainers&#x2F;images&#x2F;tree&#x2F;main&#x2F;src&#x2F;rust&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;devcontainers&#x2F;images&#x2F;tree&#x2F;main&#x2F;src&#x2F;rust&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Seems to work by copying all the files from &lt;code&gt;.devcontainer&lt;&#x2F;code&gt; into the root of your repo and then when a codespace is request to be created it uses those files.
+It takes a lot longer with not much visual feedback but seems to have worked.
+Would need to be customized to also install trunk when needed.
+For now I will just work with my script as I have more control over it and I can see the progress as it goes.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;pricing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#pricing&quot; aria-label=&quot;Anchor link for: pricing&quot;&gt;Pricing&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;By default you cannot perform actions that would result in billing according the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;codespaces&#x2F;overview#billing-for-codespaces&quot;&gt;GitHub Docs&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Go to &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;settings&#x2F;billing&#x2F;summary&quot;&gt;settings&lt;&#x2F;a&gt; to see your usage.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;see-list-of-your-code-spaces&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#see-list-of-your-code-spaces&quot; aria-label=&quot;Anchor link for: see-list-of-your-code-spaces&quot;&gt;See list of your code spaces&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;codespaces&#x2F;&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;codespaces&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
