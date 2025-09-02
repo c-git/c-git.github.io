@@ -1,14 +1,14 @@
 +++
 title="Formatting"
 date=2023-11-06
-updated = 2025-04-26
+updated = 2025-09-01
 extra = { series = "Git" }
 taxonomies = { tags = ["Git"] }
 +++
 
 # Foreword
 
-Source: <https://git-scm.com/docs/pretty-formats#Documentation/pretty-formats.txt-emnem>
+Source: <https://git-scm.com/docs/pretty-formats/2.49.0#Documentation/pretty-formats.txt-emnem>
 
 Used to control output for commands like `log`.
 

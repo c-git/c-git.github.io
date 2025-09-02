@@ -1,12 +1,12 @@
 +++
 title="Set Icon for Application"
 date = 2023-04-03
-updated = 2025-04-26
+updated = 2025-09-01
 extra = { series = "Debian" }
 taxonomies = { tags = ["Debian"] }
 +++
 
-Source: <https://www.solvetechnow.com/post/how-to-change-app-icon-in-ubuntu>
+Source: https://www.solvetechnow.com/post/how-to-change-app-icon-in-ubuntu (Link does not appear to work anymore)
 
 1. Get a preferably square image with a transparent background.Save it somewhere to be used. NB: png supports transparent backgrounds. See [instructions](@/gimp/transparent.md) if you need to make one from a screen shot.
 2. Check if the .desktop file already exists

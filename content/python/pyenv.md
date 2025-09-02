@@ -1,7 +1,7 @@
 +++
 title="pyenv"
 date = 2022-08-19
-updated = 2025-04-26
+updated = 2025-09-01
 extra = { series = "Python" }
 taxonomies = { tags = ["Python"] }
 +++
@@ -42,7 +42,7 @@ eval "$(pyenv virtualenv-init -)"
 
 ## List versions available for install
 
-Source: <https://realpython.com/intro-to-pyenv/#using-pyenv-to-install-python>
+Source: <https://realpython.com/intro-to-pyenv/#installing-python-versions-install>
 
 Can also be filtered with grep like in the example
 
