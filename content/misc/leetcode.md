@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-06-26
+updated = 2025-09-04
 taxonomies = { tags = ["Misc"] }
 +++
 
@@ -162,7 +162,8 @@ pub fn subsets(nums: Vec<i32>) -> Vec<Vec<i32>> {
 
 In my opinion if you already have experience with leetcode then a good video to start with is [this one](https://www.youtube.com/watch?v=0XUzt0D3xMw) from [Uncle Steve](https://alifeengineered.substack.com/about) where he starts of with summarizing the article [How well do LeetCode ratings predict interview performance? Here's the data](https://interviewing.io/blog/how-well-do-leetcode-ratings-predict-interview-performance).
 
-List of leetcode problems from the description of the video:
+<details>
+<summary>List of problems from the description of the video</summary>
 
 > Top 'Secretly Easy' Hard Problems:\
 > #1: [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) - Score: 0.034\
@@ -185,12 +186,39 @@ List of leetcode problems from the description of the video:
 > #4: [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) - Score: 8.2952\
 > #5: [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/description/) - Score: 8.0952
 
+</details>
+
 If you're new to leetcode then start with [neetcode][neetcode] it makes it easy to find a path to follow.
 My key takeaway is that "reasonable" hard problems are actually not hard just require multiple techniques and thus you get more value from doing them.
-But be warned some of them just require niche knowledge.
+But be warned some of the hard problems (the one's I don't generally consider reasonable) just require niche knowledge.
 The following are some lists I think are worth taking a look at and why.
-When starting off getting practice on types of solutions is good to help you build up intuition on when a type of solution is appropriate.
-However, once you are comfortable with the solution types at least in general then not having a hint on what type of solution to use is better to help you identify what type of solution you should use instead of being suggested one.
+When starting off getting practice on different techniques for developing solutions is good to help you build up intuition on when a particular technique is appropriate.
+However, once you are comfortable with the techniques then not having a hint on which technique to use is better to help you practice identifying the technique(s) you should use.
+
+<details>
+<summary> Short List from Neetcode </summary>
+
+Source: <https://www.linkedin.com/posts/navdeep-singh-3aaa14161_if-i-only-had-a-short-time-to-study-for-my-activity-7312473774598012928-ZhXz>
+
+> If I only had a short time to study for my coding interview, these are the 15 questions I would solve (in order)
+
+1. 🟢 [Two Sum](https://neetcode.io/problems/two-integer-sum) ([Leetcode](https://leetcode.com/problems/two-sum/)) - Practice using hash maps.
+2. 🟡 [Product of Array Except Self](https://neetcode.io/problems/products-of-array-discluding-self) ([Leetcode](https://leetcode.com/problems/product-of-array-except-self/)) Practice prefix / suffix sums.
+3. 🟡 [3Sum](https://neetcode.io/problems/three-integer-sum/) ([Leetcode](https://leetcode.com/problems/3sum/)) - Practice sorting and two pointers.
+4. 🟡 [Longest Repeating Character Replacement](https://neetcode.io/problems/longest-repeating-substring-with-replacement) ([Leetcode](https://leetcode.com/problems/longest-repeating-character-replacement/)) - Practice sliding window.
+5. 🟡 [Daily Temperatures](https://neetcode.io/problems/daily-temperatures) ([Leetcode](https://leetcode.com/problems/daily-temperatures/)) - Practice monotonic stack.
+6. 🟡 [Search in Rotated Sorted Array](https://neetcode.io/problems/find-target-in-rotated-sorted-array) ([Leetcode](https://leetcode.com/problems/search-in-rotated-sorted-array/)) - Practice Binary Search on array.
+7. 🟡 [Koko Eating Bananas](https://neetcode.io/problems/eating-bananas) ([Leetcode](https://leetcode.com/problems/koko-eating-bananas/)) - Practice Binary Search on a range of values, rather then a data structure.
+8. 🟡 [LRU Cache](https://neetcode.io/problems/lru-cache) ([Leetcode](https://leetcode.com/problems/lru-cache)) - Practice doubly linked lists and hashmaps.
+9. 🟢 [Same Binary Tree](https://neetcode.io/problems/same-binary-tree) ([Leetcode](https://leetcode.com/problems/same-tree/)) - Practice tree traversal - DFS or BFS.
+10. 🔴 [Serialize and Deserialize Binary Tree](https://neetcode.io/problems/serialize-and-deserialize-binary-tree) ([Leetcode](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)) - Practice hard tree traversal.
+11. 🔴 [Median in Data Stream](https://neetcode.io/problems/find-median-in-a-data-stream) ([Leetcode](https://leetcode.com/problems/find-median-from-data-stream)) - Practice two heaps pattern.
+12. 🟡 [Combination Sum](https://neetcode.io/problems/combination-target-sum) ([Leetcode](https://leetcode.com/problems/combination-sum)) - Practice two-branch backtracking.
+13. 🟡 [Course Schedule](https://neetcode.io/problems/course-schedule) ([Leetcode](https://leetcode.com/problems/course-schedule)) - Practice DFS or BFS on adjacency list.
+14. 🟡 [Rotting Oranges](https://neetcode.io/problems/rotting-fruit) ([Leetcode](https://leetcode.com/problems/rotting-oranges/)) - Practice multi-source BFS.
+15. 🟡 [Longest Common Subsequence](https://neetcode.io/problems/longest-common-subsequence) ([Leetcode](https://leetcode.com/problems/longest-common-subsequence)) - Practice dynamic programming, top-down or bottom-up.
+
+</details>
 
 These are some good videos to help you get oriented:
 
