@@ -1,7 +1,7 @@
 +++
 title="Leetcode"
 date=2025-03-24
-updated = 2025-09-04
+updated = 2025-10-24
 taxonomies = { tags = ["Misc"] }
 +++
 
@@ -28,6 +28,13 @@ I included an example problem where the technique applies.
 Coding up brute force is a good starting point but a better starting point is just typing out or writing up what you need to keep track of to solve it as a human.
 Add "digital" constraints like only looking at one variable at a time and then try to solve and see where you have repeated work and things like that which could cause the optimal solution to fall out.
 In the example problem once I [looked at Deepti](https://www.youtube.com/watch?v=zraEXluZLj0) manually solve it, the solution became obvious and I wasn't stuck anymore.
+
+- [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)
+
+Also note where information you track gets used.
+Is this example, [Neetcode](https://www.youtube.com/watch?v=gqXU1UyA8pk) was able to drop the constant 26 in the `O(26n)` down to 1 by tracking the max frequency.
+This works (also explained in the video) because the only time we can increase the result is when we find a new max.
+Before that it really doesn't matter, so having a max that is too high does not have negative side effects.
 
 </details>
 
