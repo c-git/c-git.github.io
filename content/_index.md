@@ -44,4 +44,4 @@ Happy for any questions, comments, emotional outbursts...
 
 NB: Images always seem to use relative links based on my brief testing -->
 
-Included a few QR codes to facilitate in person sharing [here](@/misc/qr_codes/index.md)
+[Included a few QR codes to facilitate in person sharing](@/misc/qr_codes/index.md)
