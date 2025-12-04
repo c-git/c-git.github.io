@@ -1,20 +1,28 @@
 +++
 title='Documentation Update'
 date=2023-10-27
-updated= 2025-05-24
+updated= 2025-12-03
 taxonomies = { tags = ["Misc"] }
 +++
 
 # Overview
 
+If you are looking for instructions on starting from scratch instead see [my notes](@/misc/site_setup.md) (WIP) on that.
+
 Top level folders under [content](https://github.com/c-git/c-git.github.io/tree/main/content) are sections and each has a
 `_index.md` that specifies the configuration parameters for that section.
 Then inside each folder you will find the pages for that section.
+I also mirror the section names as tag names to work with the [theme](https://github.com/jieiku/abridge/) I currently use.
+
+<details>
+  <summary>Historic information about how and why I set weights on sections</summary>
 
 To ensure that sections stay in alphabetical order we use manually set incrementing weights for each section.
 Initially the gap between the weights of sections is 50 and as sections are added in between we place them centered between their neighbours to reduce the frequency of needing to reweight.
 This allows us to keep them in alphabetical order even though sorting by title is not available for top level sections.
 We are using [zola](@/misc/zola.md), for more info on how it works see that page.
+
+</details>
 
 # Creating a section
 
@@ -23,7 +31,7 @@ We only change the first two lines in that file and the other two always stay th
 Namely, we set:
 
 - `title` to an appropriate string and
-- `weight` we set so that is halfway between the one **before** it and the one **after** it.
+- `weight` we set so that is halfway between the one **before** it and the one **after** it. (Not needed at present but continued as it would be more work to do if needed in the future)
 
 # Creating a page
 
