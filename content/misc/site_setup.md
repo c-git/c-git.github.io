@@ -6,7 +6,7 @@ taxonomies = { tags = ["Misc"] }
 
 # Presentation Plan
 
-1. [Show live](@demo_page.md) site and [Templates](https://www.getzola.org/themes/)
+1. [Show live](@/misc/site_setup.md) site and [Templates](https://www.getzola.org/themes/)
 2. Briefly describe Static Site Generators (SSG)
 3. [Zola](https://www.getzola.org/)
 4. [Markdown](https://commonmark.org/help/)
