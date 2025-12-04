@@ -4,7 +4,7 @@ date = 2025-12-03
 taxonomies = { tags = ["Misc"] }
 +++
 
-# Presentation Plan
+# Presentation History
 
 1. [Show live](@/misc/site_setup.md) site and [Templates](https://www.getzola.org/themes/)
 2. Briefly describe Static Site Generators (SSG)
