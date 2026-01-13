@@ -159,6 +159,7 @@ skip_prefixes = [
   "https://dev.mysql.com/",
   "https://intellij-support.jetbrains.com/hc/en-us/community/posts/",
   "https://leetcode.com/",
+  "https://medium.com",
   "https://serverfault.com",
   "https://stackoverflow.com",
   "https://superuser.com",
@@ -168,9 +169,11 @@ skip_prefixes = [
   "https://wiki.mozilla.org/Areweyet",
   "https://www.brainyquote.com", # I have multiple links to this site and repeated attempts trigger bot protection
   "https://www.cyberciti.biz/faq/",
+  "https://www.forbes.com",
   "https://www.linkedin.com/in/cwyke", # Requires login and gives a 999 status code
   "https://www.linode.com/",
   "https://www.linux.org",
+  "https://www.techrepublic.com",
   "https://www.youtube.com", # 429 Too Many Requests
   "https://youtu.be", # 429 Too Many Requests
   "https://zoomadmin.com", # Site giving 503 now
