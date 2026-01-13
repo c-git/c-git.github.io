@@ -1,12 +1,12 @@
 +++
 title = "Firewall"
 date = 2023-11-22
-updated = 2025-04-26
+updated = 2026-01-13
 extra = { series = "Debian" }
 taxonomies = { tags = ["Debian"] }
 +++
 
-Source: <https://ubuntu.com/server/docs/security-firewall>
+Source: Used to be at https://ubuntu.com/server/docs/security-firewall but it's no longer there
 
 # Man page extract
 
