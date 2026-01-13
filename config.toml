@@ -75,14 +75,6 @@ include_content = true # include rendered content of page/section in index
 
 # Configuration of the Markdown rendering
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customized by setting the `highlight_theme` variable to a theme supported by Zola
-
-# When set to "true", all code blocks are highlighted.
-highlight_code = true
-
-highlight_theme = "css"
-
 # Whether footnotes are rendered in the GitHub-style (at the bottom, with back references) or plain (in the place, where they are defined)
 bottom_footnotes = true # adds footnote backreference
 
@@ -152,6 +144,10 @@ insert_anchor_links = "heading"
 #   #    {name = "categories", feed = true},
 #   { name = "tags", feed = true },
 # ]
+
+[markdown.highlighting]
+# See change log for details on migration https://github.com/c-git/zola/blob/master/CHANGELOG.md#0220-2026-01-09
+theme = "github-dark"
 
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes
