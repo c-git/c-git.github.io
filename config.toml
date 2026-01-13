@@ -3,7 +3,7 @@
 base_url = "https://dev.chester.wykies.com"
 # Usable site directly from disk, Including Search: "/home/jieiku/.dev/abridge/public"
 # Also set index format = "elasticlunr_javascript", and in [extra] uglyurls = true, integrity = false
-# If you use the npm/node script then all you have to do is set search_library = "offline", and everything else is automatic.
+# If you use the npm/node script then all you have to do is set offline = true, and everything else is automatic.
 
 # The site title and description; used in feeds by default (and for SEO)
 title = "Chester Wyke"
@@ -270,11 +270,11 @@ seo = true # enable or disable seo-related meta tags: opengraph, facebook, twitt
 
 feed = true # this adds the RSS feed icon in the footer.
 # mail = "name@example.com"
-# mastodon = "https://mastodon.example.com/@username"
+# mastodon = "@your-user-name"
 # element = "matrix.example.com"
 # buymeacoffee = "your-user-name"
 # kofi = "your-user-name"
-# discord = "https://discord.com/invite/my-server" # https://discord.com/invite/my-server  *or*  https://discord.com/servers/my-server-id
+# discord = "your-discord" # Everything after https://discord.com/   eg: invite/my-server  *or*  servers/my-server-id
 # twitter = "your-user-name"
 # facebook = "your-user-name"
 linkedin = "cwyke"
@@ -287,13 +287,11 @@ github = "c-git"
 # docker = "your-user-name"
 # stack = "your-user-name"
 # instagram = "your-user-name"
-# pixelfed = "https://pixelfed.example.com/" # Heaviest icon, off by default
+# pixelfed = "@your-user-name" # Heaviest icon, off by default
 # pinterest = "your-user-name"
 # twitch = "your-user-name"
 # youtube = "channel/your-channel-id"
-# peertube = "https://peertube.example.com/@username"
 # researchgate = "your-profile-id"
-# telegram = "your-user-name"
 
 ###############################################################################
 ### Resource Files
@@ -399,6 +397,14 @@ favicon32 = "favicon-32x32.png" # favicon-32x32.png
 # icon_next = "svgs svgh angr" # Pagination Next Page.
 # icon_last = "svgs svgh angrr" # Pagination Last Page.
 # icon_top = "svgs svgh angu" # Back to Top Button.
+
+icon_search = false
+icon_adjust = false
+icon_first = false
+icon_prev = false
+icon_next = false
+icon_last = false
+icon_top = false
 
 # icon_read = "svgs fa-solid fa-glasses" # displayed in metadata on index and below title on page.
 # icon_date = "svgs fa-solid fa-calendar" # displayed in metadata on index and below title on page.
