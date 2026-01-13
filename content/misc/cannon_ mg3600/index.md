@@ -1,13 +1,13 @@
 +++
 title = "Cannon MG3600"
 date = 2022-06-01
-updated = 2025-04-26
+updated = 2026-01-13
 taxonomies = { tags = ["Misc"] }
 +++
 
 # Connecting the printer to the WiFi using WPS
 
-Source: [Cannon Europe Support Video on YouTube](https://www.youtube.com/watch?v=TWZ-tDtonYI) and [Cannon Canada Support Page][support_article]
+Source: [Cannon Europe Support Video on YouTube](https://www.youtube.com/watch?v=TWZ-tDtonYI) and a Cannon Canada Support Page which used to be at https://canoncanada.custhelp.com/app/answers/answer_view/a_id/1036193/session/L2F2LzEvdGltZS8xNzM0Mzc3Mzg4L2dlbi8xNzM0Mzc3Mzg4L3NpZC9mVWNkT0ZiVzUlN0VtaWxhb3NSbnJXczFxQ0ozOEpzdlVoMHJJbktRQXl5aXdGV0dYWERwV1oya29aVkU4dzdQcFZ1YkZWX0dLJTdFYl9ocVN1dmxRUGN5Slc5MkpNTUxoN1lEZjFsRDdXUjZDNEE5MzVqbFFsQUVGUTdnJTIxJTIx but is no longer online
 
 ## Foreword
 
@@ -22,15 +22,13 @@ These instructions are for "Connecting Printer and Wireless Router Using WPS Pus
 
 ## Steps to Connect to New Wi-Fi
 
-NB: The instructions from the [support article][support_article] for this part are ok **AS LONG AS YOU ALREADY DID THE RESET**.
+NB: The instructions from the support article for this part are ok **AS LONG AS YOU ALREADY DID THE RESET**.
 
 1. Be ready to press the WPS button on your router or press it from the web interface of the router from a nearby device.
 1. Press and hold the **WI-FI Button** on the printer until the power light flashes once.
 1. Press the **Black Button**
-1. Press the **Wi-Fi Button** again the Wi-Fi light will start to flash (see example of flashing in [their instructions][support_article])\
+1. Press the **Wi-Fi Button** again the Wi-Fi light will start to flash\
    ![Ready to pair](2.png)
 1. Press and hold the WPS button on the router within two minutes
 1. Complete when the power light and the Wi-Fi light stop flashing\
    ![Connect](3.png)
-
-[support_article]: https://canoncanada.custhelp.com/app/answers/answer_view/a_id/1036193/session/L2F2LzEvdGltZS8xNzM0Mzc3Mzg4L2dlbi8xNzM0Mzc3Mzg4L3NpZC9mVWNkT0ZiVzUlN0VtaWxhb3NSbnJXczFxQ0ozOEpzdlVoMHJJbktRQXl5aXdGV0dYWERwV1oya29aVkU4dzdQcFZ1YkZWX0dLJTdFYl9ocVN1dmxRUGN5Slc5MkpNTUxoN1lEZjFsRDdXUjZDNEE5MzVqbFFsQUVGUTdnJTIxJTIx
