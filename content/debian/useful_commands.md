@@ -1,7 +1,7 @@
 +++
 title="Useful commands"
 date = 2023-10-19
-updated = 2025-04-26
+updated = 2026-01-17
 extra = { series = "Debian" }
 taxonomies = { tags = ["Debian"] }
 +++
@@ -58,6 +58,14 @@ find -name "PATTERN"
 
 ```sh
 history
+```
+
+## Convert a folder of images into a pdf
+
+Source: <https://askubuntu.com/questions/246647/convert-a-directory-of-jpeg-files-to-a-single-pdf-document>
+
+```sh
+img2pdf *.png --output combined.pdf
 ```
 
 ## Show IP Addresses
