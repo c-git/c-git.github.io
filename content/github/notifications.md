@@ -10,7 +10,7 @@ taxonomies = { tags = ["GitHub"] }
 I noticed that github cc's specific email addresses depending on the reason for the notification. Found a list of them on [their site](https://docs.github.com/en/subscriptions-and-notifications/reference/email-notification-headers).
 Copied below in case the site gets moved or something.
 
-> GitHub will cc you if you're subscribed to a conversation. The second cc email address matches the notification reason. The suffix for these notification reasons is @noreply.github.com. The possible notification reasons are:
+> GitHub will `cc` you if you're subscribed to a conversation. The second `cc` email address matches the notification reason. The suffix for these notification reasons is `@noreply.github.com`. The possible notification reasons are:
 >
 > `assign`: You were assigned to an issue or pull request.\
 > `author`: You created an issue or pull request.\
