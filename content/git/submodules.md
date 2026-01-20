@@ -1,7 +1,7 @@
 +++
 title="Submodules"
 date = 2023-04-14
-updated = 2025-04-26
+updated = 2026-01-20
 extra = { series = "Git" }
 taxonomies = { tags = ["Git"] }
 +++
@@ -10,8 +10,16 @@ taxonomies = { tags = ["Git"] }
 
 For path prefer relative paths (See example below)
 
+## For placing in current folder use
+
 ```sh
 git submodule add ../ts_lib.git
+```
+
+## For placing in a subfolder (or with a specific name) use
+
+```sh
+git submodule add ../ts_lib.git path_to_place_module
 ```
 
 # Using already setup submodules
