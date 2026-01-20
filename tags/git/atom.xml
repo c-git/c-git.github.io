@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Git</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/git/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-01-20T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/git/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Detached Head</title>
+        <published>2024-09-12T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/detached-head/"/>
+        <id>https://dev.chester.wykies.com/git/detached-head/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/detached-head/">&lt;h1 id=&quot;recovering-a-detached-head-created-from-a-hard-reset&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#recovering-a-detached-head-created-from-a-hard-reset&quot; aria-label=&quot;Anchor link for: recovering-a-detached-head-created-from-a-hard-reset&quot;&gt;Recovering a detached head created from a hard reset&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;“Accidentally” did a hard reset and lost commits I’d done.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; reflog&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This showed the commit with a &lt;code&gt;HEAD@{1}&lt;&#x2F;code&gt; next to it&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; checkout HEAD@{&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This moved me onto a detached head. And git gave me instructions how to “save it”&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; switch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -c&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; new_branch&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This created a branch for my head and I just switched back to my previous branch and merged in the &lt;code&gt;new_branch&lt;&#x2F;code&gt;. (Did in vscode don’t have command and they shouldn’t be hard to find).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Push</title>
+        <published>2024-02-04T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/push/"/>
+        <id>https://dev.chester.wykies.com/git/push/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/push/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;git-push&quot;&gt;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;git-push&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;force-pushing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#force-pushing&quot; aria-label=&quot;Anchor link for: force-pushing&quot;&gt;Force pushing&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;WARNING: The command given here doesn’t work well if fetch runs in background. See source for more notes.&lt;&#x2F;p&gt;
+&lt;p&gt;If working on a project where you aren’t the only committer it’s better to use the with lease option so that if you check locally that you want to blow away the version you see of the remote branch on your machine then that is only what gets destroyed when you push.
+If someone else pushing after what you have on your machine it won’t match and you’ll get notified.&lt;&#x2F;p&gt;
+&lt;p&gt;From source above&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;--force-with-lease&lt;&#x2F;code&gt; alone, without specifying the details, will protect all remote refs that are going to be updated by requiring their current value to be the same as the remote-tracking branch we have for them.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; push&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --force-with-lease&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>rerere</title>
+        <published>2024-02-02T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/rerere/"/>
+        <id>https://dev.chester.wykies.com/git/rerere/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/rerere/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;git-rerere&quot;&gt;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;git-rerere&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If you have long lived branches this is helpful to store how to resolve conflicts you’ve solved before.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;enable&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#enable&quot; aria-label=&quot;Anchor link for: enable&quot;&gt;Enable&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; config&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --global&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; rerere.enabled&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;clean-up&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#clean-up&quot; aria-label=&quot;Anchor link for: clean-up&quot;&gt;Clean Up&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; rerere gc&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hooks Examples</title>
+        <published>2023-12-20T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/hooks/"/>
+        <id>https://dev.chester.wykies.com/git/hooks/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/hooks/">&lt;h1 id=&quot;skip-commit-hooks&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#skip-commit-hooks&quot; aria-label=&quot;Anchor link for: skip-commit-hooks&quot;&gt;Skip commit hooks&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;7230820&#x2F;skip-git-commit-hooks&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;7230820&#x2F;skip-git-commit-hooks&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Add a &lt;code&gt;--no-verify&lt;&#x2F;code&gt; flag. Only tested on commit as below&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; commit&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --no-verify&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;pre-commit-hook-to-prevent-changes-to-a-zola-project-base-url&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#pre-commit-hook-to-prevent-changes-to-a-zola-project-base-url&quot; aria-label=&quot;Anchor link for: pre-commit-hook-to-prevent-changes-to-a-zola-project-base-url&quot;&gt;pre-commit Hook to prevent changes to a zola project base_url&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;#!&#x2F;bin&#x2F;sh&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;# Check if we see the line with the base_url being changed&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; diff&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --cached&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; config.toml&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; grep&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;^-base_url&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; $?&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; -eq&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 0&lt;&#x2F;span&gt;&lt;span&gt; ]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;then&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Error: Change detected to base_url&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    exit 1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;fi&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;zola-chrono-pre-push-hook&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#zola-chrono-pre-push-hook&quot; aria-label=&quot;Anchor link for: zola-chrono-pre-push-hook&quot;&gt;zola_chrono pre-push hook&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;misc&#x2F;documentation-update&#x2F;#setting-up-a-pre-push-hook&quot;&gt;Link&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;conventional-commit-checking&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#conventional-commit-checking&quot; aria-label=&quot;Anchor link for: conventional-commit-checking&quot;&gt;Conventional Commit Checking&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Simple (not robust) &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.conventionalcommits.org&#x2F;en&#x2F;v1.0.0&#x2F;#summary&quot;&gt;conventional commit&lt;&#x2F;a&gt; checker.
+Instead of copying code here that may go out of date here is a link to &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-practice&#x2F;cargo-leet&#x2F;blob&#x2F;develop&#x2F;scripts&#x2F;commit-msg&quot;&gt;one I have in&lt;&#x2F;a&gt; use in a project.
+In that same &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-practice&#x2F;cargo-leet&#x2F;tree&#x2F;develop&#x2F;scripts&quot;&gt;folder&lt;&#x2F;a&gt; are scripts to set it up if you don’t already know how to do it.
+If you are still running into issues please reach out via github issues (see link in footer).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Formatting</title>
+        <published>2023-11-06T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/formatting/"/>
+        <id>https://dev.chester.wykies.com/git/formatting/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/formatting/">&lt;h1 id=&quot;foreword&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#foreword&quot; aria-label=&quot;Anchor link for: foreword&quot;&gt;Foreword&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;pretty-formats&#x2F;2.49.0#Documentation&#x2F;pretty-formats.txt-emnem&quot;&gt;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;pretty-formats&#x2F;2.49.0#Documentation&#x2F;pretty-formats.txt-emnem&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Used to control output for commands like &lt;code&gt;log&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;example&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example&quot; aria-label=&quot;Anchor link for: example&quot;&gt;Example&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;For example to see the last committed date of a file use the following. The &lt;code&gt;-1&lt;&#x2F;code&gt; means return only the most recent.&lt;br &#x2F;&gt;
+NB: Your current directory should be within the repo. Command originally found on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;8611486&#x2F;how-to-get-the-last-commit-date-for-a-bunch-of-files-in-git&quot;&gt;SO&lt;&#x2F;a&gt; but link to formatting options was broken so hence this page.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; log&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -1 --format=%cd&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; filename.txt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;excerpt-from-placeholder-options&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#excerpt-from-placeholder-options&quot; aria-label=&quot;Anchor link for: excerpt-from-placeholder-options&quot;&gt;Excerpt from placeholder options&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;placeholder&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Description&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%n&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;newline&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%%&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;a raw %&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%H&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;commit hash&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%h&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;abbreviated commit hash&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%an&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;author name&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%cn&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer name&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%s&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;subject&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%b&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;body&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%cd&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date (format respects –date= option)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%cD&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date, RFC2822 style&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%cr&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date, relative&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%ct&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date, UNIX timestamp&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%ci&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date, ISO 8601-like format&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%cI&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date, strict ISO 8601 format&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%cs&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date, short format (YYYY-MM-DD)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;%ch&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;committer date, human style (like the –date=human option of git-rev-list[1])&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Merge Conflict</title>
+        <published>2023-11-02T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/merge-conflict/"/>
+        <id>https://dev.chester.wykies.com/git/merge-conflict/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/merge-conflict/">&lt;h1 id=&quot;accept-their-ours&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#accept-their-ours&quot; aria-label=&quot;Anchor link for: accept-their-ours&quot;&gt;Accept their&#x2F;ours&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;914939&#x2F;simple-tool-to-accept-theirs-or-accept-mine-on-a-whole-file-using-git&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;914939&#x2F;simple-tool-to-accept-theirs-or-accept-mine-on-a-whole-file-using-git&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For conflicts it’s generally best to look at each and make a decision.
+If you are a priori sure which one you want, here are the commands to do it without opening the file to see.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Warning!&lt;&#x2F;strong&gt;: If you are rebasing &lt;code&gt;--ours&lt;&#x2F;code&gt; and &lt;code&gt;--theirs&lt;&#x2F;code&gt; are swapped.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;take-ours&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#take-ours&quot; aria-label=&quot;Anchor link for: take-ours&quot;&gt;Take ours&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; checkout HEAD&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;filenam&lt;&#x2F;span&gt;&lt;span&gt;e&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;take-theirs&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#take-theirs&quot; aria-label=&quot;Anchor link for: take-theirs&quot;&gt;Take theirs&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; checkout&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --theirs --&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;filenam&lt;&#x2F;span&gt;&lt;span&gt;e&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Branches</title>
+        <published>2023-10-28T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/branches/"/>
+        <id>https://dev.chester.wykies.com/git/branches/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/branches/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nobledesktop.com&#x2F;learn&#x2F;git&#x2F;git-branches&quot;&gt;https:&#x2F;&#x2F;www.nobledesktop.com&#x2F;learn&#x2F;git&#x2F;git-branches&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;see-branches&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#see-branches&quot; aria-label=&quot;Anchor link for: see-branches&quot;&gt;See branches&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;NB: The current branch will have a &lt;code&gt;*&lt;&#x2F;code&gt; next to it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;both-local-and-remote&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#both-local-and-remote&quot; aria-label=&quot;Anchor link for: both-local-and-remote&quot;&gt;Both local and remote&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; branch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -a&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;remote-only&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#remote-only&quot; aria-label=&quot;Anchor link for: remote-only&quot;&gt;Remote only&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; branch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -r&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;local-only&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#local-only&quot; aria-label=&quot;Anchor link for: local-only&quot;&gt;Local only&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; branch&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;checkout-a-branch&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#checkout-a-branch&quot; aria-label=&quot;Anchor link for: checkout-a-branch&quot;&gt;Checkout a branch&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Use &lt;code&gt;git switch&lt;&#x2F;code&gt; or &lt;code&gt;git checkout&lt;&#x2F;code&gt; followed by the branch name.
+Prefer &lt;code&gt;switch&lt;&#x2F;code&gt; as &lt;code&gt;checkout&lt;&#x2F;code&gt; has other functionality that it can do to restore files as per &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;57265785&#x2F;whats-the-difference-between-git-switch-and-git-checkout-branch&quot;&gt;SO&lt;&#x2F;a&gt; and &lt;code&gt;switch&lt;&#x2F;code&gt; was introduced to be used for changing branches.
+Note do not include the &lt;code&gt;remote&#x2F;origin&lt;&#x2F;code&gt; in the command it will automatically create the local branch and set it up to track the remote branch.
+Eg to check out develop use:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; switch develop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;create-a-branch&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-a-branch&quot; aria-label=&quot;Anchor link for: create-a-branch&quot;&gt;Create a branch&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.atlassian.com&#x2F;git&#x2F;tutorials&#x2F;using-branches&#x2F;git-checkout&quot;&gt;https:&#x2F;&#x2F;www.atlassian.com&#x2F;git&#x2F;tutorials&#x2F;using-branches&#x2F;git-checkout&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Create Only&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; branch new_branch&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Create and checkout&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; checkout&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -b&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; new_branch&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;delete-a-remote-tracking-branch-after-the-branch-has-been-deleted-on-the-remote&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#delete-a-remote-tracking-branch-after-the-branch-has-been-deleted-on-the-remote&quot; aria-label=&quot;Anchor link for: delete-a-remote-tracking-branch-after-the-branch-has-been-deleted-on-the-remote&quot;&gt;Delete a remote tracking branch after the branch has been deleted on the remote&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;r is for remote&lt;&#x2F;li&gt;
+&lt;li&gt;d is for delete&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; branch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -rd&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; origin&#x2F;TRACKING_BRANCH_NAME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>History</title>
+        <published>2023-10-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/history/"/>
+        <id>https://dev.chester.wykies.com/git/history/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/history/">&lt;h1 id=&quot;view-git-history&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#view-git-history&quot; aria-label=&quot;Anchor link for: view-git-history&quot;&gt;View git history&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;book&#x2F;en&#x2F;v2&#x2F;Git-Basics-Viewing-the-Commit-History&quot;&gt;https:&#x2F;&#x2F;git-scm.com&#x2F;book&#x2F;en&#x2F;v2&#x2F;Git-Basics-Viewing-the-Commit-History&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; log&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --pretty=format:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;%h %s&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --graph&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Remotes</title>
+        <published>2023-07-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/remotes/"/>
+        <id>https://dev.chester.wykies.com/git/remotes/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/remotes/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;get-started&#x2F;getting-started-with-git&#x2F;managing-remote-repositories&quot;&gt;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;get-started&#x2F;getting-started-with-git&#x2F;managing-remote-repositories&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;list-remotes&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#list-remotes&quot; aria-label=&quot;Anchor link for: list-remotes&quot;&gt;List remotes&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; remote&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -v&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;change-remote-url&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#change-remote-url&quot; aria-label=&quot;Anchor link for: change-remote-url&quot;&gt;Change remote URL&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; remote set-url origin git@github.com:OWNER&#x2F;REPOSITORY.git&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;add-remote&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#add-remote&quot; aria-label=&quot;Anchor link for: add-remote&quot;&gt;Add remote&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: New github repo&lt;&#x2F;p&gt;
+&lt;p&gt;Usually when a new repo is created this command is provided, and this is generally the easiest way to add it as no modification is needed just copy and paste.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; remote add origin git@github.com:OWNER&#x2F;REPOSITORY.git&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;clear-out-remotes-that-no-longer-exist&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#clear-out-remotes-that-no-longer-exist&quot; aria-label=&quot;Anchor link for: clear-out-remotes-that-no-longer-exist&quot;&gt;Clear out remotes that no longer exist&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; fetch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --prune&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Rebase</title>
+        <published>2023-06-28T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/rebase/"/>
+        <id>https://dev.chester.wykies.com/git/rebase/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/rebase/">&lt;h1 id=&quot;rebase-onto-develop&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#rebase-onto-develop&quot; aria-label=&quot;Anchor link for: rebase-onto-develop&quot;&gt;Rebase onto develop&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; rebase develop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you’d already pushed the branch before you’ll need to do a force push&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; push&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -f&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;rebase-interactive&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#rebase-interactive&quot; aria-label=&quot;Anchor link for: rebase-interactive&quot;&gt;Rebase interactive&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;git-rebase&quot;&gt;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;git-rebase&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;unpushed&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#unpushed&quot; aria-label=&quot;Anchor link for: unpushed&quot;&gt;Unpushed&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Observation: Only seems to rebase unpushed commits.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; rebase&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -i&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;including-pushed&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#including-pushed&quot; aria-label=&quot;Anchor link for: including-pushed&quot;&gt;Including Pushed&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; rebase&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -i --onto&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; develop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;rebase-your-branch-after-someone-else-force-pushes-to-it&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#rebase-your-branch-after-someone-else-force-pushes-to-it&quot; aria-label=&quot;Anchor link for: rebase-your-branch-after-someone-else-force-pushes-to-it&quot;&gt;Rebase your branch after someone else force pushes to it&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;These erase what you have locally with the info from remote&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;this-works-for-me-but-saw-it-didn-t-work-for-others&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#this-works-for-me-but-saw-it-didn-t-work-for-others&quot; aria-label=&quot;Anchor link for: this-works-for-me-but-saw-it-didn-t-work-for-others&quot;&gt;This works for me (but saw it didn’t work for others)&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;git pull -f&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;this-one-worked-when-the-one-above-didn-t-work&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#this-one-worked-when-the-one-above-didn-t-work&quot; aria-label=&quot;Anchor link for: this-one-worked-when-the-one-above-didn-t-work&quot;&gt;This one worked when the one above didn’t work&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Source: Trippy Maintainers Chat (Included a link to &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;1628088&#x2F;reset-local-repository-branch-to-be-just-like-remote-repository-head&quot;&gt;guidance&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; fetch&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; reset origin&#x2F;my-branch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --hard&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>New Repo Creation</title>
+        <published>2023-06-15T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/new-repo/"/>
+        <id>https://dev.chester.wykies.com/git/new-repo/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/new-repo/">&lt;p&gt;NB: These instructions assume github with ssh key auth but any would be similar&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create empty repo in cloud&lt;&#x2F;li&gt;
+&lt;li&gt;Create folder on local machine with same name (same name is recommended not required)&lt;&#x2F;li&gt;
+&lt;li&gt;Open a command prompt in the folder and initialize git&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; init&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Create &lt;code&gt;.gitignore&lt;&#x2F;code&gt; file&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;touch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; .gitignore&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Add file and commit&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Add remote repo connection (Can be copied from github)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; remote add origin git@github.com:wykies&#x2F;REPO_NAME.git&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;(Skippable) Move to main branch (-M is a shortcut for &lt;code&gt;--move --force&lt;&#x2F;code&gt;.) This step can usually be skipped in a new repo&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; branch&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -M&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; main&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Push branch to remote and set current branch as a tracking branch (-u sets current brach to tracking)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; push&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -u&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; origin main&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Modify Existing Commits</title>
+        <published>2023-05-05T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/modify-existing-commits/"/>
+        <id>https://dev.chester.wykies.com/git/modify-existing-commits/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/modify-existing-commits/">&lt;h1 id=&quot;modify-last-commit-message&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#modify-last-commit-message&quot; aria-label=&quot;Anchor link for: modify-last-commit-message&quot;&gt;Modify last commit message&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Opens the last message in your editor&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; commit&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --amend&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Stash</title>
+        <published>2023-04-27T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/stash/"/>
+        <id>https://dev.chester.wykies.com/git/stash/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/stash/">&lt;p&gt;Source: &lt;code&gt;git stash --help&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;move-to-stash&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#move-to-stash&quot; aria-label=&quot;Anchor link for: move-to-stash&quot;&gt;Move to stash&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; stash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;apply&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#apply&quot; aria-label=&quot;Anchor link for: apply&quot;&gt;Apply&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Restores most recent without dropping it&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; stash apply&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;pop&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#pop&quot; aria-label=&quot;Anchor link for: pop&quot;&gt;Pop&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Apply and drop the most recent stash&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; stash pop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Merge</title>
+        <published>2023-04-17T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/merge/"/>
+        <id>https://dev.chester.wykies.com/git/merge/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/merge/">&lt;h1 id=&quot;aborting-a-merge&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#aborting-a-merge&quot; aria-label=&quot;Anchor link for: aborting-a-merge&quot;&gt;Aborting a merge&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;It is sometimes possible to abort a merge for example if there is a conflict and the merge is not completed.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; merge&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --abort&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Submodules</title>
+        <published>2023-04-14T00:00:00+00:00</published>
+        <updated>2026-01-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/submodules/"/>
+        <id>https://dev.chester.wykies.com/git/submodules/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/submodules/">&lt;h1 id=&quot;add-a-new-submodule&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#add-a-new-submodule&quot; aria-label=&quot;Anchor link for: add-a-new-submodule&quot;&gt;Add a new submodule&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;For path prefer relative paths (See example below)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;for-placing-in-current-folder-use&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#for-placing-in-current-folder-use&quot; aria-label=&quot;Anchor link for: for-placing-in-current-folder-use&quot;&gt;For placing in current folder use&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; submodule add ..&#x2F;ts_lib.git&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;for-placing-in-a-subfolder-or-with-a-specific-name-use&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#for-placing-in-a-subfolder-or-with-a-specific-name-use&quot; aria-label=&quot;Anchor link for: for-placing-in-a-subfolder-or-with-a-specific-name-use&quot;&gt;For placing in a subfolder (or with a specific name) use&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; submodule add ..&#x2F;ts_lib.git path_to_place_module&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;using-already-setup-submodules&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#using-already-setup-submodules&quot; aria-label=&quot;Anchor link for: using-already-setup-submodules&quot;&gt;Using already setup submodules&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;1030169&#x2F;pull-latest-changes-for-all-git-submodules&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;1030169&#x2F;pull-latest-changes-for-all-git-submodules&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;initialize&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#initialize&quot; aria-label=&quot;Anchor link for: initialize&quot;&gt;Initialize&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; submodule update&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --init --recursive&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#update&quot; aria-label=&quot;Anchor link for: update&quot;&gt;Update&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; pull&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --recurse-submodules&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.damirscorner.com&#x2F;blog&#x2F;posts&#x2F;20210423-ChangingUrlsOfGitSubmodules.html&quot;&gt;https:&#x2F;&#x2F;www.damirscorner.com&#x2F;blog&#x2F;posts&#x2F;20210423-ChangingUrlsOfGitSubmodules.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;problem-with-absolute-links&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#problem-with-absolute-links&quot; aria-label=&quot;Anchor link for: problem-with-absolute-links&quot;&gt;Problem with absolute links&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Uses using HTTPS need one format while users using SSH need a different format&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;https-format&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#https-format&quot; aria-label=&quot;Anchor link for: https-format&quot;&gt;HTTPS Format&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[submodule &amp;quot;modules&#x2F;mySubmodule&amp;quot;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    path = modules&#x2F;mySubmodule&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    url = https:&#x2F;&#x2F;github.com&#x2F;damirarh&#x2F;mySubmodule.git&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;ssh-format&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ssh-format&quot; aria-label=&quot;Anchor link for: ssh-format&quot;&gt;SSH Format&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[submodule &amp;quot;modules&#x2F;mySubmodule&amp;quot;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    path = modules&#x2F;mySubmodule&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    url = git@github.com:damirarh&#x2F;mySubmodule.git&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;how-relative-links-work&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-relative-links-work&quot; aria-label=&quot;Anchor link for: how-relative-links-work&quot;&gt;How relative links work&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;They relate the submodule link to the link of the parent module, so it omits what protocol to use for the connection and
+therefore works for both.
+This means it will only work if both repos are hosted on the same service. If not in the same top level account just use
+the appropriate number of &lt;code&gt;..&#x2F;&lt;&#x2F;code&gt;. So if in the same account you would use &lt;code&gt;..&#x2F;&lt;&#x2F;code&gt; whereas if they were in different ones
+you would use &lt;code&gt;..&#x2F;..&#x2F;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;relative-format&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#relative-format&quot; aria-label=&quot;Anchor link for: relative-format&quot;&gt;Relative Format&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[submodule &amp;quot;modules&#x2F;mySubmodule&amp;quot;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    path = modules&#x2F;mySubmodule&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    url = ..&#x2F;mySubmodule.git&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;steps-to-change-from-absolute-to-relative-links&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps-to-change-from-absolute-to-relative-links&quot; aria-label=&quot;Anchor link for: steps-to-change-from-absolute-to-relative-links&quot;&gt;Steps to change from absolute to relative links&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;NB: Not tested&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Modify the URL value in the &lt;code&gt;.gitmodules&lt;&#x2F;code&gt; file to make it relative. Then commit this file to Git.&lt;&#x2F;li&gt;
+&lt;li&gt;Force submodules to resynchronize with the modified file using the following command in the folder with the
+modified &lt;code&gt;.gitmodules&lt;&#x2F;code&gt; file (not necessarily the repository root if its submodules contain other nested submodules)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; submodule update&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --init --recursive --remote&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;remove-a-submodule&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#remove-a-submodule&quot; aria-label=&quot;Anchor link for: remove-a-submodule&quot;&gt;Remove a submodule&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; rm&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;path-to-submodul&lt;&#x2F;span&gt;&lt;span&gt;e&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;impacts-on-github-workflows&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#impacts-on-github-workflows&quot; aria-label=&quot;Anchor link for: impacts-on-github-workflows&quot;&gt;Impacts on github workflows&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;If your code depends on the submodule being there then you’ll need to ensure it gets checked out.
+You’ll need to add with &lt;code&gt;submodules: recursive&lt;&#x2F;code&gt; to your checkout step (See example below).
+Also used in CI for &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;c-git&#x2F;c-git.github.io&#x2F;tree&#x2F;main&#x2F;.github&#x2F;workflows&quot;&gt;this repo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;-&lt;&#x2F;span&gt;&lt;span style=&quot;color: #85E89D;&quot;&gt; name&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; Checkout repo&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #85E89D;&quot;&gt;    uses&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; actions&#x2F;checkout@v4&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #85E89D;&quot;&gt;    with&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #85E89D;&quot;&gt;        submodules&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; recursive&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Global Ignore</title>
+        <published>2022-09-10T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/global-ignore/"/>
+        <id>https://dev.chester.wykies.com/git/global-ignore/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/global-ignore/">&lt;h1 id=&quot;foreword&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#foreword&quot; aria-label=&quot;Anchor link for: foreword&quot;&gt;Foreword&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Instructions written for linux (not tested on Windows)&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;specify-global-ignore-file&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#specify-global-ignore-file&quot; aria-label=&quot;Anchor link for: specify-global-ignore-file&quot;&gt;Specify global ignore file&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h3 id=&quot;open-git-config-file&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#open-git-config-file&quot; aria-label=&quot;Anchor link for: open-git-config-file&quot;&gt;Open git config file&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;It’s ok if the file does not exist.
+You can just create it.&lt;&#x2F;p&gt;
+&lt;p&gt;Note: It is unlikely that the file does not exist
+because mandatory settings like your name and email address go in the &lt;code&gt;user&lt;&#x2F;code&gt; section of that file.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;nano&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; ~&#x2F;.gitconfig&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;create-or-find-core-section&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-or-find-core-section&quot; aria-label=&quot;Anchor link for: create-or-find-core-section&quot;&gt;Create or find &lt;code&gt;core&lt;&#x2F;code&gt; section&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;It starts with the text &lt;code&gt;[core]&lt;&#x2F;code&gt;.
+If section did not exist (or the file did not exist) then simply add that text.&lt;&#x2F;p&gt;
+&lt;p&gt;Under that section add the following&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;excludesFile = ~&#x2F;.gitignore_global&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Final content (ignoring other settings) should look like&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[core]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;	excludesFile = ~&#x2F;.gitignore_global&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;add-entries-to-file&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#add-entries-to-file&quot; aria-label=&quot;Anchor link for: add-entries-to-file&quot;&gt;Add entries to file&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Use the normal git ignore format. More info on that can be found &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;docs&#x2F;gitignore#_pattern_format&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Add them to the file specified in the last step&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;nano&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; ~&#x2F;.gitignore_global&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Reset</title>
+        <published>2022-08-26T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/reset/"/>
+        <id>https://dev.chester.wykies.com/git/reset/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/reset/">&lt;h1 id=&quot;reset-to-current-head-and-discard-all-including-stash&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#reset-to-current-head-and-discard-all-including-stash&quot; aria-label=&quot;Anchor link for: reset-to-current-head-and-discard-all-including-stash&quot;&gt;Reset to current head and discard all including stash&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; reset&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --hard&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;undo-accidental-reset&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#undo-accidental-reset&quot; aria-label=&quot;Anchor link for: undo-accidental-reset&quot;&gt;Undo accidental reset&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;5788037&#x2F;recover-from-losing-uncommitted-changes-by-git-reset-hard&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;5788037&#x2F;recover-from-losing-uncommitted-changes-by-git-reset-hard&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; reflog show&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;then use the &lt;code&gt;HEAD@{?}&lt;&#x2F;code&gt; and replace the question mark like&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; reset HEAD@{&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>New CLASP repo</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/git/new-clasp/"/>
+        <id>https://dev.chester.wykies.com/git/new-clasp/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/git/new-clasp/">&lt;p&gt;See &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;misc&#x2F;clasp&#x2F;#useful-commands&quot;&gt;clasp page&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
