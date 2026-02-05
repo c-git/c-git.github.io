@@ -41,6 +41,7 @@ nano ~/.config/systemd/user/SERVICE_NAME.service
 - You can also set the **user** to run as for system wide services (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#User=)).
 - You can set **environment variables** using `Environment=` (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#Environment) for more).
 - You can set **working directory** using `WorkingDirectory=` (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#WorkingDirectory=) for more).
+- You can set **standard output** using `StandardOutput=` (see [here](https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#StandardOutput=) for more) Note: **stderr** defaults to use the same path (I think, not tested but based on the docs).
 
 ```
 [Unit]
@@ -52,6 +53,7 @@ ExecStart=/bin/bash -c '/usr/bin/my_awesome_program >> /home/user/out.txt 2>&1'
 User=[Only allowed when running as root to set the user to use instead of root (see note above)]
 WorkingDirectory=[relative to another option root but absolute paths work]
 Environment="VAR1=word1 word2" VAR2=word3 "VAR3=$word 5 6"
+StandardOutput=append:/my_folder/output.txt
 Type=simple
 Restart=always
 
