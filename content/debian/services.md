@@ -48,6 +48,7 @@ After=network.target
 
 [Service]
 ExecStart=/bin/bash -c '/usr/bin/my_awesome_program >> /home/user/out.txt 2>&1'
+User=[Only allowed when running as root to set the user to use instead of root (see note above)]
 Environment="VAR1=word1 word2" VAR2=word3 "VAR3=$word 5 6"
 Type=simple
 Restart=always
