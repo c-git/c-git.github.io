@@ -321,6 +321,7 @@
         "viverra",
         "vmli",
         "whos",
+        "zedbar",
         "zeroconf"
     ],
     "code-runner.customCommand": "zola build",
