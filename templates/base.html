@@ -147,6 +147,17 @@
         {%- endfor %}
       </nav>
       {%- endif %}
+      
+      {#- Github edit page link #}
+      {%- if section -%}      
+        {%- set relative_path = section.relative_path -%}
+      {%- endif -%}
+      {%- if page -%}      
+        {%- set relative_path = page.relative_path -%}
+      {%- endif -%}
+      {%- if relative_path -%}              
+        <a href="https://github.com/c-git/c-git.github.io/edit/main/content/{{ relative_path }}" target="_blank">{{ macros::translate(key="Edit this page on GitHub", default="Edit this page on GitHub", i18n=i18n) }}</a>
+      {%- endif %}      
 
       {#- Copyright START #}
       {%- if config.extra.copyright | default(value=true) -%}
