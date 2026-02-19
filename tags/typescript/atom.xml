@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - TypeScript</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/typescript/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-26T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/typescript/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Snippets</title>
+        <published>2023-04-17T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/typescript/snippets/"/>
+        <id>https://dev.chester.wykies.com/typescript/snippets/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/typescript/snippets/">&lt;p&gt;Includes Google App Script (gscript)&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;exhaustive-matching&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#exhaustive-matching&quot; aria-label=&quot;Anchor link for: exhaustive-matching&quot;&gt;Exhaustive Matching&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.typescriptlang.org&#x2F;docs&#x2F;handbook&#x2F;2&#x2F;narrowing.html#exhaustiveness-checking&quot;&gt;https:&#x2F;&#x2F;www.typescriptlang.org&#x2F;docs&#x2F;handbook&#x2F;2&#x2F;narrowing.html#exhaustiveness-checking&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;typescript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; Shape&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; Circle&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; Square&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; getArea&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #FFAB70;&quot;&gt;shape&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; Shape&lt;&#x2F;span&gt;&lt;span&gt;) {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;  switch&lt;&#x2F;span&gt;&lt;span&gt; (shape.kind) {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;    case&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;circle&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;      return&lt;&#x2F;span&gt;&lt;span&gt; Math.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;PI&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; *&lt;&#x2F;span&gt;&lt;span&gt; shape.radius&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; **&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 2&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;    case&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;square&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;      return&lt;&#x2F;span&gt;&lt;span&gt; shape.sideLength&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; **&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 2&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;    default&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;      const&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; _exhaustiveCheck&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; never&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span&gt; shape;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;      return&lt;&#x2F;span&gt;&lt;span&gt; _exhaustiveCheck;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  }&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;sleep-in-google-app-script-gscript&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sleep-in-google-app-script-gscript&quot; aria-label=&quot;Anchor link for: sleep-in-google-app-script-gscript&quot;&gt;Sleep in Google App Script (gscript)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;developers.google.com&#x2F;apps-script&#x2F;reference&#x2F;utilities&#x2F;utilities#sleepmilliseconds&quot;&gt;https:&#x2F;&#x2F;developers.google.com&#x2F;apps-script&#x2F;reference&#x2F;utilities&#x2F;utilities#sleepmilliseconds&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;typescript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Utilities.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sleep&lt;&#x2F;span&gt;&lt;span&gt;(milliseconds);&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;google-script-simple-trigger&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#google-script-simple-trigger&quot; aria-label=&quot;Anchor link for: google-script-simple-trigger&quot;&gt;Google Script Simple Trigger&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;on-open&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#on-open&quot; aria-label=&quot;Anchor link for: on-open&quot;&gt;On Open&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Putting it at the top outside of the namespace in &lt;code&gt;shared.ts&lt;&#x2F;code&gt; is the convention in use&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;typescript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; onOpen&lt;&#x2F;span&gt;&lt;span&gt;() {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;    const&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; menu&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span&gt; SpreadsheetApp.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;getUi&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;createMenu&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;Scripts&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    menu.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;addItem&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;Displayed Text&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;functionName&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;).&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;addToUi&lt;&#x2F;span&gt;&lt;span&gt;();&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    menu.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;addItem&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;Button 2&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;functionName2&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;).&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;addToUi&lt;&#x2F;span&gt;&lt;span&gt;();&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;on-edit&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#on-edit&quot; aria-label=&quot;Anchor link for: on-edit&quot;&gt;On Edit&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;typescript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; onEditBody&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #FFAB70;&quot;&gt;e&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; GoogleAppsScript&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;Events&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;SheetsOnEdit&lt;&#x2F;span&gt;&lt;span&gt;) {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;        if&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;            (e.range.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;getColumn&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; !==&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; OUTPUT_COL_DATE&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;amp;&amp;amp;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;            (e.range.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;getColumn&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; !==&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; OUTPUT_COL_TIME_START&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;amp;&amp;amp;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;            (e.range.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;getColumn&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; !==&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; OUTPUT_COL_TIME_END&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;amp;&amp;amp;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;            (e.range.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;getWidth&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; ===&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 1&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;amp;&amp;amp;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;            (e.range.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;getHeight&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; ===&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 1&lt;&#x2F;span&gt;&lt;span&gt;)) {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;            &#x2F;&#x2F; Do the needful (note variables on rhs above are not automatically defined)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;        }&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    }&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Error Suppression</title>
+        <published>2023-04-14T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/typescript/error-suppression/"/>
+        <id>https://dev.chester.wykies.com/typescript/error-suppression/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/typescript/error-suppression/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bobbyhadz.com&#x2F;blog&#x2F;typescript-ignore-error&quot;&gt;https:&#x2F;&#x2F;bobbyhadz.com&#x2F;blog&#x2F;typescript-ignore-error&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Use &lt;code&gt;&#x2F;&#x2F; @ts-expect-error&lt;&#x2F;code&gt; on the previous line to suppress errors. This is to be preferred over &lt;code&gt;&#x2F;&#x2F; @ts-nocheck&lt;&#x2F;code&gt; (which is for a whole file) and &lt;code&gt;&#x2F;&#x2F; @ts-ignore&lt;&#x2F;code&gt; which gives no warning if the error is no longer present.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

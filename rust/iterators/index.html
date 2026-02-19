@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Iterators | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/rust/iterators/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/rust/iterators/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/rust/iterators/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="Iterators | Chester Wyke" />
+  <meta name="twitter:title" content="Iterators | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-04-26" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> September 05, 2024 <span class="rpad"></span>Updated: April 26, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/rust/">Rust</a> </span>
+
+    
+        <div class="block">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/rust/">Rust (Series)</a><br>
+            <a href="https://dev.chester.wykies.com/rust/conditional-compilation/">Conditional Compilation</a><br>
+            <a href="https://dev.chester.wykies.com/rust/install/">Install</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-serde/">Crate Serde</a><br>
+            <a href="https://dev.chester.wykies.com/rust/refs/">References</a><br>
+            <a href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a><br>
+            <a href="https://dev.chester.wykies.com/rust/toolchain/">Toolchain (Nightly)</a><br>
+            <a href="https://dev.chester.wykies.com/rust/string-formatting/">String Formatting</a><br>
+            <a href="https://dev.chester.wykies.com/rust/time/">Time</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-tokio/">Crate Tokio</a><br>
+            <a href="https://dev.chester.wykies.com/rust/publish-crate/">Publish Crate</a><br>
+            <a href="https://dev.chester.wykies.com/rust/rustfmt/">rustfmt</a><br>
+            <a href="https://dev.chester.wykies.com/rust/scripts/">Single file script</a><br>
+            <a href="https://dev.chester.wykies.com/rust/snippets/">Snippets</a><br>
+            <a href="https://dev.chester.wykies.com/rust/ci/">CI</a><br>
+            <a href="https://dev.chester.wykies.com/rust/pattern-typestate/">Pattern Type State</a><br>
+            <a href="https://dev.chester.wykies.com/rust/wasm/">WASM</a><br>
+            <a href="https://dev.chester.wykies.com/rust/create-new-crate/">Create New Crate</a><br>
+            <a href="https://dev.chester.wykies.com/rust/documentation/">Documentation</a><br>
+            <a href="https://dev.chester.wykies.com/rust/json/">JSON</a><br>
+            <a href="https://dev.chester.wykies.com/rust/pattern-builder/">Pattern Builder</a><br>
+            <a href="https://dev.chester.wykies.com/rust/testing/">Testing</a><br>
+            <a href="https://dev.chester.wykies.com/rust/byte-collections/">Working with collections of bytes</a><br>
+            <a href="https://dev.chester.wykies.com/rust/thoughts/">Thoughts about rust</a><br>
+            <a href="https://dev.chester.wykies.com/rust/areweyet/">Are we yet</a><br>
+            <a href="https://dev.chester.wykies.com/rust/std-once/">OnceLock</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-actix/">Crate Actix Web</a><br>
+            <a href="https://dev.chester.wykies.com/rust/stack-overflow/">Stack Overflow</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-poll-promise/">Crate Poll Promise</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-insta/">Crate Insta</a><br>
+            <a href="https://dev.chester.wykies.com/rust/tips/">Tips</a><br>
+            <a href="https://dev.chester.wykies.com/rust/create-new-egui-project/">Create new egui project</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-csv/">Crate CSV</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-egui/">Crate egui</a><br>
+            <a class="scur" href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a><br> 
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-tracing-subscriber/">Crate Tracing Subscriber</a><br>
+            <a href="https://dev.chester.wykies.com/rust/regex/">Regex</a><br>
+            <a href="https://dev.chester.wykies.com/rust/vscode/">vscode</a><br>
+            <a href="https://dev.chester.wykies.com/rust/enum-conversion/">Enum Conversion</a><br>
+            <a href="https://dev.chester.wykies.com/rust/macros/">Macros</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-lettre/">lettre</a><br>
+            <a href="https://dev.chester.wykies.com/rust/google-apis/">Google APIs</a><br>
+      </div>
+    </div>
+
+
+<h1 id="references"><a class="zola-anchor" href="#references" aria-label="Anchor link for: references">References</a></h1>
+<p><a rel="noopener external" target="_blank" href="https://aloso.github.io/2021/03/09/creating-an-iterator">Blog post</a> on how to use iterator to traverse a tree</p>
+<h1 id="examples"><a class="zola-anchor" href="#examples" aria-label="Anchor link for: examples">Examples</a></h1>
+<p>Copied from an example by <a rel="noopener external" target="_blank" href="https://github.com/robjtede">robjtede @ Actix Web</a> on discord. It was an aside to Tim’s <a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=RQE4GeDe4yw">video</a></p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span>#</span><span style="color: #F97583;">!/</span><span>usr</span><span style="color: #F97583;">/</span><span>bin</span><span style="color: #F97583;">/</span><span>env</span><span style="color: #F97583;"> -</span><span style="color: #B392F0;">S</span><span> cargo</span><span style="color: #F97583;"> +</span><span>nightly</span><span style="color: #F97583;"> -</span><span style="color: #B392F0;">Zscript</span></span>
+<span class="giallo-l"><span style="color: #F97583;">---</span><span>cargo</span></span>
+<span class="giallo-l"><span>package</span><span style="color: #F97583;">.</span><span>edition </span><span style="color: #F97583;">=</span><span style="color: #9ECBFF;"> &quot;2021&quot;</span><span> # </span><span style="color: #B392F0;">Desirable</span><span> to stop warning but not needed</span></span>
+<span class="giallo-l"><span>[dependencies]</span></span>
+<span class="giallo-l"><span>itertools</span><span style="color: #F97583;"> =</span><span style="color: #9ECBFF;"> &quot;0.12.1&quot;</span></span>
+<span class="giallo-l"><span style="color: #F97583;">---</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">use</span><span style="color: #B392F0;"> itertools</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">Itertools</span><span style="color: #F97583;"> as</span><span> _;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">fn</span><span style="color: #B392F0;"> main</span><span>() {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    let</span><span> pas</span><span style="color: #F97583;"> =</span><span style="color: #B392F0;"> Pas</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">new</span><span>();</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">    for</span><span> row</span><span style="color: #F97583;"> in</span><span> pas</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">take</span><span>(</span><span style="color: #79B8FF;">8</span><span>) {</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">        println!</span><span>(</span><span style="color: #9ECBFF;">&quot;{}&quot;</span><span>, row</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">iter</span><span>()</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">join</span><span>(</span><span style="color: #9ECBFF;">&quot;, &quot;</span><span>));</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>#[derive(</span><span style="color: #B392F0;">Debug</span><span>)]</span></span>
+<span class="giallo-l"><span style="color: #F97583;">struct</span><span style="color: #B392F0;"> Pas</span><span> {</span></span>
+<span class="giallo-l"><span>    row</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> u32</span><span>,</span></span>
+<span class="giallo-l"><span>    prev</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> Vec</span><span>&lt;</span><span style="color: #B392F0;">i32</span><span>&gt;,</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">impl</span><span style="color: #B392F0;"> Pas</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    fn</span><span style="color: #B392F0;"> new</span><span>()</span><span style="color: #F97583;"> -&gt;</span><span style="color: #79B8FF;"> Self</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">        Self</span><span> {</span></span>
+<span class="giallo-l"><span>            row</span><span style="color: #F97583;">:</span><span style="color: #79B8FF;"> 0</span><span>,</span></span>
+<span class="giallo-l"><span>            prev</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> vec!</span><span>[</span><span style="color: #79B8FF;">1</span><span>],</span></span>
+<span class="giallo-l"><span>        }</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">impl</span><span style="color: #B392F0;"> Iterator</span><span style="color: #F97583;"> for</span><span style="color: #B392F0;"> Pas</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    type</span><span style="color: #B392F0;"> Item</span><span style="color: #F97583;"> =</span><span style="color: #B392F0;"> Vec</span><span>&lt;</span><span style="color: #B392F0;">i32</span><span>&gt;;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">    fn</span><span style="color: #B392F0;"> next</span><span>(</span><span style="color: #F97583;">&amp;mut</span><span style="color: #79B8FF;"> self</span><span>)</span><span style="color: #F97583;"> -&gt;</span><span style="color: #B392F0;"> Option</span><span>&lt;</span><span style="color: #79B8FF;">Self</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">Item</span><span>&gt; {</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">        self</span><span style="color: #F97583;">.</span><span>row </span><span style="color: #F97583;">+=</span><span style="color: #79B8FF;"> 1</span><span>;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">        if</span><span style="color: #79B8FF;"> self</span><span style="color: #F97583;">.</span><span>row </span><span style="color: #F97583;">==</span><span style="color: #79B8FF;"> 1</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            return</span><span style="color: #B392F0;"> Some</span><span>(</span><span style="color: #79B8FF;">self</span><span style="color: #F97583;">.</span><span>prev</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">clone</span><span>());</span></span>
+<span class="giallo-l"><span>        }</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #79B8FF;">        self</span><span style="color: #F97583;">.</span><span>prev</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">insert</span><span>(</span><span style="color: #79B8FF;">0</span><span>,</span><span style="color: #79B8FF;"> 0</span><span>);</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">        self</span><span style="color: #F97583;">.</span><span>prev</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">push</span><span>(</span><span style="color: #79B8FF;">0</span><span>);</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #79B8FF;">        self</span><span style="color: #F97583;">.</span><span>prev </span><span style="color: #F97583;">=</span><span style="color: #79B8FF;"> self</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            .</span><span>prev</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            .</span><span style="color: #B392F0;">iter</span><span>()</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            .</span><span style="color: #B392F0;">tuple_windows</span><span>()</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            .</span><span style="color: #B392F0;">map</span><span>(</span><span style="color: #F97583;">|</span><span>(a, b)</span><span style="color: #F97583;">|</span><span> a</span><span style="color: #F97583;"> +</span><span> b)</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            .</span><span style="color: #B392F0;">collect</span><span>();</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #B392F0;">        Some</span><span>(</span><span style="color: #79B8FF;">self</span><span style="color: #F97583;">.</span><span>prev</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">clone</span><span>())</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre>
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/rust/">Series</a><br>
+
+          
+          
+      <a href="https://dev.chester.wykies.com/rust/conditional-compilation/">Conditional Compilation</a><br>
+
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/rust/install/">Install</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-serde/">Crate Serde</a><br>
+                <a href="https://dev.chester.wykies.com/rust/refs/">References</a><br>
+                <a href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a><br>
+                <a href="https://dev.chester.wykies.com/rust/toolchain/">Toolchain (Nightly)</a><br>
+                <a href="https://dev.chester.wykies.com/rust/string-formatting/">String Formatting</a><br>
+                <a href="https://dev.chester.wykies.com/rust/time/">Time</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-tokio/">Crate Tokio</a><br>
+                <a href="https://dev.chester.wykies.com/rust/publish-crate/">Publish Crate</a><br>
+                <a href="https://dev.chester.wykies.com/rust/rustfmt/">rustfmt</a><br>
+                <a href="https://dev.chester.wykies.com/rust/scripts/">Single file script</a><br>
+                <a href="https://dev.chester.wykies.com/rust/snippets/">Snippets</a><br>
+                <a href="https://dev.chester.wykies.com/rust/ci/">CI</a><br>
+                <a href="https://dev.chester.wykies.com/rust/pattern-typestate/">Pattern Type State</a><br>
+                <a href="https://dev.chester.wykies.com/rust/wasm/">WASM</a><br>
+                <a href="https://dev.chester.wykies.com/rust/create-new-crate/">Create New Crate</a><br>
+                <a href="https://dev.chester.wykies.com/rust/documentation/">Documentation</a><br>
+                <a href="https://dev.chester.wykies.com/rust/json/">JSON</a><br>
+                <a href="https://dev.chester.wykies.com/rust/pattern-builder/">Pattern Builder</a><br>
+                <a href="https://dev.chester.wykies.com/rust/testing/">Testing</a><br>
+                <a href="https://dev.chester.wykies.com/rust/byte-collections/">Working with collections of bytes</a><br>
+                <a href="https://dev.chester.wykies.com/rust/thoughts/">Thoughts about rust</a><br>
+                <a href="https://dev.chester.wykies.com/rust/areweyet/">Are we yet</a><br>
+                <a href="https://dev.chester.wykies.com/rust/std-once/">OnceLock</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-actix/">Crate Actix Web</a><br>
+                <a href="https://dev.chester.wykies.com/rust/stack-overflow/">Stack Overflow</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-poll-promise/">Crate Poll Promise</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-insta/">Crate Insta</a><br>
+                <a href="https://dev.chester.wykies.com/rust/tips/">Tips</a><br>
+                <a href="https://dev.chester.wykies.com/rust/create-new-egui-project/">Create new egui project</a><br>
+            </div>
+
+          
+
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-csv/">Crate CSV</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-egui/">Crate egui</a><br>
+
+          
+            
+      <a class="scur" href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a><br>
+    
+
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-tracing-subscriber/">Crate Tracing Subscriber</a><br>
+          
+            <a href="https://dev.chester.wykies.com/rust/regex/">Regex</a><br>
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/rust/vscode/">vscode</a><br>
+                <a href="https://dev.chester.wykies.com/rust/enum-conversion/">Enum Conversion</a><br>
+                <a href="https://dev.chester.wykies.com/rust/macros/">Macros</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-lettre/">lettre</a><br>
+            </div>
+        
+      <a href="https://dev.chester.wykies.com/rust/google-apis/">Google APIs</a><br>
+
+        
+      </div>
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#references">References</a>
+        </div>
+        <div>
+          <a href="#examples">Examples</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/rust&#x2F;iterators.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

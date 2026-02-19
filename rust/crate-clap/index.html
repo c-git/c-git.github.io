@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Crate Clap | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/rust/crate-clap/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/rust/crate-clap/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/rust/crate-clap/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="Crate Clap | Chester Wyke" />
+  <meta name="twitter:title" content="Crate Clap | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-04-26" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> January 30, 2024 <span class="rpad"></span>Updated: April 26, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/rust/">Rust</a> </span>
+
+    
+        <div class="block">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/rust/">Rust (Series)</a><br>
+            <a href="https://dev.chester.wykies.com/rust/conditional-compilation/">Conditional Compilation</a><br>
+            <a href="https://dev.chester.wykies.com/rust/install/">Install</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-serde/">Crate Serde</a><br>
+            <a href="https://dev.chester.wykies.com/rust/refs/">References</a><br>
+            <a href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a><br>
+            <a href="https://dev.chester.wykies.com/rust/toolchain/">Toolchain (Nightly)</a><br>
+            <a href="https://dev.chester.wykies.com/rust/string-formatting/">String Formatting</a><br>
+            <a href="https://dev.chester.wykies.com/rust/time/">Time</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-tokio/">Crate Tokio</a><br>
+            <a href="https://dev.chester.wykies.com/rust/publish-crate/">Publish Crate</a><br>
+            <a href="https://dev.chester.wykies.com/rust/rustfmt/">rustfmt</a><br>
+            <a href="https://dev.chester.wykies.com/rust/scripts/">Single file script</a><br>
+            <a href="https://dev.chester.wykies.com/rust/snippets/">Snippets</a><br>
+            <a href="https://dev.chester.wykies.com/rust/ci/">CI</a><br>
+            <a href="https://dev.chester.wykies.com/rust/pattern-typestate/">Pattern Type State</a><br>
+            <a href="https://dev.chester.wykies.com/rust/wasm/">WASM</a><br>
+            <a href="https://dev.chester.wykies.com/rust/create-new-crate/">Create New Crate</a><br>
+            <a href="https://dev.chester.wykies.com/rust/documentation/">Documentation</a><br>
+            <a href="https://dev.chester.wykies.com/rust/json/">JSON</a><br>
+            <a href="https://dev.chester.wykies.com/rust/pattern-builder/">Pattern Builder</a><br>
+            <a href="https://dev.chester.wykies.com/rust/testing/">Testing</a><br>
+            <a href="https://dev.chester.wykies.com/rust/byte-collections/">Working with collections of bytes</a><br>
+            <a href="https://dev.chester.wykies.com/rust/thoughts/">Thoughts about rust</a><br>
+            <a href="https://dev.chester.wykies.com/rust/areweyet/">Are we yet</a><br>
+            <a href="https://dev.chester.wykies.com/rust/std-once/">OnceLock</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-actix/">Crate Actix Web</a><br>
+            <a href="https://dev.chester.wykies.com/rust/stack-overflow/">Stack Overflow</a><br>
+            <a class="scur" href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a><br> 
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-poll-promise/">Crate Poll Promise</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-insta/">Crate Insta</a><br>
+            <a href="https://dev.chester.wykies.com/rust/tips/">Tips</a><br>
+            <a href="https://dev.chester.wykies.com/rust/create-new-egui-project/">Create new egui project</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-csv/">Crate CSV</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-egui/">Crate egui</a><br>
+            <a href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-tracing-subscriber/">Crate Tracing Subscriber</a><br>
+            <a href="https://dev.chester.wykies.com/rust/regex/">Regex</a><br>
+            <a href="https://dev.chester.wykies.com/rust/vscode/">vscode</a><br>
+            <a href="https://dev.chester.wykies.com/rust/enum-conversion/">Enum Conversion</a><br>
+            <a href="https://dev.chester.wykies.com/rust/macros/">Macros</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-lettre/">lettre</a><br>
+            <a href="https://dev.chester.wykies.com/rust/google-apis/">Google APIs</a><br>
+      </div>
+    </div>
+
+
+<p>Source: <a rel="noopener external" target="_blank" href="https://docs.rs/clap/latest/clap/">https://docs.rs/clap/latest/clap/</a></p>
+<h1 id="setup-steps"><a class="zola-anchor" href="#setup-steps" aria-label="Anchor link for: setup-steps">Setup Steps</a></h1>
+<p>An example of project where this was used is <a rel="noopener external" target="_blank" href="https://github.com/c-git/zola_chrono">zola_chrono</a> but I want to stop including the logging level as part of it and defer to using environment variables as already supported by <a rel="noopener external" target="_blank" href="https://docs.rs/env_logger/latest/env_logger/">env_logger</a>.</p>
+<ul>
+<li>Add dependency<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="plain"><span class="giallo-l"><span>cargo add clap -F derive,cargo,wrap_help</span></span></code></pre></li>
+<li>Copy <a rel="noopener external" target="_blank" href="https://github.com/c-git/zola_chrono/blob/main/src/cli.rs">cli.rs</a> and add and remove as needed</li>
+<li>Copy from <a rel="noopener external" target="_blank" href="https://github.com/c-git/zola_chrono/blob/main/src/main.rs">main.rs</a> as needed</li>
+<li>Testing<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span>#[cfg(test)]</span></span>
+<span class="giallo-l"><span style="color: #F97583;">mod</span><span style="color: #B392F0;"> tests</span><span> {</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    #[test]</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    fn</span><span style="color: #B392F0;"> verify_cli</span><span>() {</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">        // Source: https://docs.rs/clap/latest/clap/_derive/_tutorial/index.html#testing</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">        // My understanding it reports most development errors without additional effort</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        use</span><span style="color: #B392F0;"> clap</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">CommandFactory</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">        super</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">Cli</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">command</span><span>()</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">debug_assert</span><span>()</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre></li>
+</ul>
+<h1 id="example-of-cargo-subcommand"><a class="zola-anchor" href="#example-of-cargo-subcommand" aria-label="Anchor link for: example-of-cargo-subcommand">Example of cargo subcommand</a></h1>
+<p><a rel="noopener external" target="_blank" href="https://github.com/rust-practice/cargo-leet/">https://github.com/rust-practice/cargo-leet/</a></p>
+<h1 id="example-of-using-clap-derive"><a class="zola-anchor" href="#example-of-using-clap-derive" aria-label="Anchor link for: example-of-using-clap-derive">Example of using clap derive</a></h1>
+<p>Full details can be found in the <a rel="noopener external" target="_blank" href="https://docs.rs/clap/latest/clap/_derive/">clap docs</a>.
+This is just an short example showing features I use more frequently.</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span>#</span><span style="color: #F97583;">!/</span><span>usr</span><span style="color: #F97583;">/</span><span>bin</span><span style="color: #F97583;">/</span><span>env</span><span style="color: #F97583;"> -</span><span style="color: #B392F0;">S</span><span> cargo</span><span style="color: #F97583;"> +</span><span>nightly</span><span style="color: #F97583;"> -</span><span style="color: #B392F0;">Zscript</span></span>
+<span class="giallo-l"><span style="color: #F97583;">---</span><span>cargo</span></span>
+<span class="giallo-l"><span>package</span><span style="color: #F97583;">.</span><span>edition </span><span style="color: #F97583;">=</span><span style="color: #9ECBFF;"> &quot;2021&quot;</span><span> # </span><span style="color: #B392F0;">Desirable</span><span> to stop warning but not needed</span></span>
+<span class="giallo-l"><span>[dependencies]</span></span>
+<span class="giallo-l"><span>version</span><span style="color: #F97583;">-</span><span>control</span><span style="color: #F97583;">-</span><span>clean</span><span style="color: #F97583;">-</span><span>check</span><span style="color: #F97583;"> =</span><span> { version</span><span style="color: #F97583;"> =</span><span style="color: #9ECBFF;"> &quot;0.1.4&quot;</span><span>, features</span><span style="color: #F97583;"> =</span><span> [</span><span style="color: #9ECBFF;">&quot;clap&quot;</span><span>] }</span></span>
+<span class="giallo-l"><span>anyhow</span><span style="color: #F97583;"> =</span><span style="color: #9ECBFF;"> &quot;1.0.94&quot;</span></span>
+<span class="giallo-l"><span>clap</span><span style="color: #F97583;"> =</span><span> { version</span><span style="color: #F97583;"> =</span><span style="color: #9ECBFF;"> &quot;4.5.23&quot;</span><span>, features</span><span style="color: #F97583;"> =</span><span> [</span><span style="color: #9ECBFF;">&quot;derive&quot;</span><span>,</span><span style="color: #9ECBFF;"> &quot;wrap_help&quot;</span><span>] }</span></span>
+<span class="giallo-l"><span style="color: #F97583;">---</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">use</span><span style="color: #B392F0;"> clap</span><span style="color: #F97583;">::</span><span>{</span><span style="color: #B392F0;">Parser</span><span>,</span><span style="color: #B392F0;"> ValueEnum</span><span>};</span></span>
+<span class="giallo-l"><span style="color: #F97583;">use</span><span style="color: #B392F0;"> std</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">path</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">PathBuf</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #F97583;">use</span><span style="color: #B392F0;"> version_control_clean_check</span><span style="color: #F97583;">::</span><span>{check_version_control,</span><span style="color: #B392F0;"> CheckOptions</span><span>};</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6A737D;">/// Short about text goes here</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">///</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">/// This part is only included in the long about text that shows when using --help</span></span>
+<span class="giallo-l"><span>#[derive(</span><span style="color: #B392F0;">Parser</span><span>,</span><span style="color: #B392F0;"> Clone</span><span>,</span><span style="color: #B392F0;"> Eq</span><span>,</span><span style="color: #B392F0;"> PartialEq</span><span>,</span><span style="color: #B392F0;"> Ord</span><span>,</span><span style="color: #B392F0;"> PartialOrd</span><span>,</span><span style="color: #B392F0;"> Debug</span><span>,</span><span style="color: #B392F0;"> Default</span><span>)]</span></span>
+<span class="giallo-l"><span>#[command(author, version, about)]</span></span>
+<span class="giallo-l"><span style="color: #F97583;">struct</span><span style="color: #B392F0;"> Cli</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">    /// Specify the root directory or uses current directory if not provided</span></span>
+<span class="giallo-l"><span>    #[arg(value_name </span><span style="color: #F97583;">=</span><span style="color: #9ECBFF;"> &quot;FOLDER&quot;</span><span>, default_value </span><span style="color: #F97583;">=</span><span style="color: #9ECBFF;"> &quot;.&quot;</span><span>)]</span></span>
+<span class="giallo-l"><span>    root</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> PathBuf</span><span>,</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    #[clap(flatten)]</span></span>
+<span class="giallo-l"><span>    check_version_control</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> CheckOptions</span><span>,</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6A737D;">    /// A boolean flag that is set to true if the argument is provided</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">    ///</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">    /// This line only shows in the long help mode and</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">    /// if you do not include `long` or `short` (both used below) on the argument</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">    /// then it becomes positional</span></span>
+<span class="giallo-l"><span>    #[arg(long, short)]</span></span>
+<span class="giallo-l"><span>    optional_flag</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> bool</span><span>,</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6A737D;">    /// Included to give an example for an enum</span></span>
+<span class="giallo-l"><span>    #[arg(value_enum, long, default_value_t)]</span></span>
+<span class="giallo-l"><span>    mode</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> Animal</span><span>,</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>#[derive(</span><span style="color: #B392F0;">ValueEnum</span><span>,</span><span style="color: #B392F0;"> Clone</span><span>,</span><span style="color: #B392F0;"> PartialEq</span><span>,</span><span style="color: #B392F0;"> Eq</span><span>,</span><span style="color: #B392F0;"> PartialOrd</span><span>,</span><span style="color: #B392F0;"> Ord</span><span>,</span><span style="color: #B392F0;"> Debug</span><span>,</span><span style="color: #B392F0;"> Default</span><span>)]</span></span>
+<span class="giallo-l"><span style="color: #F97583;">enum</span><span style="color: #B392F0;"> Animal</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    Bird</span><span>,</span></span>
+<span class="giallo-l"><span>    #[default]</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    Cat</span><span>,</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    Dog</span><span>,</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">fn</span><span style="color: #B392F0;"> main</span><span>()</span><span style="color: #F97583;"> -&gt;</span><span style="color: #B392F0;"> anyhow</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">Result</span><span>&lt;()&gt; {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    let</span><span> cli</span><span style="color: #F97583;"> =</span><span style="color: #B392F0;"> Cli</span><span style="color: #F97583;">::</span><span style="color: #B392F0;">parse</span><span>();</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    dbg!</span><span>(</span><span style="color: #F97583;">&amp;</span><span>cli);</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    let</span><span> path</span><span style="color: #F97583;"> =</span><span> cli</span><span style="color: #F97583;">.</span><span>root</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">canonicalize</span><span>()</span><span style="color: #F97583;">?</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    dbg!</span><span>(</span><span style="color: #F97583;">&amp;</span><span>path);</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    check_version_control</span><span>(path,</span><span style="color: #F97583;"> &amp;</span><span>cli</span><span style="color: #F97583;">.</span><span>check_version_control)</span><span style="color: #F97583;">?</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    println!</span><span>(</span><span style="color: #9ECBFF;">&quot;Program Ended&quot;</span><span>);</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">    Ok</span><span>(())</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre>
+<p>Example output:</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="plain"><span class="giallo-l"><span>% ./single_file_script.rs -h</span></span>
+<span class="giallo-l"><span>    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.04s</span></span>
+<span class="giallo-l"><span>     Running `/home/one/.cargo/target/b1/bdd0db958a601c/debug/single_file_script -h`</span></span>
+<span class="giallo-l"><span>Short about text goes here</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Usage: single_file_script [OPTIONS] [FOLDER]</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Arguments:</span></span>
+<span class="giallo-l"><span>  [FOLDER]  Specify the root directory or uses current directory if not provided [default: .]</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>Options:</span></span>
+<span class="giallo-l"><span>      --allow-dirty    Does not return an error for dirty files nor generate the list of said files</span></span>
+<span class="giallo-l"><span>      --allow-no-vcs   This option basically disables checking. If true no checks are done. (Not even if the `path`</span></span>
+<span class="giallo-l"><span>                       exists)</span></span>
+<span class="giallo-l"><span>      --allow-staged   Does not return an error for staged files nor generate the list of said files</span></span>
+<span class="giallo-l"><span>  -o, --optional-flag  A boolean flag that is set to true if the argument is provided</span></span>
+<span class="giallo-l"><span>      --mode &lt;MODE&gt;    Included to give an example for an enum [default: cat] [possible values: bird, cat, dog]</span></span>
+<span class="giallo-l"><span>  -h, --help           Print help (see more with &#39;--help&#39;)</span></span>
+<span class="giallo-l"><span>  -V, --version        Print version</span></span></code></pre>
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/rust/">Series</a><br>
+
+          
+          
+      <a href="https://dev.chester.wykies.com/rust/conditional-compilation/">Conditional Compilation</a><br>
+
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/rust/install/">Install</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-serde/">Crate Serde</a><br>
+                <a href="https://dev.chester.wykies.com/rust/refs/">References</a><br>
+                <a href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a><br>
+                <a href="https://dev.chester.wykies.com/rust/toolchain/">Toolchain (Nightly)</a><br>
+                <a href="https://dev.chester.wykies.com/rust/string-formatting/">String Formatting</a><br>
+                <a href="https://dev.chester.wykies.com/rust/time/">Time</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-tokio/">Crate Tokio</a><br>
+                <a href="https://dev.chester.wykies.com/rust/publish-crate/">Publish Crate</a><br>
+                <a href="https://dev.chester.wykies.com/rust/rustfmt/">rustfmt</a><br>
+                <a href="https://dev.chester.wykies.com/rust/scripts/">Single file script</a><br>
+                <a href="https://dev.chester.wykies.com/rust/snippets/">Snippets</a><br>
+                <a href="https://dev.chester.wykies.com/rust/ci/">CI</a><br>
+                <a href="https://dev.chester.wykies.com/rust/pattern-typestate/">Pattern Type State</a><br>
+                <a href="https://dev.chester.wykies.com/rust/wasm/">WASM</a><br>
+                <a href="https://dev.chester.wykies.com/rust/create-new-crate/">Create New Crate</a><br>
+                <a href="https://dev.chester.wykies.com/rust/documentation/">Documentation</a><br>
+                <a href="https://dev.chester.wykies.com/rust/json/">JSON</a><br>
+                <a href="https://dev.chester.wykies.com/rust/pattern-builder/">Pattern Builder</a><br>
+                <a href="https://dev.chester.wykies.com/rust/testing/">Testing</a><br>
+                <a href="https://dev.chester.wykies.com/rust/byte-collections/">Working with collections of bytes</a><br>
+                <a href="https://dev.chester.wykies.com/rust/thoughts/">Thoughts about rust</a><br>
+                <a href="https://dev.chester.wykies.com/rust/areweyet/">Are we yet</a><br>
+                <a href="https://dev.chester.wykies.com/rust/std-once/">OnceLock</a><br>
+            </div>
+
+          
+
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-actix/">Crate Actix Web</a><br>
+            <a href="https://dev.chester.wykies.com/rust/stack-overflow/">Stack Overflow</a><br>
+
+          
+            
+      <a class="scur" href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a><br>
+    
+
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-poll-promise/">Crate Poll Promise</a><br>
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-insta/">Crate Insta</a><br>
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/rust/tips/">Tips</a><br>
+                <a href="https://dev.chester.wykies.com/rust/create-new-egui-project/">Create new egui project</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-csv/">Crate CSV</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-egui/">Crate egui</a><br>
+                <a href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-tracing-subscriber/">Crate Tracing Subscriber</a><br>
+                <a href="https://dev.chester.wykies.com/rust/regex/">Regex</a><br>
+                <a href="https://dev.chester.wykies.com/rust/vscode/">vscode</a><br>
+                <a href="https://dev.chester.wykies.com/rust/enum-conversion/">Enum Conversion</a><br>
+                <a href="https://dev.chester.wykies.com/rust/macros/">Macros</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-lettre/">lettre</a><br>
+            </div>
+        
+      <a href="https://dev.chester.wykies.com/rust/google-apis/">Google APIs</a><br>
+
+        
+      </div>
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#setup-steps">Setup Steps</a>
+        </div>
+        <div>
+          <a href="#example-of-cargo-subcommand">Example of cargo subcommand</a>
+        </div>
+        <div>
+          <a href="#example-of-using-clap-derive">Example of using clap derive</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/rust&#x2F;crate_clap.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

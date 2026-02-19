@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - SQL</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/sql/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-05-14T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/sql/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Install MySQL</title>
+        <published>2022-12-07T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/mysql/"/>
+        <id>https://dev.chester.wykies.com/sql/mysql/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/mysql/">&lt;h1 id=&quot;client-install&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#client-install&quot; aria-label=&quot;Anchor link for: client-install&quot;&gt;Client Install&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;This is also what is needed if you want to use mysqldump&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt install mysql-client&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;docker-environment-variables&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#docker-environment-variables&quot; aria-label=&quot;Anchor link for: docker-environment-variables&quot;&gt;Docker Environment Variables&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dev.mysql.com&#x2F;doc&#x2F;mysql-installation-excerpt&#x2F;8.2&#x2F;en&#x2F;docker-mysql-more-topics.html#docker-environment-variables&quot;&gt;https:&#x2F;&#x2F;dev.mysql.com&#x2F;doc&#x2F;mysql-installation-excerpt&#x2F;8.2&#x2F;en&#x2F;docker-mysql-more-topics.html#docker-environment-variables&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Add New User to Database</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/add-new-user/"/>
+        <id>https://dev.chester.wykies.com/sql/add-new-user/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/add-new-user/">&lt;p&gt;(See sample log below)&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;u &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;root -&lt;&#x2F;span&gt;&lt;span&gt;p&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;CREATE USER&lt;&#x2F;span&gt;&lt;span&gt; &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;newuser&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;@&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; IDENTIFIED &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;BY&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;password&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;GRANT&lt;&#x2F;span&gt;&lt;span&gt; ALL PRIVILEGES &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;ON database_name&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;* TO&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;newuser&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;flush privileges;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Log 1&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ mysql -uroot -p&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Enter password:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Welcome to the MySQL monitor.  Commands end with ; or \g.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Your MySQL connection id is 6&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Server version: 5.7.27-0ubuntu0.18.04.1 (Ubuntu)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Copyright (c) 2000, 2019, Oracle and&#x2F;or its affiliates. All rights reserved.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Oracle is a registered trademark of Oracle Corporation and&#x2F;or its&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;affiliates. Other names may be trademarks of their respective&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;owners.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Type &amp;#39;help;&amp;#39; or &amp;#39;\h&amp;#39; for help. Type &amp;#39;\c&amp;#39; to clear the current input statement.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; CREATE USER &amp;#39;newuser&amp;#39;@&amp;#39;192.168.1.5&amp;#39; IDENTIFIED BY &amp;#39;password_here&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected (0.00 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; GRANT ALL PRIVILEGES ON newuser.* TO &amp;#39;myuser&amp;#39;@&amp;#39;192.168.1.5&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected (0.00 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; flush privileges;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected (0.00 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Log 2&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; CREATE USER &amp;#39;newuser&amp;#39;@&amp;#39;192.168.1.5&amp;#39; IDENTIFIED BY &amp;#39;password_here&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected (0.08 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; GRANT SELECT ON fa.* TO &amp;#39;newuser&amp;#39;@&amp;#39;192.168.1.5&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected (0.00 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; GRANT SELECT ON parts.* TO &amp;#39;newuser&amp;#39;@&amp;#39;192.168.1.5&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected (0.00 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Install and Setup</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/install-setup/"/>
+        <id>https://dev.chester.wykies.com/sql/install-setup/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/install-setup/">&lt;h1 id=&quot;tested-os&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#tested-os&quot; aria-label=&quot;Anchor link for: tested-os&quot;&gt;Tested OS&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;This setup was done and tested on Ubuntu 22.04&lt;&#x2F;p&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tutorials&#x2F;how-to-install-mysql-on-ubuntu-22-04&quot;&gt;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tutorials&#x2F;how-to-install-mysql-on-ubuntu-22-04&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;install-mariadb&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-mariadb&quot; aria-label=&quot;Anchor link for: install-mariadb&quot;&gt;Install MariaDB&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt install mariadb-server&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;start&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#start&quot; aria-label=&quot;Anchor link for: start&quot;&gt;Start&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; systemctl start mysql.service&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;configure&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure&quot; aria-label=&quot;Anchor link for: configure&quot;&gt;Configure&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;As of July 2022 &lt;code&gt;mysql_secure_installation&lt;&#x2F;code&gt; will produce an error due how it
+attempts connection. This error results in a loop.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;open-sql-command-prompt&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#open-sql-command-prompt&quot; aria-label=&quot;Anchor link for: open-sql-command-prompt&quot;&gt;Open SQL command prompt&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See instructions &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;sql&#x2F;misc&#x2F;#without-password&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;set-root-password&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#set-root-password&quot; aria-label=&quot;Anchor link for: set-root-password&quot;&gt;Set root password&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Replace &lt;code&gt;p@s$w0rD&lt;&#x2F;code&gt; by a suitable strong password.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ALTER USER &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;p@s$w0rD&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;close-sql-command-prompt&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#close-sql-command-prompt&quot; aria-label=&quot;Anchor link for: close-sql-command-prompt&quot;&gt;Close SQL command prompt&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;exit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You will no longer be able to access mysql using &lt;code&gt;sudo mysql&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;run-command-to-secure-installation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#run-command-to-secure-installation&quot; aria-label=&quot;Anchor link for: run-command-to-secure-installation&quot;&gt;Run command to secure installation&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Now secure the setup.
+Run the command and follow the steps as appropriate.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; mysql_secure_installation&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>View List Of Users</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/list-users/"/>
+        <id>https://dev.chester.wykies.com/sql/list-users/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/list-users/">&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&amp;gt; select&lt;&#x2F;span&gt;&lt;span&gt; host, user &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;from&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; mysql&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;user&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;host&lt;&#x2F;th&gt;&lt;th&gt;user&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;%&lt;&#x2F;td&gt;&lt;td&gt;inventory&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;192.168.1.5&lt;&#x2F;td&gt;&lt;td&gt;newuser&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;localhost&lt;&#x2F;td&gt;&lt;td&gt;debian-sys-maint&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;localhost&lt;&#x2F;td&gt;&lt;td&gt;mysql.session&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;localhost&lt;&#x2F;td&gt;&lt;td&gt;mysql.sys&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;localhost&lt;&#x2F;td&gt;&lt;td&gt;root&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;———––&lt;&#x2F;td&gt;&lt;td&gt;——————&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;p&gt;6 rows in set (0.00 sec)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Misc</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/misc/"/>
+        <id>https://dev.chester.wykies.com/sql/misc/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/misc/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tutorials&#x2F;how-to-allow-remote-access-to-mysql&quot;&gt;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tutorials&#x2F;how-to-allow-remote-access-to-mysql&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;open-command-prompt&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#open-command-prompt&quot; aria-label=&quot;Anchor link for: open-command-prompt&quot;&gt;Open Command Prompt&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;with-password&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#with-password&quot; aria-label=&quot;Anchor link for: with-password&quot;&gt;With password&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;mysql&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -u&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; root&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;without-password&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#without-password&quot; aria-label=&quot;Anchor link for: without-password&quot;&gt;Without password&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; mysql&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;create-database&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-database&quot; aria-label=&quot;Anchor link for: create-database&quot;&gt;Create Database&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;CREATE DATABASE database_name;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;create-user-and-grant-all-permissions-on-database&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-user-and-grant-all-permissions-on-database&quot; aria-label=&quot;Anchor link for: create-user-and-grant-all-permissions-on-database&quot;&gt;Create user and grant all permissions on database&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;GRANT ALL PRIVILEGES ON database_name.* TO &amp;#39;USERNAME&amp;#39;@&amp;#39;HOSTNAME&amp;#39; IDENTIFIED BY &amp;quot;Str0ngDBP@ssw0rd&amp;quot;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;create-new-user&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-new-user&quot; aria-label=&quot;Anchor link for: create-new-user&quot;&gt;Create New User&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;CREATE USER &amp;#39;USERNAME&amp;#39;@&amp;#39;HOSTNAME&amp;#39; IDENTIFIED BY &amp;#39;Str0ngDBP@ssw0rd&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;rename-or-change-users-host-address&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#rename-or-change-users-host-address&quot; aria-label=&quot;Anchor link for: rename-or-change-users-host-address&quot;&gt;Rename or change users host address&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;RENAME USER &amp;#39;USERNAME&amp;#39;@&amp;#39;localhost&amp;#39; TO &amp;#39;USERNAME&amp;#39;@&amp;#39;HOSTNAME&amp;#39;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;flush-frees-memory-and-makes-changes-take-immediate-effect&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#flush-frees-memory-and-makes-changes-take-immediate-effect&quot; aria-label=&quot;Anchor link for: flush-frees-memory-and-makes-changes-take-immediate-effect&quot;&gt;Flush (Frees memory and makes changes take immediate effect)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;FLUSH PRIVILEGES;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;close-sql-command-prompt&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#close-sql-command-prompt&quot; aria-label=&quot;Anchor link for: close-sql-command-prompt&quot;&gt;Close sql command prompt&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;exit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>View User Permissions</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/permissions/"/>
+        <id>https://dev.chester.wykies.com/sql/permissions/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/permissions/">&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;select&lt;&#x2F;span&gt;&lt;span&gt; user, host &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;from&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; mysql&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;user&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;SHOW GRANTS &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;FOR&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;newuser&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;SHOW GRANTS &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;FOR&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;newuser&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;192.168.1.5&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Reset Root Password</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-05-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/reset-root-password/"/>
+        <id>https://dev.chester.wykies.com/sql/reset-root-password/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/reset-root-password/">&lt;p&gt;The following are the commands, followed by the log;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;cd &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;etc&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;mysql&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;mysql&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;conf&lt;&#x2F;span&gt;&lt;span&gt;.d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;sudo cp &lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;mysqld&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;cnf mysqld&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;cnf&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;20191103&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;under [mysqld] add skip-grant-tables&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;sudo &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;etc&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;init&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;mysql &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;stop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;sudo &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;etc&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;init&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;mysql &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;start&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;use&lt;&#x2F;span&gt;&lt;span&gt; mysql;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;flush privileges;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;SET PASSWORD FOR root&lt;&#x2F;span&gt;&lt;span&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;localhost&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; = PASSWORD&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;newpwd&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;quit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;remove line added&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;sudo &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;etc&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;init&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;mysql &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;stop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;sudo &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;etc&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;init&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;mysql &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;start&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;uroot &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;p&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Full Log&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:~$ cd &#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ sudo cp mysqld.cnf mysqld.cnf.20191103&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ sudo cp mysqld.cnf mysqld.cnf.20191103&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ sudo &#x2F;etc&#x2F;init.d&#x2F;mysql stop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[ ok ] Stopping mysql (via systemctl): mysql.service.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ sudo &#x2F;etc&#x2F;init.d&#x2F;mysql start&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[ ok ] Starting mysql (via systemctl): mysql.service.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ mysql&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Welcome to the MySQL monitor.  Commands end with ; or \g.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Your MySQL connection id is 2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Server version: 5.7.27-0ubuntu0.18.04.1 (Ubuntu)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Copyright (c) 2000, 2019, Oracle and&#x2F;or its affiliates. All rights reserved.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Oracle is a registered trademark of Oracle Corporation and&#x2F;or its&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;affiliates. Other names may be trademarks of their respective&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;owners.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Type &amp;#39;help;&amp;#39; or &amp;#39;\h&amp;#39; for help. Type &amp;#39;\c&amp;#39; to clear the current input statement.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; use mysql;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Reading table information for completion of table and column names&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;You can turn off this feature to get a quicker startup with -A&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Database changed&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; flush privileges;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected (0.00 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; SET PASSWORD FOR root@&amp;#39;localhost&amp;#39; = PASSWORD(&amp;#39;newpwd&amp;#39;);&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Query OK, 0 rows affected, 1 warning (0.00 sec)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt; quit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Bye&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ sudo nano mysqld.cnf&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ sudo &#x2F;etc&#x2F;init.d&#x2F;mysql stop&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[ ok ] Stopping mysql (via systemctl): mysql.service.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ sudo &#x2F;etc&#x2F;init.d&#x2F;mysql start&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[ ok ] Starting mysql (via systemctl): mysql.service.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;admin@mysqlserver:&#x2F;etc&#x2F;mysql&#x2F;mysql.conf.d$ mysql -uroot -p&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Enter password:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Welcome to the MySQL monitor.  Commands end with ; or \g.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Your MySQL connection id is 2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Server version: 5.7.27-0ubuntu0.18.04.1 (Ubuntu)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Copyright (c) 2000, 2019, Oracle and&#x2F;or its affiliates. All rights reserved.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Oracle is a registered trademark of Oracle Corporation and&#x2F;or its&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;affiliates. Other names may be trademarks of their respective&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;owners.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Type &amp;#39;help;&amp;#39; or &amp;#39;\h&amp;#39; for help. Type &amp;#39;\c&amp;#39; to clear the current input statement.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Temp Admin</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/sql/temp-admin/"/>
+        <id>https://dev.chester.wykies.com/sql/temp-admin/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/sql/temp-admin/">&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;mysql &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;u &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;root -&lt;&#x2F;span&gt;&lt;span&gt;p&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;CREATE USER&lt;&#x2F;span&gt;&lt;span&gt; &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;tempadmin&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;@&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; IDENTIFIED &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;BY&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;password&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;GRANT&lt;&#x2F;span&gt;&lt;span&gt; ALL PRIVILEGES &lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;ON *&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;* TO&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;tempadmin&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;flush privileges;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;DROP USER&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;#39;tempadmin&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+</feed>
