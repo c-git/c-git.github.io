@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - VSCode</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/vscode/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-01-13T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/vscode/atom.xml</id>
+    <entry xml:lang="en">
+        <title>GitLens</title>
+        <published>2025-05-24T00:00:00+00:00</published>
+        <updated>2025-05-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/vscode/gitlens/"/>
+        <id>https://dev.chester.wykies.com/vscode/gitlens/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/vscode/gitlens/">&lt;h1 id=&quot;easily-pull-in-changes-from-another-branch&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#easily-pull-in-changes-from-another-branch&quot; aria-label=&quot;Anchor link for: easily-pull-in-changes-from-another-branch&quot;&gt;Easily pull in changes from another branch&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;WARNING:&lt;&#x2F;strong&gt;: Depending on your use case using merging branches or &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.atlassian.com&#x2F;git&#x2F;tutorials&#x2F;cherry-pick&quot;&gt;git cherry picking&lt;&#x2F;a&gt; might make more sense but if the branches will never be merged and you don’t want to take entire commits or want to selectively pick from just the current diff between the branches then this might make sense.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source Control&lt;br &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;vscode&#x2F;gitlens&#x2F;source_control.png&quot; alt=&quot;Source Control Screenshot&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;GITLENS Branches Tab&lt;br &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;vscode&#x2F;gitlens&#x2F;GITLENS.png&quot; alt=&quot;GITLENS Branches screenshot&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Right click on a branch then click &lt;code&gt;Compare Working Tree to Here&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;vscode&#x2F;gitlens&#x2F;compare.png&quot; alt=&quot;Screenshot of context menu&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Click &lt;code&gt;Open All Changes&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;vscode&#x2F;gitlens&#x2F;open_all_changes.png&quot; alt=&quot;Screenshot of button to show all changes&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hotkeys</title>
+        <published>2023-11-09T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/vscode/hotkeys/"/>
+        <id>https://dev.chester.wykies.com/vscode/hotkeys/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/vscode/hotkeys/">&lt;p&gt;Compilation of hotkeys I use and those I rarely use but really want and then have a hard time finding.
+Might hide the frequency column in the future but kept to make them easy to sort.&lt;&#x2F;p&gt;
+&lt;p&gt;Reference link: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;docs&#x2F;getstarted&#x2F;keybindings&quot;&gt;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;docs&#x2F;getstarted&#x2F;keybindings&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Freq&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Key Combination&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Description&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;High&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Ctrl+Shift+P&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Command Palette&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;Med&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Ctrl+Shift+T&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Reopen Tab&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Extensions General</title>
+        <published>2023-07-27T00:00:00+00:00</published>
+        <updated>2026-01-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/vscode/extensions-general/"/>
+        <id>https://dev.chester.wykies.com/vscode/extensions-general/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/vscode/extensions-general/">&lt;p&gt;Some may come installed by default (not sure where I got all of these and haven’t had time to test)&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;current&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#current&quot; aria-label=&quot;Anchor link for: current&quot;&gt;Current&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Name&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;ID&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Reason&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=streetsidesoftware.code-spell-checker&quot;&gt;Code Spell Checker&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;streetsidesoftware.code-spell-checker&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Spelling checker for source code&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=usernamehw.errorlens&quot;&gt;Error Lens&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;usernamehw.errorlens&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Makes errors overlay next to code&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=mhutchie.git-graph&quot;&gt;Git Graph&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;mhutchie.git-graph&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;View a Git Graph of your repository, and perform Git actions from the graph&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=donjayamanne.githistory&quot;&gt;Git History&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;donjayamanne.githistory&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Provides additional git commands and more file specific info&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=vector-of-bool.gitflow&quot;&gt;gitflow&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;vector-of-bool.gitflow&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Gitflow integration&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=GitHub.vscode-github-actions&quot;&gt;GitHub Actions&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;github.vscode-github-actions&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;GitHub Actions workflows and runs&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=GitHub.vscode-pull-request-github&quot;&gt;GitHub Pull Requests and Issues&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;GitHub.vscode-pull-request-github&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Pull Request and Issues&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=eamodio.gitlens&quot;&gt;GitLens — Git supercharged&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;eamodio.gitlens&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Provides more advanced git commands like rebase interactive&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=ms-vscode.live-server&quot;&gt;Live Preview&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;ms-vscode.live-server&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Lets you preview pages (like markdown)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=MS-vsliveshare.vsliveshare&quot;&gt;Live Share&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;ms-vsliveshare.vsliveshare&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Real-time collaborative development&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=alefragnani.numbered-bookmarks&quot;&gt;Numbered Bookmarks&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;alefragnani.numbered-bookmarks&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Mark lines and jump to them, in Delphi style&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=Gruntfuggly.todo-tree&quot;&gt;Todo Tree&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Gruntfuggly.todo-tree&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Show TODO, FIXME, etc. comment tags in a tree view&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h1 id=&quot;previous&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#previous&quot; aria-label=&quot;Anchor link for: previous&quot;&gt;Previous&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Name&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;ID&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Reason&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=easterapps.script-runner&quot;&gt;cmd exec&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;easterapps.script-runner&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Execute commands using a key combination (Wasn’t being used)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=ms-vscode.remote-repositories&quot;&gt;Remote Repositories&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;ms-vscode.remote-repositories&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Remotely browse and edit git repositories (Mostly using code spaces now)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Extensions Rust</title>
+        <published>2023-07-27T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/vscode/extensions-rust/"/>
+        <id>https://dev.chester.wykies.com/vscode/extensions-rust/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/vscode/extensions-rust/">&lt;h1 id=&quot;must-haves&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#must-haves&quot; aria-label=&quot;Anchor link for: must-haves&quot;&gt;Must haves&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Name&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;ID&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Reason&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=vadimcn.vscode-lldb&quot;&gt;CodeLLDB&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;vadimcn.vscode-lldb&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Allows debugging rust code&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=rust-lang.rust-analyzer&quot;&gt;rust-analyzer&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;rust-lang.rust-analyzer&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Provides realtime feedback on code&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h1 id=&quot;useful&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#useful&quot; aria-label=&quot;Anchor link for: useful&quot;&gt;Useful&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Name&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;ID&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Reason&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=fill-labs.dependi&quot;&gt;Dependi&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;fill-labs.dependi&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Adds icons to cargo.toml to tell you dependency status&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h1 id=&quot;might-be-useful&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#might-be-useful&quot; aria-label=&quot;Anchor link for: might-be-useful&quot;&gt;Might be useful&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Name&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;ID&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Reason&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=mitsuhiko.insta&quot;&gt;insta snapshots&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;mitsuhiko.insta&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Makes working with insta more convenient&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h1 id=&quot;previously-used&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#previously-used&quot; aria-label=&quot;Anchor link for: previously-used&quot;&gt;Previously used&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Name&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;ID&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Reason&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=jedeop.crates-completer&quot;&gt;Crates Completer&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;jedeop.crates-completer&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Auto complete for creates if you edit &lt;code&gt;cargo.toml&lt;&#x2F;code&gt; manually (using &lt;code&gt;cargo add&lt;&#x2F;code&gt; cli now instead)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=tamasfe.even-better-toml&quot;&gt;Even Better TOML&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;tamasfe.even-better-toml&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Add TOML support (using dprint now instead)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=swellaby.vscode-rust-test-adapter&quot;&gt;Rust Test Explorer&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Swellaby.vscode-rust-test-adapter&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;View and run your Rust tests in the Sidebar (Didn’t always work so stopped using it)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=a5huynh.vscode-ron&quot;&gt;vscode-ron&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;a5huynh.vscode-ron&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Adds support for RON (Rusty object notation) - Wasn’t using it&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>View Whitespace (Non printing characters)</title>
+        <published>2023-07-27T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/vscode/whitespace/"/>
+        <id>https://dev.chester.wykies.com/vscode/whitespace/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/vscode/whitespace/">&lt;p&gt;To view white space or non printable characters, use &lt;code&gt;Toggle Render Whitespace&lt;&#x2F;code&gt; from the command palette.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Live Share</title>
+        <published>2023-06-24T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/vscode/liveshare/"/>
+        <id>https://dev.chester.wykies.com/vscode/liveshare/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/vscode/liveshare/">&lt;h1 id=&quot;controlling-files-shared&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#controlling-files-shared&quot; aria-label=&quot;Anchor link for: controlling-files-shared&quot;&gt;Controlling files shared&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tutorials&#x2F;how-to-use-live-share-with-visual-studio-code&quot;&gt;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tutorials&#x2F;how-to-use-live-share-with-visual-studio-code&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Filename: &lt;code&gt;.vsls.json&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;json&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    &amp;quot;$schema&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;http:&#x2F;&#x2F;json.schemastore.org&#x2F;vsls&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    &amp;quot;gitignore&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;none&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    &amp;quot;excludeFiles&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: [],&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    &amp;quot;hideFiles&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: []&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+</feed>
