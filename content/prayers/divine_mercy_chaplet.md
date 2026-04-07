@@ -1,10 +1,23 @@
 +++
 title = "Divine Mercy Chaplet"
 date = 2026-03-03
-updated = 2026-03-17
+updated = 2026-04-07
 extra = { series = "Prayers" }
 taxonomies = { tags = ["Prayers"] }
 +++
+
+After I copied the bellow from the app to make it easier to access I found that the Marian Fathers already have a website with more information and laid out much better than I have.
+I'll keep this page as I already typed it up but I would deferrer any visitors to the [divine mercy website](https://www.thedivinemercy.org/) or see links to parts I found helpful to get started as it may feel a bit overwhelming to start off:
+
+- The [message](https://www.thedivinemercy.org/message)
+
+- The [chaplet](https://www.thedivinemercy.org/message/devotions/chaplet) and the [step by step](https://www.thedivinemercy.org/message/devotions/pray-the-chaplet) instructions
+- [Novena](https://www.thedivinemercy.org/message/devotions/novena)
+
+![Divine Mercy Image][divine_mercy_image]\
+Image credit the <https://www.thedivinemercy.org/> page on: [The Image of The Divine Mercy][image_page]
+
+---
 
 Source: [Divine Mercy](https://play.google.com/store/apps/details?id=com.jacobsmedia.divinem) App
 
@@ -111,3 +124,9 @@ Source: [Divine Mercy](https://play.google.com/store/apps/details?id=com.jacobsm
   but with great confidence, submit ourselves to Your holy will,\
   which is Love and Mercy Itself. Amen.
 - End with the sign of the cross.
+
+![Divine Mercy Image][divine_mercy_image]\
+Image credit the <https://www.thedivinemercy.org/> page on: [The Image of The Divine Mercy][image_page]
+
+[divine_mercy_image]: https://www.thedivinemercy.org/sites/default/files/divinemercyvilniusimage.jpg
+[image_page]: https://www.thedivinemercy.org/message/devotions/image
