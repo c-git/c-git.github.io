@@ -1,7 +1,7 @@
 +++
 title = "Divine Mercy Chaplet"
 date = 2026-03-03
-updated = 2026-04-07
+updated = 2026-04-09
 extra = { series = "Prayers" }
 taxonomies = { tags = ["Prayers"] }
 +++
@@ -13,6 +13,8 @@ I'll keep this page as I already typed it up but I would deferrer any visitors t
 
 - The [chaplet](https://www.thedivinemercy.org/message/devotions/chaplet) and the [step by step](https://www.thedivinemercy.org/message/devotions/pray-the-chaplet) instructions
 - [Novena](https://www.thedivinemercy.org/message/devotions/novena)
+- [Pray along with Video](https://www.thedivinemercy.org/message/devotions/chaplet) Really moving [The Chaplet of Divine Mercy in Song (Complete)](https://www.youtube.com/watch?v=p5TGfisOKMM).\
+  {{ youtube(id="p5TGfisOKMM") }}
 
 ![Divine Mercy Image][divine_mercy_image]\
 Image credit the <https://www.thedivinemercy.org/> page on: [The Image of The Divine Mercy][image_page]
