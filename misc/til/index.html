@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Today I Learned (TIL) | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/misc/til/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/misc/til/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/misc/til/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="Today I Learned (TIL) | Chester Wyke" />
+  <meta name="twitter:title" content="Today I Learned (TIL) | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-04-26" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/misc/til/">Today I Learned (TIL)</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> January 12, 2024 <span class="rpad"></span>Updated: April 26, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/misc/">Misc</a> </span>
+
+    
+
+
+<p><strong>Foreword</strong>: I didn’t always learn the thing at that time but that’s when something caused me to say you know what I should write this down.
+That could be I’ve told it to people often so maybe writing it down will help someone.
+And maybe that someone is me after a period of time when I forget it (or at least don’t have it in mind and am reminded, possibly after wasting a lot of time in the process).</p>
+<h1 id="function-length"><a class="zola-anchor" href="#function-length" aria-label="Anchor link for: function-length">Function length</a></h1>
+<p>Keep your functions short.</p>
+<ul>
+<li>There are times violating this rule is the right thing to do but if the function is so long that all of the function can’t fit on your screen you better not be tired so you can remember the context of the part you can’t see.</li>
+<li>It also makes coming back to the code later harder as you need to try work with a bigger context window.</li>
+<li>It also tends to encourage functions that have more than one responsibility.</li>
+</ul>
+<h1 id="deleting-files-on-linux"><a class="zola-anchor" href="#deleting-files-on-linux" aria-label="Anchor link for: deleting-files-on-linux">Deleting files on linux</a></h1>
+<p>Deleting a folder does not kick out (close) any terminals in that folder.
+Technically I didn’t learn that today but I experienced it for the first time today.
+I think presenting this one as a narrative may prove more entertaining and less like random and somewhat useless knowledge.</p>
+<details>
+  <summary>Click to expand!</summary>
+<p>It all started with me trying to create a new <a rel="noopener external" target="_blank" href="https://www.egui.rs/">egui</a> project.
+I decided to use <a rel="noopener external" target="_blank" href="https://github.com/c-git/my_egui_template/tree/main">my template</a> (Note sunset my version of the template wasn’t worth the maintenance costs) which I wrote a setup script for.
+The sequence of events went like this:</p>
+<ul>
+<li>In vscode use <code>Open folder...</code> to create a folder (using the open dialog) and open that folder.</li>
+<li>Open the built in terminal</li>
+<li>Realize I would prefer use a separate terminal (Open one from vscode, because it opens in the correct folder)</li>
+<li>Navigate up one folder and use the <a rel="noopener external" target="_blank" href="https://manpages.ubuntu.com/manpages/jammy/en/man1/trash.1.html">trash</a> program to remove the current folder.</li>
+<li>Use the template setup tool to create a new folder.</li>
+<li>In the built in terminal I saw no files when I did <code>ll</code></li>
+<li>Did a <code>cd ..</code> then went back in and <code>ll</code> now showed the files.</li>
+</ul>
+<p>I’d done a few <code>pwd</code> in between to make sure I was in the folder I expected because zsh doesn’t show the folder in the prompt.
+At first I couldn’t understand what had happened then realized I was still in the folder but that folder was in the trash and thus was still a “valid” folder but not the same as the one I wanted to use even though <code>pwd</code> had the same output.</p>
+<h2 id="steps-to-reproduce"><a class="zola-anchor" href="#steps-to-reproduce" aria-label="Anchor link for: steps-to-reproduce">Steps to reproduce</a></h2>
+<p>To keep it simple, I’ll just demonstrate using two terminal windows</p>
+<h3 id="known-assumptions"><a class="zola-anchor" href="#known-assumptions" aria-label="Anchor link for: known-assumptions">Known assumptions</a></h3>
+<ul>
+<li>Both terminals in the same working director</li>
+<li><code>ll</code> = <code>ls</code> with some args as is default on Ubuntu.</li>
+<li><code>trash</code> program is installed (<code>sudo apt install trash-cli</code>)</li>
+</ul>
+<p>From Terminal 1</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">mkdir</span><span style="color: #9ECBFF;"> folder</span><span> &amp;&amp;</span><span style="color: #79B8FF;"> cd</span><span style="color: #9ECBFF;"> folder</span><span> &amp;&amp;</span><span style="color: #79B8FF;"> pwd</span><span> &amp;&amp;</span><span style="color: #B392F0;"> ll</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">touch</span><span style="color: #9ECBFF;"> apple</span><span> &amp;&amp;</span><span style="color: #B392F0;"> ll</span></span></code></pre>
+<p>From Terminal 2</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">trash</span><span style="color: #9ECBFF;"> folder</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">mkdir</span><span> &amp;&amp;</span><span style="color: #79B8FF;"> cd</span><span style="color: #9ECBFF;"> folder</span><span> &amp;&amp;</span><span style="color: #79B8FF;"> pwd</span><span> &amp;&amp;</span><span style="color: #B392F0;"> ll</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">touch</span><span style="color: #9ECBFF;"> bob</span><span> &amp;&amp;</span><span style="color: #B392F0;"> ll</span></span></code></pre>
+<p>From Terminal 1 (now in the original <code>folder</code> that is in the trash still sees the same output for <code>pwd</code> and <code>ll</code>)</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">touch</span><span style="color: #9ECBFF;"> charlie</span></span>
+<span class="giallo-l"><span style="color: #79B8FF;">pwd</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">ll</span></span></code></pre>
+<p>From Terminal 2 in the “new” <code>folder</code> shows the new contents (bob)</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #79B8FF;">pwd</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">ll</span></span></code></pre>
+<p>If you use <code>rm -r folder</code> instead of trash you can no longer add any files in terminal 1 after that command and the output of <code>ll</code> only shows <code>Total 0</code>.</p>
+</details>
+<h1 id="share-by-default"><a class="zola-anchor" href="#share-by-default" aria-label="Anchor link for: share-by-default">Share by default</a></h1>
+<p>Often making something shared makes it easier for you to access from more places.
+Not everything should be made public and once you do you can’t always take it back but double check before you assume it needs to be private.
+Even if no one else uses it, you might be making it easier for yourself at least.
+(Kinda what this site is about…)</p>
+<h1 id="ctrl-d-to-send-eof"><a class="zola-anchor" href="#ctrl-d-to-send-eof" aria-label="Anchor link for: ctrl-d-to-send-eof">Ctrl + D to send EOF</a></h1>
+<p>I was reading up <a rel="noopener external" target="_blank" href="https://github.com/vi/websocat">websocat</a> while learning how to use websockets and they said I should use <code>Ctrl + D</code> to close.
+So I decided to look it up as that wasn’t a key combination I was familiar with in the terminal.
+Found info on it on <a rel="noopener external" target="_blank" href="https://superuser.com/questions/169051/whats-the-difference-between-c-and-d-for-unix-mac-os-x-terminal">superuser</a> and basically it sends EOF which closes stdin, which can signal to the program that you want to close.
+When used on the terminal it is <strong>a faster way to close the terminal window</strong> than typing exit.</p>
+<h1 id="diataxis"><a class="zola-anchor" href="#diataxis" aria-label="Anchor link for: diataxis">Diátaxis</a></h1>
+<blockquote>
+<p>A systematic approach to technical documentation authoring.</p>
+</blockquote>
+<p>Mentioned to me by <a rel="noopener external" target="_blank" href="https://github.com/robjtede">robjtede @ Actix Web</a></p>
+<details>
+  <summary>Click to expand!</summary>
+<p>Source: <a rel="noopener external" target="_blank" href="https://diataxis.fr/">https://diataxis.fr/</a></p>
+<blockquote>
+<p>Diátaxis is a way of thinking about and doing documentation.</p>
+<p>It prescribes approaches to content, architecture and form that emerge from a systematic approach to understanding the needs of documentation users.</p>
+<p>Diátaxis identifies four distinct needs, and four corresponding forms of documentation - tutorials, how-to guides, technical reference and explanation. It places them in a systematic relationship, and proposes that documentation should itself be organised around the structures of those needs.</p>
+</blockquote>
+<p><a rel="noopener external" target="_blank" href="https://diataxis.fr/"><img src="https://diataxis.fr/_images/diataxis.png" alt="Four Quadrant Image showing types" /></a></p>
+<p>Image Source: <a rel="noopener external" target="_blank" href="https://diataxis.fr/_images/diataxis.png">https://diataxis.fr/_images/diataxis.png</a></p>
+</details>
+<h1 id="importance-of-documentation"><a class="zola-anchor" href="#importance-of-documentation" aria-label="Anchor link for: importance-of-documentation">Importance of Documentation</a></h1>
+<p>It actually comes back to why are you working on the project being documented.
+Is it just to experiment?
+Is it to create a usable artifact that you expect to only be useful for a short period of time?
+At the end of the day we have limited time and need to be conscious of how we choose to use that limited resource.
+The next person (might be you) may be able to figure it out again by looking at the code but you could drastically cut down the time needed if you add documentation.
+So really it’s more about do you expect someone to need to look at the code in the future (again this future might be you), is there any small thing you can do to help them out?
+Sometimes you can re-derive a process but documenting processes I’ve found to be the most important because it’s not always trivial to come up with them again and may end up requiring making the same mistakes again what you’ve already made.</p>
+<h1 id="github-ci-stdin-can-trick-programs"><a class="zola-anchor" href="#github-ci-stdin-can-trick-programs" aria-label="Anchor link for: github-ci-stdin-can-trick-programs">Github CI stdin can trick programs</a></h1>
+<p>If you are using a program in GitHub CI be careful if the program takes a path or stdin because some “smart” programs detect CI as supplying stdin when really it’s not.
+In my case it was ripgrep.
+I needed to specify a path to get it to work eg <code>rg MY_REGEX .</code> where the dot specifies the current folder.
+There is a very good explanation on the <a rel="noopener external" target="_blank" href="https://github.com/BurntSushi/ripgrep/discussions/2241">ripgrep repo</a>.</p>
+
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#function-length">Function length</a>
+        </div>
+        <div>
+          <a href="#deleting-files-on-linux">Deleting files on linux</a>
+        </div>
+        <div class="hpad">
+          <a href="#steps-to-reproduce"><small>- Steps to reproduce</small></a>
+        </div>
+        <div>
+          <a href="#share-by-default">Share by default</a>
+        </div>
+        <div>
+          <a href="#ctrl-d-to-send-eof">Ctrl + D to send EOF</a>
+        </div>
+        <div>
+          <a href="#diataxis">Diátaxis</a>
+        </div>
+        <div>
+          <a href="#importance-of-documentation">Importance of Documentation</a>
+        </div>
+        <div>
+          <a href="#github-ci-stdin-can-trick-programs">Github CI stdin can trick programs</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/misc&#x2F;til.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top">&cuwed;</a>
+</span>
+</body>
+</html>

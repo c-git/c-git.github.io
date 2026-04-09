@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>CLASP | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/misc/clasp/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/misc/clasp/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/misc/clasp/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="CLASP | Chester Wyke" />
+  <meta name="twitter:title" content="CLASP | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-04-26" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/misc/clasp/">CLASP</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> April 17, 2023 <span class="rpad"></span>Updated: April 26, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/misc/">Misc</a> </span>
+
+    
+
+
+<h1 id="new-project-setup"><a class="zola-anchor" href="#new-project-setup" aria-label="Anchor link for: new-project-setup">New project setup</a></h1>
+<ul>
+<li>Create New Repo using Git GUI</li>
+<li>Create Scripts project (On Google Scripts, Sheets, etc.)</li>
+<li>Clone Scripts Project into repo folder using clasp</li>
+</ul>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">clasp</span><span style="color: #9ECBFF;"> clone</span><span style="color: #F97583;"> &lt;</span><span style="color: #9ECBFF;">scriptI</span><span>D</span><span style="color: #F97583;">&gt;</span></span></code></pre>
+<ul>
+<li>Copy Hook and .gitignore from template
+folder <code>repos/zTemplates/clasp/CopyContentsToProjectRoot/</code> or create folder to copy from
+using <a href="https://dev.chester.wykies.com/misc/clasp/CopyContentsToProjectRoot.tar.xz">this zip file</a>.</li>
+</ul>
+<h2 id="steps-if-using-typescript-ts"><a class="zola-anchor" href="#steps-if-using-typescript-ts" aria-label="Anchor link for: steps-if-using-typescript-ts">Steps if using TypeScript (TS)</a></h2>
+<p>This version is was based on the then version of <a rel="noopener external" target="_blank" href="https://developers.google.com/apps-script/guides/typescript">https://developers.google.com/apps-script/guides/typescript</a> which linked out to https://github.com/google/clasp/blob/master/docs/typescript.md but they no longer provide typescript. See excerpt from the github <a rel="noopener external" target="_blank" href="https://github.com/google/clasp#drop-typescript-support">readme</a> below.</p>
+<blockquote>
+<h4 id="drop-typescript-support"><a class="zola-anchor" href="#drop-typescript-support" aria-label="Anchor link for: drop-typescript-support"><a rel="noopener external" target="_blank" href="https://github.com/google/clasp#drop-typescript-support">Drop typescript support</a></a></h4>
+<p>Clasp no longer transpiles typescript code. For typescript projects, use typescript with a bundler like Rollup to transform code prior to pushing with clasp.</p>
+</blockquote>
+<ul>
+<li>Add Type definitions for Apps Script</li>
+</ul>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">npm</span><span style="color: #9ECBFF;"> i</span><span style="color: #79B8FF;"> -S</span><span style="color: #9ECBFF;"> @types/google-apps-script</span></span></code></pre>
+<ul>
+<li>
+<p>Add ts_lib</p>
+<ul>
+<li>Part of wykies</li>
+</ul>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">git</span><span style="color: #9ECBFF;"> submodule add ../ts_lib.git</span></span></code></pre>
+<ul>
+<li>Outside of wykies</li>
+</ul>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">git</span><span style="color: #9ECBFF;"> submodule add git@github.com:wykies/ts_lib.git</span></span></code></pre></li>
+<li>
+<p>(Optional) Use the following command to push and watch the ts files. Watch is not required.</p>
+</li>
+</ul>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">clasp</span><span style="color: #9ECBFF;"> push</span><span style="color: #79B8FF;"> --watch</span></span></code></pre><h3 id="typescript-modules-exports-and-imports"><a class="zola-anchor" href="#typescript-modules-exports-and-imports" aria-label="Anchor link for: typescript-modules-exports-and-imports">TypeScript Modules, exports and imports</a></h3>
+<p>Original Source was: https://github.com/google/clasp/blob/master/docs/typescript.md#the-namespace-statement-workaround but they are <a rel="noopener external" target="_blank" href="https://github.com/google/clasp#drop-typescript-support">dropping typescript support</a>.</p>
+<p>Instead of normal imports use the following as import is not supported in GAS</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="typescript"><span class="giallo-l"><span style="color: #6A737D;">// module.ts</span></span>
+<span class="giallo-l"><span style="color: #F97583;">namespace</span><span style="color: #B392F0;"> MyLib</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    export function</span><span style="color: #B392F0;"> foo</span><span>() {</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #F97583;">    function</span><span style="color: #B392F0;"> bar</span><span>() {</span></span>
+<span class="giallo-l"><span>    }</span><span style="color: #6A737D;">  // this function can only be addressed from within the `MyLib` namespace</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre><pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="typescript"><span class="giallo-l"><span style="color: #6A737D;">// anyFiles.ts</span></span>
+<span class="giallo-l"><span>MyLib.</span><span style="color: #B392F0;">foo</span><span>();</span><span style="color: #6A737D;">  // address a namespace&#39;s exported content directly</span></span></code></pre><h2 id="steps-if-using-javascript-js"><a class="zola-anchor" href="#steps-if-using-javascript-js" aria-label="Anchor link for: steps-if-using-javascript-js">Steps if using Javascript (JS)</a></h2>
+<ul>
+<li>Add js_lib</li>
+</ul>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">git</span><span style="color: #9ECBFF;"> submodule add ../js_lib.git</span></span></code></pre><h1 id="converting-an-existing-javascript-js-project-to-typescript-ts"><a class="zola-anchor" href="#converting-an-existing-javascript-js-project-to-typescript-ts" aria-label="Anchor link for: converting-an-existing-javascript-js-project-to-typescript-ts">Converting an existing Javascript (JS) project to TypeScript (TS)</a></h1>
+<ul>
+<li>Copy over from template to update ignore and hooks <a href="https://dev.chester.wykies.com/misc/clasp/#new-project-setup">last step in new</a></li>
+<li>Remove <code>js_lib</code> if in use see <a href="https://dev.chester.wykies.com/git/submodules/#remove-a-submodule">removal instructions for submodule</a></li>
+<li>Change all <code>.js</code> files to <code>.ts</code> files</li>
+<li>Follow normal instructions from <a href="https://dev.chester.wykies.com/misc/clasp/#steps-if-using-typescript-ts">New TS project</a></li>
+</ul>
+<h1 id="useful-commands"><a class="zola-anchor" href="#useful-commands" aria-label="Anchor link for: useful-commands">Useful Commands</a></h1>
+<ul>
+<li><code>clasp clone &lt;scriptID&gt;</code> <a rel="noopener external" target="_blank" href="https://developers.google.com/apps-script/guides/clasp#clone_an_existing_project">Clone an existing project</a></li>
+<li><code>clasp pull</code> <a rel="noopener external" target="_blank" href="https://developers.google.com/apps-script/guides/clasp#download_a_script_project">Download a script project</a></li>
+<li><code>clasp push</code> <a rel="noopener external" target="_blank" href="https://developers.google.com/apps-script/guides/clasp#upload_a_script_project">Upload a script project</a></li>
+<li><code>clasp open</code> <a rel="noopener external" target="_blank" href="https://developers.google.com/apps-script/guides/clasp#open_the_project_in_the_editor">Open the project in the Apps Script editor</a></li>
+</ul>
+<h1 id="ignore-files"><a class="zola-anchor" href="#ignore-files" aria-label="Anchor link for: ignore-files">Ignore files</a></h1>
+<h2 id="file-location"><a class="zola-anchor" href="#file-location" aria-label="Anchor link for: file-location">File location</a></h2>
+<p>Source: <a rel="noopener external" target="_blank" href="https://github.com/google/clasp#ignore-file-claspignore">https://github.com/google/clasp#ignore-file-claspignore</a></p>
+<p>Put a <code>.claspignore</code> in the root of the project’s directory.
+All paths are relative to root.</p>
+<h2 id="format"><a class="zola-anchor" href="#format" aria-label="Anchor link for: format">Format</a></h2>
+<p>Uses <a rel="noopener external" target="_blank" href="https://github.com/sindresorhus/multimatch">multimatch</a></p>
+<p><a rel="noopener external" target="_blank" href="https://github.com/sindresorhus/multimatch#globbing-patterns">Glob Pattern</a>:</p>
+<ul>
+<li><code>*</code> matches any number of characters, but not /</li>
+<li><code>?</code> matches a single character, but not /</li>
+<li><code>**</code> matches any number of characters, including /, as long as it’s the only thing in a path part</li>
+<li><code>{}</code> allows for a comma-separated list of “or” expressions</li>
+<li><code>!</code> at the beginning of a pattern will negate the match</li>
+</ul>
+<h3 id="example"><a class="zola-anchor" href="#example" aria-label="Anchor link for: example">Example</a></h3>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="plain"><span class="giallo-l"><span>js_lib/**</span></span></code></pre><h1 id="installation"><a class="zola-anchor" href="#installation" aria-label="Anchor link for: installation">Installation</a></h1>
+<p>Source: <a rel="noopener external" target="_blank" href="https://developers.google.com/apps-script/guides/clasp#installation">https://developers.google.com/apps-script/guides/clasp#installation</a></p>
+<p>First install Install <a rel="noopener external" target="_blank" href="https://nodejs.org/en/download/">Node.js</a></p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">npm</span><span style="color: #9ECBFF;"> install @google/clasp</span><span style="color: #79B8FF;"> -g</span></span></code></pre>
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#new-project-setup">New project setup</a>
+        </div>
+        <div class="hpad">
+          <a href="#steps-if-using-typescript-ts"><small>- Steps if using TypeScript (TS)</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#steps-if-using-javascript-js"><small>- Steps if using Javascript (JS)</small></a>
+        </div>
+        <div>
+          <a href="#converting-an-existing-javascript-js-project-to-typescript-ts">Converting an existing Javascript (JS) project to TypeScript (TS)</a>
+        </div>
+        <div>
+          <a href="#useful-commands">Useful Commands</a>
+        </div>
+        <div>
+          <a href="#ignore-files">Ignore files</a>
+        </div>
+        <div class="hpad">
+          <a href="#file-location"><small>- File location</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#format"><small>- Format</small></a>
+        </div>
+        <div>
+          <a href="#installation">Installation</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/misc&#x2F;clasp&#x2F;index.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top">&cuwed;</a>
+</span>
+</body>
+</html>

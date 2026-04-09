@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Cargo | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/rust/cargo/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/rust/cargo/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/rust/cargo/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="Cargo | Chester Wyke" />
+  <meta name="twitter:title" content="Cargo | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-05-11" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> June 16, 2023 <span class="rpad"></span>Updated: May 11, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/rust/">Rust</a> </span>
+
+    
+        <div class="block">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/rust/">Rust (Series)</a><br>
+            <a href="https://dev.chester.wykies.com/rust/conditional-compilation/">Conditional Compilation</a><br>
+            <a href="https://dev.chester.wykies.com/rust/install/">Install</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-serde/">Crate Serde</a><br>
+            <a href="https://dev.chester.wykies.com/rust/refs/">References</a><br>
+            <a class="scur" href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a><br> 
+          
+            <a href="https://dev.chester.wykies.com/rust/toolchain/">Toolchain (Nightly)</a><br>
+            <a href="https://dev.chester.wykies.com/rust/string-formatting/">String Formatting</a><br>
+            <a href="https://dev.chester.wykies.com/rust/time/">Time</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-tokio/">Crate Tokio</a><br>
+            <a href="https://dev.chester.wykies.com/rust/publish-crate/">Publish Crate</a><br>
+            <a href="https://dev.chester.wykies.com/rust/rustfmt/">rustfmt</a><br>
+            <a href="https://dev.chester.wykies.com/rust/scripts/">Single file script</a><br>
+            <a href="https://dev.chester.wykies.com/rust/snippets/">Snippets</a><br>
+            <a href="https://dev.chester.wykies.com/rust/ci/">CI</a><br>
+            <a href="https://dev.chester.wykies.com/rust/pattern-typestate/">Pattern Type State</a><br>
+            <a href="https://dev.chester.wykies.com/rust/wasm/">WASM</a><br>
+            <a href="https://dev.chester.wykies.com/rust/create-new-crate/">Create New Crate</a><br>
+            <a href="https://dev.chester.wykies.com/rust/documentation/">Documentation</a><br>
+            <a href="https://dev.chester.wykies.com/rust/json/">JSON</a><br>
+            <a href="https://dev.chester.wykies.com/rust/pattern-builder/">Pattern Builder</a><br>
+            <a href="https://dev.chester.wykies.com/rust/testing/">Testing</a><br>
+            <a href="https://dev.chester.wykies.com/rust/byte-collections/">Working with collections of bytes</a><br>
+            <a href="https://dev.chester.wykies.com/rust/thoughts/">Thoughts about rust</a><br>
+            <a href="https://dev.chester.wykies.com/rust/areweyet/">Are we yet</a><br>
+            <a href="https://dev.chester.wykies.com/rust/std-once/">OnceLock</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-actix/">Crate Actix Web</a><br>
+            <a href="https://dev.chester.wykies.com/rust/stack-overflow/">Stack Overflow</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-poll-promise/">Crate Poll Promise</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-insta/">Crate Insta</a><br>
+            <a href="https://dev.chester.wykies.com/rust/tips/">Tips</a><br>
+            <a href="https://dev.chester.wykies.com/rust/create-new-egui-project/">Create new egui project</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-csv/">Crate CSV</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-egui/">Crate egui</a><br>
+            <a href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-tracing-subscriber/">Crate Tracing Subscriber</a><br>
+            <a href="https://dev.chester.wykies.com/rust/regex/">Regex</a><br>
+            <a href="https://dev.chester.wykies.com/rust/vscode/">vscode</a><br>
+            <a href="https://dev.chester.wykies.com/rust/enum-conversion/">Enum Conversion</a><br>
+            <a href="https://dev.chester.wykies.com/rust/macros/">Macros</a><br>
+            <a href="https://dev.chester.wykies.com/rust/crate-lettre/">lettre</a><br>
+            <a href="https://dev.chester.wykies.com/rust/google-apis/">Google APIs</a><br>
+      </div>
+    </div>
+
+
+<h1 id="configuring-cargo"><a class="zola-anchor" href="#configuring-cargo" aria-label="Anchor link for: configuring-cargo">Configuring Cargo</a></h1>
+<p>See the <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/config.html#configuration-format">Cargo Reference</a></p>
+<h1 id="frequently-used-commands-and-arguments"><a class="zola-anchor" href="#frequently-used-commands-and-arguments" aria-label="Anchor link for: frequently-used-commands-and-arguments">Frequently Used Commands and arguments</a></h1>
+<p>Source: <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/commands/index.html">https://doc.rust-lang.org/cargo/commands/index.html</a></p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/commands/cargo-doc.html">doc</a>
+<ul>
+<li><code>--document-private-items</code></li>
+<li><code>--no-deps</code></li>
+<li><code>--target-dir</code></li>
+<li><code>--open</code></li>
+</ul>
+</li>
+<li><a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/commands/cargo-run.html">run</a>
+<ul>
+<li><code>--release</code></li>
+<li><code>--bin name</code> (Works with multiple binaries see <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/cargo-targets.html?highlight=bin#binaries">Additional Binaries</a>)</li>
+</ul>
+</li>
+<li><a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/commands/cargo-test.html">test</a>
+<ul>
+<li><code>-- --ignored</code> (Works with <code>#[ignore]</code>
+see <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/reference/attributes/testing.html#the-ignore-attribute">rust reference</a>)</li>
+<li><code>-- --test-threads 1</code></li>
+</ul>
+</li>
+<li><a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/features.html#inspecting-resolved-features">tree</a>
+<ul>
+<li><code>-e features</code></li>
+<li><code>-f "{p} {f}"</code></li>
+<li><code>-e features -i foo</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="cargo-environment-variables"><a class="zola-anchor" href="#cargo-environment-variables" aria-label="Anchor link for: cargo-environment-variables">Cargo Environment Variables</a></h1>
+<h2 id="for-crates"><a class="zola-anchor" href="#for-crates" aria-label="Anchor link for: for-crates">For Crates</a></h2>
+<p>Source: <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/environment-variables.html#environment-variables-cargo-sets-for-crates">https://doc.rust-lang.org/cargo/reference/environment-variables.html#environment-variables-cargo-sets-for-crates</a></p>
+<p>To use environment variables provided by cargo use <code>env!()</code>.</p>
+<p>Example</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span style="color: #B392F0;">println!</span><span>(</span><span style="color: #9ECBFF;">&quot;{}&quot;</span><span>,</span><span style="color: #B392F0;"> env!</span><span>(</span><span style="color: #9ECBFF;">&quot;CARGO_PKG_NAME&quot;</span><span>));</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">println!</span><span>(</span><span style="color: #9ECBFF;">&quot;{}&quot;</span><span>,</span><span style="color: #B392F0;"> env!</span><span>(</span><span style="color: #9ECBFF;">&quot;CARGO_PKG_VERSION&quot;</span><span>));</span></span></code></pre>
+<ul>
+<li>CARGO_PKG_NAME</li>
+<li>CARGO_PKG_VERSION (As an alternative you may use the <a rel="noopener external" target="_blank" href="https://crates.io/crates/version">Version Crate</a>)</li>
+</ul>
+<h1 id="specifying-dependencies"><a class="zola-anchor" href="#specifying-dependencies" aria-label="Anchor link for: specifying-dependencies">Specifying dependencies</a></h1>
+<h2 id="using-git"><a class="zola-anchor" href="#using-git" aria-label="Anchor link for: using-git">Using Git</a></h2>
+<p>Source: <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#specifying-dependencies-from-git-repositories">https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#specifying-dependencies-from-git-repositories</a></p>
+<p>Example</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="toml"><span class="giallo-l"><span>[</span><span style="color: #B392F0;">dependencies</span><span>]</span></span>
+<span class="giallo-l"><span>regex = { git =</span><span style="color: #9ECBFF;"> &quot;https://github.com/rust-lang/regex.git&quot;</span><span>, branch =</span><span style="color: #9ECBFF;"> &quot;next&quot;</span><span> }</span></span></code></pre><h1 id="adding-feature-flag-to-a-library"><a class="zola-anchor" href="#adding-feature-flag-to-a-library" aria-label="Anchor link for: adding-feature-flag-to-a-library">Adding Feature flag to a library</a></h1>
+<p>Source: <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/features.html">https://doc.rust-lang.org/cargo/reference/features.html</a></p>
+<p>Example of defining a feature</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="toml"><span class="giallo-l"><span>[</span><span style="color: #B392F0;">features</span><span>]</span></span>
+<span class="giallo-l"><span>default = [</span><span style="color: #9ECBFF;">&quot;ico&quot;</span><span>,</span><span style="color: #9ECBFF;"> &quot;webp&quot;</span><span>]</span></span>
+<span class="giallo-l"><span>avif = [</span><span style="color: #9ECBFF;">&quot;dep:ravif&quot;</span><span>,</span><span style="color: #9ECBFF;"> &quot;dep:rgb&quot;</span><span>]</span></span>
+<span class="giallo-l"><span>bmp = []</span></span>
+<span class="giallo-l"><span>gif = [</span><span style="color: #9ECBFF;">&quot;dep:gif&quot;</span><span>]</span></span>
+<span class="giallo-l"><span>png = []</span></span>
+<span class="giallo-l"><span>ico = [</span><span style="color: #9ECBFF;">&quot;bmp&quot;</span><span>,</span><span style="color: #9ECBFF;"> &quot;png&quot;</span><span>]</span></span>
+<span class="giallo-l"><span style="color: #6A737D;"># Defines a feature named `webp` that does not enable any other features.</span></span>
+<span class="giallo-l"><span>webp = []</span></span></code></pre>
+<p>Optional dependency</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="toml"><span class="giallo-l"><span>[</span><span style="color: #B392F0;">dependencies</span><span>]</span></span>
+<span class="giallo-l"><span>gif = { version =</span><span style="color: #9ECBFF;"> &quot;0.11.1&quot;</span><span>, optional =</span><span style="color: #79B8FF;"> true</span><span> }</span></span>
+<span class="giallo-l"><span>ravif = { version =</span><span style="color: #9ECBFF;"> &quot;0.6.3&quot;</span><span>, optional =</span><span style="color: #79B8FF;"> true</span><span> }</span></span>
+<span class="giallo-l"><span>rgb = { version =</span><span style="color: #9ECBFF;"> &quot;0.8.25&quot;</span><span>, optional =</span><span style="color: #79B8FF;"> true</span><span> }</span></span></code></pre>
+<p>Example of conditionally compiling based on feature</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span style="color: #6A737D;">// This conditionally includes a module which implements WEBP support.</span></span>
+<span class="giallo-l"><span>#[cfg(feature </span><span style="color: #F97583;">=</span><span style="color: #9ECBFF;"> &quot;webp&quot;</span><span>)]</span></span>
+<span class="giallo-l"><span style="color: #F97583;">pub mod</span><span style="color: #B392F0;"> webp</span><span>;</span></span></code></pre><h1 id="mutually-exclusive-feature-flags"><a class="zola-anchor" href="#mutually-exclusive-feature-flags" aria-label="Anchor link for: mutually-exclusive-feature-flags">Mutually Exclusive Feature Flags</a></h1>
+<p>Source: <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/features.html#mutually-exclusive-features">https://doc.rust-lang.org/cargo/reference/features.html#mutually-exclusive-features</a></p>
+<p><strong>TLDR</strong>: Avoid using mutually exclusive features see source above for options to work around it otherwise detect it at compile time and provide an error message instead of waiting for duplicated functions to stop the compile.</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span>#[cfg(all(feature </span><span style="color: #F97583;">=</span><span style="color: #9ECBFF;"> &quot;foo&quot;</span><span>, feature </span><span style="color: #F97583;">=</span><span style="color: #9ECBFF;"> &quot;bar&quot;</span><span>))]</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">compile_error!</span><span>(</span><span style="color: #9ECBFF;">&quot;feature </span><span style="color: #79B8FF;">\&quot;</span><span style="color: #9ECBFF;">foo</span><span style="color: #79B8FF;">\&quot;</span><span style="color: #9ECBFF;"> and feature </span><span style="color: #79B8FF;">\&quot;</span><span style="color: #9ECBFF;">bar</span><span style="color: #79B8FF;">\&quot;</span><span style="color: #9ECBFF;"> cannot be enabled at the same time&quot;</span><span>);</span></span></code></pre><h1 id="patch-a-crate"><a class="zola-anchor" href="#patch-a-crate" aria-label="Anchor link for: patch-a-crate">Patch a crate</a></h1>
+<p>Source: <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html#testing-a-bugfix">https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html#testing-a-bugfix</a></p>
+<p>The source is sufficiently terse that I don’t find value in extracting relevant parts here other than pointing out the following:</p>
+<blockquote>
+<p>The way [patch] works is that it’ll load the dependency at ../path/to/uuid and then whenever crates.io is queried for versions of uuid it’ll <em>also</em> return the local version.</p>
+<p>This means that the <strong>version number of the local checkout is significant</strong> and will affect whether the patch is used. Our manifest declared uuid = “1.0” which means we’ll only resolve to &gt;= 1.0.0, &lt; 2.0.0, and Cargo’s greedy resolution algorithm also means that we’ll resolve to the maximum version within that range. Typically this doesn’t matter as the version of the git repository will already be greater or match the maximum version published on crates.io, but it’s important to keep this in mind!</p>
+</blockquote>
+<p>Bolding applied is my own.</p>
+<p>If you need to patch often it is worthwhile looking into <a rel="noopener external" target="_blank" href="https://crates.io/crates/cargo-override">cargo-override</a> which automates overriding crates.</p>
+
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/rust/">Series</a><br>
+
+          
+          
+      <a href="https://dev.chester.wykies.com/rust/conditional-compilation/">Conditional Compilation</a><br>
+
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/rust/install/">Install</a><br>
+            </div>
+
+          
+
+          
+            <a href="https://dev.chester.wykies.com/rust/crate-serde/">Crate Serde</a><br>
+            <a href="https://dev.chester.wykies.com/rust/refs/">References</a><br>
+
+          
+            
+      <a class="scur" href="https://dev.chester.wykies.com/rust/cargo/">Cargo</a><br>
+    
+
+          
+            <a href="https://dev.chester.wykies.com/rust/toolchain/">Toolchain (Nightly)</a><br>
+          
+            <a href="https://dev.chester.wykies.com/rust/string-formatting/">String Formatting</a><br>
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/rust/time/">Time</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-tokio/">Crate Tokio</a><br>
+                <a href="https://dev.chester.wykies.com/rust/publish-crate/">Publish Crate</a><br>
+                <a href="https://dev.chester.wykies.com/rust/rustfmt/">rustfmt</a><br>
+                <a href="https://dev.chester.wykies.com/rust/scripts/">Single file script</a><br>
+                <a href="https://dev.chester.wykies.com/rust/snippets/">Snippets</a><br>
+                <a href="https://dev.chester.wykies.com/rust/ci/">CI</a><br>
+                <a href="https://dev.chester.wykies.com/rust/pattern-typestate/">Pattern Type State</a><br>
+                <a href="https://dev.chester.wykies.com/rust/wasm/">WASM</a><br>
+                <a href="https://dev.chester.wykies.com/rust/create-new-crate/">Create New Crate</a><br>
+                <a href="https://dev.chester.wykies.com/rust/documentation/">Documentation</a><br>
+                <a href="https://dev.chester.wykies.com/rust/json/">JSON</a><br>
+                <a href="https://dev.chester.wykies.com/rust/pattern-builder/">Pattern Builder</a><br>
+                <a href="https://dev.chester.wykies.com/rust/testing/">Testing</a><br>
+                <a href="https://dev.chester.wykies.com/rust/byte-collections/">Working with collections of bytes</a><br>
+                <a href="https://dev.chester.wykies.com/rust/thoughts/">Thoughts about rust</a><br>
+                <a href="https://dev.chester.wykies.com/rust/areweyet/">Are we yet</a><br>
+                <a href="https://dev.chester.wykies.com/rust/std-once/">OnceLock</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-actix/">Crate Actix Web</a><br>
+                <a href="https://dev.chester.wykies.com/rust/stack-overflow/">Stack Overflow</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-clap/">Crate Clap</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-poll-promise/">Crate Poll Promise</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-insta/">Crate Insta</a><br>
+                <a href="https://dev.chester.wykies.com/rust/tips/">Tips</a><br>
+                <a href="https://dev.chester.wykies.com/rust/create-new-egui-project/">Create new egui project</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-csv/">Crate CSV</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-egui/">Crate egui</a><br>
+                <a href="https://dev.chester.wykies.com/rust/iterators/">Iterators</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-tracing-subscriber/">Crate Tracing Subscriber</a><br>
+                <a href="https://dev.chester.wykies.com/rust/regex/">Regex</a><br>
+                <a href="https://dev.chester.wykies.com/rust/vscode/">vscode</a><br>
+                <a href="https://dev.chester.wykies.com/rust/enum-conversion/">Enum Conversion</a><br>
+                <a href="https://dev.chester.wykies.com/rust/macros/">Macros</a><br>
+                <a href="https://dev.chester.wykies.com/rust/crate-lettre/">lettre</a><br>
+            </div>
+        
+      <a href="https://dev.chester.wykies.com/rust/google-apis/">Google APIs</a><br>
+
+        
+      </div>
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#configuring-cargo">Configuring Cargo</a>
+        </div>
+        <div>
+          <a href="#frequently-used-commands-and-arguments">Frequently Used Commands and arguments</a>
+        </div>
+        <div>
+          <a href="#cargo-environment-variables">Cargo Environment Variables</a>
+        </div>
+        <div class="hpad">
+          <a href="#for-crates"><small>- For Crates</small></a>
+        </div>
+        <div>
+          <a href="#specifying-dependencies">Specifying dependencies</a>
+        </div>
+        <div class="hpad">
+          <a href="#using-git"><small>- Using Git</small></a>
+        </div>
+        <div>
+          <a href="#adding-feature-flag-to-a-library">Adding Feature flag to a library</a>
+        </div>
+        <div>
+          <a href="#mutually-exclusive-feature-flags">Mutually Exclusive Feature Flags</a>
+        </div>
+        <div>
+          <a href="#patch-a-crate">Patch a crate</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/rust&#x2F;cargo.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top">&cuwed;</a>
+</span>
+</body>
+</html>
