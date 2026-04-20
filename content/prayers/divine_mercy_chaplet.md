@@ -1,7 +1,7 @@
 +++
 title = "Divine Mercy Chaplet"
 date = 2026-03-03
-updated = 2026-04-09
+updated = 2026-04-20
 extra = { series = "Prayers" }
 taxonomies = { tags = ["Prayers"] }
 +++
@@ -15,6 +15,23 @@ I'll keep this page as I already typed it up but I would deferrer any visitors t
 - [Novena](https://www.thedivinemercy.org/message/devotions/novena)
 - [Pray along with Video](https://www.thedivinemercy.org/message/devotions/chaplet) Really moving [The Chaplet of Divine Mercy in Song (Complete)](https://www.youtube.com/watch?v=p5TGfisOKMM).\
   {{ youtube(id="p5TGfisOKMM") }}
+
+<details>
+
+<summary> Lyrics to opening hymn (based on what it sounds like to me)</summary>
+
+Hail to Thee! True body sprung\
+From the Virgin Mary's womb!\
+Same that on the cross was hung\
+Bore for man the bitter doom.\
+Sweet Jesus Mary's son.\
+Thou whose side was pierced and flowed\
+Both with water and with blood;\
+Suffer us to taste of Thee\
+In our life's last agony.\
+Sweet Jesus Mary's son.
+
+</details>
 
 ![Divine Mercy Image][divine_mercy_image]\
 Image credit the <https://www.thedivinemercy.org/> page on: [The Image of The Divine Mercy][image_page]
