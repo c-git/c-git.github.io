@@ -24,12 +24,12 @@ Hail to Thee! True body sprung\
 From the Virgin Mary's womb!\
 Same that on the cross was hung\
 Bore for man the bitter doom.\
-Sweet Jesus Mary's son.\
+Sweet Jesus, Mary's son.\
 Thou whose side was pierced and flowed\
 Both with water and with blood;\
 Suffer us to taste of Thee\
 In our life's last agony.\
-Sweet Jesus Mary's son.
+Sweet Jesus, Mary's son.
 
 </details>
 
