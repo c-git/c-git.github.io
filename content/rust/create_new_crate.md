@@ -1,7 +1,7 @@
 +++
 title="Create New Crate"
 date=2023-11-02
-updated= 2025-04-26
+updated= 2026-04-21
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
@@ -11,7 +11,7 @@ Patterned on: [New Repo Creation](@/git/new_repo.md)
 # Notes
 
 - These instructions assume github with ssh key auth but any would be similar
-- If creating a egui application with eframe I have an opinionated setup with a script at <https://github.com/c-git/my_egui_template> (See readme for more details).
+- If creating a egui application see [Create New egui Project](@/rust/create_new_egui_project.md)
 
 # Instructions
 
