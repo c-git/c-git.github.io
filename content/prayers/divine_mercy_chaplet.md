@@ -1,7 +1,7 @@
 +++
 title = "Divine Mercy Chaplet"
 date = 2026-03-03
-updated = 2026-04-20
+updated = 2026-04-29
 extra = { series = "Prayers" }
 taxonomies = { tags = ["Prayers"] }
 +++
@@ -18,23 +18,34 @@ I'll keep this page as I already typed it up but I would deferrer any visitors t
 
 <details>
 
-<summary> Lyrics to opening hymn (based on what it sounds like to me)</summary>
+<summary> Lyrics to opening hymn (based on what it sounds like to me) and closing prayer</summary>
 
-Hail to Thee! True body sprung\
-From the Virgin Mary's womb!\
-Same that on the cross was hung\
-Bore for man the bitter doom.\
-Sweet Jesus, Mary's son.\
-Thou whose side was pierced and flowed\
-Both with water and with blood;\
-Suffer us to taste of Thee\
-In our life's last agony.\
-Sweet Jesus, Mary's son.
+- **Lyrics to opening hymn**
+  Hail to Thee! True body sprung\
+  From the Virgin Mary's womb!\
+  Same that on the cross was hung\
+  Bore for man the bitter doom.\
+  Sweet Jesus, Mary's son.\
+  Thou whose side was pierced and flowed\
+  Both with water and with blood;\
+  Suffer us to taste of Thee\
+  In our life's last agony.\
+  Sweet Jesus, Mary's son.
+
+- **Closing Song**\
+  Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world. (x3)
+
+- **Closing prayer** (Not included in video)\
+  Eternal God, in whom mercy is endless,\
+  and the treasury of compassion inexhaustible,\
+  look kindly upon us,\
+  and increase Your mercy in us,\
+  that in difficult moments,\
+  we might not despair, nor become despondent,\
+  but with great confidence, submit ourselves to Your holy will,\
+  which is Love and Mercy Itself. Amen.
 
 </details>
-
-![Divine Mercy Image][divine_mercy_image]\
-Image credit the <https://www.thedivinemercy.org/> page on: [The Image of The Divine Mercy][image_page]
 
 ---
 
