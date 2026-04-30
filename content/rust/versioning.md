@@ -7,7 +7,7 @@ taxonomies = { tags = ["Rust"] }
 
 # General tips
 
-- The cargo book has a great [section on semver](https://doc.rust-lang.org/cargo/reference/semver.html) that gives examples different types of changes. Note: breaking changes require a bump of the first non-zero version number. That is what cargo looks for to determine incompatibility.
+- The cargo book has a great [section on semver](https://doc.rust-lang.org/cargo/reference/semver.html) that gives examples of different types of changes. Note: breaking changes require a bump of the first non-zero version number. That is what cargo looks for to determine incompatibility.
 - If you are releasing a library I highly recommend using [cargo-semver-checks](https://crates.io/crates/cargo-semver-checks) to help detect breaking changes. It's not perfect but it's always improving and is IMO a minimum amount of checking for libraries.
 
 # Opinions on when to bump version numbers
