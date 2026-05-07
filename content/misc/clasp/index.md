@@ -8,7 +8,7 @@ aliases=["/git/new-clasp"]
 
 # New project setup
 
-- Create New Repo using Git GUI
+- Create new git repo (see [instructions](@/git/new_repo.md) if needed)
 - Create Scripts project (On Google Scripts, Sheets, etc.)
 - Clone Scripts Project into repo folder using clasp
 
