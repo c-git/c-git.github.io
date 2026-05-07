@@ -1,8 +1,9 @@
 +++
 title='CLASP'
 date = 2023-04-17
-updated = 2025-04-26
+updated = 2026-05-07
 taxonomies = { tags = ["Misc"] }
+aliases=["/git/new-clasp"]
 +++
 
 # New project setup
