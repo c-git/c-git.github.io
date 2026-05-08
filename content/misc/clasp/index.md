@@ -49,18 +49,14 @@ In particular you will need:
 
 ## Additional Steps for Wykies Library
 
-- From inside of the `src` folder
-  ```sh
-  cd src
-  ```
 - [ ] Add ts_lib
   - Part of wykies
   ```sh
-  git submodule add ../ts_lib.git
+  git submodule add ../ts_lib.git src/ts_lib
   ```
   - Outside of wykies
   ```sh
-  git submodule add git@github.com:wykies/ts_lib.git
+  git submodule add git@github.com:wykies/ts_lib.git src/ts_lib
   ```
 
 # Converting an existing Javascript (JS) project to TypeScript (TS)
