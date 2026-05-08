@@ -1,40 +1,55 @@
 +++
 title='CLASP'
 date = 2023-04-17
-updated = 2026-05-07
+updated = 2026-05-08
 taxonomies = { tags = ["Misc"] }
 aliases=["/git/new-clasp"]
 +++
 
+{{ enable_checkboxes() }}
+
+# Setup
+
+If this is your first time using clasp or first time on a new computer the best instructions to get started can be found in the Readme of the project it self at <https://github.com/google/clasp>
+
+In particular you will need:
+
+- To install [Node.js](https://nodejs.org/en/download/)
+- To install clasp
+  ```sh
+  npm install -g @google/clasp
+  ```
+- And the enable the to use the Google Apps Script API: <https://script.google.com/home/usersettings>
+
+# How to use
+
+- Once everything has been setup (ie. both [Setup](@/misc/clasp/index.md#setup) and [New project setup](@/misc/clasp/index.md#new-project-setup) are completed)
+- Edit your code inside of the `src` folder then use `npm run deploy` to upload to the cloud
+- See other commands in `package.json`
+- You can use clasp normally as the `rootDir` is set but you need to bundle the typescript first so you would need to use `npm run build`.
+
 # New project setup
 
-- Create new git repo (see [instructions](@/git/new_repo.md) if needed)
-- Create Scripts project (On Google Scripts, Sheets, etc.)
-- Clone Scripts Project into repo folder using clasp
+- [ ] Create new git repo from the [template repo](template_repo) (big green button on top right)
+- [ ] Create Google Apps Script project (On Standalone, Sheets, etc.)
+- [ ] Clone Scripts Project into an **EMPTY FOLDER** using clasp (We won't be keeping this folder we just need two files from the clone)
+  ```sh
+  clasp clone <scriptID>
+  ```
+- [ ] Copy/Move `.clasp.json` and `appsscript.json` into the root of the repo created from the template.
+- [ ] You may delete the temporary folder at this point
+- [ ] Edit `.clasp.json` to set the `rootDir` to `dist`
+  ```json
+  "rootDir": "dist",
+  ```
+- [ ] Install npm dependencies
+  ```sh
+  npm install
+  ```
 
-```sh
-clasp clone <scriptID>
-```
+## Additional Steps for Wykies Library
 
-- Copy Hook and .gitignore from template
-  folder `repos/zTemplates/clasp/CopyContentsToProjectRoot/` or create folder to copy from
-  using [this zip file](CopyContentsToProjectRoot.tar.xz).
-
-## Steps if using TypeScript (TS)
-
-This version is was based on the then version of <https://developers.google.com/apps-script/guides/typescript> which linked out to https://github.com/google/clasp/blob/master/docs/typescript.md but they no longer provide typescript. See excerpt from the github [readme][drop_clasp_typescript] below.
-
-> #### [Drop typescript support][drop_clasp_typescript]
->
-> Clasp no longer transpiles typescript code. For typescript projects, use typescript with a bundler like Rollup to transform code prior to pushing with clasp.
-
-- Add Type definitions for Apps Script
-
-```sh
-npm i -S @types/google-apps-script
-```
-
-- Add ts_lib
+- [ ] Add ts_lib
   - Part of wykies
 
   ```sh
@@ -47,55 +62,13 @@ npm i -S @types/google-apps-script
   git submodule add git@github.com:wykies/ts_lib.git
   ```
 
-- (Optional) Use the following command to push and watch the ts files. Watch is not required.
-
-```sh
-clasp push --watch
-```
-
-### TypeScript Modules, exports and imports
-
-Original Source was: https://github.com/google/clasp/blob/master/docs/typescript.md#the-namespace-statement-workaround but they are [dropping typescript support][drop_clasp_typescript].
-
-Instead of normal imports use the following as import is not supported in GAS
-
-```ts
-// module.ts
-namespace MyLib {
-    export function foo() {
-    }
-
-    function bar() {
-    }  // this function can only be addressed from within the `MyLib` namespace
-}
-```
-
-```ts
-// anyFiles.ts
-MyLib.foo();  // address a namespace's exported content directly
-```
-
-## Steps if using Javascript (JS)
-
-- Add js_lib
-
-```sh
-git submodule add ../js_lib.git
-```
-
 # Converting an existing Javascript (JS) project to TypeScript (TS)
 
-- Copy over from template to update ignore and hooks [last step in new](@/misc/clasp/index.md#new-project-setup)
-- Remove `js_lib` if in use see [removal instructions for submodule](@/git/submodules.md#remove-a-submodule)
-- Change all `.js` files to `.ts` files
-- Follow normal instructions from [New TS project](@/misc/clasp/index.md#steps-if-using-typescript-ts)
-
-# Useful Commands
-
-- `clasp clone <scriptID>` [Clone an existing project](https://developers.google.com/apps-script/guides/clasp#clone_an_existing_project)
-- `clasp pull` [Download a script project](https://developers.google.com/apps-script/guides/clasp#download_a_script_project)
-- `clasp push` [Upload a script project](https://developers.google.com/apps-script/guides/clasp#upload_a_script_project)
-- `clasp open` [Open the project in the Apps Script editor](https://developers.google.com/apps-script/guides/clasp#open_the_project_in_the_editor)
+- [ ] Move files into a directory called `src`
+- [ ] Remove `js_lib` if in use see [removal instructions for submodule](@/git/submodules.md#remove-a-submodule)
+- [ ] Change all `.js` files to `.ts` files
+- [ ] Download
+- [ ] Follow normal instructions from [New TS project](@/misc/clasp/index.md##additional-steps-for-wykies-library)
 
 # Ignore files
 
@@ -124,14 +97,4 @@ Uses [multimatch](https://github.com/sindresorhus/multimatch)
 js_lib/**
 ```
 
-# Installation
-
-Source: <https://developers.google.com/apps-script/guides/clasp#installation>
-
-First install Install [Node.js](https://nodejs.org/en/download/)
-
-```sh
-npm install @google/clasp -g
-```
-
-[drop_clasp_typescript]: https://github.com/google/clasp#drop-typescript-support
+[template_repo]: https://github.com/c-git/clasp_minimal_typescript
