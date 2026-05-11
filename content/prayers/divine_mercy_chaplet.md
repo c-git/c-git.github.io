@@ -1,7 +1,7 @@
 +++
 title = "Divine Mercy Chaplet"
 date = 2026-03-03
-updated = 2026-04-29
+updated = 2026-05-11
 extra = { series = "Prayers" }
 taxonomies = { tags = ["Prayers"] }
 +++
@@ -20,7 +20,7 @@ I'll keep this page as I already typed it up but I would deferrer any visitors t
 
 <summary> Lyrics to opening hymn (based on what it sounds like to me) and closing prayer</summary>
 
-- **Lyrics to opening hymn**
+- **Lyrics to opening hymn**\
   Hail to Thee! True body sprung\
   From the Virgin Mary's womb!\
   Same that on the cross was hung\
