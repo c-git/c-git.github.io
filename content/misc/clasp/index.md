@@ -1,7 +1,7 @@
 +++
 title='CLASP'
 date = 2023-04-17
-updated = 2026-05-08
+updated = 2026-05-11
 taxonomies = { tags = ["Misc"] }
 aliases=["/git/new-clasp"]
 +++
@@ -30,7 +30,7 @@ In particular you will need:
 
 # New project setup
 
-- [ ] Create new git repo from the [template repo](template_repo) (big green button on top right)
+- [ ] Create new git repo from the [template repo][template_repo] (big green button on top right)
 - [ ] Create Google Apps Script project (On Standalone, Sheets, etc.)
 - [ ] Clone Scripts Project into an **EMPTY FOLDER** using clasp (We won't be keeping this folder we just need two files from the clone)
   ```sh
