@@ -1,17 +1,20 @@
 +++
 title="Time"
 date=2023-08-15
-updated = 2025-04-26
+updated = 2026-05-15
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
 
 # Standard Library
 
-Unless you're only measuring duration you're probably going to want to reach for chrono. See example below of how to measure duration.
-Note that duration does **NOT** keep counting if the computer goes to sleep (The time while the computer is suspended does not count).
+Unless you're only measuring duration you're probably going to want to reach for a create for more full date/time support. See example below of how to measure duration.
+
+Chrono is now soft deprecated (See [message](https://github.com/chronotope/chrono/issues/1301#issuecomment-4321773137) from maintainer), I'm moving to [jiff](https://docs.rs/jiff/latest/) as it's very easy to use and fits well in all use cases I've wanted to use it.
 
 ## Measure duration
+
+**Note:**: duration does **NOT** keep counting if the computer goes to sleep (The time while the computer is suspended does not count).
 
 ```rust
 use std::time::{Duration, Instant};
@@ -52,9 +55,9 @@ match UNIX_EPOCH.elapsed() {
 
 # Display current date/time
 
+<details>
+<summary>See previous example that used chrono</summary>
 Source: <https://rust-lang-nursery.github.io/rust-cookbook/datetime/parse.html#display-formatted-date-and-time>
-
-See [Formatting Syntax](#formatting-syntax) for more details on options regarding formatting.
 
 ```rust
 fn main() { 
@@ -66,8 +69,30 @@ fn main() {
 }
 ```
 
+---
+
+</details>
+
+See [Formatting Syntax](#formatting-syntax) for more details on options regarding formatting.
+
+```rust
+fn main() {
+    let now_zoned = jiff::Zoned::now();
+    println!("Now in the detected timezone is: {now_zoned}");
+    // Prints something like:
+    // Now in the detected timezone is: 2026-05-15T13:30:31.200583642-04:00[America/New_York]
+
+    let now_civil = now_zoned.datetime();
+    println!("civil::DateTime capture the date and time but not the timezone: {now_civil}");
+    // Prints something like:
+    // civil::DateTime capture the date and time but not the timezone: 2026-05-15T13:30:31.200583642
+}
+```
+
 # Convert between timezones
 
+<details>
+<summary>See previous example that used chrono</summary>
 Source: <https://stackoverflow.com/questions/28747694/how-do-i-convert-a-chrono-datetimeutc-instance-to-datetimelocal>
 
 ```rust
@@ -79,7 +104,29 @@ fn main() {
 }
 ```
 
+---
+
+</details>
+
+See the documentation on [jiff::Zoned::now()](https://docs.rs/jiff/latest/jiff/struct.Zoned.html#method.now) if you don't need to start off in the current timezone as you can start with just a timestamp and avoid the lookup for local.
+
+```rust
+fn main() -> Result<(), jiff::Error> {
+    let local = jiff::Zoned::now();
+    let utc = local.in_tz("UTC")?;
+    println!("Local time now is: {local}");
+    println!("UTC time now is: {utc}");
+    // Prints something like
+    // Local time now is: 2026-05-15T13:39:41.211169613-04:00[America/New_York]
+    // UTC time now is: 2026-05-15T17:39:41.211169613+00:00[UTC]
+    Ok(())
+}
+```
+
 # In WASM
+
+<details>
+<summary>See previous example that used chrono</summary>
 
 Source: <https://timclicks.dev/tip/convert-a-unix-timestamp-to-rust>
 
@@ -125,7 +172,27 @@ fn now_date_time_as_string_native_only() -> String {
 }
 ```
 
+---
+
+</details>
+
+If you are targeting the browser then you only need to enable the `js` feature in jiff and the same code works. If you don't enable it you actually get a really good error message. I was pleasantly surprised. It wasn't a stack trace from deep in the bowels of the standard library.
+
+```rust
+fn main() {
+    println!("The date and time now is {}", now_date_time_as_string());
+}
+
+fn now_date_time_as_string() -> String {
+    let now = jiff::Zoned::now();
+    now.strftime("%F %T").to_string()
+}
+```
+
 # Formatting syntax
+
+<details>
+<summary>See previous example that used chrono</summary>
 
 See [docs.rs](https://docs.rs/chrono/latest/chrono/format/strftime/index.html#specifiers) for full details
 
@@ -139,7 +206,26 @@ Excerpt from docs.rs
 | %a    |           Sun           | Abbreviated weekday name. Always 3 letters.                            |
 | %A    |         Sunday          | Full weekday name. Also accepts corresponding abbreviation in parsing. |
 
+---
+
+</details>
+
+See [docs](https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html#conversion-specifications)
+
+Excerpt from docs.rs
+
+| Spec.  |          Example          | Description                                                                   |
+| :----- | :-----------------------: | :---------------------------------------------------------------------------- |
+| %F     |        2024-07-14         | Equivalent to %Y-%m-%d.                                                       |
+| %T     |         23:30:59          | Equivalent to %H:%M:%S.                                                       |
+| %c     | 2024 M07 14, Sun 17:31:59 | The date and clock time via [Custom][custom]. Supported when formatting only. |
+| %A, %a |        Sunday, Sun        | The full and abbreviated weekday, respectively.                               |
+
 ## Example usage
+
+<details>
+
+<summary>See previous example that used chrono</summary>
 
 Source: <https://docs.rs/chrono/latest/chrono/offset/struct.Local.html#method.now>
 
@@ -184,3 +270,37 @@ now_fixed_offset: 2023-11-06 18:08:19.700585376 +00:00
 offset: +05:00
 now_with_offset: 2023-11-06 23:08:19.700591966 +05:00
 ```
+
+---
+
+</details>
+
+```rust
+fn main() -> Result<(), jiff::Error> {
+    // Current local time
+    let now = jiff::Zoned::now();
+    println!("Formatted output: {}", now.strftime("%Y-%m-%d %H:%M:%S"));
+    println!("now: {now}");
+
+    // Current local date
+    let today = now.date();
+    println!("today: {today}");
+
+    // Current time in some timezone (let's use the time in Dominica)
+    // If you don't need to start with the local time you can start with a timestamp (See section above called "Convert between timezones")
+    let dominica_time = now.in_tz("America/Dominica")?;
+    println!("Dominica Time: {dominica_time}");
+    Ok(())
+}
+```
+
+Output:
+
+```
+Formatted output: 2026-05-15 14:12:06
+now: 2026-05-15T14:12:06.779365104-04:00[America/New_York]
+today: 2026-05-15
+Dominica Time: 2026-05-15T14:12:06.779365104-04:00[America/Dominica]
+```
+
+[custom]: https://docs.rs/jiff/latest/jiff/fmt/strtime/trait.Custom.html
