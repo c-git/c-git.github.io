@@ -1,7 +1,7 @@
 +++
 title = "Divine Mercy Chaplet"
 date = 2026-03-03
-updated = 2026-05-11
+updated = 2026-05-17
 extra = { series = "Prayers" }
 taxonomies = { tags = ["Prayers"] }
 +++
@@ -18,7 +18,9 @@ I'll keep this page as I already typed it up but I would deferrer any visitors t
 
 <details>
 
-<summary> Lyrics to opening hymn (based on what it sounds like to me) and closing prayer</summary>
+<summary> Lyrics, and prayer versions used in video</summary>
+
+These are based on what it sounds like to me.
 
 - **Lyrics to opening hymn**\
   Hail to Thee! True body sprung\
@@ -31,6 +33,27 @@ I'll keep this page as I already typed it up but I would deferrer any visitors t
   Suffer us to taste of Thee\
   In our life's last agony.\
   Sweet Jesus, Mary's son.
+
+- **The Apostle's Creed** (version said in the video)\
+  I believe in God,\
+  the Father almighty,\
+  Creator of Heaven and earth,\
+  I believe in Jesus Christ,\
+  His only Son, our Lord,\
+  He was conceived by the power of the Holy Spirit,\
+  and born of the Virgin Mary,\
+  He suffered under Pontius Pilate,\
+  was crucified, died, and was buried;\
+  He descended to the dead;\
+  on the third day He rose again;\
+  He ascended into Heaven,\
+  and is seated at the right hand of the Father.\
+  He will come again to judge the living and the dead.\
+  I believe in the Holy Spirit, the holy catholic Church,\
+  the communion of Saints,\
+  the forgiveness of sins,\
+  the resurrection of the body,\
+  and the life everlasting. Amen.
 
 - **Closing Song**\
   Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world. (x3)
