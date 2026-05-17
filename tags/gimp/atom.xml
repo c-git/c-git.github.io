@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - GIMP</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/gimp/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-10-09T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/gimp/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Reset window</title>
+        <published>2023-06-05T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/gimp/reset-window/"/>
+        <id>https://dev.chester.wykies.com/gimp/reset-window/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/gimp/reset-window/">&lt;h1 id=&quot;reset-window&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#reset-window&quot; aria-label=&quot;Anchor link for: reset-window&quot;&gt;Reset window&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;033byQ9c-Nw?t=44&quot;&gt;https:&#x2F;&#x2F;youtu.be&#x2F;033byQ9c-Nw?t=44&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Test on Ubuntu 22.04&lt;&#x2F;p&gt;
+&lt;p&gt;The video also includes how to reset other parts.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;code&gt;Edit&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;Preferences&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Then &lt;code&gt;Interface&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;Window Management&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Click button at bottom that says &lt;code&gt;Reset Saved Window Positions to Default Values&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Transparent background</title>
+        <published>2023-06-05T00:00:00+00:00</published>
+        <updated>2025-10-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/gimp/transparent/"/>
+        <id>https://dev.chester.wykies.com/gimp/transparent/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/gimp/transparent/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;nl2uqKqbryo&quot;&gt;https:&#x2F;&#x2F;youtu.be&#x2F;nl2uqKqbryo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right click the channel on the right and click &lt;code&gt;Add alpha channel&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Select the area (&lt;strong&gt;See note below&lt;&#x2F;strong&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Press Delete&lt;&#x2F;li&gt;
+&lt;li&gt;Save in supported format like png&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;strong&gt;How to do selection&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;gimp&#x2F;transparent&#x2F;scrshot.png&quot; alt=&quot;Screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If the background is not contiguous but is the same color it goes &lt;strong&gt;A LOT&lt;&#x2F;strong&gt; faster to use &lt;code&gt;Select by Colour Tool&lt;&#x2F;code&gt; instead of &lt;code&gt;Fuzzy Select&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;NB: There is an alternative approach with manual selection of parts to be removed that can be found here &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;C0tg2mRroSY&quot;&gt;https:&#x2F;&#x2F;youtu.be&#x2F;C0tg2mRroSY&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

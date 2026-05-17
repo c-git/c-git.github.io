@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Leetcode | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/misc/leetcode/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/misc/leetcode/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/misc/leetcode/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="Leetcode | Chester Wyke" />
+  <meta name="twitter:title" content="Leetcode | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-10-24" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/misc/leetcode/">Leetcode</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> March 24, 2025 <span class="rpad"></span>Updated: October 24, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/misc/">Misc</a> </span>
+
+    
+
+
+<p>I quite enjoy doing leetcode as small contained puzzles that are easy to verify.
+It’s also pretty good for trying out a new language in some regards.
+This page is a collection of resources for various purposes:</p>
+<h1 id="problem-solving-tips-and-notes"><a class="zola-anchor" href="#problem-solving-tips-and-notes" aria-label="Anchor link for: problem-solving-tips-and-notes">Problem solving tips and notes</a></h1>
+<p>This is a list of tips I want to remember.
+It’s likely that there is a more comprehensive list somewhere but I haven’t looked for it.
+There are just small techniques to apply.
+Not really a full pattern but just a way to reframe problems.
+If you know of a comprehensive list of techniques like these please tell me about it.
+I’ll check it out and link to it if I find it good.
+I included an example problem where the technique applies.</p>
+<h2 id="try-brute-force"><a class="zola-anchor" href="#try-brute-force" aria-label="Anchor link for: try-brute-force">Try brute force</a></h2>
+<details>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/path-sum-iii/description/">437. Path Sum III</a></li>
+</ul>
+<p>Coding up brute force is a good starting point but a better starting point is just typing out or writing up what you need to keep track of to solve it as a human.
+Add “digital” constraints like only looking at one variable at a time and then try to solve and see where you have repeated work and things like that which could cause the optimal solution to fall out.
+In the example problem once I <a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=zraEXluZLj0">looked at Deepti</a> manually solve it, the solution became obvious and I wasn’t stuck anymore.</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/longest-repeating-character-replacement">424. Longest Repeating Character Replacement</a></li>
+</ul>
+<p>Also note where information you track gets used.
+Is this example, <a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=gqXU1UyA8pk">Neetcode</a> was able to drop the constant 26 in the <code>O(26n)</code> down to 1 by tracking the max frequency.
+This works (also explained in the video) because the only time we can increase the result is when we find a new max.
+Before that it really doesn’t matter, so having a max that is too high does not have negative side effects.</p>
+</details>
+<h2 id="tips-for-detecting-dp"><a class="zola-anchor" href="#tips-for-detecting-dp" aria-label="Anchor link for: tips-for-detecting-dp">Tips for detecting DP</a></h2>
+<details>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/word-break/description/">139. Word Break</a></li>
+</ul>
+<p>I eventually solved the problem by patterning on <a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=TK9pptFzH-A">Deepti’s solution</a>.
+What I think I missed is that even though because of how the question is constructed the ways must be tried, brute force even with a trie would be too slow as it’s exponential.</p>
+<p><strong>Lesson:</strong> If the ways really must be tried and trying them is exponential, it’s likely a dynamic programming (DP) problem.</p>
+</details>
+<h2 id="rearrange-formulas-especially-if-modulus-is-involved-think-of-operations-closed-under-modulus"><a class="zola-anchor" href="#rearrange-formulas-especially-if-modulus-is-involved-think-of-operations-closed-under-modulus" aria-label="Anchor link for: rearrange-formulas-especially-if-modulus-is-involved-think-of-operations-closed-under-modulus">Rearrange formulas (especially if modulus is involved - think of operations closed under modulus (+,-,*))</a></h2>
+<details>
+<p>Source: Taken from Hint #2 for problem.</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/count-number-of-bad-pairs/">2364. Count Number of Bad Pairs</a></li>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/count-of-interesting-subarrays/">2845. Count of Interesting Subarrays</a></li>
+</ul>
+<p>Check to see if formulas in question can be rearranged into one that is easier to optimize for</p>
+<blockquote>
+<p>Notice that (j - i != nums[j] - nums[i]) is the same as (nums[i] - i != nums[j] - j).</p>
+</blockquote>
+</details>
+<h2 id="consider-partition-point"><a class="zola-anchor" href="#consider-partition-point" aria-label="Anchor link for: consider-partition-point">Consider <code>partition_point</code></a></h2>
+<details>
+<p>Inspired by: <a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=TjthKf7Mc_8">https://www.youtube.com/watch?v=TjthKf7Mc_8</a></p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/search-in-rotated-sorted-array">33. Search in Rotated Sorted Array</a></li>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array">34. Find First and Last Position of Element in Sorted Array</a></li>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/binary-search">704. Binary Search</a></li>
+</ul>
+<p>When you need binary search consider using <code>partition_point</code> function from <a rel="noopener external" target="_blank" href="https://doc.rust-lang.org/std/primitive.slice.html#method.partition_point">rust std</a>. If it’s not allowed manually implement as below.</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span style="color: #6A737D;">/// Returns the index of the partition point according to the given predicate (the index of the first element of the second partition).</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">/// See &lt;https://doc.rust-lang.org/std/primitive.slice.html#method.partition_point&gt; for more info</span></span>
+<span class="giallo-l"><span style="color: #F97583;">fn</span><span style="color: #B392F0;"> partition_point</span><span>&lt;</span><span style="color: #B392F0;">T</span><span>&gt;(arr</span><span style="color: #F97583;">: &amp;</span><span>[</span><span style="color: #B392F0;">T</span><span>], is_left_half</span><span style="color: #F97583;">: impl</span><span style="color: #B392F0;"> Fn</span><span>(</span><span style="color: #F97583;">&amp;</span><span style="color: #B392F0;">T</span><span>)</span><span style="color: #F97583;"> -&gt;</span><span style="color: #B392F0;"> bool</span><span>)</span><span style="color: #F97583;"> -&gt;</span><span style="color: #B392F0;"> usize</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    let mut</span><span> size</span><span style="color: #F97583;"> =</span><span> arr</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">len</span><span>();</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    if</span><span> size</span><span style="color: #F97583;"> ==</span><span style="color: #79B8FF;"> 0</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        return</span><span style="color: #79B8FF;"> 0</span><span>;</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    let mut</span><span> base</span><span style="color: #F97583;"> =</span><span style="color: #79B8FF;"> 0</span><span style="color: #B392F0;">usize</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    while</span><span> size</span><span style="color: #F97583;"> &gt;</span><span style="color: #79B8FF;"> 1</span><span> {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        let</span><span> half</span><span style="color: #F97583;"> =</span><span> size</span><span style="color: #F97583;"> /</span><span style="color: #79B8FF;"> 2</span><span>;</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        let</span><span> mid</span><span style="color: #F97583;"> =</span><span> base</span><span style="color: #F97583;"> +</span><span> half;</span></span>
+<span class="giallo-l"><span>        base</span><span style="color: #F97583;"> = if</span><span style="color: #B392F0;"> is_left_half</span><span>(</span><span style="color: #F97583;">&amp;</span><span>arr[mid]) { mid }</span><span style="color: #F97583;"> else</span><span> { base };</span></span>
+<span class="giallo-l"><span>        size</span><span style="color: #F97583;"> -=</span><span> half;</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    if</span><span style="color: #B392F0;"> is_left_half</span><span>(</span><span style="color: #F97583;">&amp;</span><span>arr[base]) {</span></span>
+<span class="giallo-l"><span>        base</span><span style="color: #F97583;"> +</span><span style="color: #79B8FF;"> 1</span></span>
+<span class="giallo-l"><span>    }</span><span style="color: #F97583;"> else</span><span> {</span></span>
+<span class="giallo-l"><span>        base</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre></details>
+<h2 id="be-comfortable-with-permutations"><a class="zola-anchor" href="#be-comfortable-with-permutations" aria-label="Anchor link for: be-comfortable-with-permutations">Be comfortable with permutations</a></h2>
+<details>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/permutations/">46. Permutations</a></li>
+</ul>
+<p>Sometimes brute force is what the question wants.
+I prefer <a rel="noopener external" target="_blank" href="https://en.wikipedia.org/wiki/Heap%27s_algorithm">Heap’s Algorithm</a> but it’s too difficult to memorize.
+So instead I think the iterative solution from the video is the easiest to remember without feeling too icky</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span style="color: #6A737D;">/// Based on https://www.youtube.com/watch?v=FZe0UqISmUw</span></span>
+<span class="giallo-l"><span style="color: #F97583;">pub fn</span><span style="color: #B392F0;"> permute</span><span>(nums</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> Vec</span><span>&lt;</span><span style="color: #B392F0;">i32</span><span>&gt;)</span><span style="color: #F97583;"> -&gt;</span><span style="color: #B392F0;"> Vec</span><span>&lt;</span><span style="color: #B392F0;">Vec</span><span>&lt;</span><span style="color: #B392F0;">i32</span><span>&gt;&gt; {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    let mut</span><span> result</span><span style="color: #F97583;"> =</span><span style="color: #B392F0;"> vec!</span><span>[</span><span style="color: #B392F0;">vec!</span><span>[]];</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #6A737D;">    // For each number insert it into each position in the previous solutions</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">    // Including at the end</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    for</span><span> num</span><span style="color: #F97583;"> in</span><span> nums {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        let mut</span><span> new_result</span><span style="color: #F97583;"> =</span><span style="color: #B392F0;"> vec!</span><span>[];</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        for</span><span> prev_result_val</span><span style="color: #F97583;"> in</span><span> result {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            for</span><span> i</span><span style="color: #F97583;"> in</span><span style="color: #79B8FF;"> 0</span><span style="color: #F97583;">..=</span><span>prev_result_val</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">len</span><span>() {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">                let mut</span><span> clone</span><span style="color: #F97583;"> =</span><span> prev_result_val</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">clone</span><span>();</span></span>
+<span class="giallo-l"><span>                clone</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">insert</span><span>(i, num);</span></span>
+<span class="giallo-l"><span>                new_result</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">push</span><span>(clone);</span></span>
+<span class="giallo-l"><span>            }</span></span>
+<span class="giallo-l"><span>        }</span></span>
+<span class="giallo-l"><span>        result</span><span style="color: #F97583;"> =</span><span> new_result;</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    result</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre></details>
+<h2 id="be-comfortable-with-subsets"><a class="zola-anchor" href="#be-comfortable-with-subsets" aria-label="Anchor link for: be-comfortable-with-subsets">Be comfortable with subsets</a></h2>
+<details>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://leetcode.com/problems/subsets">78. Subsets</a></li>
+</ul>
+<p>Note that this is not subarrays.
+Similarly to <a href="https://dev.chester.wykies.com/misc/leetcode/#be-comfortable-with-permutations">permutations</a> an iterative approach can be used to just add all numbers to the end only instead of all positions like permutations.</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="rust"><span class="giallo-l"><span style="color: #F97583;">pub fn</span><span style="color: #B392F0;"> subsets</span><span>(nums</span><span style="color: #F97583;">:</span><span style="color: #B392F0;"> Vec</span><span>&lt;</span><span style="color: #B392F0;">i32</span><span>&gt;)</span><span style="color: #F97583;"> -&gt;</span><span style="color: #B392F0;"> Vec</span><span>&lt;</span><span style="color: #B392F0;">Vec</span><span>&lt;</span><span style="color: #B392F0;">i32</span><span>&gt;&gt; {</span></span>
+<span class="giallo-l"><span style="color: #6A737D;">    // Based on editorial and https://www.youtube.com/watch?v=z3xEwMA5Rn8</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    let mut</span><span> result</span><span style="color: #F97583;"> =</span><span style="color: #B392F0;"> vec!</span><span>[</span><span style="color: #B392F0;">vec!</span><span>[]];</span></span>
+<span class="giallo-l"><span style="color: #F97583;">    for</span><span> num</span><span style="color: #F97583;"> in</span><span> nums {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        let</span><span> n</span><span style="color: #F97583;"> =</span><span> result</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">len</span><span>();</span></span>
+<span class="giallo-l"><span style="color: #F97583;">        for</span><span> i</span><span style="color: #F97583;"> in</span><span style="color: #79B8FF;"> 0</span><span style="color: #F97583;">..</span><span>n {</span></span>
+<span class="giallo-l"><span style="color: #F97583;">            let mut</span><span> next</span><span style="color: #F97583;"> =</span><span> result[i]</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">clone</span><span>();</span></span>
+<span class="giallo-l"><span>            next</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">push</span><span>(num);</span></span>
+<span class="giallo-l"><span>            result</span><span style="color: #F97583;">.</span><span style="color: #B392F0;">push</span><span>(next);</span></span>
+<span class="giallo-l"><span>        }</span></span>
+<span class="giallo-l"><span>    }</span></span>
+<span class="giallo-l"><span>    result</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre></details>
+<h1 id="interview-preparation"><a class="zola-anchor" href="#interview-preparation" aria-label="Anchor link for: interview-preparation">Interview Preparation</a></h1>
+<p>In my opinion if you already have experience with leetcode then a good video to start with is <a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=0XUzt0D3xMw">this one</a> from <a rel="noopener external" target="_blank" href="https://alifeengineered.substack.com/about">Uncle Steve</a> where he starts of with summarizing the article <a rel="noopener external" target="_blank" href="https://interviewing.io/blog/how-well-do-leetcode-ratings-predict-interview-performance">How well do LeetCode ratings predict interview performance? Here’s the data</a>.</p>
+<details>
+<summary>List of problems from the description of the video</summary>
+<blockquote>
+<p>Top ‘Secretly Easy’ Hard Problems:<br />
+#1: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/reverse-nodes-in-k-group/description/">Reverse Nodes in k-Group</a> - Score: 0.034<br />
+#2: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/median-of-two-sorted-arrays/description/">Median of Two Sorted Arrays</a> - Score: 0.0298<br />
+#3: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/n-queens-ii/description/">N-Queens II</a> - Score: 0.0288<br />
+#4: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/n-queens/description/">N-Queens</a> - Score: 0.0255<br />
+#5: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/robot-room-cleaner/description/">Robot Room Cleaner</a> - Score: 0.0192</p>
+<p>Top ‘Most Efficient for Interview Prep’ Hard Problems:<br />
+#1: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/">Longest Increasing Path in a Matrix</a> - Score: 1.8094<br />
+#2: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/trapping-rain-water/description/">Trapping Rain Water</a> - Score: 1.6964<br />
+#3: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/the-skyline-problem/description/">The Skyline Problem</a> - Score: 1.5794<br />
+#4: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/word-break-ii/description/">Word Break II</a> - Score: 1.5601<br />
+#5: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/">Smallest Range Covering Elements from K Lists</a> - Score: 1.1687</p>
+<p>Hardest Questions Actually Used in FAANG Interviews:<br />
+#1: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/description/">Partition Array Into Two Arrays to Minimize Sum Difference</a> - Score: 12.3924<br />
+#2: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/regular-expression-matching/description/">Regular Expression Matching</a> - Score: 12.1070<br />
+#3: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/reverse-pairs/description/">Reverse Pairs</a> - Score: 9.0915<br />
+#4: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/median-of-two-sorted-arrays/description/">Median of Two Sorted Arrays</a> - Score: 8.2952<br />
+#5: <a rel="noopener external" target="_blank" href="https://leetcode.com/problems/max-points-on-a-line/description/">Max Points on a Line</a> - Score: 8.0952</p>
+</blockquote>
+</details>
+<p>If you’re new to leetcode then start with <a rel="noopener external" target="_blank" href="https://neetcode.io/">neetcode</a> it makes it easy to find a path to follow.
+My key takeaway is that “reasonable” hard problems are actually not hard just require multiple techniques and thus you get more value from doing them.
+But be warned some of the hard problems (the one’s I don’t generally consider reasonable) just require niche knowledge.
+The following are some lists I think are worth taking a look at and why.
+When starting off getting practice on different techniques for developing solutions is good to help you build up intuition on when a particular technique is appropriate.
+However, once you are comfortable with the techniques then not having a hint on which technique to use is better to help you practice identifying the technique(s) you should use.</p>
+<details>
+<summary> Short List from Neetcode </summary>
+<p>Source: <a rel="noopener external" target="_blank" href="https://www.linkedin.com/posts/navdeep-singh-3aaa14161_if-i-only-had-a-short-time-to-study-for-my-activity-7312473774598012928-ZhXz">https://www.linkedin.com/posts/navdeep-singh-3aaa14161_if-i-only-had-a-short-time-to-study-for-my-activity-7312473774598012928-ZhXz</a></p>
+<blockquote>
+<p>If I only had a short time to study for my coding interview, these are the 15 questions I would solve (in order)</p>
+</blockquote>
+<ol>
+<li>🟢 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/two-integer-sum">Two Sum</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/two-sum/">Leetcode</a>) - Practice using hash maps.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/products-of-array-discluding-self">Product of Array Except Self</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/product-of-array-except-self/">Leetcode</a>) Practice prefix / suffix sums.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/three-integer-sum/">3Sum</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/3sum/">Leetcode</a>) - Practice sorting and two pointers.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/longest-repeating-substring-with-replacement">Longest Repeating Character Replacement</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/longest-repeating-character-replacement/">Leetcode</a>) - Practice sliding window.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/daily-temperatures">Daily Temperatures</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/daily-temperatures/">Leetcode</a>) - Practice monotonic stack.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/find-target-in-rotated-sorted-array">Search in Rotated Sorted Array</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/search-in-rotated-sorted-array/">Leetcode</a>) - Practice Binary Search on array.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/eating-bananas">Koko Eating Bananas</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/koko-eating-bananas/">Leetcode</a>) - Practice Binary Search on a range of values, rather then a data structure.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/lru-cache">LRU Cache</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/lru-cache">Leetcode</a>) - Practice doubly linked lists and hashmaps.</li>
+<li>🟢 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/same-binary-tree">Same Binary Tree</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/same-tree/">Leetcode</a>) - Practice tree traversal - DFS or BFS.</li>
+<li>🔴 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/serialize-and-deserialize-binary-tree">Serialize and Deserialize Binary Tree</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree">Leetcode</a>) - Practice hard tree traversal.</li>
+<li>🔴 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/find-median-in-a-data-stream">Median in Data Stream</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/find-median-from-data-stream">Leetcode</a>) - Practice two heaps pattern.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/combination-target-sum">Combination Sum</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/combination-sum">Leetcode</a>) - Practice two-branch backtracking.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/course-schedule">Course Schedule</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/course-schedule">Leetcode</a>) - Practice DFS or BFS on adjacency list.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/rotting-fruit">Rotting Oranges</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/rotting-oranges/">Leetcode</a>) - Practice multi-source BFS.</li>
+<li>🟡 <a rel="noopener external" target="_blank" href="https://neetcode.io/problems/longest-common-subsequence">Longest Common Subsequence</a> (<a rel="noopener external" target="_blank" href="https://leetcode.com/problems/longest-common-subsequence">Leetcode</a>) - Practice dynamic programming, top-down or bottom-up.</li>
+</ol>
+</details>
+<p>These are some good videos to help you get oriented:</p>
+<ul>
+<li><a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=2V7yPrxJ8Ck">The LeetCode Fallacy</a> by <a rel="noopener external" target="_blank" href="https://neetcode.io/">NeetCode</a></li>
+<li><a rel="noopener external" target="_blank" href="https://www.youtube.com/watch?v=G5_Q2_yRFsY">How to Start LeetCode from ZERO in 2025</a> by <a rel="noopener external" target="_blank" href="https://algomaster.io/practice/dsa-patterns">AlgoMaster</a></li>
+</ul>
+<table><thead><tr><th style="text-align: left">List</th><th style="text-align: left">Reason</th><th style="text-align: left">Organization</th></tr></thead><tbody>
+<tr><td style="text-align: left"><a rel="noopener external" target="_blank" href="https://neetcode.io/roadmap">NeetCode Roadmap</a></td><td style="text-align: left">Provides a guided tree to follow based on prerequisites</td><td style="text-align: left">Tree with solution types</td></tr>
+<tr><td style="text-align: left"><a rel="noopener external" target="_blank" href="https://leetcode.com/studyplan/leetcode-75/">LeetCode 75</a></td><td style="text-align: left">Provided by leetcode and free (they also have list available to premium users, support them if you’re able)</td><td style="text-align: left">Grouped by Solution Type</td></tr>
+<tr><td style="text-align: left"><a rel="noopener external" target="_blank" href="https://algomaster.io/practice/dsa-patterns">AlgoMaster</a></td><td style="text-align: left">Has links to an explanation for each solution type before the problems. Has links to solutions for each problem (seems like his) and preloaded search for solutions on YouTube</td><td style="text-align: left">Grouped by Solution Type</td></tr>
+<tr><td style="text-align: left"><a rel="noopener external" target="_blank" href="https://www.techinterviewhandbook.org/grind75/">Grind 75 by author of Blind 75</a></td><td style="text-align: left">Allows customization of plan to the amount of time you have available and can not show what topic is covered by a question for you to practice that skill</td><td style="text-align: left">Customizable</td></tr>
+</tbody></table>
+<h1 id="recreational"><a class="zola-anchor" href="#recreational" aria-label="Anchor link for: recreational">Recreational</a></h1>
+<p>If you’re objective is just practice or for fun then working locally can be less annoying than working in the text editor provided.
+Also if you want to get practice with using your IDE of choice and learning from the autocomplete and docs displayed in the IDE.
+Then I recommend <a rel="noopener external" target="_blank" href="https://github.com/rust-practice/cargo-leet/">cargo-leet</a>.
+It’s a pretty basic download tool that just tries to setup the tests from the description for you.
+Happy to accept contributions if you’re so included.</p>
+
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#problem-solving-tips-and-notes">Problem solving tips and notes</a>
+        </div>
+        <div class="hpad">
+          <a href="#try-brute-force"><small>- Try brute force</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#tips-for-detecting-dp"><small>- Tips for detecting DP</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#rearrange-formulas-especially-if-modulus-is-involved-think-of-operations-closed-under-modulus"><small>- Rearrange formulas (especially if modulus is involved - think of operations closed under modulus (+,-,*))</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#consider-partition-point"><small>- Consider partition_point</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#be-comfortable-with-permutations"><small>- Be comfortable with permutations</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#be-comfortable-with-subsets"><small>- Be comfortable with subsets</small></a>
+        </div>
+        <div>
+          <a href="#interview-preparation">Interview Preparation</a>
+        </div>
+        <div>
+          <a href="#recreational">Recreational</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/misc&#x2F;leetcode.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top">&cuwed;</a>
+</span>
+</body>
+</html>
