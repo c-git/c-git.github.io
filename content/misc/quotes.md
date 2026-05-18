@@ -1,7 +1,7 @@
 +++
 title = "Quotes"
 date = 2024-06-07
-updated = 2025-04-26
+updated = 2026-05-18
 taxonomies = { tags = ["Misc"] }
 +++
 
@@ -47,3 +47,7 @@ _[by](https://www.brainyquote.com/quotes/mother_teresa_133195) Mother Teresa_
 > And the wisdom to know the difference.
 
 _[Author Unclear](https://en.wikipedia.org/wiki/Serenity_Prayer) but words to live by all the same_
+
+> Therefore, in every deed and every thought, act as though you were to die this very day. If you had a good conscience you would not fear death very much. It is better to avoid sin than to fear death. If you are not prepared today, how will you be prepared tomorrow? Tomorrow is an uncertain day; how do you know you will have a tomorrow?
+
+_[by](https://catholicarchive.org/thomas_a_kempis/the_imitation_of_christ/1/23.html) Thomas à Kempis in The Imitation of Christ_
