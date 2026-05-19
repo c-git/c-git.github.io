@@ -1,7 +1,7 @@
 +++
 title = "Divine Mercy Chaplet"
 date = 2026-03-03
-updated = 2026-05-17
+updated = 2026-05-19
 extra = { series = "Prayers" }
 taxonomies = { tags = ["Prayers"] }
 +++
@@ -20,7 +20,21 @@ I'll keep this page as I already typed it up but I would deferrer any visitors t
 
 <summary> Lyrics, and prayer versions used in video</summary>
 
-These are based on what it sounds like to me.
+<details>
+
+<summary>Show <strong>Optional Opening Prayer</strong></summary>
+
+You expired, Jesus,\
+but the source of life gushed forth for souls,\
+and the ocean of mercy opened up for the whole world.\
+O Fount of Life, unfathomable Divine Mercy,\
+envelop the whole world and empty Yourself out upon us.
+
+O Blood and Water,\
+which gushed forth from the Heart of Jesus as a fount of mercy for us,\
+I trust in You! (3x)
+
+</details>
 
 - **Lyrics to opening hymn**\
   Hail to Thee! True body sprung\
