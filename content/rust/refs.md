@@ -90,7 +90,9 @@ They got it and were able to do some of the practice problems.
 - [Rust in Production](https://corrode.dev/podcast/) - Interviews with companies using rust in production.
 - [Self-Directed Research Podcast (SDR)](https://sdr-podcast.com/) - "Every week, a new presentation on what Amos or James has been up to. Usually: Rust, embedded, web servers, but anything is fair game.", is what the top of their site says. Tracks with what I've heard so far.
 - [Oxide and Friends](https://oxide-and-friends.transistor.fm/) - Not specifically a rust podcast but it's from a company that uses rust and, as a result, rust comes up frequently.
-- [Compose by Tim Clicks](https://timclicks.dev/podcasts/compose) - They haven't put out an episode in a while but they backlog (while small) is great.
+- [Compose by Tim Clicks](https://timclicks.dev/podcasts/compose) - They haven't put out an episode in a while but their back catalog (while small) is great.
+
+## Inactive Podcasts
 
 Not active at the time of writing (more than 1 year from 2026-05-21 since last episode)
 
