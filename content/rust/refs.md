@@ -1,7 +1,7 @@
 +++
 title='References'
 date=2023-05-29
-updated = 2025-04-26
+updated = 2026-05-21
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
@@ -86,11 +86,16 @@ They got it and were able to do some of the practice problems.
 # Podcasts
 
 - [Rustacean Station](https://rustacean-station.org/) - Current community run podcast
+- [Netstack.FM](https://netstack.fm/) - They have a heavy focus on rust especially as it relates to networking. Great if you don't know a lot of details about networking as they include explainer episodes where they explain parts of the networking stack in a beginner friendly way.
 - [Rust in Production](https://corrode.dev/podcast/) - Interviews with companies using rust in production.
-- [RustShip](https://www.marcoieni.com/tags/rustship/) - Interviews with companies that ship rust software.
-- [Self-Directed Research Podcast (SDR)](https://sdr-podcast.com/) - "Every week, a new presentation on what Amos or James has been up to. Usually: Rust, embedded, web servers, but anything is fair game.", is what the top of their site says. Tracks with what I've heard so far (although no episodes for the year yet).
+- [Self-Directed Research Podcast (SDR)](https://sdr-podcast.com/) - "Every week, a new presentation on what Amos or James has been up to. Usually: Rust, embedded, web servers, but anything is fair game.", is what the top of their site says. Tracks with what I've heard so far.
 - [Oxide and Friends](https://oxide-and-friends.transistor.fm/) - Not specifically a rust podcast but it's from a company that uses rust and, as a result, rust comes up frequently.
-- [New Rustacean](https://newrustacean.com/) - Stopped but it's where I started. This podcast introduced me to rust and got me excited before I read the book and actually tried it myself (was able to use commute time to see if I like this "rust thing" I kept hearing people talking about). I think the main reason it got me excited is that the author, [Chris Krycho](https://www.chriskrycho.com/), spoke about the parts of rust that I was interested in and maybe contributed to making it easier to learn rust. I found learning rust easy but that's not a sentiment I've heard from many other people so maybe this podcast played into what made it easy for me.
+- [Compose by Tim Clicks](https://timclicks.dev/podcasts/compose) - They haven't put out an episode in a while but they backlog (while small) is great.
+
+Not active at the time of writing (more than 1 year from 2026-05-21 since last episode)
+
+- [New Rustacean](https://newrustacean.com/) - Stopped but this is where I started. This podcast introduced me to rust and got me excited before I read the book and actually tried it myself (was able to use commute time to see if I like this "rust thing" I kept hearing people talking about). I think the main reason it got me excited is that the author, [Chris Krycho](https://www.chriskrycho.com/), spoke about the parts of rust that I was interested in and maybe contributed to making it easier to learn rust. I found learning rust easy but that's not a sentiment I've heard from many other people so maybe this podcast played into what made it easy for me.
+- [RustShip](https://www.marcoieni.com/tags/rustship/) - Interviews with companies that ship rust software.
   Don't have a counterfactual so I'll never know.
 
 # Video
