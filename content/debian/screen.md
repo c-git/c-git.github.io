@@ -1,6 +1,7 @@
 +++
 title = "Screen Application"
 date = 2025-05-06
+updated = 2026-05-25
 extra = { series = "Debian" }
 taxonomies = { tags = ["Debian"] }
 +++
@@ -33,6 +34,14 @@ Where `session_name` is the name of the session
 
 ```sh
 screen -S session_name
+```
+
+## Detached
+
+Starts a new detached session that ends once the commands stops. Provides an easy to manage way to spawn a job in a different process that survives closing of the terminal window.
+
+```sh
+screen --d -m [COMMAND_HERE]
 ```
 
 # List sessions
