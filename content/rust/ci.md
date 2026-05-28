@@ -1,7 +1,7 @@
 +++
 title="CI"
 date=2023-09-03
-updated = 2025-04-26
+updated = 2026-05-28
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
@@ -56,7 +56,7 @@ git push
 When the CI has been updated and you want to pull in the updates use the following command.
 
 ```sh
-git merge ci/main
+git fetch ci; git merge ci/main
 ```
 
 # Explanation of problem situation
