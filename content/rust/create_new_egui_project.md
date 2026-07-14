@@ -6,8 +6,11 @@ extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
 
+After setting up the project locally using the instructions below you can follow the first few steps in the [new create setup](@/rust/create_new_crate.md) to link to the remote repo.
+It may not make sense to link to the CI jobs as the templates already include jobs.
+
 Currently have a PR in flight to address this <https://github.com/emilk/eframe_template/pull/227>.
-In the mean while you may still use it with the instructions in the readme at <https://github.com/c-git/eframe_template/tree/create-cargo-generate-template>
+In the mean while you may still use it with the instructions in the readme at <https://github.com/c-git/eframe_template/tree/create-cargo-generate-template>.
 
 See also the [windowed section](@/rust/create_new_egui_project.md#windowed-framework-application) below for an application with a basic windowing framework.
 
