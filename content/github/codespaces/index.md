@@ -1,7 +1,7 @@
 +++
 title="Codespaces"
 date=2023-11-05
-updated = 2025-04-26
+updated = 2026-07-14
 extra = { series = "GitHub" }
 taxonomies = { tags = ["GitHub"] }
 +++
@@ -9,6 +9,13 @@ taxonomies = { tags = ["GitHub"] }
 # Setup from default for Rust
 
 These are my custom setups if you just want rust only see the [rust website](https://www.rust-lang.org/tools/install).
+
+If you want to use cargo binstall see their [readme](https://github.com/cargo-bins/cargo-binstall#quickly).
+Here is the install command for linux and macOS (use at your own risk, this is not an endorsement but I feel it's safe to use in codespaces for short lived setups to just check things)
+
+```sh
+curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+```
 
 Feel free to download the scripts to review to decide if you want to use them. They are pretty simple.
 
