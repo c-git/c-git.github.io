@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated = 2026-05-15
+updated = 2026-07-17
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
@@ -301,6 +301,27 @@ Formatted output: 2026-05-15 14:12:06
 now: 2026-05-15T14:12:06.779365104-04:00[America/New_York]
 today: 2026-05-15
 Dominica Time: 2026-05-15T14:12:06.779365104-04:00[America/Dominica]
+```
+
+# Extracting timestamps from UUIDv7
+
+```rust
+fn main() -> Result<(), jiff::Error> {
+    let uuid_v7 = uuid::Uuid::now_v7();
+    println!("Generated UUIDv7: {uuid_v7}");
+
+    if let Some(uuid_ts) = uuid_v7.get_timestamp() {
+        let (seconds, nanos) = uuid_ts.to_unix();
+        let jiff_ts = jiff::Timestamp::new(seconds as i64, nanos as i32)?;
+        let dt: jiff::Zoned = jiff_ts.to_zoned(jiff::tz::TimeZone::system());
+
+        println!("{dt}");
+        // Output: 2025-01-20T10:14:30.123456789-05:00[America/New_York] (for example)
+    } else {
+        println!("This UUID does not contain a timestamp.");
+    }
+    Ok(())
+}
 ```
 
 [custom]: https://docs.rs/jiff/latest/jiff/fmt/strtime/trait.Custom.html
