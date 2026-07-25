@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated = 2026-07-17
+updated = 2026-07-25
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
@@ -194,9 +194,7 @@ fn now_date_time_as_string() -> String {
 <details>
 <summary>See previous example that used chrono</summary>
 
-See [docs.rs](https://docs.rs/chrono/latest/chrono/format/strftime/index.html#specifiers) for full details
-
-Excerpt from docs.rs
+See [docs.rs](https://docs.rs/chrono/latest/chrono/format/strftime/index.html#specifiers) for full details.
 
 | Spec. |         Example         | Description                                                            |
 | :---- | :---------------------: | :--------------------------------------------------------------------- |
@@ -212,7 +210,12 @@ Excerpt from docs.rs
 
 See [docs](https://docs.rs/jiff/latest/jiff/fmt/strtime/index.html#conversion-specifications)
 
-Excerpt from docs.rs
+Excerpt from docs.rs for `jiff` below.
+
+> Support for “printf”-style parsing and formatting.
+> While the routines exposed in this module very closely resemble the corresponding strptime and strftime POSIX functions, it is not a goal for the formatting machinery to precisely match POSIX semantics.
+
+And a few specifiers from the docs as well.
 
 | Spec.  |          Example          | Description                                                                   |
 | :----- | :-----------------------: | :---------------------------------------------------------------------------- |
