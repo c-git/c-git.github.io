@@ -37,13 +37,13 @@ It's important to note that <https://www.vectorizer.io> gave me a smaller more c
 1. ## Draw the crop shape
    - Select the Rectangle Tool from the left toolbar (or press R).
    - Draw a rectangle framing only the part you want to keep (Tip: If the rectangle fills with solid color and hides the image, reduce its opacity in the 'Fill and Stroke' panel, or use an outlined box, so you can see your framing.)
-2. Select **Both** Objects (The framing box you just created and the image at the back)
+2. Select **All** Objects (The framing box you just created and the image at the back, or all if you used <https://www.vectorizer.io> as it will create multiple objects)
    - Activate the Select Tool (top black arrow, or press S).
-   - Click the box you just drew to select it and then Shift-click on the image at the back so **BOTH** are selected.
+   - Select all (Ctrl+A)OR Click the box you just drew to select it and then Shift-click on the image at the back so **BOTH** are selected.
 3. Apply the Crop (Set Clip, this only hides the rest of the content)
-   - With both objects selected, go to the top menu and select Object > Clip > Set.
+   - With both objects selected, go to the top menu and select `Object` > `Clip` > `Set`.
 4. Resize the canvas (should have a lot of empty space now)
-   - Go to File > Document Properties... (or press Ctrl + Shift + D).
+   - Go to `File` > `Document Properties...` (or press Ctrl + Shift + D).
    - Click on `Resize page to content...`, this will open a sub menu
    - Click `Resize page to drawing or selection (Ctrl+Shift+R)`
 5. Save
