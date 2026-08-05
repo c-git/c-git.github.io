@@ -1,7 +1,7 @@
 +++
 title="Extensions General"
 date = 2023-07-27
-updated = 2026-01-13
+updated = 2026-08-05
 extra = { series = "VSCode" }
 taxonomies = { tags = ["VSCode"] }
 +++
@@ -24,6 +24,7 @@ Some may come installed by default (not sure where I got all of these and haven'
 | [Live Share][liveshare]                       | ms-vsliveshare.vsliveshare            | Real-time collaborative development                                         |
 | [Numbered Bookmarks][bookmark]                | alefragnani.numbered-bookmarks        | Mark lines and jump to them, in Delphi style                                |
 | [Todo Tree][todo]                             | Gruntfuggly.todo-tree                 | Show TODO, FIXME, etc. comment tags in a tree view                          |
+| [OOXML Viewer][ooxml]                         | yuenm18.ooxml-viewer                  | Viewing XML for changes to spreadsheets (Recommended by [MathNya][xlm_rec]) |
 
 # Previous
 
@@ -46,3 +47,5 @@ Some may come installed by default (not sure where I got all of these and haven'
 [remote]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-repositories
 [spell]: https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 [todo]: https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree
+[ooxml]: https://marketplace.visualstudio.com/items?itemName=yuenm18.ooxml-viewer
+[xlm_rec]: https://github.com/MathNya/umya-spreadsheet/pull/348#issuecomment-5187739047
