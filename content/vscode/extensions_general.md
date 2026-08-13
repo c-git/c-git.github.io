@@ -1,7 +1,7 @@
 +++
 title="Extensions General"
 date = 2023-07-27
-updated = 2026-08-05
+updated = 2026-08-13
 extra = { series = "VSCode" }
 taxonomies = { tags = ["VSCode"] }
 +++
@@ -23,7 +23,7 @@ Some may come installed by default (not sure where I got all of these and haven'
 | [Live Preview][liveview]                      | ms-vscode.live-server                 | Lets you preview pages (like markdown)                                      |
 | [Live Share][liveshare]                       | ms-vsliveshare.vsliveshare            | Real-time collaborative development                                         |
 | [Numbered Bookmarks][bookmark]                | alefragnani.numbered-bookmarks        | Mark lines and jump to them, in Delphi style                                |
-| [Todo Tree][todo]                             | Gruntfuggly.todo-tree                 | Show TODO, FIXME, etc. comment tags in a tree view                          |
+| [Todo Tree][todo]                             | Gruntfuggly.todo-tree                 | Show TODO, FIXME, etc. in a tree view (Filter: `^(?!TODO [45]:).*$`)        |
 | [OOXML Viewer][ooxml]                         | yuenm18.ooxml-viewer                  | Viewing XML for changes to spreadsheets (Recommended by [MathNya][xlm_rec]) |
 
 # Previous
