@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - VMware</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/vmware/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-26T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/vmware/atom.xml</id>
+    <entry xml:lang="en">
+        <title>VMware Tools</title>
+        <published>2023-08-23T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/vmware/vmware-tools/"/>
+        <id>https://dev.chester.wykies.com/vmware/vmware-tools/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/vmware/vmware-tools/">&lt;h1 id=&quot;install-from-repo&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-from-repo&quot; aria-label=&quot;Anchor link for: install-from-repo&quot;&gt;Install from Repo&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Tested on Ubuntu 18.04 (2022-12-02)&lt;&#x2F;p&gt;
+&lt;p&gt;When trying the &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;vmware&#x2F;vmware-tools&#x2F;#install-from-vmware-cd&quot;&gt;other instructions&lt;&#x2F;a&gt; I got a message prompt encouraging me to use the package
+for my OS. Which I did and it seems to have worked without issue (The message in the browser saying VMTools is not
+installed went away). Only required one command as below.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt install open-vm-tools&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;install-from-vmware-cd&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-from-vmware-cd&quot; aria-label=&quot;Anchor link for: install-from-vmware-cd&quot;&gt;Install From VMWare CD&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Tested on Ubuntu 22.04 (2022-09-20)&lt;&#x2F;p&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;knowledge.broadcom.com&#x2F;external&#x2F;article?legacyId=1022525&quot;&gt;https:&#x2F;&#x2F;knowledge.broadcom.com&#x2F;external&#x2F;article?legacyId=1022525&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;NB: Main thing reason for creating documentation was to note that the error message &lt;code&gt;Segmentation Fault (core dumped)&lt;&#x2F;code&gt;
+is normal, and it should be ignored.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mount-cd-image&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#mount-cd-image&quot; aria-label=&quot;Anchor link for: mount-cd-image&quot;&gt;Mount CD Image&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Virtual Machine&lt;&#x2F;strong&gt; &amp;gt; &lt;strong&gt;Install VMware Tools&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;extract-installation-files&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#extract-installation-files&quot; aria-label=&quot;Anchor link for: extract-installation-files&quot;&gt;Extract installation files&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigate to the CD&lt;&#x2F;li&gt;
+&lt;li&gt;Copy the file similar to &lt;code&gt;VMwareTools.x.x.x-xxxx.tar.gz&lt;&#x2F;code&gt; to the desktop&lt;&#x2F;li&gt;
+&lt;li&gt;Extract the contents of the &lt;code&gt;VMwareTools.x.x.x-xxxx.tar.gz&lt;&#x2F;code&gt; file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;run-installation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#run-installation&quot; aria-label=&quot;Anchor link for: run-installation&quot;&gt;Run installation&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Navigate into the extracted folder &lt;code&gt;vmware-tools-distrib&lt;&#x2F;code&gt; and run the installer:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; .&#x2F;vmware-install.pl&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Take the defaults and ignore the error message about the &lt;code&gt;Segmentation Fault (core dumped)&lt;&#x2F;code&gt; it takes a while but the
+installation continues.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

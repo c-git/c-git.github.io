@@ -1,0 +1,5 @@
+
+Sitemap: https://dev.chester.wykies.com/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://dev.chester.wykies.com

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Apache</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/apache/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-26T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/apache/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Installation</title>
+        <published>2022-09-21T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/apache/installation/"/>
+        <id>https://dev.chester.wykies.com/apache/installation/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/apache/installation/">&lt;h1 id=&quot;install&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;Install&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Install apache with php and required mods&#x2F;plugins&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt install apache2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt install php php-mysql libapache2-mod-php&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;restart-server&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#restart-server&quot; aria-label=&quot;Anchor link for: restart-server&quot;&gt;Restart Server&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Restart is required to reload config, enable and disable modules&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; systemctl restart apache2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;NB: After testing don’t forget to remove the default &lt;code&gt;index.html&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>HTTPS Setup</title>
+        <published>2022-09-10T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/apache/https-setup/"/>
+        <id>https://dev.chester.wykies.com/apache/https-setup/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/apache/https-setup/">&lt;h1 id=&quot;generate-keys&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#generate-keys&quot; aria-label=&quot;Anchor link for: generate-keys&quot;&gt;GENERATE KEYS&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Preferably run these steps in a temp folder so file cleanup at the end will be easy.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;create-rsa-key&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-rsa-key&quot; aria-label=&quot;Anchor link for: create-rsa-key&quot;&gt;Create RSA key&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;openssl&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; genrsa&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -out&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; localhost.key&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 4096&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;create-signing-request&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-signing-request&quot; aria-label=&quot;Anchor link for: create-signing-request&quot;&gt;Create signing request&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;openssl&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; req&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -new -key&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; localhost.key&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -out&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; localhost.csr&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h3 id=&quot;use-the-following-as-a-guide-to-answer-the-questions-asked&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#use-the-following-as-a-guide-to-answer-the-questions-asked&quot; aria-label=&quot;Anchor link for: use-the-following-as-a-guide-to-answer-the-questions-asked&quot;&gt;Use the following as a guide to answer the questions asked:&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Usage Notes&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This section is very use case dependent these just match my needs.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Replace &lt;code&gt;&amp;lt;&amp;lt;SERVER-NAME&amp;gt;&amp;gt;&lt;&#x2F;code&gt; with the name of the server.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;You are about to be asked to enter information that will be incorporated into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;For some fields there will be a default value,&lt;br &#x2F;&gt;
+If you enter ‘.’, the field will be left blank.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;—–&lt;br &#x2F;&gt;
+Country Name (2 letter code) [AU]:&lt;code&gt;DM&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+State or Province Name (full name) [Some-State]:&lt;br &#x2F;&gt;
+Locality Name (eg, city) []:&lt;br &#x2F;&gt;
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:&lt;br &#x2F;&gt;
+Organizational Unit Name (eg, section) []:&lt;br &#x2F;&gt;
+Common Name (e.g. server FQDN or YOUR name) []:&lt;code&gt;&amp;lt;&amp;lt;SERVER-NAME&amp;gt;&amp;gt;&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+Email Address []:&lt;br &#x2F;&gt;
+&lt;br &#x2F;&gt;
+Please enter the following ‘extra’ attributes&lt;br &#x2F;&gt;
+to be sent with your certificate request&lt;br &#x2F;&gt;
+A challenge password []:&lt;br &#x2F;&gt;
+An optional company name []:&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;self-sign-certificate&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#self-sign-certificate&quot; aria-label=&quot;Anchor link for: self-sign-certificate&quot;&gt;Self sign certificate&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;openssl&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; x509&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -req -days 9999 -in&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; localhost.csr&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -signkey&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; localhost.key&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -out&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; localhost.crt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;enable-ssl-on-server&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#enable-ssl-on-server&quot; aria-label=&quot;Anchor link for: enable-ssl-on-server&quot;&gt;ENABLE SSL on server&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; a2enmod ssl&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;update-config-file&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#update-config-file&quot; aria-label=&quot;Anchor link for: update-config-file&quot;&gt;UPDATE CONFIG FILE&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Note these instruction assume that you are using the default configuration file named &lt;code&gt;000-default.conf&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; nano &#x2F;etc&#x2F;apache2&#x2F;sites-enabled&#x2F;000-default.conf&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;expected-default-file-before-changes&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#expected-default-file-before-changes&quot; aria-label=&quot;Anchor link for: expected-default-file-before-changes&quot;&gt;Expected default file before changes&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See file linked &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;apache&#x2F;https-setup&#x2F;org&#x2F;000-default.conf&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;example-of-final-output&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example-of-final-output&quot; aria-label=&quot;Anchor link for: example-of-final-output&quot;&gt;Example of final output&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See example of updated file &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;apache&#x2F;https-setup&#x2F;after&#x2F;000-default.conf&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;change-port-to-443-from-80&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#change-port-to-443-from-80&quot; aria-label=&quot;Anchor link for: change-port-to-443-from-80&quot;&gt;Change port to 443 from 80&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Change the line that looks like &lt;code&gt;&amp;lt;VirtualHost *:80&amp;gt;&lt;&#x2F;code&gt; to &lt;code&gt;&amp;lt;VirtualHost *:443&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;add-ssl-configs&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#add-ssl-configs&quot; aria-label=&quot;Anchor link for: add-ssl-configs&quot;&gt;Add SSL configs&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add the following lines between the opening &lt;code&gt;&amp;lt;VirtualHost *:443&amp;gt;&lt;&#x2F;code&gt; and closing &lt;code&gt;&amp;lt;&#x2F;VirtualHost&amp;gt;&lt;&#x2F;code&gt; tags.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;SSLEngine on&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;SSLCertificateFile	&#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;localhost.crt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;SSLCertificateKeyFile	&#x2F;etc&#x2F;ssl&#x2F;private&#x2F;localhost.key&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;add-redirect-from-http&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#add-redirect-from-http&quot; aria-label=&quot;Anchor link for: add-redirect-from-http&quot;&gt;Add redirect from HTTP&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add the following lines putting in the correct URL instead of &lt;code&gt;x.x.x.x&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;VirtualHost *:80&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;	Redirect permanent &#x2F; https:&#x2F;&#x2F;x.x.x.x&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;&#x2F;VirtualHost&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;place-keys-at-path-specified-in-config&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#place-keys-at-path-specified-in-config&quot; aria-label=&quot;Anchor link for: place-keys-at-path-specified-in-config&quot;&gt;Place keys at path specified in config&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; mv localhost.crt &#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;localhost.crt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; mv localhost.key &#x2F;etc&#x2F;ssl&#x2F;private&#x2F;localhost.key&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;delete-signing-request&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#delete-signing-request&quot; aria-label=&quot;Anchor link for: delete-signing-request&quot;&gt;Delete signing request&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;It is no longer needed as the key has already been signed&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;rm&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; localhost.csr&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;set-permissions-to-protect-key&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#set-permissions-to-protect-key&quot; aria-label=&quot;Anchor link for: set-permissions-to-protect-key&quot;&gt;Set permissions to protect key&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; chown root:root &#x2F;etc&#x2F;ssl&#x2F;private&#x2F;localhost.key&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; chown root:root &#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;localhost.crt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; chmod&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 400&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &#x2F;etc&#x2F;ssl&#x2F;private&#x2F;localhost.key&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; chmod&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 444&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;localhost.crt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;verify-ports-conf-matches&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#verify-ports-conf-matches&quot; aria-label=&quot;Anchor link for: verify-ports-conf-matches&quot;&gt;Verify &lt;code&gt;ports.conf&lt;&#x2F;code&gt; matches&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Open the current &lt;code&gt;ports.conf&lt;&#x2F;code&gt; on the server you are working on.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &#x2F;etc&#x2F;apache2&#x2F;ports.conf&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Compare against the one below which can be found as a text file &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;apache&#x2F;https-setup&#x2F;ports.conf&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# If you just change the port or add more ports here, you will likely also&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# have to change the VirtualHost statement in&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# &#x2F;etc&#x2F;apache2&#x2F;sites-enabled&#x2F;000-default.conf&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Listen 80&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;IfModule ssl_module&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;	Listen 443&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;&#x2F;IfModule&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;IfModule mod_gnutls.c&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;	Listen 443&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;lt;&#x2F;IfModule&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;# vim: syntax=apache ts=4 sw=4 sts=4 sr noet&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;restart-apache&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#restart-apache&quot; aria-label=&quot;Anchor link for: restart-apache&quot;&gt;Restart Apache&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &#x2F;etc&#x2F;init.d&#x2F;apache2 restart&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+</feed>
