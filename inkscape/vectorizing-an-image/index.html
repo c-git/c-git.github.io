@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Vectorizing an image | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="Vectorizing an image | Chester Wyke" />
+  <meta name="twitter:title" content="Vectorizing an image | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2026-08-01" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/">Vectorizing an image</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> August 01, 2026 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/inkscape/">Inkscape</a> </span>
+
+    
+        <div class="block">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/inkscape/">Inkscape (Series)</a><br>
+            <a class="scur" href="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/">Vectorizing an image</a><br> 
+          
+      </div>
+    </div>
+
+
+<p>Source: Gemini (extract, the parts that worked)</p>
+<h1 id="foreword"><a class="zola-anchor" href="#foreword" aria-label="Anchor link for: foreword">Foreword</a></h1>
+<p>This is meant to provide a way to take a raster image (common raster formats are BMP, JPEG, PNG) and convert it into a vector format like SVG.
+There are multiple ways to do it.
+This one is just one that worked for me.
+Tested on Inkscape 1.1.2 (0a00cf5339, 2022-02-04).</p>
+<p>It’s important to note that <a rel="noopener external" target="_blank" href="https://www.vectorizer.io">https://www.vectorizer.io</a> gave me a smaller more clear file but these instructions are good as a backup as that’s not a free service.</p>
+<h1 id="vectorization"><a class="zola-anchor" href="#vectorization" aria-label="Anchor link for: vectorization">Vectorization</a></h1>
+<ol>
+<li>Open the image in Inkscape</li>
+<li>Select the image
+<ul>
+<li>Click on the image with the Select Tool (the top black arrow on the left toolbar, shortcut S) to select it.</li>
+</ul>
+</li>
+<li>Open <code>Trace Bitmap</code>
+<ul>
+<li>Go to the top menu and select Path &gt; Trace Bitmap… (or press Shift + Alt + B). (Opens on the right)</li>
+</ul>
+</li>
+<li>Select <code>Multiple scans</code></li>
+<li>Change <code>Brightness steps</code> to <code>Colors</code></li>
+<li>Increase the number of <code>Scans</code> depending on how many colors you have (8-16 recommended by Gemini). I found 90 worked better on my image that had gradients but be aware of the final file size. Play with it and see what works for you.
+<ul>
+<li>You can play with this number because it happens quickly</li>
+</ul>
+</li>
+<li>Check <code>Smooth</code> and <code>Stack</code></li>
+<li>(Optional) You may also want to select <code>Remove background</code></li>
+<li>Click Apply</li>
+<li>It will place the generated image on top of your image so drag it to the side and delete the one at the back and bring it back to the center</li>
+</ol>
+<h1 id="crop-image"><a class="zola-anchor" href="#crop-image" aria-label="Anchor link for: crop-image">Crop image</a></h1>
+<ol>
+<li><h2 id="draw-the-crop-shape"><a class="zola-anchor" href="#draw-the-crop-shape" aria-label="Anchor link for: draw-the-crop-shape">Draw the crop shape</a></h2>
+<ul>
+<li>Select the Rectangle Tool from the left toolbar (or press R).</li>
+<li>Draw a rectangle framing only the part you want to keep (Tip: If the rectangle fills with solid color and hides the image, reduce its opacity in the ‘Fill and Stroke’ panel, or use an outlined box, so you can see your framing.)</li>
+</ul>
+</li>
+<li>Select <strong>All</strong> Objects (The framing box you just created and the image at the back, or all if you used <a rel="noopener external" target="_blank" href="https://www.vectorizer.io">https://www.vectorizer.io</a> as it will create multiple objects)
+<ul>
+<li>Activate the Select Tool (top black arrow, or press S).</li>
+<li>Select all (Ctrl+A)OR Click the box you just drew to select it and then Shift-click on the image at the back so <strong>BOTH</strong> are selected.</li>
+</ul>
+</li>
+<li>Apply the Crop (Set Clip, this only hides the rest of the content)
+<ul>
+<li>With both objects selected, go to the top menu and select <code>Object</code> &gt; <code>Clip</code> &gt; <code>Set</code>.</li>
+</ul>
+</li>
+<li>Resize the canvas (should have a lot of empty space now)
+<ul>
+<li>Go to <code>File</code> &gt; <code>Document Properties...</code> (or press Ctrl + Shift + D).</li>
+<li>Click on <code>Resize page to content...</code>, this will open a sub menu</li>
+<li>Click <code>Resize page to drawing or selection (Ctrl+Shift+R)</code></li>
+</ul>
+</li>
+<li>Save
+<ul>
+<li>If you want to keep the hidden part which can be recovered with <code>Object</code> &gt; <code>Clip</code> &gt; <code>Release</code>, then just save as <code>Inkscape SVG</code></li>
+<li>If you want to permanently remove the parts that are not visible select <code>Optimized SVG</code></li>
+<li>Set the filename</li>
+<li>Click <code>Save</code></li>
+<li>In the menu that pops up check <code>Collapse groups</code></li>
+<li>Click <code>Ok</code></li>
+</ul>
+</li>
+</ol>
+
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/inkscape/">Series</a><br>
+            
+      <a class="scur" href="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/">Vectorizing an image</a><br>
+    
+      </div>
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#foreword">Foreword</a>
+        </div>
+        <div>
+          <a href="#vectorization">Vectorization</a>
+        </div>
+        <div>
+          <a href="#crop-image">Crop image</a>
+        </div>
+        <div class="hpad">
+          <a href="#draw-the-crop-shape"><small>- Draw the crop shape</small></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/inkscape&#x2F;vectorizing_an_image.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer><span class="topout">
+<span class="topleft"> </span><a href="#" class="top" title="Back to Top">&cuwed;</a>
+</span>
+</body>
+</html>

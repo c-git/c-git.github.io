@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Javascript</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/javascript/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-26T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/javascript/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Event Handlers</title>
+        <published>2022-12-07T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/javascript/event-handlers/"/>
+        <id>https://dev.chester.wykies.com/javascript/event-handlers/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/javascript/event-handlers/">&lt;h1 id=&quot;onclick&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#onclick&quot; aria-label=&quot;Anchor link for: onclick&quot;&gt;OnClick&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;Event&#x2F;target&quot;&gt;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;API&#x2F;Event&#x2F;target&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;See source for more details but my understanding of it is given a function&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; myOnClick&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #FFAB70;&quot;&gt;event&lt;&#x2F;span&gt;&lt;span&gt;) {&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;    const&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; elementClicked&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span&gt; evt.target;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;then that function can be set on any element and will fire for that element and all it’s children and the target will
+tell you which element (might be a child) that was clicked.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Arrays</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/javascript/arrays/"/>
+        <id>https://dev.chester.wykies.com/javascript/arrays/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/javascript/arrays/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Reference&#x2F;Global_Objects&#x2F;Array&quot;&gt;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;JavaScript&#x2F;Reference&#x2F;Global_Objects&#x2F;Array&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;includes&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#includes&quot; aria-label=&quot;Anchor link for: includes&quot;&gt;includes&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.w3schools.com&#x2F;jsref&#x2F;jsref_includes_array.asp&quot;&gt;https:&#x2F;&#x2F;www.w3schools.com&#x2F;jsref&#x2F;jsref_includes_array.asp&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Checks if the input is contained in the array&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;const&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; fruits&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span&gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;Banana&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Orange&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Apple&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Mango&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;];&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;fruits.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;includes&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;Mango&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;);&lt;&#x2F;span&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt; &#x2F;&#x2F; Returns true&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;some&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#some&quot; aria-label=&quot;Anchor link for: some&quot;&gt;some&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;The &lt;code&gt;some()&lt;&#x2F;code&gt; method tests whether at least one element in the array passes the test implemented by the provided
+function.
+It returns true if, in the array, it finds an element for which the provided function returns true;
+otherwise it returns false.
+It doesn’t modify the array.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;const&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; array&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span&gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 2&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 3&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 4&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 5&lt;&#x2F;span&gt;&lt;span&gt;];&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;&#x2F;&#x2F; checks whether an element is even&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;const&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; even&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color: #FFAB70;&quot;&gt;element&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt; element&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; %&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 2&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; ===&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 0&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;console.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;log&lt;&#x2F;span&gt;&lt;span&gt;(array.&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;some&lt;&#x2F;span&gt;&lt;span&gt;(even));&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;&#x2F;&#x2F; expected output: true&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Linting Suppression</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/javascript/linting/"/>
+        <id>https://dev.chester.wykies.com/javascript/linting/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/javascript/linting/">&lt;h1 id=&quot;foreword&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#foreword&quot; aria-label=&quot;Anchor link for: foreword&quot;&gt;Foreword&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;These techniques are tested on PyCharm but some like the global variables one are known to work on NetBeans as well.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;global-variable&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#global-variable&quot; aria-label=&quot;Anchor link for: global-variable&quot;&gt;Global variable&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;intellij-support.jetbrains.com&#x2F;hc&#x2F;en-us&#x2F;community&#x2F;posts&#x2F;207070365-Configuring-inspection-Unresolved-JavaScript-variable-to-recognize-global-variables-from-external-files&quot;&gt;https:&#x2F;&#x2F;intellij-support.jetbrains.com&#x2F;hc&#x2F;en-us&#x2F;community&#x2F;posts&#x2F;207070365-Configuring-inspection-Unresolved-JavaScript-variable-to-recognize-global-variables-from-external-files&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Notice: Superseded by using &lt;code&gt;js_lib&lt;&#x2F;code&gt;&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Use a comma separated list of the global variables in a comment.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;&#x2F;* global SpreadsheetApp, Logger, DriveApp, GmailApp, Session *&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;default-types-supported-in-docstrings&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#default-types-supported-in-docstrings&quot; aria-label=&quot;Anchor link for: default-types-supported-in-docstrings&quot;&gt;Default Types supported in docstrings&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@trukrs&#x2F;type-safe-javascript-with-jsdoc-7a2a63209b76&quot;&gt;https:&#x2F;&#x2F;medium.com&#x2F;@trukrs&#x2F;type-safe-javascript-with-jsdoc-7a2a63209b76&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;null&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;undefined&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;boolean&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;number&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;string&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Array&lt;&#x2F;code&gt; or &lt;code&gt;[]&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Object&lt;&#x2F;code&gt; or &lt;code&gt;{}&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;any&lt;&#x2F;code&gt; (Added by me because it makes sense)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can have a typed array: &lt;code&gt;any[]&lt;&#x2F;code&gt;, &lt;code&gt;number[]&lt;&#x2F;code&gt;, &lt;code&gt;string[]&lt;&#x2F;code&gt;. You could also have an array of object types: &lt;code&gt;Employee[]&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
