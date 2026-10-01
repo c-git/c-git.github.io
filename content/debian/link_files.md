@@ -1,7 +1,7 @@
 +++
 title = "Links between files"
 date = 2024-02-24
-updated = 2025-04-26
+updated = 2026-10-01
 extra = { series = "Debian" }
 taxonomies = { tags = ["Debian"] }
 +++
@@ -9,7 +9,7 @@ taxonomies = { tags = ["Debian"] }
 # TLDR
 
 - Hard links share the same data but are independent of each other in terms of the file system and deleting one doesn't affect the other
-- Hard links are usually restricted to only files and withing the same file system
+- Hard links are usually restricted to only files and within the same file system
 - Soft links are usually allowed to be dangling and can break and can also be relative or absolute
 - `ln` defaults to hard links
 - `ln` with `-s` will create a symbolic link instead
