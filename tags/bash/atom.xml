@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Bash</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/bash/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-05-14T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/bash/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Omit From History</title>
+        <published>2025-02-20T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/bash/omit-from-history/"/>
+        <id>https://dev.chester.wykies.com/bash/omit-from-history/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/bash/omit-from-history/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;6475524&#x2F;how-do-i-prevent-commands-from-showing-up-in-bash-history&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;6475524&#x2F;how-do-i-prevent-commands-from-showing-up-in-bash-history&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If you want to leave commands out of the history prefix them with whitespace.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Redirect Output</title>
+        <published>2024-11-13T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/bash/redirect-output/"/>
+        <id>https://dev.chester.wykies.com/bash/redirect-output/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/bash/redirect-output/">&lt;h1 id=&quot;stderr-to-stdout&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#stderr-to-stdout&quot; aria-label=&quot;Anchor link for: stderr-to-stdout&quot;&gt;stderr to stdout&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Use &lt;code&gt;2&amp;gt;&amp;amp;1&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In the example without the redirect there is no output in vscode because &lt;code&gt;tar&lt;&#x2F;code&gt; requires arguments and instead prints to &lt;code&gt;stderr&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;tar&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; 2&amp;gt;&amp;amp;1 |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; code&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; -&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If sending to a file instead of piping &lt;code&gt;stdout&lt;&#x2F;code&gt; then redirect &lt;code&gt;stdout&lt;&#x2F;code&gt; first (the order the redirects are done in matters).
+As it does the redirects from left to right as per &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;876239&#x2F;how-to-redirect-and-append-both-standard-output-and-standard-error-to-a-file-wit&quot;&gt;SA Question&lt;&#x2F;a&gt;. (See excerpt below)&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;cmd &amp;gt;&amp;gt;file.txt 2&amp;gt;&amp;amp;1&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;br &#x2F;&gt;
+Bash executes the redirects from left to right as follows:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;gt;&amp;gt;file.txt&lt;&#x2F;code&gt;: Open file.txt in append mode and redirect stdout there.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;2&amp;gt;&amp;amp;1&lt;&#x2F;code&gt;: Redirect stderr to “where stdout is currently going”. In this case, that is a file opened in append mode. In other words, the &amp;amp;1 reuses the file descriptor which stdout currently uses.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;tar&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;file.txt&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; 2&amp;gt;&amp;amp;1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Background Commands</title>
+        <published>2024-03-03T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/bash/background-commands/"/>
+        <id>https://dev.chester.wykies.com/bash/background-commands/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/bash/background-commands/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;510811&#x2F;what-is-the-difference-between-ctrl-z-and-ctrl-c-in-the-terminal&quot;&gt;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;510811&#x2F;what-is-the-difference-between-ctrl-z-and-ctrl-c-in-the-terminal&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Note: I found more info on &lt;code&gt;fg&lt;&#x2F;code&gt; in the man page for sh (see &lt;code&gt;man sh&lt;&#x2F;code&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;We all end up pressing &lt;code&gt;Ctrl + Z&lt;&#x2F;code&gt; instead of &lt;code&gt;Ctrl + C&lt;&#x2F;code&gt; one day and not knowing what to do.
+This isn’t always a big deal unless the program that was running locked some resource you want to use.
+Closing the terminal “fixes” it but that might be inconvenient.
+What &lt;code&gt;Ctrl + Z&lt;&#x2F;code&gt; does is suspend the program instead of stopping it like &lt;code&gt;Ctrl + C&lt;&#x2F;code&gt;.
+So it’s not running but it’s basically paused and in the background.&lt;&#x2F;p&gt;
+&lt;p&gt;There are two commands you can use to control programs in the background &lt;code&gt;bg&lt;&#x2F;code&gt; and &lt;code&gt;fg&lt;&#x2F;code&gt;.
+Didn’t find any info on these programs from a cursory search. No man page for either and &lt;code&gt;--help&lt;&#x2F;code&gt; doesn’t seem to be an argument.
+The following is from my testing mostly using &lt;code&gt;ping&lt;&#x2F;code&gt; which still sends messages to the terminal even if it’s running in the background.
+To see if it is in the background I tried using another command like top.
+From those test I concluded the following:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fg&lt;&#x2F;code&gt; - brings a suspended (or running in the background) program to the foreground&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;bg&lt;&#x2F;code&gt; - resumes a suspended program in the background (you can continue to use the terminal, with the background program possibly sending messages)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&lt;&#x2F;code&gt; at the end of command seems to start a command and then put it to run in the background so &lt;code&gt;fg&lt;&#x2F;code&gt; can be used to bring it back to the foreground&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Command Substitution</title>
+        <published>2023-12-29T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/bash/command-substitution/"/>
+        <id>https://dev.chester.wykies.com/bash/command-substitution/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/bash/command-substitution/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;mywiki.wooledge.org&#x2F;CommandSubstitution&quot;&gt;http:&#x2F;&#x2F;mywiki.wooledge.org&#x2F;CommandSubstitution&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Inserts the output of one command into another command.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo&lt;&#x2F;span&gt;&lt;span&gt; $(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;pwd&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Example Output: &lt;code&gt;&#x2F;home&#x2F;user&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;NB: Older shells seemed to have only supported ` but &lt;code&gt;$()&lt;&#x2F;code&gt; is &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;mywiki.wooledge.org&#x2F;BashFAQ&#x2F;082&quot;&gt;preferred&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Scripts</title>
+        <published>2023-12-11T00:00:00+00:00</published>
+        <updated>2025-05-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/bash/scripts/"/>
+        <id>https://dev.chester.wykies.com/bash/scripts/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/bash/scripts/">&lt;h1 id=&quot;shebang-line&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#shebang-line&quot; aria-label=&quot;Anchor link for: shebang-line&quot;&gt;Shebang Line&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codejunction.hashnode.dev&#x2F;the-advantage-of-using-usrbinenv-bash-over-binbash&quot;&gt;https:&#x2F;&#x2F;codejunction.hashnode.dev&#x2F;the-advantage-of-using-usrbinenv-bash-over-binbash&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This is the line that goes at the top of the script and tells the shell what to use to execute the script&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;#!&#x2F;usr&#x2F;bin&#x2F;env bash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;if-statements&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#if-statements&quot; aria-label=&quot;Anchor link for: if-statements&quot;&gt;If statements&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;linuxize.com&#x2F;post&#x2F;bash-if-else-statement&#x2F;&quot;&gt;https:&#x2F;&#x2F;linuxize.com&#x2F;post&#x2F;bash-if-else-statement&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;WARNING!!&lt;&#x2F;strong&gt; I ran into syntax errors with &lt;code&gt;fi&lt;&#x2F;code&gt; if I put &lt;code&gt;then&lt;&#x2F;code&gt; on the same line with &lt;code&gt;if&lt;&#x2F;code&gt; (see error message below)&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;… syntax error near unexpected token `fi’&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; TEST-COMMAND1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;then&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;  STATEMENTS1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;elif&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; TEST-COMMAND2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;then&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;  STATEMENTS2&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;else&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;  STATEMENTS3&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;fi&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;#!&#x2F;bin&#x2F;bash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo -n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Enter a number: &amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; VAR&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; [ $VAR&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; -gt&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 10&lt;&#x2F;span&gt;&lt;span&gt; ]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;then&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;  echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;The variable is greater than 10.&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;elif&lt;&#x2F;span&gt;&lt;span&gt; [ $VAR&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; -eq&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 10&lt;&#x2F;span&gt;&lt;span&gt; ]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;then&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;  echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;The variable is equal to 10.&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;else&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;  echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;The variable is less than 10.&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;fi&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;until&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#until&quot; aria-label=&quot;Anchor link for: until&quot;&gt;Until&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;#!&#x2F;bin&#x2F;bash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;counter&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;0&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;until&lt;&#x2F;span&gt;&lt;span&gt; [ $counter&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; -gt&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 5&lt;&#x2F;span&gt;&lt;span&gt; ]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;do&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;  echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; Counter:&lt;&#x2F;span&gt;&lt;span&gt; $counter&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  ((counter&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;++&lt;&#x2F;span&gt;&lt;span&gt;))&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;done&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;positional-arguments&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#positional-arguments&quot; aria-label=&quot;Anchor link for: positional-arguments&quot;&gt;Positional arguments&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.redhat.com&#x2F;en&#x2F;blog&#x2F;arguments-options-bash-scripts&quot;&gt;https:&#x2F;&#x2F;www.redhat.com&#x2F;en&#x2F;blog&#x2F;arguments-options-bash-scripts&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;$0 - the name of the running script and $1 to $9 are positional arguments.
+The example if for a executable text file called &lt;code&gt;test_script&lt;&#x2F;code&gt; in your current directory.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;#!&#x2F;usr&#x2F;bin&#x2F;env bash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; Running&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; \&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #FFAB70;&quot;&gt;$0&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;\&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; With 1st argument in quotes is&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; \&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #FFAB70;&quot;&gt;$1&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;\&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; And 2nd without quotes this time is: &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;$2&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; And 3rd without quotes this time is:&lt;&#x2F;span&gt;&lt;span style=&quot;color: #FFAB70;&quot;&gt; $3&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Run with &lt;code&gt;.&#x2F;test_script.sh first second third&lt;&#x2F;code&gt; and it outputs&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Running &amp;quot;.&#x2F;test_script.sh&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;With 1st argument in quotes is &amp;quot;first&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;And 2nd without quotes this time is: second&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;And 3rd without quotes this time is: third&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;case-statements&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#case-statements&quot; aria-label=&quot;Anchor link for: case-statements&quot;&gt;Case statements&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;linuxize.com&#x2F;post&#x2F;bash-case-statement&#x2F;&quot;&gt;https:&#x2F;&#x2F;linuxize.com&#x2F;post&#x2F;bash-case-statement&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;case&lt;&#x2F;span&gt;&lt;span&gt; EXPRESSION&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; in&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt;  PATTERN_1&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;    STATEMENTS&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt;  PATTERN_2&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;    STATEMENTS&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt;  PATTERN_N&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;    STATEMENTS&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;  *)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;    STATEMENTS&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;esac&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;#!&#x2F;bin&#x2F;bash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo -n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Enter the name of a country: &amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; COUNTRY&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo -n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;The official language of &lt;&#x2F;span&gt;&lt;span&gt;$COUNTRY&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; is &amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;case&lt;&#x2F;span&gt;&lt;span&gt; $COUNTRY&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; in&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt;  Lithuania&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    echo -n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Lithuanian&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt;  Romania&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt; Moldova&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    echo -n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Romanian&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt;  Italy&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;San Marino&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #DBEDFF;&quot;&gt; Switzerland&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Vatican City&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    echo -n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Italian&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;  *)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    echo -n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;unknown&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ;;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;esac&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;comparing-strings&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#comparing-strings&quot; aria-label=&quot;Anchor link for: comparing-strings&quot;&gt;Comparing Strings&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;linuxize.com&#x2F;post&#x2F;how-to-compare-strings-in-bash&#x2F;&quot;&gt;https:&#x2F;&#x2F;linuxize.com&#x2F;post&#x2F;how-to-compare-strings-in-bash&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;See link for more info.
+One note I wanted to add is to ensure you use quotes around your strings especially if they are coming from variables.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;directory-exits-test-and-negation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#directory-exits-test-and-negation&quot; aria-label=&quot;Anchor link for: directory-exits-test-and-negation&quot;&gt;Directory exits test (and negation)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;The example below does nothing in the positive case and exits on the negative case&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; -d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;$SRC_DIR&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; ] &lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;then&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    :&lt;&#x2F;span&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt; # Do nothing (was getting trouble with negating the condition)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;else&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;  echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;Error: Source directory does not exist&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;  exit 1&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;fi&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;no-op&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#no-op&quot; aria-label=&quot;Anchor link for: no-op&quot;&gt;No-Op&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;12404661&#x2F;what-is-the-use-case-of-noop-in-bash&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;12404661&#x2F;what-is-the-use-case-of-noop-in-bash&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Simply use a &lt;code&gt;:&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;while&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; keep_waiting&lt;&#x2F;span&gt;&lt;span&gt;;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; do&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;  :&lt;&#x2F;span&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt; # do nothing&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;done&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;set-script-to-exit-on-errors&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#set-script-to-exit-on-errors&quot; aria-label=&quot;Anchor link for: set-script-to-exit-on-errors&quot;&gt;Set script to exit on errors&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;manual&#x2F;html_node&#x2F;The-Set-Builtin.html&quot;&gt;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;bash&#x2F;manual&#x2F;html_node&#x2F;The-Set-Builtin.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;set -e&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;set-script-to-echo-commands&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#set-script-to-echo-commands&quot; aria-label=&quot;Anchor link for: set-script-to-echo-commands&quot;&gt;Set script to echo commands&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;2853803&#x2F;how-to-echo-shell-commands-as-they-are-executed&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;2853803&#x2F;how-to-echo-shell-commands-as-they-are-executed&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;set -x&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;for-loops&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#for-loops&quot; aria-label=&quot;Anchor link for: for-loops&quot;&gt;For loops&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;opensource.com&#x2F;article&#x2F;18&#x2F;5&#x2F;you-dont-know-bash-intro-bash-arrays&quot;&gt;https:&#x2F;&#x2F;opensource.com&#x2F;article&#x2F;18&#x2F;5&#x2F;you-dont-know-bash-intro-bash-arrays&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Syntax&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: left&quot;&gt;Result&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;arr=()&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Create an empty array&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;${arr[2]}&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Retrieve third element&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;${!arr[@]}&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Retrieve array indices&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;arr[0]=3&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Overwrite 1st element&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;str=$(ls)&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Save ls output as a string&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;&lt;code&gt;${arr[@]:s:n}&lt;&#x2F;code&gt;&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: left&quot;&gt;Retrieve n elements starting at index s&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;example-simple-application-call&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example-simple-application-call&quot; aria-label=&quot;Anchor link for: example-simple-application-call&quot;&gt;Example simple application call&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;allThreads&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;1 2 4 8 16 32 64 128&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;allRuntimes&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; t&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; in&lt;&#x2F;span&gt;&lt;span&gt; ${allThreads[&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;@&lt;&#x2F;span&gt;&lt;span&gt;]};&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; do&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  runtime&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;.&#x2F;pipeline&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --threads&lt;&#x2F;span&gt;&lt;span&gt; $t)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  allRuntimes&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;+=&lt;&#x2F;span&gt;&lt;span&gt;( $runtime )&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;done&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;example-log-alerting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example-log-alerting&quot; aria-label=&quot;Anchor link for: example-log-alerting&quot;&gt;Example Log Alerting&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;# List of logs and who should be notified of issues&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;logPaths&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;api.log&amp;quot; &amp;quot;auth.log&amp;quot; &amp;quot;jenkins.log&amp;quot; &amp;quot;data.log&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;logEmails&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;jay@email&amp;quot; &amp;quot;emma@email&amp;quot; &amp;quot;jon@email&amp;quot; &amp;quot;sophia@email&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;# Look for signs of trouble in each log&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; i&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; in&lt;&#x2F;span&gt;&lt;span&gt; ${&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;!&lt;&#x2F;span&gt;&lt;span&gt;logPaths[&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;@&lt;&#x2F;span&gt;&lt;span&gt;]};&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;do&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  log&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;${logPaths[$i]}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  stakeholder&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;${logEmails[$i]}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;  numErrors&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; tail&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -n 100&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;$log&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; grep&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;ERROR&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; wc&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -l&lt;&#x2F;span&gt;&lt;span&gt; )&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;  # Warn stakeholders if recently saw &amp;gt; 5 errors&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;  if&lt;&#x2F;span&gt;&lt;span&gt; [[&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;$numErrors&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; -gt&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 5&lt;&#x2F;span&gt;&lt;span&gt; ]];&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;  then&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    emailRecipient&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;$stakeholder&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    emailSubject&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;WARNING: ${&lt;&#x2F;span&gt;&lt;span&gt;log&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;} showing unusual levels of errors&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    emailBody&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span&gt;numErrors&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;} errors found in log ${&lt;&#x2F;span&gt;&lt;span&gt;log&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;}&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;    echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;$emailBody&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; mailx&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -s&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;$emailSubject&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot; &amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;$emailRecipient&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;  fi&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;done&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bash Aliases</title>
+        <published>2022-08-22T00:00:00+00:00</published>
+        <updated>2025-05-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/bash/bash-aliases/"/>
+        <id>https://dev.chester.wykies.com/bash/bash-aliases/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/bash/bash-aliases/">&lt;p&gt;In a bash shell there is a special file provided for creating aliases to avoid directly editing your &lt;code&gt;.bashrc&lt;&#x2F;code&gt; logon script.
+This file is called &lt;code&gt;.bash_aliases&lt;&#x2F;code&gt; and is automatically imported in &lt;code&gt;.bashrc&lt;&#x2F;code&gt; on startup of a new shell.&lt;&#x2F;p&gt;
+&lt;p&gt;The format of an alias is:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;alias&lt;&#x2F;span&gt;&lt;span&gt; text_to_be_typed&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;command to be executed&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The &lt;code&gt;&#x27;&lt;&#x2F;code&gt; are only needed if the command has spaces.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;see-command-that-will-execute-when-alias-is-used&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#see-command-that-will-execute-when-alias-is-used&quot; aria-label=&quot;Anchor link for: see-command-that-will-execute-when-alias-is-used&quot;&gt;See command that will execute when alias is used&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;102093&#x2F;how-to-see-the-command-attached-to-a-bash-alias&quot;&gt;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;102093&#x2F;how-to-see-the-command-attached-to-a-bash-alias&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;type -a&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;cm&lt;&#x2F;span&gt;&lt;span&gt;d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;code&gt;-a&lt;&#x2F;code&gt; display all locations containing an executable named NAME; includes aliases, builtins, and functions.&lt;&#x2F;p&gt;
+&lt;p&gt;where &lt;code&gt;&amp;lt;cmd&amp;gt;&lt;&#x2F;code&gt; is the command or alias you want information on&lt;&#x2F;p&gt;
+&lt;p&gt;If using zsh you can also use the following&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;which&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;cm&lt;&#x2F;span&gt;&lt;span&gt;d&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Return Code</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/bash/return-code/"/>
+        <id>https://dev.chester.wykies.com/bash/return-code/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/bash/return-code/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;linuxhint.com&#x2F;bash-exit-code-of-last-command&#x2F;&quot;&gt;https:&#x2F;&#x2F;linuxhint.com&#x2F;bash-exit-code-of-last-command&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;To check the return code of the last command use&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;echo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; Last command return code was&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; $?&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - PyCharm</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/pycharm/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-26T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/pycharm/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Live Templates</title>
+        <published>2022-10-15T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/pycharm/live-templates/"/>
+        <id>https://dev.chester.wykies.com/pycharm/live-templates/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/pycharm/live-templates/">&lt;h1 id=&quot;create-new&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-new&quot; aria-label=&quot;Anchor link for: create-new&quot;&gt;Create new&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.jetbrains.com&#x2F;help&#x2F;pycharm&#x2F;creating-and-editing-live-templates.html&quot;&gt;https:&#x2F;&#x2F;www.jetbrains.com&#x2F;help&#x2F;pycharm&#x2F;creating-and-editing-live-templates.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;tldr&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#tldr&quot; aria-label=&quot;Anchor link for: tldr&quot;&gt;TLDR&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;code&gt;Settings&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;Editor&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;Live Templates&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Copy a similar one and paste it (ensure to define contexts in which it can be used)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;details&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#details&quot; aria-label=&quot;Anchor link for: details&quot;&gt;Details&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;For details see instructions from source.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Disable Formatter on parts of Code</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/pycharm/disable-formatter-on-part-of-code/"/>
+        <id>https://dev.chester.wykies.com/pycharm/disable-formatter-on-part-of-code/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/pycharm/disable-formatter-on-part-of-code/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;14020200&#x2F;how-to-config-intellij-idea-not-format-some-part-of-the-code&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;14020200&#x2F;how-to-config-intellij-idea-not-format-some-part-of-the-code&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-to-use&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-use&quot; aria-label=&quot;Anchor link for: how-to-use&quot;&gt;How to use&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;# @formatter:off&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;...&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #6A737D;&quot;&gt;# @formatter:on&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;required-settings&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#required-settings&quot; aria-label=&quot;Anchor link for: required-settings&quot;&gt;Required Settings&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Ensure it is enabled in settings&lt;&#x2F;p&gt;
+&lt;p&gt;Search String: “formatter markers”&lt;&#x2F;p&gt;
+&lt;p&gt;Editor -&amp;gt; Code Style: Formatter : Turn formatter on&#x2F;off with markers in code comments&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;pycharm&#x2F;disable-formatter-on-part-of-code&#x2F;scrshot.png&quot; alt=&quot;Screen Shot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>JavaScript</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/pycharm/javascript/"/>
+        <id>https://dev.chester.wykies.com/pycharm/javascript/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/pycharm/javascript/">&lt;p&gt;See &lt;a href=&quot;..&#x2F;..&#x2F;javascript&#x2F;linting&#x2F;index.html&quot;&gt;linting&lt;&#x2F;a&gt; under javascript.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Launcher Shortcut</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/pycharm/launcher/"/>
+        <id>https://dev.chester.wykies.com/pycharm/launcher/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/pycharm/launcher/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;391439&#x2F;how-can-i-set-up-pycharm-to-launch-from-the-launcher&quot;&gt;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;391439&#x2F;how-can-i-set-up-pycharm-to-launch-from-the-launcher&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open pycharm (See instructions that come in folder)&lt;&#x2F;li&gt;
+&lt;li&gt;Once you’ve opened PyCharm then go to &lt;code&gt;Tools&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;Create Desktop Entry...&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>RegExp Editor</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/pycharm/regex/"/>
+        <id>https://dev.chester.wykies.com/pycharm/regex/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/pycharm/regex/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;pycharm&#x2F;regex&#x2F;scrshot.png&quot; alt=&quot;Screen Shot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Also see my page on &lt;a href=&quot;https:&#x2F;&#x2F;dev.chester.wykies.com&#x2F;misc&#x2F;regex&#x2F;&quot;&gt;regex&lt;&#x2F;a&gt; where I have a cookbook of regexes I wrote or found and think I may use again.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

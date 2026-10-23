@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Games</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/games/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-10-23T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/games/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Sid Meier&#x27;s Civilization V</title>
+        <published>2026-10-23T00:00:00+00:00</published>
+        <updated>2026-10-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/games/civ5/"/>
+        <id>https://dev.chester.wykies.com/games/civ5/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/games/civ5/">&lt;p&gt;Search Keys: civ, civ5&lt;&#x2F;p&gt;
+&lt;p&gt;These are notes from a beginner trying to develop their early game strategy.
+Didn’t have a better place to store them than here (in terms of me being able to access them and ease of updates, hence here they are).
+Feel free to use but they are from a green player so take them with a grain of salt.
+I’ll include my reasons for each in &lt;code&gt;[]&lt;&#x2F;code&gt; so I can see when I come back to them if they still make sense.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;research&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#research&quot; aria-label=&quot;Anchor link for: research&quot;&gt;Research&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Calender (will automatically also do Pottery) [Allows faith based production]&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;build-don-t-queue-to-avoid-forgetting&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#build-don-t-queue-to-avoid-forgetting&quot; aria-label=&quot;Anchor link for: build-don-t-queue-to-avoid-forgetting&quot;&gt;Build (Don’t queue to avoid forgetting)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Scout [To get early game exploration benefits]&lt;&#x2F;li&gt;
+&lt;li&gt;Shrine (usually during the time worker is still building, needs Pottery research) [Better to start accumulating as soon as possible]&lt;&#x2F;li&gt;
+&lt;li&gt;Worker [I mean you NEED this as early as possible it feels like]&lt;&#x2F;li&gt;
+&lt;li&gt;Stonehenge (Able to build after Calender but do after worker) [Get this one under your belt to get the faith benefit]&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;purchases&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#purchases&quot; aria-label=&quot;Anchor link for: purchases&quot;&gt;Purchases&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Settler [Use money to avoid stopping city growth]&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;policies&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#policies&quot; aria-label=&quot;Anchor link for: policies&quot;&gt;Policies&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Tradition&lt;&#x2F;li&gt;
+&lt;li&gt;Oligarchy&lt;&#x2F;li&gt;
+&lt;li&gt;Legalism&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;ideology&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ideology&quot; aria-label=&quot;Anchor link for: ideology&quot;&gt;Ideology&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;strong&gt;Autocracy&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;L1 - Elite Forces, Mobilization, Industrial Espionage&lt;&#x2F;li&gt;
+&lt;li&gt;L2 - Nationalism, Third Alternative&lt;&#x2F;li&gt;
+&lt;li&gt;L3 - Gunboat Diplomacy&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

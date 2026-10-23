@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>services systemd (unit) | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/debian/services/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/debian/services/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/debian/services/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="services systemd (unit) | Chester Wyke" />
+  <meta name="twitter:title" content="services systemd (unit) | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2026-02-04" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/debian/services/">services systemd (unit)</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> September 23, 2023 <span class="rpad"></span>Updated: February 04, 2026 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/debian/">Debian</a> </span>
+
+    
+        <div class="block">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/debian/">Debian (Series)</a><br>
+            <a href="https://dev.chester.wykies.com/debian/mac-address-change/">MAC Address Change</a><br>
+            <a href="https://dev.chester.wykies.com/debian/permissions-recusively-on-dir/">Set permissions recursively on directory structure</a><br>
+            <a href="https://dev.chester.wykies.com/debian/touch/">Touch (Set file modified date)</a><br>
+            <a href="https://dev.chester.wykies.com/debian/android-on-linux/">Android Apps on Linux</a><br>
+            <a href="https://dev.chester.wykies.com/debian/blacklist-module/">Blacklist Module</a><br>
+            <a href="https://dev.chester.wykies.com/debian/calender-notifications-popup-disable/">Calender Notifications Popup Disable</a><br>
+            <a href="https://dev.chester.wykies.com/debian/cups-pdf-printer/">CUPS PDF Printer</a><br>
+            <a href="https://dev.chester.wykies.com/debian/gping/">gping</a><br>
+            <a href="https://dev.chester.wykies.com/debian/hide-mounts/">Hide Mounts</a><br>
+            <a href="https://dev.chester.wykies.com/debian/nautilus/">Nautilus</a><br>
+            <a href="https://dev.chester.wykies.com/debian/power/">Power</a><br>
+            <a href="https://dev.chester.wykies.com/debian/smartgit/">Smartgit</a><br>
+            <a href="https://dev.chester.wykies.com/bash/bash-aliases/">Bash Aliases</a><br>
+            <a href="https://dev.chester.wykies.com/debian/video-cards/">Video Cards</a><br>
+            <a href="https://dev.chester.wykies.com/debian/snapcraft/">Snapcraft</a><br>
+            <a href="https://dev.chester.wykies.com/sql/reset-root-password/">Reset Root Password</a><br>
+            <a href="https://dev.chester.wykies.com/debian/acrobat-reader/">Acrobat Reader</a><br>
+            <a href="https://dev.chester.wykies.com/debian/audio/">Audio</a><br>
+            <a href="https://dev.chester.wykies.com/debian/shortcuts-important/">Shortcuts (Important)</a><br>
+            <a href="https://dev.chester.wykies.com/debian/dns/">DNS</a><br>
+            <a href="https://dev.chester.wykies.com/debian/mounting/">Mounting Drives</a><br>
+            <a href="https://dev.chester.wykies.com/debian/setup-network-shares/">Setup Network Shares</a><br>
+            <a href="https://dev.chester.wykies.com/debian/cron/">Cron</a><br>
+            <a href="https://dev.chester.wykies.com/debian/startup/">Startup</a><br>
+            <a href="https://dev.chester.wykies.com/debian/users-and-groups/">Users and Groups</a><br>
+            <a href="https://dev.chester.wykies.com/debian/paths-to-rem/">Paths to remember</a><br>
+            <a href="https://dev.chester.wykies.com/debian/manual-kernel-remove/">Manually Removing Old Kernels</a><br>
+            <a href="https://dev.chester.wykies.com/debian/icons/">Set Icon for Application</a><br>
+            <a href="https://dev.chester.wykies.com/debian/strange-problems/">Strange Problems and Fixes</a><br>
+            <a href="https://dev.chester.wykies.com/debian/redirect-stderr/">Redirecting stderr</a><br>
+            <a href="https://dev.chester.wykies.com/debian/extension/">Extensions</a><br>
+            <a href="https://dev.chester.wykies.com/debian/ubuntu-software/">Ubuntu Software</a><br>
+            <a href="https://dev.chester.wykies.com/debian/seconds-clock/">Show Seconds on Clock Display</a><br>
+            <a href="https://dev.chester.wykies.com/debian/create-bootable-flash/">Create Bootable Flash Drive</a><br>
+            <a href="https://dev.chester.wykies.com/debian/compressed-files/">Compressed Files</a><br>
+            <a class="scur" href="https://dev.chester.wykies.com/debian/services/">services systemd (unit)</a><br> 
+          
+            <a href="https://dev.chester.wykies.com/debian/scp/">SCP</a><br>
+            <a href="https://dev.chester.wykies.com/debian/ssh/">SSH</a><br>
+            <a href="https://dev.chester.wykies.com/debian/update/">Updating</a><br>
+            <a href="https://dev.chester.wykies.com/debian/useful-commands/">Useful commands</a><br>
+            <a href="https://dev.chester.wykies.com/debian/firewall/">Firewall</a><br>
+            <a href="https://dev.chester.wykies.com/debian/view-whitespace/">View Whitespace</a><br>
+            <a href="https://dev.chester.wykies.com/debian/open-vpn/">OpenVPN</a><br>
+            <a href="https://dev.chester.wykies.com/debian/ppp-logs/">PPP logs</a><br>
+            <a href="https://dev.chester.wykies.com/bash/scripts/">Scripts</a><br>
+            <a href="https://dev.chester.wykies.com/debian/man/">MAN</a><br>
+            <a href="https://dev.chester.wykies.com/debian/terminal/">Terminal</a><br>
+            <a href="https://dev.chester.wykies.com/debian/sed/">sed</a><br>
+            <a href="https://dev.chester.wykies.com/debian/characters/">Characters</a><br>
+            <a href="https://dev.chester.wykies.com/debian/zsh/">zsh</a><br>
+            <a href="https://dev.chester.wykies.com/debian/link-files/">Links between files</a><br>
+            <a href="https://dev.chester.wykies.com/debian/7zip/">7z encrypted file</a><br>
+            <a href="https://dev.chester.wykies.com/debian/wayland-or-x11/">Wayland or x11?</a><br>
+            <a href="https://dev.chester.wykies.com/debian/delete-old/">Delete Old Files Automatically</a><br>
+            <a href="https://dev.chester.wykies.com/debian/screen/">Screen Application</a><br>
+            <a href="https://dev.chester.wykies.com/debian/set-ip/">Set IP</a><br>
+      </div>
+    </div>
+
+
+<p>Source: <a rel="noopener external" target="_blank" href="https://linuxhandbook.com/create-systemd-services">linuxhandbook</a></p>
+<h1 id="sending-output-to-a-file"><a class="zola-anchor" href="#sending-output-to-a-file" aria-label="Anchor link for: sending-output-to-a-file">Sending output to a file</a></h1>
+<p>Source: <a rel="noopener external" target="_blank" href="https://unix.stackexchange.com/questions/245037/saving-process-output-to-a-file-in-systemd-unit-file">https://unix.stackexchange.com/questions/245037/saving-process-output-to-a-file-in-systemd-unit-file</a></p>
+<p>Commands are not subject to shell parsing eg “&lt; &gt; &lt;&lt; &gt;&gt; and &amp;” are not treated specially. Use <code>/bin/sh 'script.sh &gt; out'</code> to get around this.</p>
+<h1 id="file-location"><a class="zola-anchor" href="#file-location" aria-label="Anchor link for: file-location">File location</a></h1>
+<h2 id="if-running-as-root-user"><a class="zola-anchor" href="#if-running-as-root-user" aria-label="Anchor link for: if-running-as-root-user">If running as root user</a></h2>
+<p>File should be saved at <code>etc/systemd/system/</code></p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> nano /etc/systemd/system/SERVICE_NAME.service</span></span></code></pre><h2 id="if-running-as-non-root-user"><a class="zola-anchor" href="#if-running-as-non-root-user" aria-label="Anchor link for: if-running-as-non-root-user">If running as non-root user</a></h2>
+<p>File should be saved at <code>~/.config/systemd/user/</code> . Note that This folder usually won’t exist so create it.</p>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">mkdir</span><span style="color: #79B8FF;"> -p</span><span style="color: #9ECBFF;"> ~/.config/systemd/user</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">nano</span><span style="color: #9ECBFF;"> ~/.config/systemd/user/SERVICE_NAME.service</span></span></code></pre><h1 id="example-contents"><a class="zola-anchor" href="#example-contents" aria-label="Anchor link for: example-contents">Example Contents</a></h1>
+<ul>
+<li>This is the same for both (with a few exceptions).
+See the <a rel="noopener external" target="_blank" href="https://linuxhandbook.com/create-systemd-services">linuxhandbook</a> for more info on what should be set in the file.</li>
+<li>You can find a list of targets <a rel="noopener external" target="_blank" href="https://www.freedesktop.org/software/systemd/man/latest/systemd.special.html">here</a>.</li>
+<li>You can also set the <strong>user</strong> to run as for system wide services (see <a rel="noopener external" target="_blank" href="https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#User=">here</a>).</li>
+<li>You can set <strong>environment variables</strong> using <code>Environment=</code> (see <a rel="noopener external" target="_blank" href="https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#Environment">here</a> for more).</li>
+<li>You can set <strong>working directory</strong> using <code>WorkingDirectory=</code> (see <a rel="noopener external" target="_blank" href="https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#WorkingDirectory=">here</a> for more).</li>
+<li>You can set <strong>standard output</strong> using <code>StandardOutput=</code> (see <a rel="noopener external" target="_blank" href="https://www.freedesktop.org/software/systemd/man/latest/systemd.exec.html#StandardOutput=">here</a> for more) Note: <strong>stderr</strong> defaults to use the same path (I think, not tested but based on the docs).</li>
+</ul>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="plain"><span class="giallo-l"><span>[Unit]</span></span>
+<span class="giallo-l"><span>Description=User Facing name of service</span></span>
+<span class="giallo-l"><span>After=network.target</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>[Service]</span></span>
+<span class="giallo-l"><span>ExecStart=/bin/bash -c &#39;/usr/bin/my_awesome_program &gt;&gt; /home/user/out.txt 2&gt;&amp;1&#39;</span></span>
+<span class="giallo-l"><span>User=[Only allowed when running as root to set the user to use instead of root (see note above)]</span></span>
+<span class="giallo-l"><span>WorkingDirectory=[relative to another option root but absolute paths work]</span></span>
+<span class="giallo-l"><span>Environment=&quot;VAR1=word1 word2&quot; VAR2=word3 &quot;VAR3=$word 5 6&quot;</span></span>
+<span class="giallo-l"><span>StandardOutput=append:/my_folder/output.txt</span></span>
+<span class="giallo-l"><span>Type=simple</span></span>
+<span class="giallo-l"><span>Restart=always</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>[Install]</span></span>
+<span class="giallo-l"><span>WantedBy=default.target</span></span></code></pre><h1 id="enabling-and-starting-the-service"><a class="zola-anchor" href="#enabling-and-starting-the-service" aria-label="Anchor link for: enabling-and-starting-the-service">Enabling and starting the service</a></h1>
+<h2 id="if-running-as-root-user-1"><a class="zola-anchor" href="#if-running-as-root-user-1" aria-label="Anchor link for: if-running-as-root-user-1">If running as root user</a></h2>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl daemon-reload</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl enable SERVICE_NAME.service</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl start SERVICE_NAME</span></span></code></pre><h2 id="if-running-as-non-root-user-1"><a class="zola-anchor" href="#if-running-as-non-root-user-1" aria-label="Anchor link for: if-running-as-non-root-user-1">If running as non-root user</a></h2>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> daemon-reload</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> enable SERVICE_NAME.service</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> start SERVICE_NAME</span></span></code></pre><h1 id="updates-to-service-config"><a class="zola-anchor" href="#updates-to-service-config" aria-label="Anchor link for: updates-to-service-config">Updates to service config</a></h1>
+<p>This section applies if you’ve made changes to the service’s configuration and want to apply those changes</p>
+<h2 id="if-running-as-root-user-2"><a class="zola-anchor" href="#if-running-as-root-user-2" aria-label="Anchor link for: if-running-as-root-user-2">If running as root user</a></h2>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl daemon-reload</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl restart SERVICE_NAME</span></span></code></pre><h2 id="if-running-as-non-root-user-2"><a class="zola-anchor" href="#if-running-as-non-root-user-2" aria-label="Anchor link for: if-running-as-non-root-user-2">If running as non-root user</a></h2>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> daemon-reload</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> restart SERVICE_NAME</span></span></code></pre><h1 id="removing-services"><a class="zola-anchor" href="#removing-services" aria-label="Anchor link for: removing-services">Removing Services</a></h1>
+<p>Source: <a rel="noopener external" target="_blank" href="https://www.baeldung.com/linux/create-remove-systemd-services#1-removing-custom-systemd-services">https://www.baeldung.com/linux/create-remove-systemd-services#1-removing-custom-systemd-services</a></p>
+<h2 id="if-running-as-root-user-3"><a class="zola-anchor" href="#if-running-as-root-user-3" aria-label="Anchor link for: if-running-as-root-user-3">If running as root user</a></h2>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl stop SERVICE_NAME</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl disable SERVICE_NAME</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> rm /etc/systemd/system/SERVICE_NAME.service</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">sudo</span><span style="color: #9ECBFF;"> systemctl daemon-reload</span></span></code></pre><h2 id="if-running-as-non-root-user-3"><a class="zola-anchor" href="#if-running-as-non-root-user-3" aria-label="Anchor link for: if-running-as-non-root-user-3">If running as non-root user</a></h2>
+<pre class="giallo" style="color: #E1E4E8; background-color: #24292E;"><code data-lang="shellscript"><span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> stop SERVICE_NAME</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> disable SERVICE_NAME</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">rm</span><span style="color: #9ECBFF;"> ~/.config/systemd/user/SERVICE_NAME.service</span></span>
+<span class="giallo-l"><span style="color: #B392F0;">systemctl</span><span style="color: #79B8FF;"> --user</span><span style="color: #9ECBFF;"> daemon-reload</span></span></code></pre>
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv">
+        <a class="b s150" href="https://dev.chester.wykies.com/tags/debian/">Series</a><br>
+
+          
+          
+      <a href="https://dev.chester.wykies.com/debian/mac-address-change/">MAC Address Change</a><br>
+
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/debian/permissions-recusively-on-dir/">Set permissions recursively on directory structure</a><br>
+                <a href="https://dev.chester.wykies.com/debian/touch/">Touch (Set file modified date)</a><br>
+                <a href="https://dev.chester.wykies.com/debian/android-on-linux/">Android Apps on Linux</a><br>
+                <a href="https://dev.chester.wykies.com/debian/blacklist-module/">Blacklist Module</a><br>
+                <a href="https://dev.chester.wykies.com/debian/calender-notifications-popup-disable/">Calender Notifications Popup Disable</a><br>
+                <a href="https://dev.chester.wykies.com/debian/cups-pdf-printer/">CUPS PDF Printer</a><br>
+                <a href="https://dev.chester.wykies.com/debian/gping/">gping</a><br>
+                <a href="https://dev.chester.wykies.com/debian/hide-mounts/">Hide Mounts</a><br>
+                <a href="https://dev.chester.wykies.com/debian/nautilus/">Nautilus</a><br>
+                <a href="https://dev.chester.wykies.com/debian/power/">Power</a><br>
+                <a href="https://dev.chester.wykies.com/debian/smartgit/">Smartgit</a><br>
+                <a href="https://dev.chester.wykies.com/bash/bash-aliases/">Bash Aliases</a><br>
+                <a href="https://dev.chester.wykies.com/debian/video-cards/">Video Cards</a><br>
+                <a href="https://dev.chester.wykies.com/debian/snapcraft/">Snapcraft</a><br>
+                <a href="https://dev.chester.wykies.com/sql/reset-root-password/">Reset Root Password</a><br>
+                <a href="https://dev.chester.wykies.com/debian/acrobat-reader/">Acrobat Reader</a><br>
+                <a href="https://dev.chester.wykies.com/debian/audio/">Audio</a><br>
+                <a href="https://dev.chester.wykies.com/debian/shortcuts-important/">Shortcuts (Important)</a><br>
+                <a href="https://dev.chester.wykies.com/debian/dns/">DNS</a><br>
+                <a href="https://dev.chester.wykies.com/debian/mounting/">Mounting Drives</a><br>
+                <a href="https://dev.chester.wykies.com/debian/setup-network-shares/">Setup Network Shares</a><br>
+                <a href="https://dev.chester.wykies.com/debian/cron/">Cron</a><br>
+                <a href="https://dev.chester.wykies.com/debian/startup/">Startup</a><br>
+                <a href="https://dev.chester.wykies.com/debian/users-and-groups/">Users and Groups</a><br>
+                <a href="https://dev.chester.wykies.com/debian/paths-to-rem/">Paths to remember</a><br>
+                <a href="https://dev.chester.wykies.com/debian/manual-kernel-remove/">Manually Removing Old Kernels</a><br>
+                <a href="https://dev.chester.wykies.com/debian/icons/">Set Icon for Application</a><br>
+                <a href="https://dev.chester.wykies.com/debian/strange-problems/">Strange Problems and Fixes</a><br>
+                <a href="https://dev.chester.wykies.com/debian/redirect-stderr/">Redirecting stderr</a><br>
+                <a href="https://dev.chester.wykies.com/debian/extension/">Extensions</a><br>
+                <a href="https://dev.chester.wykies.com/debian/ubuntu-software/">Ubuntu Software</a><br>
+                <a href="https://dev.chester.wykies.com/debian/seconds-clock/">Show Seconds on Clock Display</a><br>
+            </div>
+
+          
+
+          
+            <a href="https://dev.chester.wykies.com/debian/create-bootable-flash/">Create Bootable Flash Drive</a><br>
+            <a href="https://dev.chester.wykies.com/debian/compressed-files/">Compressed Files</a><br>
+
+          
+            
+      <a class="scur" href="https://dev.chester.wykies.com/debian/services/">services systemd (unit)</a><br>
+    
+
+          
+            <a href="https://dev.chester.wykies.com/debian/scp/">SCP</a><br>
+          
+            <a href="https://dev.chester.wykies.com/debian/ssh/">SSH</a><br>
+          
+            <details>
+              <summary>More...</summary>
+            </details>
+            <div class="hidden_li">
+                <a href="https://dev.chester.wykies.com/debian/update/">Updating</a><br>
+                <a href="https://dev.chester.wykies.com/debian/useful-commands/">Useful commands</a><br>
+                <a href="https://dev.chester.wykies.com/debian/firewall/">Firewall</a><br>
+                <a href="https://dev.chester.wykies.com/debian/view-whitespace/">View Whitespace</a><br>
+                <a href="https://dev.chester.wykies.com/debian/open-vpn/">OpenVPN</a><br>
+                <a href="https://dev.chester.wykies.com/debian/ppp-logs/">PPP logs</a><br>
+                <a href="https://dev.chester.wykies.com/bash/scripts/">Scripts</a><br>
+                <a href="https://dev.chester.wykies.com/debian/man/">MAN</a><br>
+                <a href="https://dev.chester.wykies.com/debian/terminal/">Terminal</a><br>
+                <a href="https://dev.chester.wykies.com/debian/sed/">sed</a><br>
+                <a href="https://dev.chester.wykies.com/debian/characters/">Characters</a><br>
+                <a href="https://dev.chester.wykies.com/debian/zsh/">zsh</a><br>
+                <a href="https://dev.chester.wykies.com/debian/link-files/">Links between files</a><br>
+                <a href="https://dev.chester.wykies.com/debian/7zip/">7z encrypted file</a><br>
+                <a href="https://dev.chester.wykies.com/debian/wayland-or-x11/">Wayland or x11?</a><br>
+                <a href="https://dev.chester.wykies.com/debian/delete-old/">Delete Old Files Automatically</a><br>
+                <a href="https://dev.chester.wykies.com/debian/screen/">Screen Application</a><br>
+            </div>
+        
+      <a href="https://dev.chester.wykies.com/debian/set-ip/">Set IP</a><br>
+
+        
+      </div>
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#sending-output-to-a-file">Sending output to a file</a>
+        </div>
+        <div>
+          <a href="#file-location">File location</a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-root-user"><small>- If running as root user</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-non-root-user"><small>- If running as non-root user</small></a>
+        </div>
+        <div>
+          <a href="#example-contents">Example Contents</a>
+        </div>
+        <div>
+          <a href="#enabling-and-starting-the-service">Enabling and starting the service</a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-root-user-1"><small>- If running as root user</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-non-root-user-1"><small>- If running as non-root user</small></a>
+        </div>
+        <div>
+          <a href="#updates-to-service-config">Updates to service config</a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-root-user-2"><small>- If running as root user</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-non-root-user-2"><small>- If running as non-root user</small></a>
+        </div>
+        <div>
+          <a href="#removing-services">Removing Services</a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-root-user-3"><small>- If running as root user</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#if-running-as-non-root-user-3"><small>- If running as non-root user</small></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/debian&#x2F;services.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

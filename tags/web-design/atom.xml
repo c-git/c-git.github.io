@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Web Design</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/web-design/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-26T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/web-design/atom.xml</id>
+    <entry xml:lang="en">
+        <title>CSS</title>
+        <published>2022-08-31T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/web_design/css/"/>
+        <id>https://dev.chester.wykies.com/web_design/css/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/web_design/css/">&lt;h1 id=&quot;css-selectors&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-selectors&quot; aria-label=&quot;Anchor link for: css-selectors&quot;&gt;CSS Selectors&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.w3schools.com&#x2F;cssref&#x2F;css_selectors.asp&quot;&gt;https:&#x2F;&#x2F;www.w3schools.com&#x2F;cssref&#x2F;css_selectors.asp&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Material Design</title>
+        <published>2022-08-31T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/web_design/material-design/"/>
+        <id>https://dev.chester.wykies.com/web_design/material-design/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/web_design/material-design/">&lt;h1 id=&quot;icons&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#icons&quot; aria-label=&quot;Anchor link for: icons&quot;&gt;Icons&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;materialdesignicons.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;materialdesignicons.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
