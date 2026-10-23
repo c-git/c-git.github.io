@@ -1,7 +1,7 @@
 +++
 title = "Quotes"
 date = 2024-06-07
-updated = 2026-05-18
+updated = 2026-10-23
 taxonomies = { tags = ["Misc"] }
 +++
 
@@ -51,3 +51,7 @@ _[Author Unclear](https://en.wikipedia.org/wiki/Serenity_Prayer) but words to li
 > Therefore, in every deed and every thought, act as though you were to die this very day. If you had a good conscience you would not fear death very much. It is better to avoid sin than to fear death. If you are not prepared today, how will you be prepared tomorrow? Tomorrow is an uncertain day; how do you know you will have a tomorrow?
 
 _[by](https://catholicarchive.org/thomas_a_kempis/the_imitation_of_christ/1/23.html) Thomas à Kempis in The Imitation of Christ_
+
+> _7_ Do not find fault before you investigate; first consider, and then reprove. _8_ Do not answer before you have heard, nor interrupt a speaker in the midst of his words. _9_ Do not argue about a matter which does not concern you, nor sit with sinners when they judge a case.
+
+[Sirach 11:7-9](https://www.biblegateway.com/passage/?search=Sirach%2011%3A7-9&version=RSVCE)
