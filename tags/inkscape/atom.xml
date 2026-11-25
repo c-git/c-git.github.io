@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Inkscape</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/inkscape/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-08-01T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/inkscape/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Vectorizing an image</title>
+        <published>2026-08-01T00:00:00+00:00</published>
+        <updated>2026-08-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/"/>
+        <id>https://dev.chester.wykies.com/inkscape/vectorizing-an-image/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/inkscape/vectorizing-an-image/">&lt;p&gt;Source: Gemini (extract, the parts that worked)&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;foreword&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#foreword&quot; aria-label=&quot;Anchor link for: foreword&quot;&gt;Foreword&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;This is meant to provide a way to take a raster image (common raster formats are BMP, JPEG, PNG) and convert it into a vector format like SVG.
+There are multiple ways to do it.
+This one is just one that worked for me.
+Tested on Inkscape 1.1.2 (0a00cf5339, 2022-02-04).&lt;&#x2F;p&gt;
+&lt;p&gt;It’s important to note that &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.vectorizer.io&quot;&gt;https:&#x2F;&#x2F;www.vectorizer.io&lt;&#x2F;a&gt; gave me a smaller more clear file but these instructions are good as a backup as that’s not a free service.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;vectorization&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#vectorization&quot; aria-label=&quot;Anchor link for: vectorization&quot;&gt;Vectorization&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the image in Inkscape&lt;&#x2F;li&gt;
+&lt;li&gt;Select the image
+&lt;ul&gt;
+&lt;li&gt;Click on the image with the Select Tool (the top black arrow on the left toolbar, shortcut S) to select it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Open &lt;code&gt;Trace Bitmap&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the top menu and select Path &amp;gt; Trace Bitmap… (or press Shift + Alt + B). (Opens on the right)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Select &lt;code&gt;Multiple scans&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Change &lt;code&gt;Brightness steps&lt;&#x2F;code&gt; to &lt;code&gt;Colors&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Increase the number of &lt;code&gt;Scans&lt;&#x2F;code&gt; depending on how many colors you have (8-16 recommended by Gemini). I found 90 worked better on my image that had gradients but be aware of the final file size. Play with it and see what works for you.
+&lt;ul&gt;
+&lt;li&gt;You can play with this number because it happens quickly&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Check &lt;code&gt;Smooth&lt;&#x2F;code&gt; and &lt;code&gt;Stack&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;(Optional) You may also want to select &lt;code&gt;Remove background&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Click Apply&lt;&#x2F;li&gt;
+&lt;li&gt;It will place the generated image on top of your image so drag it to the side and delete the one at the back and bring it back to the center&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h1 id=&quot;crop-image&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#crop-image&quot; aria-label=&quot;Anchor link for: crop-image&quot;&gt;Crop image&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;h2 id=&quot;draw-the-crop-shape&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#draw-the-crop-shape&quot; aria-label=&quot;Anchor link for: draw-the-crop-shape&quot;&gt;Draw the crop shape&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Select the Rectangle Tool from the left toolbar (or press R).&lt;&#x2F;li&gt;
+&lt;li&gt;Draw a rectangle framing only the part you want to keep (Tip: If the rectangle fills with solid color and hides the image, reduce its opacity in the ‘Fill and Stroke’ panel, or use an outlined box, so you can see your framing.)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Select &lt;strong&gt;All&lt;&#x2F;strong&gt; Objects (The framing box you just created and the image at the back, or all if you used &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.vectorizer.io&quot;&gt;https:&#x2F;&#x2F;www.vectorizer.io&lt;&#x2F;a&gt; as it will create multiple objects)
+&lt;ul&gt;
+&lt;li&gt;Activate the Select Tool (top black arrow, or press S).&lt;&#x2F;li&gt;
+&lt;li&gt;Select all (Ctrl+A)OR Click the box you just drew to select it and then Shift-click on the image at the back so &lt;strong&gt;BOTH&lt;&#x2F;strong&gt; are selected.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Apply the Crop (Set Clip, this only hides the rest of the content)
+&lt;ul&gt;
+&lt;li&gt;With both objects selected, go to the top menu and select &lt;code&gt;Object&lt;&#x2F;code&gt; &amp;gt; &lt;code&gt;Clip&lt;&#x2F;code&gt; &amp;gt; &lt;code&gt;Set&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Resize the canvas (should have a lot of empty space now)
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;code&gt;File&lt;&#x2F;code&gt; &amp;gt; &lt;code&gt;Document Properties...&lt;&#x2F;code&gt; (or press Ctrl + Shift + D).&lt;&#x2F;li&gt;
+&lt;li&gt;Click on &lt;code&gt;Resize page to content...&lt;&#x2F;code&gt;, this will open a sub menu&lt;&#x2F;li&gt;
+&lt;li&gt;Click &lt;code&gt;Resize page to drawing or selection (Ctrl+Shift+R)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Save
+&lt;ul&gt;
+&lt;li&gt;If you want to keep the hidden part which can be recovered with &lt;code&gt;Object&lt;&#x2F;code&gt; &amp;gt; &lt;code&gt;Clip&lt;&#x2F;code&gt; &amp;gt; &lt;code&gt;Release&lt;&#x2F;code&gt;, then just save as &lt;code&gt;Inkscape SVG&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;If you want to permanently remove the parts that are not visible select &lt;code&gt;Optimized SVG&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Set the filename&lt;&#x2F;li&gt;
+&lt;li&gt;Click &lt;code&gt;Save&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;In the menu that pops up check &lt;code&gt;Collapse groups&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Click &lt;code&gt;Ok&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+        
+    </entry>
+</feed>

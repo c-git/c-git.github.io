@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>VNC Ubuntu | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/misc/vnc/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/misc/vnc/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/misc/vnc/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="VNC Ubuntu | Chester Wyke" />
+  <meta name="twitter:title" content="VNC Ubuntu | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-04-26" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/misc/vnc/">VNC Ubuntu</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> January 07, 2024 <span class="rpad"></span>Updated: April 26, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/misc/">Misc</a> </span>
+
+    
+
+
+<p>I’ve needed to do this three times now and each time I don’t know what happens but I get issues so writing it down this time.
+The last time I think I got RDP working but I can’t figure out what’s wrong this time.</p>
+<p>The <a rel="noopener external" target="_blank" href="https://help.ubuntu.com/stable/ubuntu-help/sharing-desktop.html.ro">official docs</a> may work for you but I didn’t get through.
+Linking here as I usually end up looking at them.</p>
+<p><strong>Use Case</strong>: Simple remote screen sharing on local network.
+Screen stays visible on host computer and client is also able to view and interact.
+This is <strong>NOT</strong> suitable for use on a network that is not private but is good enough for my use case on my local network.</p>
+<p><strong>OS Tested on</strong>: Ubuntu 22.04 (Both sides) (I also have an older version of Ubuntu that I connect to, but don’t remember what I did on that one and the UI is different).</p>
+<h1 id="setup-host-side-to-connect-to"><a class="zola-anchor" href="#setup-host-side-to-connect-to" aria-label="Anchor link for: setup-host-side-to-connect-to">Setup Host (Side to connect to)</a></h1>
+<ul>
+<li>Go to Settings -&gt; Sharing</li>
+<li>Move the slider at the top to the right to enable</li>
+</ul>
+<h2 id="instructions-by-picture"><a class="zola-anchor" href="#instructions-by-picture" aria-label="Anchor link for: instructions-by-picture">Instructions by picture</a></h2>
+<p><img src="https://dev.chester.wykies.com/misc/vnc/first_set.png" alt="First Set" /></p>
+<p><img src="https://dev.chester.wykies.com/misc/vnc/second_set.png" alt="Second Set" /></p>
+<p><img src="https://dev.chester.wykies.com/misc/vnc/authentication.png" alt="Authentication" /></p>
+<h2 id="in-text"><a class="zola-anchor" href="#in-text" aria-label="Anchor link for: in-text">In Text</a></h2>
+<ul>
+<li>Go to Remote Desktop</li>
+<li>Enable <code>Remote Desktop</code></li>
+<li>Check <code>Enable Legacy VNC Protocol</code></li>
+<li>Enable <code>Remote Control</code> (If you want to do more than view only)</li>
+<li>Optional - You may want to no require the user to be at the machine to approve access
+<ul>
+<li>Click the three dots next to <code>Enable Legacy VNC Protocol</code></li>
+<li>Select <code>Require a password</code></li>
+</ul>
+</li>
+<li>Set username and password, under <code>Authentication</code> at the bottom (username doesn’t get used but I put it in anyway as I think it might be used for RDP)</li>
+<li>Check your <a href="https://dev.chester.wykies.com/debian/useful-commands/#show-ip-addresses">IP</a> (You may want to set a reserved IP in your router if you plan to do this often)</li>
+</ul>
+<h1 id="setup-client-side-to-connect-from"><a class="zola-anchor" href="#setup-client-side-to-connect-from" aria-label="Anchor link for: setup-client-side-to-connect-from">Setup Client (Side to connect from)</a></h1>
+<p>These instructions use <strong>Remmina</strong> because it comes installed with the distro.</p>
+<p><img src="https://dev.chester.wykies.com/misc/vnc/remmina_config.png" alt="Remmina Config" /></p>
+<ul>
+<li>Set <code>Name</code> to any name you want it is only for you to identify the profile</li>
+<li>Change the protocol to <code>Remmina VNC Plugin</code></li>
+<li>Set <code>Server</code> to the IP of the Host computer</li>
+<li>Leave <code>Username</code> <strong>blank</strong></li>
+<li>Set the <code>User Password</code> to the password set on the host (IF THIS IS WRONG IT DOESN’T TELL YOU WRONG PASSWORD, IT JUST WON’T WORK SO DOUBLE CHECK THE PASSWORD)</li>
+</ul>
+
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#setup-host-side-to-connect-to">Setup Host (Side to connect to)</a>
+        </div>
+        <div class="hpad">
+          <a href="#instructions-by-picture"><small>- Instructions by picture</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#in-text"><small>- In Text</small></a>
+        </div>
+        <div>
+          <a href="#setup-client-side-to-connect-from">Setup Client (Side to connect from)</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/misc&#x2F;vnc&#x2F;index.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>

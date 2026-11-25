@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Chester Wyke - Python</title>
+    <subtitle>Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://dev.chester.wykies.com/tags/python/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-01T00:00:00+00:00</updated>
+    <id>https://dev.chester.wykies.com/tags/python/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Running a Script</title>
+        <published>2023-12-29T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/running-a-script/"/>
+        <id>https://dev.chester.wykies.com/python/running-a-script/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/running-a-script/">&lt;h1 id=&quot;tldr&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#tldr&quot; aria-label=&quot;Anchor link for: tldr&quot;&gt;TLDR&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Use the following (Sets &lt;code&gt;PYTHONPATH&lt;&#x2F;code&gt; in addition to normal run command)&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;PYTHONPATH&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;pwd&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; python&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; src&#x2F;main.py&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;background&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#background&quot; aria-label=&quot;Anchor link for: background&quot;&gt;Background&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;At first blush this seems obvious and very easy but…
+I inherited a setup on my first big python project that had the code inside a src folder and data and other things in other folders at that level.
+It expected all commands to be executed from that folder.
+All paths in the code were relative from that working directory.
+While it make the code harder to run from the command line it wasn’t any harder in PyCharm (other than setting the correct working directory).
+Overall I liked the separation of data from code but co-location so carried it over to a few other projects.
+But each time I need to run it from the command line I run into issues so documenting how to run it for future reference.
+Running from the correct folder is not enough to make it work hence why I’m writing it down.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;example&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example&quot; aria-label=&quot;Anchor link for: example&quot;&gt;Example&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;example-folder-tree&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#example-folder-tree&quot; aria-label=&quot;Anchor link for: example-folder-tree&quot;&gt;Example folder tree&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;$ tree example&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;example&#x2F;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;├── data&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;│   ├── file1.csv&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;│   └── file2.csv&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;└── src&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    ├── helper.py&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;    └── main.py&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;3 directories, 5 files&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;content-of-src-main-py&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#content-of-src-main-py&quot; aria-label=&quot;Anchor link for: content-of-src-main-py&quot;&gt;Content of &lt;code&gt;src&#x2F;main.py&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;$ cat src&#x2F;main.py &lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;from src.helper import hello_again&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;print(&amp;quot;Hi from main&amp;quot;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;hello_again()&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;content-of-src-helper-py&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#content-of-src-helper-py&quot; aria-label=&quot;Anchor link for: content-of-src-helper-py&quot;&gt;Content of &lt;code&gt;src&#x2F;helper.py&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;$ cat src&#x2F;helper.py &lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;def hello_again():&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;	print(&amp;quot;Well hello there&amp;quot;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;error-when-trying-from-inside-the-example-folder&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#error-when-trying-from-inside-the-example-folder&quot; aria-label=&quot;Anchor link for: error-when-trying-from-inside-the-example-folder&quot;&gt;Error when trying from inside the example folder&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;$ python src&#x2F;main.py&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Traceback (most recent call last):&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;File &amp;quot;&#x2F;home&#x2F;user&#x2F;example&#x2F;src&#x2F;main.py&amp;quot;, line 1, in &amp;lt;module&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;from src.helper import hello_again&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;ModuleNotFoundError: No module named &amp;#39;src&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;successful-command-by-setting-pythonpath-to-current-directory&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#successful-command-by-setting-pythonpath-to-current-directory&quot; aria-label=&quot;Anchor link for: successful-command-by-setting-pythonpath-to-current-directory&quot;&gt;Successful command by setting &lt;code&gt;PYTHONPATH&lt;&#x2F;code&gt; to current directory&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;$ PYTHONPATH=$(pwd) python src&#x2F;main.py&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Hi from main&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Well hello there&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Memory</title>
+        <published>2023-08-16T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/memory/"/>
+        <id>https://dev.chester.wykies.com/python/memory/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/memory/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;tracemalloc.html&quot;&gt;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;tracemalloc.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;See excerpt from introductory paragraph&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To trace most memory blocks allocated by Python, the module should be started as early as possible by setting the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;using&#x2F;cmdline.html#envvar-PYTHONTRACEMALLOC&quot;&gt;PYTHONTRACEMALLOC&lt;&#x2F;a&gt; environment variable to 1, or by using &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;using&#x2F;cmdline.html#cmdoption-X&quot;&gt;-X&lt;&#x2F;a&gt; tracemalloc command line option. The &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;tracemalloc.html#tracemalloc.start&quot;&gt;tracemalloc.start()&lt;&#x2F;a&gt; function can be called at runtime to start tracing Python memory allocations.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;tracemalloc.html#record-the-current-and-peak-size-of-all-traced-memory-blocks&quot;&gt;docs&lt;&#x2F;a&gt; for full example&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;import&lt;&#x2F;span&gt;&lt;span&gt; tracemalloc&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;tracemalloc.start()&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;size, peak&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span&gt; tracemalloc.get_traced_memory()&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Frequently looked up functions</title>
+        <published>2023-05-16T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/freq-lookup/"/>
+        <id>https://dev.chester.wykies.com/python/freq-lookup/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/freq-lookup/">&lt;h1 id=&quot;compare-two-floats-as-approximately-equal&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#compare-two-floats-as-approximately-equal&quot; aria-label=&quot;Anchor link for: compare-two-floats-as-approximately-equal&quot;&gt;Compare two floats as approximately equal&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;math.html#math.isclose&quot;&gt;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;math.html#math.isclose&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;math.isclose(a, b)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Publish Library</title>
+        <published>2022-09-14T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/publish-lib/"/>
+        <id>https://dev.chester.wykies.com/python/publish-lib/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/publish-lib/">&lt;h1 id=&quot;editable-install-local-project-install&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#editable-install-local-project-install&quot; aria-label=&quot;Anchor link for: editable-install-local-project-install&quot;&gt;Editable Install (Local Project Install)&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Allows you to run the library before publishing it for external or use case testing.&lt;&#x2F;p&gt;
+&lt;p&gt;Sources:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;23075397&#x2F;python-how-to-edit-an-installed-package&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;23075397&#x2F;python-how-to-edit-an-installed-package&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pip.pypa.io&#x2F;en&#x2F;stable&#x2F;topics&#x2F;local-project-installs&#x2F;#editable-installs&quot;&gt;https:&#x2F;&#x2F;pip.pypa.io&#x2F;en&#x2F;stable&#x2F;topics&#x2F;local-project-installs&#x2F;#editable-installs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;run-from-local-path-source&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#run-from-local-path-source&quot; aria-label=&quot;Anchor link for: run-from-local-path-source&quot;&gt;Run from local path source&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;pip&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -e&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; path&#x2F;to&#x2F;SomeProject&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;run-from-git-source&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#run-from-git-source&quot; aria-label=&quot;Anchor link for: run-from-git-source&quot;&gt;Run from git source&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;pip&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -e&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; git+https:&#x2F;&#x2F;github.com&#x2F;c-git&#x2F;opylib.git#egg=opylib&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;publish-a-version&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#publish-a-version&quot; aria-label=&quot;Anchor link for: publish-a-version&quot;&gt;Publish a version&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;packaging.python.org&#x2F;en&#x2F;latest&#x2F;tutorials&#x2F;packaging-projects&#x2F;&quot;&gt;https:&#x2F;&#x2F;packaging.python.org&#x2F;en&#x2F;latest&#x2F;tutorials&#x2F;packaging-projects&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;upload-specific-version&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#upload-specific-version&quot; aria-label=&quot;Anchor link for: upload-specific-version&quot;&gt;Upload specific version&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Replace &lt;code&gt;x.x.x&lt;&#x2F;code&gt; with the version number e.g. &lt;code&gt;1.0.0&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;python3&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -m&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; build&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;twine&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; upload dist&#x2F;opylib-x.x.x&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;*&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;upload-all&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#upload-all&quot; aria-label=&quot;Anchor link for: upload-all&quot;&gt;Upload all&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;python3&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -m&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; build&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;twine&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; upload dist&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;*&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;initial-setup-for-publishing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#initial-setup-for-publishing&quot; aria-label=&quot;Anchor link for: initial-setup-for-publishing&quot;&gt;Initial Setup for Publishing&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Last command appears to be python version specific.
+Got it from an error message generated when I tried to use build.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;python3&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -m&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; pip install&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --upgrade&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; pip&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;python3&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -m&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; pip install&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --upgrade&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; build&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;python3&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -m&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; pip install&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --upgrade&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; twine&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt install python3.10-venv&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>PyTorch</title>
+        <published>2022-09-10T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/pytorch/"/>
+        <id>https://dev.chester.wykies.com/python/pytorch/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/pytorch/">&lt;h1 id=&quot;install-pytorch&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-pytorch&quot; aria-label=&quot;Anchor link for: install-pytorch&quot;&gt;Install PyTorch&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pytorch.org&#x2F;&quot;&gt;https:&#x2F;&#x2F;pytorch.org&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Instructions from the website are:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;pip3&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; install torch torchvision torchaudio&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;(NOT TESTED) But I suspect just the command below would be enough if all you want to do is test to see if your card is working&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;pip3&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; install torch&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h1 id=&quot;how-to-test-if-your-cuda-device-is-working&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-test-if-your-cuda-device-is-working&quot; aria-label=&quot;Anchor link for: how-to-test-if-your-cuda-device-is-working&quot;&gt;How to test if your cuda device is working&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;If it’s working you should see &lt;code&gt;true&lt;&#x2F;code&gt; and the second command should tell you the recognized device name&lt;&#x2F;p&gt;
+&lt;p&gt;NB: Requires that torch is already installed&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;$ python&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Python 3.9.10 (main, Mar 19 2022, 20:19:04) &lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;[GCC 11.2.0] on linux&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; import torch&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; torch.cuda.is_available()&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;True&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; torch.cuda.get_device_name(0)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;&amp;#39;NVIDIA T500&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>pyenv</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/pyenv/"/>
+        <id>https://dev.chester.wykies.com/python/pyenv/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/pyenv/">&lt;h2 id=&quot;check-version-of-linux&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#check-version-of-linux&quot; aria-label=&quot;Anchor link for: check-version-of-linux&quot;&gt;Check version of linux&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;uname&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; -a&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;install-prerequisites&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-prerequisites&quot; aria-label=&quot;Anchor link for: install-prerequisites&quot;&gt;Install prerequisites&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pyenv&#x2F;pyenv&#x2F;wiki&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;pyenv&#x2F;pyenv&#x2F;wiki&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt update&lt;&#x2F;span&gt;&lt;span&gt; &amp;amp;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; apt install make build-essential libssl-dev zlib1g-dev&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; \&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;libbz2-dev&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; libreadline-dev libsqlite3-dev wget curl llvm&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; \&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;libncursesw5-dev&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;run-installer&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#run-installer&quot; aria-label=&quot;Anchor link for: run-installer&quot;&gt;Run installer&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pyenv&#x2F;pyenv-installer&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;pyenv&#x2F;pyenv-installer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; https:&#x2F;&#x2F;pyenv.run&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; bash&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;update-bashrc&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#update-bashrc&quot; aria-label=&quot;Anchor link for: update-bashrc&quot;&gt;Update bashrc&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add the following lines to bashrc&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;export PATH=&amp;quot;$HOME&#x2F;.pyenv&#x2F;bin:$PATH&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;eval &amp;quot;$(pyenv init --path)&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;eval &amp;quot;$(pyenv virtualenv-init -)&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;list-versions-available-for-install&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#list-versions-available-for-install&quot; aria-label=&quot;Anchor link for: list-versions-available-for-install&quot;&gt;List versions available for install&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;realpython.com&#x2F;intro-to-pyenv&#x2F;#installing-python-versions-install&quot;&gt;https:&#x2F;&#x2F;realpython.com&#x2F;intro-to-pyenv&#x2F;#installing-python-versions-install&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Can also be filtered with grep like in the example&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;pyenv&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; --list&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; |&lt;&#x2F;span&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt; grep&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; &amp;quot; 3\.[678]&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;install-new-version&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-new-version&quot; aria-label=&quot;Anchor link for: install-new-version&quot;&gt;Install new version&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pyenv&#x2F;pyenv#usage&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;pyenv&#x2F;pyenv#usage&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;shellscript&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #B392F0;&quot;&gt;pyenv&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;versio&lt;&#x2F;span&gt;&lt;span&gt;n&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>String Formatting</title>
+        <published>2022-08-19T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/string-formatting/"/>
+        <id>https://dev.chester.wykies.com/python/string-formatting/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/string-formatting/">&lt;h1 id=&quot;f-strings&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#f-strings&quot; aria-label=&quot;Anchor link for: f-strings&quot;&gt;F-Strings&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;fixed-floats&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#fixed-floats&quot; aria-label=&quot;Anchor link for: fixed-floats&quot;&gt;Fixed floats&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;string.html#format-specification-mini-language&quot;&gt;https:&#x2F;&#x2F;docs.python.org&#x2F;3&#x2F;library&#x2F;string.html#format-specification-mini-language&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;x&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt; =&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt; 3.1415926535&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;f&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;{&lt;&#x2F;span&gt;&lt;span&gt;x&lt;&#x2F;span&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;:.2f&lt;&#x2F;span&gt;&lt;span style=&quot;color: #79B8FF;&quot;&gt;}&lt;&#x2F;span&gt;&lt;span style=&quot;color: #9ECBFF;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Outputs 3.14&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Get the current function&#x27;s name</title>
+        <published>2022-06-02T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/get-func-name/"/>
+        <id>https://dev.chester.wykies.com/python/get-func-name/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/get-func-name/">&lt;p&gt;Source: &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;5067604&#x2F;determine-function-name-from-within-that-function-without-using-traceback&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;5067604&#x2F;determine-function-name-from-within-that-function-without-using-traceback&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;inspect.currentframe().f_code.co_name&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>IPython Built-in magic commands</title>
+        <published>2022-06-02T00:00:00+00:00</published>
+        <updated>2025-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Chester Wyke
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://dev.chester.wykies.com/python/ipython-built-in-magic-commands/"/>
+        <id>https://dev.chester.wykies.com/python/ipython-built-in-magic-commands/</id>
+        
+        <content type="html" xml:base="https://dev.chester.wykies.com/python/ipython-built-in-magic-commands/">&lt;p&gt;Source: https:&#x2F;&#x2F;ipython.readthedocs.io&#x2F;en&#x2F;stable&#x2F;interactive&#x2F;magics.html&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;defined-variables-with-types&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#defined-variables-with-types&quot; aria-label=&quot;Anchor link for: defined-variables-with-types&quot;&gt;Defined Variables (with types)&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;%&lt;&#x2F;span&gt;&lt;span&gt;whos&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;&lt;h2 id=&quot;defined-variables&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#defined-variables&quot; aria-label=&quot;Anchor link for: defined-variables&quot;&gt;Defined Variables&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;giallo&quot; style=&quot;color: #E1E4E8; background-color: #24292E;&quot;&gt;&lt;code data-lang=&quot;python&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span style=&quot;color: #F97583;&quot;&gt;%&lt;&#x2F;span&gt;&lt;span&gt;who&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
+        
+    </entry>
+</feed>

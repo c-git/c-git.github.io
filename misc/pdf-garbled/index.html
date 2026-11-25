@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://dev.chester.wykies.com/js/theme.min.js" integrity="sha384-pb++s6uBRKaQv+iAXpgA/H3IlpLZdO14tTwuCI7uXmz4aaZdByoCcM+6BhynMq/1"></script>
+  <link rel="stylesheet" href="https://dev.chester.wykies.com/abridge.css?h=1d8271772a1ed466a51f" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="base" content="https://dev.chester.wykies.com" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="theme-color" content="#333333" />
+  <link rel="manifest" href="https://dev.chester.wykies.com/manifest.min.json" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.chester.wykies.com/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.chester.wykies.com/favicon-32x32.png" />
+  <link rel="alternate" type="application/atom+xml" title="Chester Wyke Atom Feed" href="https://dev.chester.wykies.com/atom.xml" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>PDF Garbled (Fix) | Chester Wyke</title>
+  <meta name="author" content="Chester Wyke" />
+  <meta name="copyright" content="Chester Wyke" />
+  <meta name="description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <link rel="canonical" href="https://dev.chester.wykies.com/misc/pdf-garbled/" />
+  <meta name="keywords" content="Chester, Wyke, Software, Developer, Notes" />
+  <meta property="og:url" content="https://dev.chester.wykies.com/misc/pdf-garbled/" />
+  <meta name="twitter:url" content="https://dev.chester.wykies.com/misc/pdf-garbled/" />
+  <meta property="og:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta name="twitter:description" content="Chester Wyke is a software developer by trade and passion. This is his personal site with information about him and his publicly accessible notes on various topics." />
+  <meta property="og:title" content="PDF Garbled (Fix) | Chester Wyke" />
+  <meta name="twitter:title" content="PDF Garbled (Fix) | Chester Wyke" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:image" content="https://dev.chester.wykies.com/logo.png" />
+  <meta property="og:site_name" content="Chester Wyke" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:updated_time" content="2025-04-26" />
+  <script defer src="https://dev.chester.wykies.com/js/abridge_nopwa.min.js?h=da86cb0a199b3ccbdff1" integrity="sha384-vIpObQoso10COS540XqkYFIjE+P0OwczzYDnC2D28QZ8O6slixwCc+F1xxYZKvFr"></script>
+  <noscript><link rel="stylesheet" href="https://dev.chester.wykies.com/nojs.css" /></noscript>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><big><a href="https://dev.chester.wykies.com" title="Chester Wyke"><img src="https://dev.chester.wykies.com/logo-300x102.png" alt="Logo" width="75" height="32" /> &nbsp; Chester Wyke</a></big></div>
+      <div>
+
+        <div>
+          <ul><li><a class="s110" href="https://dev.chester.wykies.com/archive/"> Articles </a></li><li><a class="s110" href="https://dev.chester.wykies.com/tags/"> Tags </a></li><i type="reset" id="mode" class="js mode">&#9728;</i></li></ul>
+        </div>
+
+        <div>
+          <div>
+            <form autocomplete=off class="js" name="goSearch" id="searchbox">
+              <div class="searchd">
+                <input id="searchinput" type="text" placeholder="Search" title="Search" />
+                <button type="submit" title="Search" class="si">&#8981;</button>
+              </div>
+              <div class="results"><div id="suggestions"></div></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <article>
+      <h1><a href="https://dev.chester.wykies.com/misc/pdf-garbled/">PDF Garbled (Fix)</a></h1>
+
+      <span class="s95"> Chester Wyke <span class="rpad"></span> August 19, 2022 <span class="rpad"></span>Updated: April 26, 2025 <span class="rpad"></span> #<a href="https://dev.chester.wykies.com/tags/misc/">Misc</a> </span>
+
+    
+
+
+<h1 id="background"><a class="zola-anchor" href="#background" aria-label="Anchor link for: background">Background</a></h1>
+<p>Got a PDF that would display on the screen fine for reading but would produce garbled text when trying to copy and
+paste.
+Main motivation for addressing the issue is to be able to use text to speech on the pdf to read it.
+This page is meant to document the options found to address this issue.</p>
+<h1 id="convert-pdf-to-images-instead-of-garbled-text"><a class="zola-anchor" href="#convert-pdf-to-images-instead-of-garbled-text" aria-label="Anchor link for: convert-pdf-to-images-instead-of-garbled-text">Convert pdf to images instead of garbled text</a></h1>
+<p>Two methods were found for this with varied pros and cons</p>
+<h2 id="use-acrobat-reader-to-convert"><a class="zola-anchor" href="#use-acrobat-reader-to-convert" aria-label="Anchor link for: use-acrobat-reader-to-convert">Use Acrobat Reader to convert</a></h2>
+<ul>
+<li>Pros: Produced smaller file (On example pdf was by a factor of 2)</li>
+<li>Cons: Took a bit more effort</li>
+</ul>
+<ol>
+<li>Open the file in Acrobat Reader</li>
+<li>Ctrl + P to print</li>
+<li>Go to Advanced</li>
+<li>Check <code>Print As Image</code></li>
+</ol>
+<p><img src="https://dev.chester.wykies.com/misc/pdf-garbled/acrobat_reader_to_img.png" alt="Acrobat Reader Screenshot" /></p>
+<h2 id="use-okular-to-convert"><a class="zola-anchor" href="#use-okular-to-convert" aria-label="Anchor link for: use-okular-to-convert">Use Okular to convert</a></h2>
+<ul>
+<li>Pros: Faster to do with somewhat less effort especially as it is the default app to open PDFs</li>
+<li>Cons: Produce a larger file (On example pdf was by a factor of 2)</li>
+</ul>
+<ol>
+<li>Open file in Okular</li>
+<li>Ctrl + P to print</li>
+<li>Expand Options at the bottom</li>
+<li><code>PDF Options</code> tab</li>
+<li>Check <code>Force rasterization</code></li>
+</ol>
+<p><img src="https://dev.chester.wykies.com/misc/pdf-garbled/okular_to_img.png" alt="Okular Screenshot" /></p>
+<h1 id="ocr-the-image-pdf"><a class="zola-anchor" href="#ocr-the-image-pdf" aria-label="Anchor link for: ocr-the-image-pdf">OCR the image PDF</a></h1>
+<h2 id="use-voice-aloud-reader"><a class="zola-anchor" href="#use-voice-aloud-reader" aria-label="Anchor link for: use-voice-aloud-reader">Use <a rel="noopener external" target="_blank" href="https://play.google.com/store/apps/details?id=com.hyperionics.avar">@Voice Aloud Reader</a></a></h2>
+<ul>
+<li>Pros: Directly does text to speech once completed</li>
+<li>Cons:
+<ul>
+<li>Must plug into to charger to do multiple pages</li>
+<li>Must use mobile device</li>
+<li>Not easily able to copy and paste</li>
+</ul>
+</li>
+</ul>
+<h2 id="use-online-service"><a class="zola-anchor" href="#use-online-service" aria-label="Anchor link for: use-online-service">Use online service</a></h2>
+<p>Online service: <a rel="noopener external" target="_blank" href="https://www.sejda.com/ocr-pdf">https://www.sejda.com/ocr-pdf</a></p>
+<ul>
+<li>Pros: Gives you a new version of the PDF you can use on any device</li>
+<li>Cons: Not local program (Small amounts free)</li>
+</ul>
+
+    </article>
+
+    <div class="sblock">
+      <div class="blockdiv sticky">
+        <a class="b s150" href="#">Index</a>
+        <div>
+          <a href="#background">Background</a>
+        </div>
+        <div>
+          <a href="#convert-pdf-to-images-instead-of-garbled-text">Convert pdf to images instead of garbled text</a>
+        </div>
+        <div class="hpad">
+          <a href="#use-acrobat-reader-to-convert"><small>- Use Acrobat Reader to convert</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#use-okular-to-convert"><small>- Use Okular to convert</small></a>
+        </div>
+        <div>
+          <a href="#ocr-the-image-pdf">OCR the image PDF</a>
+        </div>
+        <div class="hpad">
+          <a href="#use-voice-aloud-reader"><small>- Use @Voice Aloud Reader</small></a>
+        </div>
+        <div class="hpad">
+          <a href="#use-online-service"><small>- Use online service</small></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="c">
+      <nav class="tpad"><div><a type="application/atom+xml" href="https://dev.chester.wykies.com/atom.xml" target="_blank" title="Chester Wyke Atom Feed"><i type="Button" class="svg rss" title="Chester Wyke Atom Feed"></i></a><a href="https://www.linkedin.com/in/cwyke/" target="_blank" title="LinkedIn"><i type="Button" class="svg linkedin" title="LinkedIn"></i></a><a href="https://github.com/c-git/" target="_blank" title="Github"><i type="Button" class="svg github" title="Github"></i></a></div></nav>
+      <nav class="vpad">
+        <a class="rpad s90" href="https://dev.chester.wykies.com/site-definitions/"> Definitions </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/privacy/"> Privacy </a>
+        <a class="rpad s90" href="https://dev.chester.wykies.com/sitemap.xml" target="_blank"> Sitemap </a>
+      </nav><a href="https://github.com/c-git/c-git.github.io/edit/main/content/misc&#x2F;pdf_garbled&#x2F;index.md" target="_blank">Edit this page on GitHub</a>
+          
+      <p class="s80"> © 2022-<span id="year">2026</span> Chester Wyke</p>
+      <p class="s80">Powered by <a href="https://www.getzola.org/" target="_blank">Zola</a> & <a href="https://github.com/jieiku/abridge/" target="_blank">Abridge</a></p>
+    </div>
+  </footer>
+</body>
+</html>
