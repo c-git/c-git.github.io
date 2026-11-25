@@ -1,7 +1,7 @@
 +++
 title="Time"
 date=2023-08-15
-updated = 2026-07-25
+updated = 2026-11-25
 extra = { series = "Rust" }
 taxonomies = { tags = ["Rust"] }
 +++
@@ -108,7 +108,7 @@ fn main() {
 
 </details>
 
-See the documentation on [jiff::Zoned::now()](https://docs.rs/jiff/latest/jiff/struct.Zoned.html#method.now) if you don't need to start off in the current timezone as you can start with just a timestamp and avoid the lookup for local.
+See the documentation on [jiff::Zoned::now()](https://docs.rs/jiff/0.2.46/jiff/struct.Zoned.html#method.now) if you don't need to start off in the current timezone as you can start with just a timestamp and avoid the lookup for local.
 
 ```rust
 fn main() -> Result<(), jiff::Error> {
