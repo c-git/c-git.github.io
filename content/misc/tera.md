@@ -1,11 +1,13 @@
 +++
 title = "Tera Guide"
 date=2023-10-27
-updated = 2026-02-19
+updated = 2026-11-25
 taxonomies = { tags = ["Misc"] }
 +++
 
 ## Get everything in context
+
+**SEEMS THERE IS A NEW VERSION OF TERA AND THIS PAGE HAS NOT BEEN UPDATED AS A RESULT MAY NO LONGER BE VALID, NOTICED BECAUSE LINKS ARE BROKEN**
 
 This is useful for debugging.
 But be warned it includes all the content of the site so on large sites it is VERY big.
@@ -16,6 +18,8 @@ But be warned it includes all the content of the site so on large sites it is VE
 
 ## Example for loop
 
+**SEEMS THERE IS A NEW VERSION OF TERA AND THIS PAGE HAS NOT BEEN UPDATED AS A RESULT MAY NO LONGER BE VALID, NOTICED BECAUSE LINKS ARE BROKEN**
+
 Source: <https://keats.github.io/tera/docs/#functions>
 
 ```
@@ -24,6 +28,8 @@ Source: <https://keats.github.io/tera/docs/#functions>
 ```
 
 ## As String
+
+**SEEMS THERE IS A NEW VERSION OF TERA AND THIS PAGE HAS NOT BEEN UPDATED AS A RESULT MAY NO LONGER BE VALID, NOTICED BECAUSE LINKS ARE BROKEN**
 
 Source: <https://keats.github.io/tera/docs/#as-str>
 
